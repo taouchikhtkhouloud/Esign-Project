@@ -1,0 +1,5 @@
+2023-06-19 15:46:35.198 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-19 15:46:35.314 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-19 15:46:35.321 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:46:35.322 +00:00 [INF] Hosting environment: Development
+2023-06-19 15:46:35.324 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\src\Server

@@ -1,7 +1,0 @@
-2023-06-16 00:00:18.228 +00:00 [INF] Now listening on: https://localhost:5001
-2023-06-16 00:00:18.262 +00:00 [INF] Now listening on: http://localhost:5000
-2023-06-16 00:00:18.266 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-06-16 00:00:18.267 +00:00 [INF] Hosting environment: Development
-2023-06-16 00:00:18.271 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\src\Server
-2023-06-16 00:04:32.965 +00:00 [ERR] No recipients have been specified.
-2023-06-16 00:18:25.247 +00:00 [INF] Application is shutting down...

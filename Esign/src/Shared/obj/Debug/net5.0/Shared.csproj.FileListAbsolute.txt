@@ -1,0 +1,12 @@
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\bin\Debug\net5.0\Esign.Shared.deps.json
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\bin\Debug\net5.0\Esign.Shared.dll
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\bin\Debug\net5.0\ref\Esign.Shared.dll
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\bin\Debug\net5.0\Esign.Shared.pdb
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Shared.csproj.AssemblyReference.cache
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Shared.AssemblyInfoInputs.cache
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Shared.AssemblyInfo.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Shared.csproj.CoreCompileInputs.cache
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Esign.Shared.dll
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\ref\Esign.Shared.dll
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Shared\obj\Debug\net5.0\Esign.Shared.pdb

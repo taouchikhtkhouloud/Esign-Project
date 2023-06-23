@@ -60,12 +60,12 @@ namespace Esign.Infrastructure
                 //Check if User Exists
                 var superUser = new BlazorHeroUser
                 {
-                    FirstName = "Mukesh",
-                    LastName = "Murugan",
-                    Email = "mukesh@blazorhero.com",
-                    UserName = "mukesh",
+                    FirstName = "Youssef",
+                    LastName = "Farissi",
+                    Email = "fabracontrolea@gmail.com",
+                    UserName = "YoussefFarissi",
                     EmailConfirmed = true,
-                    PhoneNumberConfirmed = true,
+                    PhoneNumberConfirmed = false,
                     CreatedOn = DateTime.Now,
                     IsActive = true
                 };

@@ -303,15 +303,13 @@ using Microsoft.Extensions.Logging;
 #line hidden
 #nullable disable
             , 2, (__builder2) => {
-                __builder2.AddContent(3, 
 #nullable restore
 #line 5 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Error.razor"
-     ChildContent
+__builder2.AddContent(3, ChildContent);
 
 #line default
 #line hidden
 #nullable disable
-                );
             }
             );
         }

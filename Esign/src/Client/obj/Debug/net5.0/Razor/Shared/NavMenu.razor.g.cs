@@ -301,7 +301,7 @@ using System.Security.Claims;
             __builder.AddAttribute(3, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(4);
                 __builder2.AddAttribute(5, "Href", "/");
-                __builder2.AddAttribute(6, "Match", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
+                __builder2.AddAttribute(6, "Match", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                 NavLinkMatch.All
@@ -310,7 +310,7 @@ using System.Security.Claims;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(7, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(7, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                                          Icons.Material.Outlined.Home
@@ -320,15 +320,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(9, 
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                                                                                        _localizer["Home"]
+__builder3.AddContent(9, _localizer["Home"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -336,15 +334,13 @@ using System.Security.Claims;
                 __builder2.OpenComponent<MudBlazor.MudListSubheader>(11);
                 __builder2.AddAttribute(12, "Class", "mt-2 mb-n2");
                 __builder2.AddAttribute(13, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(14, 
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                                          _localizer["Personal"]
+__builder3.AddContent(14, _localizer["Personal"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -358,7 +354,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(15);
                 __builder2.AddAttribute(16, "Href", "/dashboard");
-                __builder2.AddAttribute(17, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(17, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                              Icons.Material.Outlined.Dashboard
@@ -368,15 +364,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(18, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(19, 
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-             _localizer["Dashboard"]
+__builder3.AddContent(19, _localizer["Dashboard"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -389,7 +383,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(20);
                 __builder2.AddAttribute(21, "Href", "/account");
-                __builder2.AddAttribute(22, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(22, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                        Icons.Material.Outlined.SupervisorAccount
@@ -399,15 +393,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(23, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(24, 
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-         _localizer["Account"]
+__builder3.AddContent(24, _localizer["Account"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -421,7 +413,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(25);
                 __builder2.AddAttribute(26, "Href", "/audit-trails");
-                __builder2.AddAttribute(27, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(27, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 21 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                                 Icons.Material.Outlined.Security
@@ -431,15 +423,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(28, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(29, 
 #nullable restore
 #line 22 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-             _localizer["Audit Trails"]
+__builder3.AddContent(29, _localizer["Audit Trails"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -461,15 +451,13 @@ using System.Security.Claims;
                 __builder2.OpenComponent<MudBlazor.MudListSubheader>(30);
                 __builder2.AddAttribute(31, "Class", "mt-2 mb-n2");
                 __builder2.AddAttribute(32, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(33, 
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                                              _localizer["Document Management"]
+__builder3.AddContent(33, _localizer["Document Management"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -483,7 +471,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(34);
                 __builder2.AddAttribute(35, "Href", "/document-store");
-                __builder2.AddAttribute(36, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(36, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                                       Icons.Material.Outlined.AttachFile
@@ -493,15 +481,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(37, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(38, 
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                 _localizer["Document Store"]
+__builder3.AddContent(38, _localizer["Document Store"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -522,7 +508,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(39);
                 __builder2.AddAttribute(40, "Href", "/document-types");
-                __builder2.AddAttribute(41, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(41, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                                       Icons.Material.Outlined.FileCopy
@@ -532,15 +518,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(42, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(43, 
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                 _localizer["Document Types"]
+__builder3.AddContent(43, _localizer["Document Types"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -570,15 +554,13 @@ using System.Security.Claims;
                 __builder2.OpenComponent<MudBlazor.MudListSubheader>(44);
                 __builder2.AddAttribute(45, "Class", "mt-2 mb-n2");
                 __builder2.AddAttribute(46, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(47, 
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                                              _localizer["Administrator"]
+__builder3.AddContent(47, _localizer["Administrator"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -592,7 +574,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(48);
                 __builder2.AddAttribute(49, "Href", "/identity/users");
-                __builder2.AddAttribute(50, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(50, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 47 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                                       Icons.Material.Outlined.Person
@@ -602,15 +584,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(51, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(52, 
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                 _localizer["Users"]
+__builder3.AddContent(52, _localizer["Users"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -631,7 +611,7 @@ using System.Security.Claims;
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(53);
                 __builder2.AddAttribute(54, "Href", "/identity/roles");
-                __builder2.AddAttribute(55, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(55, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 53 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                                       Icons.Material.Outlined.Person
@@ -641,15 +621,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(56, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(57, 
 #nullable restore
 #line 53 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                                                                                       _localizer["Roles"]
+__builder3.AddContent(57, _localizer["Roles"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -679,22 +657,20 @@ using System.Security.Claims;
                 __builder2.OpenComponent<MudBlazor.MudListSubheader>(58);
                 __builder2.AddAttribute(59, "Class", "mt-2 mb-n2");
                 __builder2.AddAttribute(60, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(61, 
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-                                              _localizer["Communication"]
+__builder3.AddContent(61, _localizer["Communication"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(62, "\r\n        ");
                 __builder2.OpenComponent<MudBlazor.MudNavLink>(63);
                 __builder2.AddAttribute(64, "Href", "/chat");
-                __builder2.AddAttribute(65, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(65, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 59 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
                                         Icons.Material.Outlined.Chat
@@ -704,15 +680,13 @@ using System.Security.Claims;
 #nullable disable
                 ));
                 __builder2.AddAttribute(66, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(67, 
 #nullable restore
 #line 60 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NavMenu.razor"
-             _localizer["Chat"]
+__builder3.AddContent(67, _localizer["Chat"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();

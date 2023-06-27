@@ -304,7 +304,7 @@ using System.Globalization;
         {
             __builder.AddMarkupContent(0, "<style>\r\n    .mud-table-container {\r\n        overflow: auto;\r\n    }\r\n</style>\r\n\r\n");
             __builder.OpenComponent<Esign.Client.Shared.Components.HeroTitle>(1);
-            __builder.AddAttribute(2, "Title", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+            __builder.AddAttribute(2, "Title", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                    _localizer["Audit Trails"]
@@ -313,7 +313,7 @@ using System.Globalization;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(3, "Description", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+            __builder.AddAttribute(3, "Description", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                              _localizer["Your Recent Activities."]
@@ -332,7 +332,7 @@ using System.Globalization;
 #line hidden
 #nullable disable
             __builder.OpenComponent<MudBlazor.MudProgressCircular>(4);
-            __builder.AddAttribute(5, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+            __builder.AddAttribute(5, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                 Color.Primary
@@ -341,7 +341,7 @@ using System.Globalization;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(6, "Indeterminate", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+            __builder.AddAttribute(6, "Indeterminate", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                               true
@@ -432,7 +432,7 @@ else
 #line default
 #line hidden
 #nullable disable
-            , 17, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _trail = __value, _trail), 18, (__builder2) => {
+            , 17, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _trail = __value, _trail), 18, (__builder2) => {
                 __builder2.OpenElement(19, "div");
                 __builder2.AddAttribute(20, "class", "justify-center mud-text-align-center");
 #nullable restore
@@ -445,7 +445,7 @@ else
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudButton>(21);
                 __builder2.AddAttribute(22, "DisableElevation", true);
-                __builder2.AddAttribute(23, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(23, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                            Color.Secondary
@@ -454,7 +454,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(24, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(24, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                      Variant.Filled
@@ -463,7 +463,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(25, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(25, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                               ExportToExcelAsync
@@ -472,7 +472,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(26, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(26, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                               Icons.Custom.FileFormats.FileExcel
@@ -481,7 +481,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(27, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(27, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                                                                          Color.Surface
@@ -491,15 +491,13 @@ else
 #nullable disable
                 ));
                 __builder2.AddAttribute(28, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(29, 
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                                                                                         _localizer["Export To Excel"]
+__builder3.AddContent(29, _localizer["Export To Excel"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -570,7 +568,7 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 40, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchString = __value, _searchString)));
+                , 40, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchString = __value, _searchString)));
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
             }
@@ -589,7 +587,7 @@ else
 #line hidden
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudTHeadRow>(42);
-                __builder2.AddAttribute(43, "IgnoreCheckbox", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                __builder2.AddAttribute(43, "IgnoreCheckbox", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                              true
@@ -603,7 +601,7 @@ else
                     __builder3.AddAttribute(46, "colspan", "2");
                     __builder3.AddAttribute(47, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudDateRangePicker>(48);
-                        __builder4.AddAttribute(49, "PickerVariant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.PickerVariant>(
+                        __builder4.AddAttribute(49, "PickerVariant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.PickerVariant>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                    PickerVariant.Dialog
@@ -612,7 +610,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(50, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(50, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                  _localizer["Date Range For Searching"]
@@ -621,7 +619,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(51, "DateRange", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.DateRange>(
+                        __builder4.AddAttribute(51, "DateRange", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.DateRange>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                                                           _dateRange
@@ -630,11 +628,11 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(52, "DateRangeChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<MudBlazor.DateRange>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<MudBlazor.DateRange>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dateRange = __value, _dateRange))));
+                        __builder4.AddAttribute(52, "DateRangeChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<MudBlazor.DateRange>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<MudBlazor.DateRange>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dateRange = __value, _dateRange))));
                         __builder4.AddAttribute(53, "PickerActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudButton>(54);
                             __builder5.AddAttribute(55, "Class", "mr-auto align-self-start");
-                            __builder5.AddAttribute(56, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                            __builder5.AddAttribute(56, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 40 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                        () => _dateRangePicker.Clear()
@@ -644,21 +642,19 @@ else
 #nullable disable
                             )));
                             __builder5.AddAttribute(57, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.AddContent(58, 
 #nullable restore
 #line 40 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                         _localizer["Clear"]
+__builder6.AddContent(58, _localizer["Clear"]);
 
 #line default
 #line hidden
 #nullable disable
-                                );
                             }
                             ));
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(59, "\r\n                                ");
                             __builder5.OpenComponent<MudBlazor.MudButton>(60);
-                            __builder5.AddAttribute(61, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                            __builder5.AddAttribute(61, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                       () => _dateRangePicker.Close(false)
@@ -668,21 +664,19 @@ else
 #nullable disable
                             )));
                             __builder5.AddAttribute(62, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.AddContent(63, 
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                             _localizer["Cancel"]
+__builder6.AddContent(63, _localizer["Cancel"]);
 
 #line default
 #line hidden
 #nullable disable
-                                );
                             }
                             ));
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(64, "\r\n                                ");
                             __builder5.OpenComponent<MudBlazor.MudButton>(65);
-                            __builder5.AddAttribute(66, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                            __builder5.AddAttribute(66, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                   Color.Primary
@@ -691,7 +685,7 @@ else
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(67, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                            __builder5.AddAttribute(67, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                             () => _dateRangePicker.Close()
@@ -701,15 +695,13 @@ else
 #nullable disable
                             )));
                             __builder5.AddAttribute(68, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.AddContent(69, 
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                              _localizer["Ok"]
+__builder6.AddContent(69, _localizer["Ok"]);
 
 #line default
 #line hidden
 #nullable disable
-                                );
                             }
                             ));
                             __builder5.CloseComponent();
@@ -750,16 +742,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                        , 80, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchInOldValues = __value, _searchInOldValues)), 81, (__builder5) => {
-                            __builder5.AddContent(82, 
+                        , 80, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchInOldValues = __value, _searchInOldValues)), 81, (__builder5) => {
 #nullable restore
 #line 47 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                        _localizer["Search in Old Values"]
+__builder5.AddContent(82, _localizer["Search in Old Values"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         );
                         __builder4.AddMarkupContent(83, "\r\n                        ");
@@ -779,16 +769,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                        , 88, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchInNewValues = __value, _searchInNewValues)), 89, (__builder5) => {
-                            __builder5.AddContent(90, 
+                        , 88, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchInNewValues = __value, _searchInNewValues)), 89, (__builder5) => {
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                        _localizer["Search in New Values"]
+__builder5.AddContent(90, _localizer["Search in New Values"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         );
                     }
@@ -805,7 +793,7 @@ else
 #line hidden
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudTHeadRow>(91);
-                __builder2.AddAttribute(92, "IgnoreCheckbox", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                __builder2.AddAttribute(92, "IgnoreCheckbox", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                          true
@@ -826,15 +814,13 @@ else
 #line hidden
 #nullable disable
                         , 98, (__builder5) => {
-                            __builder5.AddContent(99, 
 #nullable restore
 #line 53 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                   _localizer["Id"]
+__builder5.AddContent(99, _localizer["Id"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         );
                     }
@@ -852,15 +838,13 @@ else
 #line hidden
 #nullable disable
                         , 105, (__builder5) => {
-                            __builder5.AddContent(106, 
 #nullable restore
 #line 54 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                          _localizer["Table Name"]
+__builder5.AddContent(106, _localizer["Table Name"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         );
                     }
@@ -878,15 +862,13 @@ else
 #line hidden
 #nullable disable
                         , 112, (__builder5) => {
-                            __builder5.AddContent(113, 
 #nullable restore
 #line 55 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                         _localizer["Date"]
+__builder5.AddContent(113, _localizer["Date"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         );
                     }
@@ -904,15 +886,13 @@ else
 #line hidden
 #nullable disable
                         , 119, (__builder5) => {
-                            __builder5.AddContent(120, 
 #nullable restore
 #line 56 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                     _localizer["Type"]
+__builder5.AddContent(120, _localizer["Type"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         );
                     }
@@ -930,15 +910,13 @@ else
                 __builder2.OpenComponent<MudBlazor.MudTd>(125);
                 __builder2.AddAttribute(126, "DataLabel", "Id");
                 __builder2.AddAttribute(127, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(128, 
 #nullable restore
 #line 61 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                   context.Id
+__builder3.AddContent(128, context.Id);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -947,7 +925,7 @@ else
                 __builder2.AddAttribute(131, "DataLabel", "Name");
                 __builder2.AddAttribute(132, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudHighlighter>(133);
-                    __builder3.AddAttribute(134, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(134, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                        context.TableName
@@ -956,7 +934,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(135, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(135, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                             _searchString
@@ -976,7 +954,7 @@ else
                     __builder3.OpenComponent<MudBlazor.MudItem>(140);
                     __builder3.AddAttribute(141, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudChip>(142);
-                        __builder4.AddAttribute(143, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(143, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                     Icons.Material.Filled.Watch
@@ -985,7 +963,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(144, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(144, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                             Color.Secondary
@@ -994,7 +972,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(145, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(145, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                     true
@@ -1003,7 +981,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(146, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(146, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                  Color.Surface
@@ -1013,25 +991,21 @@ else
 #nullable disable
                         ));
                         __builder4.AddAttribute(147, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.AddContent(148, 
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                 _localizer["Local"]
+__builder5.AddContent(148, _localizer["Local"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                             __builder5.AddContent(149, " : ");
-                            __builder5.AddContent(150, 
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                                        context.LocalTime.ToString("G", CultureInfo.CurrentCulture)
+__builder5.AddContent(150, context.LocalTime.ToString("G", CultureInfo.CurrentCulture));
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1042,7 +1016,7 @@ else
                     __builder3.OpenComponent<MudBlazor.MudItem>(152);
                     __builder3.AddAttribute(153, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudChip>(154);
-                        __builder4.AddAttribute(155, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(155, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                     Icons.Material.Filled.Watch
@@ -1051,7 +1025,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(156, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(156, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                             Color.Secondary
@@ -1060,7 +1034,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(157, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(157, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                     true
@@ -1069,7 +1043,7 @@ else
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(158, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(158, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                  Color.Surface
@@ -1079,25 +1053,21 @@ else
 #nullable disable
                         ));
                         __builder4.AddAttribute(159, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.AddContent(160, 
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                 _localizer["UTC"]
+__builder5.AddContent(160, _localizer["UTC"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                             __builder5.AddContent(161, " : ");
-                            __builder5.AddContent(162, 
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                                      context.DateTime.ToString("G", CultureInfo.CurrentCulture)
+__builder5.AddContent(162, context.DateTime.ToString("G", CultureInfo.CurrentCulture));
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1111,15 +1081,13 @@ else
                 __builder2.OpenComponent<MudBlazor.MudTd>(164);
                 __builder2.AddAttribute(165, "DataLabel", "Tax");
                 __builder2.AddAttribute(166, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(167, 
 #nullable restore
 #line 73 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                    context.Type
+__builder3.AddContent(167, context.Type);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -1128,7 +1096,7 @@ else
                 __builder2.AddAttribute(170, "Style", "text-align:right");
                 __builder2.AddAttribute(171, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudButton>(172);
-                    __builder3.AddAttribute(173, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(173, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                     Variant.Filled
@@ -1137,7 +1105,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(174, "DisableElevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(174, "DisableElevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                       true
@@ -1146,7 +1114,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(175, "EndIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(175, "EndIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                       Icons.Filled.KeyboardArrowDown
@@ -1155,7 +1123,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(176, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(176, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                  Color.Secondary
@@ -1164,7 +1132,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(177, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(177, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                                              () => ShowBtnPress(context.Id)
@@ -1174,25 +1142,21 @@ else
 #nullable disable
                     )));
                     __builder3.AddAttribute(178, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(179, 
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                                                                                (context.ShowDetails == true)? _localizer["Hide"] : _localizer["Show"]
+__builder4.AddContent(179, (context.ShowDetails == true)? _localizer["Hide"] : _localizer["Show"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                         __builder4.AddContent(180, " ");
-                        __builder4.AddContent(181, 
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                                                                                                                                                         _localizer["Trail Details"]
+__builder4.AddContent(181, _localizer["Trail Details"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -1214,7 +1178,7 @@ else
                     __builder3.OpenElement(185, "td");
                     __builder3.AddAttribute(186, "colspan", "5");
                     __builder3.OpenComponent<MudBlazor.MudCard>(187);
-                    __builder3.AddAttribute(188, "Elevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(188, "Elevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 83 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                             25
@@ -1227,7 +1191,7 @@ else
                         __builder4.OpenComponent<MudBlazor.MudCardHeader>(190);
                         __builder4.AddAttribute(191, "CardHeaderContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudAlert>(192);
-                            __builder5.AddAttribute(193, "Severity", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Severity>(
+                            __builder5.AddAttribute(193, "Severity", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Severity>(
 #nullable restore
 #line 86 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                         Severity.Info
@@ -1238,26 +1202,22 @@ else
                             ));
                             __builder5.AddAttribute(194, "Typo", "Typo.body1");
                             __builder5.AddAttribute(195, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.AddContent(196, 
 #nullable restore
 #line 86 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                          _localizer["Details for Trail ID"]
+__builder6.AddContent(196, _localizer["Details for Trail ID"]);
 
 #line default
 #line hidden
 #nullable disable
-                                );
                                 __builder6.AddContent(197, " : ");
                                 __builder6.OpenElement(198, "strong");
-                                __builder6.AddContent(199, 
 #nullable restore
 #line 86 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                                                        context.Id
+__builder6.AddContent(199, context.Id);
 
 #line default
 #line hidden
 #nullable disable
-                                );
                                 __builder6.CloseElement();
                             }
                             ));
@@ -1284,15 +1244,13 @@ else
                             __builder5.AddAttribute(208, "class", "mud-table-row");
                             __builder5.AddAttribute(209, "style", "padding:10px!important");
                             __builder5.OpenElement(210, "td");
-                            __builder5.AddContent(211, 
 #nullable restore
 #line 95 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                     _localizer["Columns Affected"]
+__builder5.AddContent(211, _localizer["Columns Affected"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                             __builder5.CloseElement();
                             __builder5.AddMarkupContent(212, "\r\n                                                ");
                             __builder5.OpenElement(213, "td");
@@ -1307,7 +1265,7 @@ else
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudChip>(216);
-                                __builder6.AddAttribute(217, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(217, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 100 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                             true
@@ -1316,7 +1274,7 @@ else
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(218, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(218, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 100 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                          Color.Surface
@@ -1326,15 +1284,13 @@ else
 #nullable disable
                                 ));
                                 __builder6.AddAttribute(219, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.AddContent(220, 
 #nullable restore
 #line 100 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                         column.Replace('"', ' ').Trim()
+__builder7.AddContent(220, column.Replace('"', ' ').Trim());
 
 #line default
 #line hidden
 #nullable disable
-                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -1360,22 +1316,20 @@ else
                             __builder5.OpenElement(221, "tr");
                             __builder5.AddAttribute(222, "class", "mud-table-row");
                             __builder5.OpenElement(223, "td");
-                            __builder5.AddContent(224, 
 #nullable restore
 #line 107 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                 _localizer["Primary Key"]
+__builder5.AddContent(224, _localizer["Primary Key"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                             __builder5.CloseElement();
                             __builder5.AddMarkupContent(225, "\r\n                                            ");
                             __builder5.OpenElement(226, "td");
                             __builder5.OpenComponent<MudBlazor.MudItem>(227);
                             __builder5.AddAttribute(228, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudChip>(229);
-                                __builder6.AddAttribute(230, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(230, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 110 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                     true
@@ -1384,7 +1338,7 @@ else
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(231, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(231, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 110 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                  Color.Surface
@@ -1394,15 +1348,13 @@ else
 #nullable disable
                                 ));
                                 __builder6.AddAttribute(232, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.AddContent(233, 
 #nullable restore
 #line 110 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                 context.PrimaryKey.Trim('{').Trim('}').Replace('"', ' ').Trim()
+__builder7.AddContent(233, context.PrimaryKey.Trim('{').Trim('}').Replace('"', ' ').Trim());
 
 #line default
 #line hidden
 #nullable disable
-                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -1422,15 +1374,13 @@ else
                             __builder5.OpenElement(234, "tr");
                             __builder5.AddAttribute(235, "class", "mud-table-row");
                             __builder5.OpenElement(236, "td");
-                            __builder5.AddContent(237, 
 #nullable restore
 #line 118 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                     _localizer["Old Values"]
+__builder5.AddContent(237, _localizer["Old Values"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                             __builder5.CloseElement();
                             __builder5.AddMarkupContent(238, "\r\n                                                ");
                             __builder5.OpenElement(239, "td");
@@ -1454,7 +1404,7 @@ else
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudChip>(242);
-                                __builder6.AddAttribute(243, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(243, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 126 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                 true
@@ -1463,7 +1413,7 @@ else
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(244, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(244, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 126 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                              Color.Warning
@@ -1474,7 +1424,7 @@ else
                                 ));
                                 __builder6.AddAttribute(245, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
                                     __builder7.OpenComponent<MudBlazor.MudHighlighter>(246);
-                                    __builder7.AddAttribute(247, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(247, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 127 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                            value.Replace('"', ' ').Trim()
@@ -1483,7 +1433,7 @@ else
 #line hidden
 #nullable disable
                                     ));
-                                    __builder7.AddAttribute(248, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(248, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 127 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                              _searchString
@@ -1506,7 +1456,7 @@ else
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudChip>(249);
-                                __builder6.AddAttribute(250, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(250, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 132 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                 true
@@ -1515,7 +1465,7 @@ else
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(251, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(251, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 132 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                              Color.Warning
@@ -1525,15 +1475,13 @@ else
 #nullable disable
                                 ));
                                 __builder6.AddAttribute(252, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.AddContent(253, 
 #nullable restore
 #line 132 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                             value.Replace('"', ' ').Trim()
+__builder7.AddContent(253, value.Replace('"', ' ').Trim());
 
 #line default
 #line hidden
 #nullable disable
-                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -1575,15 +1523,13 @@ else
                             __builder5.OpenElement(254, "tr");
                             __builder5.AddAttribute(255, "class", "mud-table-row");
                             __builder5.OpenElement(256, "td");
-                            __builder5.AddContent(257, 
 #nullable restore
 #line 142 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                     _localizer["New Values"]
+__builder5.AddContent(257, _localizer["New Values"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                             __builder5.CloseElement();
                             __builder5.AddMarkupContent(258, "\r\n                                                ");
                             __builder5.OpenElement(259, "td");
@@ -1607,7 +1553,7 @@ else
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudChip>(262);
-                                __builder6.AddAttribute(263, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(263, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 150 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                 true
@@ -1616,7 +1562,7 @@ else
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(264, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(264, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 150 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                              Color.Success
@@ -1627,7 +1573,7 @@ else
                                 ));
                                 __builder6.AddAttribute(265, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
                                     __builder7.OpenComponent<MudBlazor.MudHighlighter>(266);
-                                    __builder7.AddAttribute(267, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(267, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 151 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                            value.Replace('"', ' ').Trim()
@@ -1636,7 +1582,7 @@ else
 #line hidden
 #nullable disable
                                     ));
-                                    __builder7.AddAttribute(268, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(268, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 151 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                                                                              _searchString
@@ -1659,7 +1605,7 @@ else
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudChip>(269);
-                                __builder6.AddAttribute(270, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(270, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 156 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                 true
@@ -1668,7 +1614,7 @@ else
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(271, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(271, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 156 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
                                                                                              Color.Success
@@ -1678,15 +1624,13 @@ else
 #nullable disable
                                 ));
                                 __builder6.AddAttribute(272, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.AddContent(273, 
 #nullable restore
 #line 156 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                             value.Replace('"', ' ').Trim()
+__builder7.AddContent(273, value.Replace('"', ' ').Trim());
 
 #line default
 #line hidden
 #nullable disable
-                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -1754,16 +1698,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 279, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dense = __value, _dense)), 280, (__builder3) => {
-                    __builder3.AddContent(281, 
+                , 279, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dense = __value, _dense)), 280, (__builder3) => {
 #nullable restore
 #line 171 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                  _localizer["Dense"]
+__builder3.AddContent(281, _localizer["Dense"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
                 __builder2.AddMarkupContent(282, "\r\n            ");
@@ -1783,16 +1725,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 287, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _striped = __value, _striped)), 288, (__builder3) => {
-                    __builder3.AddContent(289, 
+                , 287, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _striped = __value, _striped)), 288, (__builder3) => {
 #nullable restore
 #line 172 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                   _localizer["Striped"]
+__builder3.AddContent(289, _localizer["Striped"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
                 __builder2.AddMarkupContent(290, "\r\n            ");
@@ -1812,16 +1752,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 295, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _bordered = __value, _bordered)), 296, (__builder3) => {
-                    __builder3.AddContent(297, 
+                , 295, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _bordered = __value, _bordered)), 296, (__builder3) => {
 #nullable restore
 #line 173 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Utilities\AuditTrails.razor"
-                                                                                                   _localizer["Bordered"]
+__builder3.AddContent(297, _localizer["Bordered"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
             }

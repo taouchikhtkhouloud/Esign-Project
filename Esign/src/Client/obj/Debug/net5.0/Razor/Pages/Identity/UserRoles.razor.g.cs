@@ -309,7 +309,7 @@ using Microsoft.AspNetCore.Components;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Esign.Client.Shared.Components.HeroTitle>(0);
-            __builder.AddAttribute(1, "Title", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+            __builder.AddAttribute(1, "Title", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                    Title
@@ -318,7 +318,7 @@ using Microsoft.AspNetCore.Components;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "Description", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+            __builder.AddAttribute(2, "Description", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                         Description
@@ -337,7 +337,7 @@ using Microsoft.AspNetCore.Components;
 #line hidden
 #nullable disable
             __builder.OpenComponent<MudBlazor.MudProgressCircular>(3);
-            __builder.AddAttribute(4, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+            __builder.AddAttribute(4, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                 Color.Primary
@@ -346,7 +346,7 @@ using Microsoft.AspNetCore.Components;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(5, "Indeterminate", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+            __builder.AddAttribute(5, "Indeterminate", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                                               true
@@ -429,7 +429,7 @@ else
 #line default
 #line hidden
 #nullable disable
-            , 15, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _userRole = __value, _userRole), 16, (__builder2) => {
+            , 15, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _userRole = __value, _userRole), 16, (__builder2) => {
                 __builder2.OpenElement(17, "div");
                 __builder2.AddAttribute(18, "class", "justify-center mud-text-align-center");
 #nullable restore
@@ -441,7 +441,7 @@ else
 #line hidden
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudButton>(19);
-                __builder2.AddAttribute(20, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(20, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                         Variant.Filled
@@ -450,7 +450,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(21, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(21, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                                                Color.Primary
@@ -460,7 +460,7 @@ else
 #nullable disable
                 ));
                 __builder2.AddAttribute(22, "Class", "ml-auto");
-                __builder2.AddAttribute(23, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(23, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                                                                                        SaveAsync
@@ -469,7 +469,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(24, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                __builder2.AddAttribute(24, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                                                                                                               ButtonType.Submit
@@ -479,15 +479,13 @@ else
 #nullable disable
                 ));
                 __builder2.AddAttribute(25, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(26, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                                                                  _localizer["Update User Roles"]
+__builder3.AddContent(26, _localizer["Update User Roles"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -566,7 +564,7 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 38, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchString = __value, _searchString)));
+                , 38, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchString = __value, _searchString)));
 #nullable restore
 #line 26 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
             }
@@ -587,15 +585,13 @@ else
 #line hidden
 #nullable disable
                     , 44, (__builder4) => {
-                        __builder4.AddContent(45, 
 #nullable restore
 #line 29 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                 _localizer["Role Name"]
+__builder4.AddContent(45, _localizer["Role Name"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     );
                 }
@@ -613,15 +609,13 @@ else
 #line hidden
 #nullable disable
                     , 51, (__builder4) => {
-                        __builder4.AddContent(52, 
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                        _localizer["Description"]
+__builder4.AddContent(52, _localizer["Description"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     );
                 }
@@ -639,15 +633,13 @@ else
 #line hidden
 #nullable disable
                     , 58, (__builder4) => {
-                        __builder4.AddContent(59, 
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                 _localizer["Status"]
+__builder4.AddContent(59, _localizer["Status"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     );
                 }
@@ -656,7 +648,7 @@ else
             }
             , 60, (context) => (__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudTd>(61);
-                __builder2.AddAttribute(62, "DataLabel", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(62, "DataLabel", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                _localizer["Role Name"]
@@ -667,7 +659,7 @@ else
                 ));
                 __builder2.AddAttribute(63, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudHighlighter>(64);
-                    __builder3.AddAttribute(65, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(65, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                        context.RoleName
@@ -676,7 +668,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(66, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(66, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                                                            _searchString
@@ -691,7 +683,7 @@ else
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(67, "\r\n            ");
                 __builder2.OpenComponent<MudBlazor.MudTd>(68);
-                __builder2.AddAttribute(69, "DataLabel", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(69, "DataLabel", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                _localizer["Description"]
@@ -702,7 +694,7 @@ else
                 ));
                 __builder2.AddAttribute(70, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudHighlighter>(71);
-                    __builder3.AddAttribute(72, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(72, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                        context.RoleDescription
@@ -711,7 +703,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(73, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(73, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
                                                                                   _searchString
@@ -752,7 +744,7 @@ else
 #line default
 #line hidden
 #nullable disable
-                    , 82, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => context.Selected = __value, context.Selected)));
+                    , 82, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => context.Selected = __value, context.Selected)));
                 }
                 ));
                 __builder2.CloseComponent();
@@ -774,16 +766,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 88, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dense = __value, _dense)), 89, (__builder3) => {
-                    __builder3.AddContent(90, 
+                , 88, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dense = __value, _dense)), 89, (__builder3) => {
 #nullable restore
 #line 43 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                  _localizer["Dense"]
+__builder3.AddContent(90, _localizer["Dense"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
                 __builder2.AddMarkupContent(91, "\r\n            ");
@@ -803,16 +793,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 96, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _striped = __value, _striped)), 97, (__builder3) => {
-                    __builder3.AddContent(98, 
+                , 96, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _striped = __value, _striped)), 97, (__builder3) => {
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                   _localizer["Striped"]
+__builder3.AddContent(98, _localizer["Striped"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
                 __builder2.AddMarkupContent(99, "\r\n            ");
@@ -832,16 +820,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 104, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _bordered = __value, _bordered)), 105, (__builder3) => {
-                    __builder3.AddContent(106, 
+                , 104, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _bordered = __value, _bordered)), 105, (__builder3) => {
 #nullable restore
 #line 45 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\UserRoles.razor"
-                                                                                                   _localizer["Bordered"]
+__builder3.AddContent(106, _localizer["Bordered"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
             }

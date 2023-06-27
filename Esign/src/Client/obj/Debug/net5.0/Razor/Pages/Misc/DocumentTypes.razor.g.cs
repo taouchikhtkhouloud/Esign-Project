@@ -304,7 +304,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
         {
             __builder.AddMarkupContent(0, "<style>\r\n    .mud-table-container {\r\n        overflow: auto;\r\n    }\r\n</style>\r\n\r\n");
             __builder.OpenComponent<Esign.Client.Shared.Components.HeroTitle>(1);
-            __builder.AddAttribute(2, "Title", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+            __builder.AddAttribute(2, "Title", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                    _localizer["Document Types"]
@@ -313,7 +313,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(3, "Description", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+            __builder.AddAttribute(3, "Description", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                _localizer["Manage Document Types."]
@@ -332,7 +332,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
 #line hidden
 #nullable disable
             __builder.OpenComponent<MudBlazor.MudProgressCircular>(4);
-            __builder.AddAttribute(5, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+            __builder.AddAttribute(5, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                 Color.Primary
@@ -341,7 +341,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(6, "Indeterminate", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+            __builder.AddAttribute(6, "Indeterminate", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                               true
@@ -424,7 +424,7 @@ else
 #line default
 #line hidden
 #nullable disable
-            , 16, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _documentType = __value, _documentType), 17, (__builder2) => {
+            , 16, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _documentType = __value, _documentType), 17, (__builder2) => {
                 __builder2.OpenElement(18, "div");
                 __builder2.AddAttribute(19, "class", "justify-center mud-text-align-center");
 #nullable restore
@@ -437,7 +437,7 @@ else
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudButton>(20);
                 __builder2.AddAttribute(21, "DisableElevation", true);
-                __builder2.AddAttribute(22, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(22, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                          Variant.Filled
@@ -446,7 +446,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(23, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(23, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                 Color.Primary
@@ -455,7 +455,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(24, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(24, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                         (() => InvokeModal())
@@ -464,7 +464,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(25, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(25, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                            Icons.Material.Filled.Add
@@ -473,7 +473,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(26, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(26, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                  Color.Surface
@@ -483,22 +483,20 @@ else
 #nullable disable
                 ));
                 __builder2.AddAttribute(27, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(28, 
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                                                                                                                 _localizer["Create"]
+__builder3.AddContent(28, _localizer["Create"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(29, "\r\n                    ");
                 __builder2.OpenComponent<MudBlazor.MudButton>(30);
                 __builder2.AddAttribute(31, "DisableElevation", true);
-                __builder2.AddAttribute(32, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(32, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                          Variant.Filled
@@ -507,7 +505,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(33, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(33, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                   GetDocumentTypesAsync
@@ -516,7 +514,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(34, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(34, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                      Icons.Material.Filled.Refresh
@@ -525,7 +523,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(35, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(35, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                Color.Surface
@@ -534,7 +532,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(36, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(36, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                      Color.Secondary
@@ -544,15 +542,13 @@ else
 #nullable disable
                 ));
                 __builder2.AddAttribute(37, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(38, 
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                                                                                                                       _localizer["Reload"]
+__builder3.AddContent(38, _localizer["Reload"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -566,7 +562,7 @@ else
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudButton>(39);
                 __builder2.AddAttribute(40, "DisableElevation", true);
-                __builder2.AddAttribute(41, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(41, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                              Variant.Filled
@@ -575,7 +571,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(42, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(42, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                       ExportToExcel
@@ -584,7 +580,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(43, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(43, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                  Icons.Custom.FileFormats.FileExcel
@@ -593,7 +589,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(44, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(44, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                 Color.Secondary
@@ -602,7 +598,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(45, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(45, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                         Color.Surface
@@ -613,15 +609,13 @@ else
                 ));
                 __builder2.AddAttribute(46, "Style", "margin-left: 5px;");
                 __builder2.AddAttribute(47, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(48, 
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                                                                                                                                                  _localizer["Export"]
+__builder3.AddContent(48, _localizer["Export"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -644,7 +638,7 @@ else
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudButton>(49);
                 __builder2.AddAttribute(50, "DisableElevation", true);
-                __builder2.AddAttribute(51, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(51, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                          Variant.Filled
@@ -653,7 +647,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(52, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(52, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                   GetDocumentTypesAsync
@@ -662,7 +656,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(53, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(53, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                      Icons.Material.Filled.Refresh
@@ -671,7 +665,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(54, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(54, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                Color.Surface
@@ -680,7 +674,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(55, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(55, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                      Color.Secondary
@@ -690,15 +684,13 @@ else
 #nullable disable
                 ));
                 __builder2.AddAttribute(56, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(57, 
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                                                                                                                       _localizer["Reload"]
+__builder3.AddContent(57, _localizer["Reload"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -712,7 +704,7 @@ else
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudButton>(58);
                 __builder2.AddAttribute(59, "DisableElevation", true);
-                __builder2.AddAttribute(60, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(60, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                              Variant.Filled
@@ -721,7 +713,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(61, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(61, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                       ExportToExcel
@@ -730,7 +722,7 @@ else
 #line hidden
 #nullable disable
                 )));
-                __builder2.AddAttribute(62, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(62, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                  Icons.Custom.FileFormats.FileExcel
@@ -739,7 +731,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(63, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(63, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                 Color.Secondary
@@ -748,7 +740,7 @@ else
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(64, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(64, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                         Color.Surface
@@ -759,15 +751,13 @@ else
                 ));
                 __builder2.AddAttribute(65, "Style", "margin-left: 5px;");
                 __builder2.AddAttribute(66, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(67, 
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                                                                                                                                                  _localizer["Export"]
+__builder3.AddContent(67, _localizer["Export"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -846,7 +836,7 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 78, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchString = __value, _searchString)));
+                , 78, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _searchString = __value, _searchString)));
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
             }
@@ -867,15 +857,13 @@ else
 #line hidden
 #nullable disable
                     , 84, (__builder4) => {
-                        __builder4.AddContent(85, 
 #nullable restore
 #line 47 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                         _localizer["Id"]
+__builder4.AddContent(85, _localizer["Id"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     );
                 }
@@ -893,15 +881,13 @@ else
 #line hidden
 #nullable disable
                     , 91, (__builder4) => {
-                        __builder4.AddContent(92, 
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                           _localizer["Name"]
+__builder4.AddContent(92, _localizer["Name"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     );
                 }
@@ -919,15 +905,13 @@ else
 #line hidden
 #nullable disable
                     , 98, (__builder4) => {
-                        __builder4.AddContent(99, 
 #nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                                  _localizer["Description"]
+__builder4.AddContent(99, _localizer["Description"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     );
                 }
@@ -937,15 +921,13 @@ else
                 __builder2.OpenComponent<MudBlazor.MudTh>(101);
                 __builder2.AddAttribute(102, "Style", "text-align:right");
                 __builder2.AddAttribute(103, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(104, 
 #nullable restore
 #line 50 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                             _localizer["Actions"]
+__builder3.AddContent(104, _localizer["Actions"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -954,15 +936,13 @@ else
                 __builder2.OpenComponent<MudBlazor.MudTd>(106);
                 __builder2.AddAttribute(107, "DataLabel", "Id");
                 __builder2.AddAttribute(108, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddContent(109, 
 #nullable restore
 #line 53 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                   context.Id
+__builder3.AddContent(109, context.Id);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -971,7 +951,7 @@ else
                 __builder2.AddAttribute(112, "DataLabel", "Name");
                 __builder2.AddAttribute(113, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudHighlighter>(114);
-                    __builder3.AddAttribute(115, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(115, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 55 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                        context.Name
@@ -980,7 +960,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(116, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(116, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 55 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                        _searchString
@@ -998,7 +978,7 @@ else
                 __builder2.AddAttribute(119, "DataLabel", "Description");
                 __builder2.AddAttribute(120, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudHighlighter>(121);
-                    __builder3.AddAttribute(122, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(122, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                        context.Description
@@ -1007,7 +987,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(123, "HighlightedText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(123, "HighlightedText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                               _searchString
@@ -1034,7 +1014,7 @@ else
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudMenu>(129);
-                    __builder3.AddAttribute(130, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(130, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                      _localizer["Actions"]
@@ -1043,7 +1023,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(131, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(131, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                      Variant.Filled
@@ -1052,7 +1032,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(132, "DisableElevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(132, "DisableElevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                        true
@@ -1061,7 +1041,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(133, "EndIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(133, "EndIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                        Icons.Filled.KeyboardArrowDown
@@ -1070,7 +1050,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(134, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(134, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                   Color.Secondary
@@ -1079,7 +1059,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(135, "Direction", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Direction>(
+                    __builder3.AddAttribute(135, "Direction", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Direction>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                               Direction.Left
@@ -1088,7 +1068,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(136, "OffsetX", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(136, "OffsetX", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 63 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                                                                                                                                                                                        true
@@ -1117,15 +1097,13 @@ else
 #nullable disable
                         ));
                         __builder4.AddAttribute(140, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.AddContent(141, 
 #nullable restore
 #line 66 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                       _localizer["Edit"]
+__builder5.AddContent(141, _localizer["Edit"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1155,15 +1133,13 @@ else
 #nullable disable
                         ));
                         __builder4.AddAttribute(144, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.AddContent(145, 
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                  _localizer["Delete"]
+__builder5.AddContent(145, _localizer["Delete"]);
 
 #line default
 #line hidden
 #nullable disable
-                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1187,7 +1163,7 @@ else
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(146);
-                    __builder3.AddAttribute(147, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(147, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 76 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                         Variant.Filled
@@ -1196,7 +1172,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(148, "DisableElevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(148, "DisableElevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 77 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                                  true
@@ -1205,7 +1181,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(149, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(149, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 78 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                            Icons.Material.Filled.DoNotTouch
@@ -1214,7 +1190,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(150, "IconColor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(150, "IconColor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 79 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                           Color.Secondary
@@ -1223,7 +1199,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(151, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                    __builder3.AddAttribute(151, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 80 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                      Size.Small
@@ -1232,7 +1208,7 @@ else
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(152, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(152, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 81 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
                                       Color.Surface
@@ -1242,15 +1218,13 @@ else
 #nullable disable
                     ));
                     __builder3.AddAttribute(153, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(154, 
 #nullable restore
 #line 82 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                         _localizer["No Allowed Actions"]
+__builder4.AddContent(154, _localizer["No Allowed Actions"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -1282,16 +1256,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 160, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dense = __value, _dense)), 161, (__builder3) => {
-                    __builder3.AddContent(162, 
+                , 160, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _dense = __value, _dense)), 161, (__builder3) => {
 #nullable restore
 #line 88 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                  _localizer["Dense"]
+__builder3.AddContent(162, _localizer["Dense"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
                 __builder2.AddMarkupContent(163, "\r\n            ");
@@ -1311,16 +1283,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 168, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _striped = __value, _striped)), 169, (__builder3) => {
-                    __builder3.AddContent(170, 
+                , 168, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _striped = __value, _striped)), 169, (__builder3) => {
 #nullable restore
 #line 89 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                   _localizer["Striped"]
+__builder3.AddContent(170, _localizer["Striped"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
                 __builder2.AddMarkupContent(171, "\r\n            ");
@@ -1340,16 +1310,14 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 176, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _bordered = __value, _bordered)), 177, (__builder3) => {
-                    __builder3.AddContent(178, 
+                , 176, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _bordered = __value, _bordered)), 177, (__builder3) => {
 #nullable restore
 #line 90 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-                                                                                                   _localizer["Bordered"]
+__builder3.AddContent(178, _localizer["Bordered"]);
 
 #line default
 #line hidden
 #nullable disable
-                    );
                 }
                 );
             }

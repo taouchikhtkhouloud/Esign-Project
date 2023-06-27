@@ -288,7 +288,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                   AddEditDocumentTypeModel
@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                            SaveAsync
@@ -332,7 +332,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(9);
-                    __builder3.AddAttribute(10, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(10, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                    Typo.h6
@@ -343,7 +343,7 @@ using Esign.Client.Extensions;
                     ));
                     __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(12);
-                        __builder4.AddAttribute(13, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(13, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 11 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                         Icons.Material.Filled.Add
@@ -355,15 +355,13 @@ using Esign.Client.Extensions;
                         __builder4.AddAttribute(14, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(15, "\r\n                        ");
-                        __builder4.AddContent(16, 
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
-                         _localizer["Add Document Type"]
+__builder4.AddContent(16, _localizer["Add Document Type"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -377,7 +375,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(17);
-                    __builder3.AddAttribute(18, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(18, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                    Typo.h6
@@ -388,7 +386,7 @@ using Esign.Client.Extensions;
                     ));
                     __builder3.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(20);
-                        __builder4.AddAttribute(21, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(21, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 18 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                         Icons.Material.Filled.Update
@@ -400,15 +398,13 @@ using Esign.Client.Extensions;
                         __builder4.AddAttribute(22, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(23, "\r\n                        ");
-                        __builder4.AddContent(24, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
-                         _localizer["Update Document Type"]
+__builder4.AddContent(24, _localizer["Update Document Type"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -434,7 +430,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(28);
-                        __builder4.AddAttribute(29, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(29, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                  12
@@ -443,7 +439,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(30, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(30, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                          6
@@ -477,7 +473,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                            , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditDocumentTypeModel.Id = __value, AddEditDocumentTypeModel.Id)));
+                            , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditDocumentTypeModel.Id = __value, AddEditDocumentTypeModel.Id)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -489,7 +485,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(38);
-                        __builder4.AddAttribute(39, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(39, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 32 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                              12
@@ -498,7 +494,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(40, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(40, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 32 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                      6
@@ -509,7 +505,7 @@ using Esign.Client.Extensions;
                         ));
                         __builder4.AddAttribute(41, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudTextField<string>>(42);
-                            __builder5.AddAttribute(43, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                            __builder5.AddAttribute(43, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                     () => AddEditDocumentTypeModel.Name
@@ -518,7 +514,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(44, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(44, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                                                                                               _localizer["Name"]
@@ -527,7 +523,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(45, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                            __builder5.AddAttribute(45, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                                                        AddEditDocumentTypeModel.Name
@@ -536,14 +532,14 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(46, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditDocumentTypeModel.Name = __value, AddEditDocumentTypeModel.Name))));
+                            __builder5.AddAttribute(46, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditDocumentTypeModel.Name = __value, AddEditDocumentTypeModel.Name))));
                             __builder5.CloseComponent();
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(47, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(48);
-                        __builder4.AddAttribute(49, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(49, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                              12
@@ -552,7 +548,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(50, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(50, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                      6
@@ -586,7 +582,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                            , 56, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditDocumentTypeModel.Description = __value, AddEditDocumentTypeModel.Description)));
+                            , 56, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditDocumentTypeModel.Description = __value, AddEditDocumentTypeModel.Description)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -597,7 +593,7 @@ using Esign.Client.Extensions;
                 ));
                 __builder2.AddAttribute(57, "DialogActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudButton>(58);
-                    __builder3.AddAttribute(59, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(59, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                 Variant.Filled
@@ -606,7 +602,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(60, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(60, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                          Cancel
@@ -616,15 +612,13 @@ using Esign.Client.Extensions;
 #nullable disable
                     )));
                     __builder3.AddAttribute(61, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(62, 
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
-                                                                  _localizer["Cancel"]
+__builder4.AddContent(62, _localizer["Cancel"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -637,7 +631,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(63);
-                    __builder3.AddAttribute(64, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(64, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                     Variant.Filled
@@ -646,7 +640,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(65, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(65, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                 ButtonType.Submit
@@ -655,7 +649,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(66, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(66, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                                                !Validated
@@ -664,7 +658,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(67, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(67, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                                                                    Color.Secondary
@@ -674,15 +668,13 @@ using Esign.Client.Extensions;
 #nullable disable
                     ));
                     __builder3.AddAttribute(68, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(69, 
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
-                                                                                                                                     _localizer["Update"]
+__builder4.AddContent(69, _localizer["Update"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -696,7 +688,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(70);
-                    __builder3.AddAttribute(71, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(71, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                     Variant.Filled
@@ -705,7 +697,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(72, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(72, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                 ButtonType.Submit
@@ -714,7 +706,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(73, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(73, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                                                !Validated
@@ -723,7 +715,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(74, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(74, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
                                                                                                                    Color.Success
@@ -733,15 +725,13 @@ using Esign.Client.Extensions;
 #nullable disable
                     ));
                     __builder3.AddAttribute(75, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(76, 
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\AddEditDocumentTypeModal.razor"
-                                                                                                                                   _localizer["Save"]
+__builder4.AddContent(76, _localizer["Save"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();

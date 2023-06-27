@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Client",
+    "\\src\\Client\\Pages",
+    "\\src\\Client\\Pages\\Authentication",
+    "\\src\\Client\\Pages\\Catalog",
+    "\\src\\Client\\Shared"
+  ],
+  "SelectedNode": "\\src\\Client\\Shared\\MainLayout.razor",
+  "PreviewInSolutionExplorer": false
+}

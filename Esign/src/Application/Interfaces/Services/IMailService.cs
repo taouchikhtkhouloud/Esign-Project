@@ -5,6 +5,6 @@ namespace Esign.Application.Interfaces.Services
 {
     public interface IMailService
     {
-        Task SendAsync(MailRequest request);
+        void SendAsync(MailRequest request);
     }
 }

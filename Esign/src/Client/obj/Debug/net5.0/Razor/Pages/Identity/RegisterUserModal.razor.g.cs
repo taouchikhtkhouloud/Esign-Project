@@ -288,7 +288,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                   _registerUserModel
@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                                      SubmitAsync
@@ -323,7 +323,7 @@ using Esign.Client.Extensions;
                 __builder2.OpenComponent<MudBlazor.MudDialog>(7);
                 __builder2.AddAttribute(8, "TitleContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudText>(9);
-                    __builder3.AddAttribute(10, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(10, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                Typo.h6
@@ -334,7 +334,7 @@ using Esign.Client.Extensions;
                     ));
                     __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(12);
-                        __builder4.AddAttribute(13, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(13, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                     Icons.Material.Filled.VerifiedUser
@@ -346,15 +346,13 @@ using Esign.Client.Extensions;
                         __builder4.AddAttribute(14, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(15, "\r\n                    ");
-                        __builder4.AddContent(16, 
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
-                     _localizer["Register User"]
+__builder4.AddContent(16, _localizer["Register User"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -385,7 +383,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 22, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.UserName = __value, _registerUserModel.UserName)));
+                    , 22, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.UserName = __value, _registerUserModel.UserName)));
                     __builder3.AddMarkupContent(23, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudTextField_1(__builder3, 24, 25, 
 #nullable restore
@@ -411,7 +409,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 28, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.FirstName = __value, _registerUserModel.FirstName)));
+                    , 28, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.FirstName = __value, _registerUserModel.FirstName)));
                     __builder3.AddMarkupContent(29, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudTextField_2(__builder3, 30, 31, 
 #nullable restore
@@ -437,7 +435,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 34, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.LastName = __value, _registerUserModel.LastName)));
+                    , 34, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.LastName = __value, _registerUserModel.LastName)));
                     __builder3.AddMarkupContent(35, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudTextField_3(__builder3, 36, 37, 
 #nullable restore
@@ -471,7 +469,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 41, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Email = __value, _registerUserModel.Email)));
+                    , 41, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Email = __value, _registerUserModel.Email)));
                     __builder3.AddMarkupContent(42, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudTextField_4(__builder3, 43, 44, 
 #nullable restore
@@ -497,7 +495,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 47, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.PhoneNumber = __value, _registerUserModel.PhoneNumber)));
+                    , 47, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.PhoneNumber = __value, _registerUserModel.PhoneNumber)));
                     __builder3.AddMarkupContent(48, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudTextField_5(__builder3, 49, 50, 
 #nullable restore
@@ -555,7 +553,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 57, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Password = __value, _registerUserModel.Password)));
+                    , 57, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Password = __value, _registerUserModel.Password)));
                     __builder3.AddMarkupContent(58, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudTextField_6(__builder3, 59, 60, 
 #nullable restore
@@ -589,7 +587,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 64, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.ConfirmPassword = __value, _registerUserModel.ConfirmPassword)));
+                    , 64, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.ConfirmPassword = __value, _registerUserModel.ConfirmPassword)));
                     __builder3.AddMarkupContent(65, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudCheckBox_7(__builder3, 66, 67, 
 #nullable restore
@@ -615,7 +613,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 70, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.ActivateUser = __value, _registerUserModel.ActivateUser)));
+                    , 70, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.ActivateUser = __value, _registerUserModel.ActivateUser)));
                     __builder3.AddMarkupContent(71, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RegisterUserModal.TypeInference.CreateMudCheckBox_8(__builder3, 72, 73, 
 #nullable restore
@@ -641,12 +639,12 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                    , 76, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.AutoConfirmEmail = __value, _registerUserModel.AutoConfirmEmail)));
+                    , 76, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.AutoConfirmEmail = __value, _registerUserModel.AutoConfirmEmail)));
                 }
                 ));
                 __builder2.AddAttribute(77, "DialogActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudButton>(78);
-                    __builder3.AddAttribute(79, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(79, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 26 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                 Variant.Filled
@@ -655,7 +653,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(80, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(80, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 26 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                                          Cancel
@@ -665,20 +663,18 @@ using Esign.Client.Extensions;
 #nullable disable
                     )));
                     __builder3.AddAttribute(81, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(82, 
 #nullable restore
 #line 26 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
-                                                                  _localizer["Cancel"]
+__builder4.AddContent(82, _localizer["Cancel"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.OpenComponent<MudBlazor.MudButton>(83);
-                    __builder3.AddAttribute(84, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(84, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                     Variant.Filled
@@ -687,7 +683,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(85, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(85, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                                                 ButtonType.Submit
@@ -696,7 +692,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(86, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(86, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                                                                                !Validated
@@ -705,7 +701,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(87, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(87, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
                                                                                                                    Color.Success
@@ -715,15 +711,13 @@ using Esign.Client.Extensions;
 #nullable disable
                     ));
                     __builder3.AddAttribute(88, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(89, 
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RegisterUserModal.razor"
-                                                                                                                                   _localizer["Register"]
+__builder4.AddContent(89, _localizer["Register"]);
 
 #line default
 #line hidden
 #nullable disable
-                        );
                     }
                     ));
                     __builder3.CloseComponent();

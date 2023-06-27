@@ -1,0 +1,121 @@
+2023-06-23 00:57:40.935 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 00:57:41.053 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 00:57:41.059 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 00:57:41.061 +00:00 [INF] Hosting environment: Development
+2023-06-23 00:57:41.064 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 01:04:04.448 +00:00 [ERR] 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials r19-20020a05600c285300b003f8ec58995fsm870564wmb.6 - gsmtp
+2023-06-23 01:07:01.383 +00:00 [ERR] 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials y25-20020a1c4b19000000b003f9b4330880sm832477wma.29 - gsmtp
+2023-06-23 01:25:35.607 +00:00 [ERR] Username 'YoussefFarissi' is already taken.
+2023-06-23 01:25:36.256 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Esign.Infrastructure.Contexts.BlazorHeroContext'.
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-23 01:27:45.620 +00:00 [ERR] Username 'YoussefFarissi' is already taken.
+2023-06-23 01:27:46.096 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Esign.Infrastructure.Contexts.BlazorHeroContext'.
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-23 01:33:05.577 +00:00 [ERR] Username 'YoussefFarissi' is already taken.
+2023-06-23 01:33:05.938 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Esign.Infrastructure.Contexts.BlazorHeroContext'.
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-23 01:39:32.159 +00:00 [ERR] Username 'YoussefFarissi' is already taken.
+2023-06-23 01:39:32.546 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Esign.Infrastructure.Contexts.BlazorHeroContext'.
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-23 01:45:14.435 +00:00 [ERR] Username 'YoussefFarissi' is already taken.
+2023-06-23 01:45:14.802 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Esign.Infrastructure.Contexts.BlazorHeroContext'.
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'IdentityUserRole<string>.UserId' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-23 01:47:03.960 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 01:47:04.035 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 01:47:04.042 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 01:47:04.045 +00:00 [INF] Hosting environment: Development
+2023-06-23 01:47:04.048 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 21:42:32.121 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 21:42:32.336 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 21:42:32.349 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 21:42:32.350 +00:00 [INF] Hosting environment: Development
+2023-06-23 21:42:32.351 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 22:17:26.249 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 22:17:26.426 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 22:17:26.434 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 22:17:26.436 +00:00 [INF] Hosting environment: Development
+2023-06-23 22:17:26.439 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 22:34:04.977 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 22:34:05.139 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 22:34:05.146 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 22:34:05.149 +00:00 [INF] Hosting environment: Development
+2023-06-23 22:34:05.151 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 22:38:12.884 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 22:38:12.970 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 22:38:12.979 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 22:38:12.982 +00:00 [INF] Hosting environment: Development
+2023-06-23 22:38:12.985 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 22:45:37.595 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-23 22:45:37.660 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-23 22:45:37.666 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-23 22:45:37.668 +00:00 [INF] Hosting environment: Development
+2023-06-23 22:45:37.670 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-23 22:50:33.493 +00:00 [ERR] 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials d13-20020a5d4f8d000000b003063db8f45bsm539959wru.23 - gsmtp

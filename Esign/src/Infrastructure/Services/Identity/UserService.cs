@@ -60,6 +60,7 @@ namespace Esign.Infrastructure.Services.Identity
             return await Result<List<UserResponse>>.SuccessAsync(result);
         }
 
+       
         public async Task<IResult> RegisterAsync(RegisterRequest request, string origin)
         {
             var userWithSameUserName = await _userManager.FindByNameAsync(request.UserName);
@@ -97,14 +98,16 @@ namespace Esign.Infrastructure.Services.Identity
                     if (!request.AutoConfirmEmail)
                     {
                         var verificationUri = await SendVerificationEmail(user, origin);
-                        var mailRequest = new MailRequest
-                        {
-                            From = "mail@codewithmukesh.com",
-                            To = user.Email,
-                            Body = string.Format(_localizer["Please confirm your account by <a href='{0}'>clicking here</a>."], verificationUri),
-                            Subject = _localizer["Confirm Registration"]
-                        };
-                        BackgroundJob.Enqueue(() => _mailService.SendAsync(mailRequest));
+                        var message = new MailRequest(new string[] { user.Email! }, "Confirmation email link", verificationUri!);
+                        _mailService.SendAsync(message);
+                        //var mailRequest = new MailRequest
+                        //{
+                        //    From = "fabracontrolea@gmail.com",
+                        //    To = user.Email,
+                        //    Body = string.Format(_localizer["Please confirm your account by <a href='{0}'>clicking here</a>."], verificationUri),
+                        //    Subject = _localizer["Confirm Registration"]
+                        //};
+                        //BackgroundJob.Enqueue(() => _mailService.SendAsync(mailRequest));
                         return await Result<string>.SuccessAsync(user.Id, string.Format(_localizer["User {0} Registered. Please check your Mailbox to verify!"], user.UserName));
                     }
                     return await Result<string>.SuccessAsync(user.Id, string.Format(_localizer["User {0} Registered."], user.UserName));
@@ -184,7 +187,7 @@ namespace Esign.Infrastructure.Services.Identity
         public async Task<IResult> UpdateRolesAsync(UpdateUserRolesRequest request)
         {
             var user = await _userManager.FindByIdAsync(request.UserId);
-            if (user.Email == "mukesh@blazorhero.com")
+            if (user.Email == "fabracontrolea@gmail.com")
             {
                 return await Result.FailAsync(_localizer["Not Allowed."]);
             }
@@ -239,13 +242,15 @@ namespace Esign.Infrastructure.Services.Identity
             var route = "account/reset-password";
             var endpointUri = new Uri(string.Concat($"{origin}/", route));
             var passwordResetURL = QueryHelpers.AddQueryString(endpointUri.ToString(), "Token", code);
-            var mailRequest = new MailRequest
-            {
-                Body = string.Format(_localizer["Please reset your password by <a href='{0}>clicking here</a>."], HtmlEncoder.Default.Encode(passwordResetURL)),
-                Subject = _localizer["Reset Password"],
-                To = request.Email
-            };
-            BackgroundJob.Enqueue(() => _mailService.SendAsync(mailRequest));
+            var message = new MailRequest(new string[] { user.Email! }, "Please reset your password by", HtmlEncoder.Default.Encode(passwordResetURL)!);
+            _mailService.SendAsync(message);
+            //var mailRequest = new MailRequest
+            //{
+            //    Body = string.Format(_localizer["Please reset your password by <a href='{0}>clicking here</a>."], HtmlEncoder.Default.Encode(passwordResetURL)),
+            //    Subject = _localizer["Reset Password"],
+            //    To = request.Email
+            //};
+            //BackgroundJob.Enqueue(() => _mailService.SendAsync(mailRequest));
             return await Result.SuccessAsync(_localizer["Password Reset Mail has been sent to your authorized Email."]);
         }
 

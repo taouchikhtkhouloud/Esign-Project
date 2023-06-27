@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "k+JautP6JIDflRInsOr6w2X9lJ3yzRj43xEMn+poT1K6n3dY/dqElM2zPUG/DfovqFvkG09Dgc2bhlWzwYYuzw==",
+  "dgSpecHash": "hzrJ1yJ1drC5RxpuPjAvJXxF318M08TlTQPXSoV4Tf+KmsPSBq8udmzi8NPsHRC286r2RspPOVYt+DLaWbjGNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KHOULOUD TAOUCHIKHT\\Desktop\\Files\\Coding\\WarehouseManger\\Esign\\src\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\mailkit\\2.13.0\\mailkit.2.13.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.7\\microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.7\\microsoft.aspnetcore.cryptography.keyderivation.5.0.7.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
@@ -15,7 +16,15 @@
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
-    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\mimekit\\2.13.0\\mimekit.2.13.0.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "toSj1XDjaTwbgOuwzrYkO7IKNlHjrWmqkl9veFl3iYHzeL9Qpk/R2bCWpPOka/4OPp4RplJGSAGx1Usaa+t2nw==",
+  "dgSpecHash": "PQP7Fd2nnJRJkpLJxkvqtUf7R3a2usMysp2bNVSEBe087Gac5ttusTRZULmp0pC2D4ZFIrSipAgavk0gPcrygw==",
   "success": true,
   "projectFilePath": "C:\\Users\\KHOULOUD TAOUCHIKHT\\Desktop\\Files\\Coding\\WarehouseManger\\Esign\\src\\Server\\Server.csproj",
   "expectedPackageFiles": [
@@ -248,7 +248,8 @@
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\9.2.1\\toolbelt.blazor.httpclientinterceptor.9.2.1.nupkg.sha512"
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\9.2.1\\toolbelt.blazor.httpclientinterceptor.9.2.1.nupkg.sha512",
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

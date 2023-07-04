@@ -15,7 +15,7 @@
             </MudTooltip>
         </MudAppBar>
 
-        <MudContainer MaxWidth="MaxWidth.Small" Class="d-flex align-center" Style="height: 100vh;">
+        <MudContainer MaxWidth="MaxWidth.Small" Class="d-flex align-center" Style="height: 150vh; margin-top: 50px; ">
             <MudPaper Elevation="25" Class="pa-8" Style="width: 500px;">
                 <CascadingValue Value="hubConnection">
                     @Body
@@ -27,8 +27,10 @@
         @(LoadDataAsync())
         <MudLayout RightToLeft="@_rightToLeft">
             <MudAppBar Elevation="25">
-                <MudIcon Icon="@CustomIcons.BlazorHero" Size="Size.Large" ViewBox="0 0 500 500" />
-                <MudText Typo="Typo.h6" Class="ml-4">Blazor Hero</MudText>
+                <div class="d-flex justify-center mt-2">
+                    <img src="/E_Sign_1.png" alt="Logo" style="width: 70px; " />
+                </div>
+                <MudText Typo="Typo.h6" Class="ml-4">E-signature</MudText>
                 <MudToolBar DisableGutters="true">
                     <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" Class="ml-3" />
                 </MudToolBar>

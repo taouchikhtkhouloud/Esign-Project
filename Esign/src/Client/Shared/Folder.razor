@@ -1,0 +1,44 @@
+﻿@page "/folder-store"
+@inject IJSRuntime JSRuntime
+
+<MudContainer>
+    <MudCard>
+        <MudCardContent>
+            <h3>Create Folder</h3>
+            <MudTextField @bind-Value="newFolderName" Label="Folder Name"></MudTextField>
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="CreateFolder">Create</MudButton>
+        </MudCardContent>
+    </MudCard>
+
+    <MudCard>
+        <MudCardContent>
+            <h3>Folder List</h3>
+            <ul>
+                @foreach (var folder in folders)
+                {
+                    <li>@folder</li>
+                }
+            </ul>
+        </MudCardContent>
+    </MudCard>
+</MudContainer>
+@code {
+    List<string>
+    folders = new List<string>
+    ();
+    string newFolderName;
+
+    async Task CreateFolder()
+    {
+        folders.Add(newFolderName);
+
+        // Reset the folder name input field
+        newFolderName = string.Empty;
+
+        // Call a JavaScript function to scroll to the bottom of the list
+        await JSRuntime.InvokeVoidAsync("scrollToBottom");
+    }
+
+}
+    
+

@@ -1,0 +1,133 @@
+2023-07-03 12:32:16.231 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 12:32:16.423 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 12:32:16.444 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 12:32:16.445 +00:00 [INF] Hosting environment: Development
+2023-07-03 12:32:16.446 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 12:32:45.207 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-03 12:32:45.381 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-03 12:32:45.859 +00:00 [ERR] Connection id "0HMRRO64J16U8", Request id "0HMRRO64J16U8:00000021": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-07-03 12:32:45.886 +00:00 [ERR] Connection id "0HMRRO64J16U8", Request id "0HMRRO64J16U8:0000001D": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-07-03 12:38:29.073 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 12:38:29.203 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 12:38:29.210 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 12:38:29.212 +00:00 [INF] Hosting environment: Development
+2023-07-03 12:38:29.216 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 12:41:42.916 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 12:41:43.123 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 12:41:43.137 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 12:41:43.138 +00:00 [INF] Hosting environment: Development
+2023-07-03 12:41:43.140 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 17:00:41.001 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 17:00:41.053 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 17:00:41.057 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 17:00:41.058 +00:00 [INF] Hosting environment: Development
+2023-07-03 17:00:41.059 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 17:01:15.748 +00:00 [INF] Application is shutting down...
+2023-07-03 18:13:14.300 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 18:13:14.430 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 18:13:14.435 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 18:13:14.437 +00:00 [INF] Hosting environment: Development
+2023-07-03 18:13:14.440 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 21:13:18.284 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 21:13:18.356 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 21:13:18.363 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 21:13:18.365 +00:00 [INF] Hosting environment: Development
+2023-07-03 21:13:18.367 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 21:16:29.943 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 21:16:30.093 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 21:16:30.102 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 21:16:30.108 +00:00 [INF] Hosting environment: Development
+2023-07-03 21:16:30.109 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 21:22:53.981 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 21:22:54.110 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 21:22:54.116 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 21:22:54.119 +00:00 [INF] Hosting environment: Development
+2023-07-03 21:22:54.121 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 21:26:57.904 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 21:26:57.984 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 21:26:57.991 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 21:26:57.994 +00:00 [INF] Hosting environment: Development
+2023-07-03 21:26:57.998 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 21:30:45.401 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 21:30:45.475 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 21:30:45.479 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 21:30:45.480 +00:00 [INF] Hosting environment: Development
+2023-07-03 21:30:45.482 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 22:09:20.227 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 22:09:20.310 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 22:09:20.316 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 22:09:20.319 +00:00 [INF] Hosting environment: Development
+2023-07-03 22:09:20.332 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 22:13:34.698 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 22:13:34.830 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 22:13:34.835 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 22:13:34.836 +00:00 [INF] Hosting environment: Development
+2023-07-03 22:13:34.838 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 22:16:43.365 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 22:16:43.444 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 22:16:43.449 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 22:16:43.451 +00:00 [INF] Hosting environment: Development
+2023-07-03 22:16:43.454 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 22:19:52.550 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 22:19:52.632 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 22:19:52.638 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 22:19:52.641 +00:00 [INF] Hosting environment: Development
+2023-07-03 22:19:52.651 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 23:41:04.157 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 23:41:04.245 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 23:41:04.253 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 23:41:04.255 +00:00 [INF] Hosting environment: Development
+2023-07-03 23:41:04.257 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 23:47:41.968 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 23:47:42.078 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 23:47:42.085 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 23:47:42.086 +00:00 [INF] Hosting environment: Development
+2023-07-03 23:47:42.088 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 23:52:34.108 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 23:52:34.179 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 23:52:34.186 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 23:52:34.190 +00:00 [INF] Hosting environment: Development
+2023-07-03 23:52:34.193 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 23:54:30.131 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 23:54:30.314 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 23:54:30.324 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 23:54:30.325 +00:00 [INF] Hosting environment: Development
+2023-07-03 23:54:30.327 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 23:56:13.712 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 23:56:13.866 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 23:56:13.880 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 23:56:13.885 +00:00 [INF] Hosting environment: Development
+2023-07-03 23:56:13.903 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-03 23:58:01.201 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-03 23:58:01.442 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-03 23:58:01.450 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-03 23:58:01.451 +00:00 [INF] Hosting environment: Development
+2023-07-03 23:58:01.452 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

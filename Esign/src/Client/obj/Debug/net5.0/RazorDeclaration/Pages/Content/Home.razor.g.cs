@@ -286,7 +286,6 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Home : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

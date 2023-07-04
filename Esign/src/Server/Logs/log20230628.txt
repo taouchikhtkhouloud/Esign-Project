@@ -1,0 +1,20 @@
+2023-06-28 11:33:53.118 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-28 11:33:53.202 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-28 11:33:53.206 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 11:33:53.207 +00:00 [INF] Hosting environment: Development
+2023-06-28 11:33:53.208 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-28 12:00:19.569 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-28 12:00:19.615 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-28 12:00:19.620 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 12:00:19.621 +00:00 [INF] Hosting environment: Development
+2023-06-28 12:00:19.622 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-28 12:07:31.200 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-28 12:07:31.287 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-28 12:07:31.292 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 12:07:31.293 +00:00 [INF] Hosting environment: Development
+2023-06-28 12:07:31.295 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-06-28 12:23:36.054 +00:00 [INF] Now listening on: https://localhost:5001
+2023-06-28 12:23:36.135 +00:00 [INF] Now listening on: http://localhost:5000
+2023-06-28 12:23:36.140 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 12:23:36.141 +00:00 [INF] Hosting environment: Development
+2023-06-28 12:23:36.142 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

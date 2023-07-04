@@ -309,13 +309,15 @@ using Esign.Domain.Entities.ExtendedAttributes;
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
+            __builder.AddContent(0, 
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor"
-__builder.AddContent(0, Inherited());
+ Inherited()
 
 #line default
 #line hidden
 #nullable disable
+            );
         }
         #pragma warning restore 1998
 #nullable restore

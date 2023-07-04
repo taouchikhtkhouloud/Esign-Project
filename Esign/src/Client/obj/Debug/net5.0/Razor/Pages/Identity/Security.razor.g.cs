@@ -288,7 +288,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                   _passwordModel
@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                  ChangePasswordAsync
@@ -321,7 +321,7 @@ using Esign.Client.Extensions;
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(6, "\r\n    ");
                 __builder2.OpenComponent<MudBlazor.MudCard>(7);
-                __builder2.AddAttribute(8, "Elevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                __builder2.AddAttribute(8, "Elevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 5 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                         25
@@ -335,13 +335,15 @@ using Esign.Client.Extensions;
                     __builder3.AddAttribute(11, "CardHeaderContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudText>(12);
                         __builder4.AddAttribute(13, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(14, 
 #nullable restore
 #line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
-__builder5.AddContent(14, _localizer["Change Password"]);
+                          _localizer["Change Password"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -354,7 +356,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
                         __builder4.OpenComponent<MudBlazor.MudGrid>(18);
                         __builder4.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudItem>(20);
-                            __builder5.AddAttribute(21, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                            __builder5.AddAttribute(21, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                              12
@@ -363,7 +365,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(22, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                            __builder5.AddAttribute(22, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                      6
@@ -374,7 +376,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
                             ));
                             __builder5.AddAttribute(23, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudTextField<string>>(24);
-                                __builder6.AddAttribute(25, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                                __builder6.AddAttribute(25, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                              () => _passwordModel.NewPassword
@@ -383,7 +385,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(26, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(26, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                         _localizer["Password"]
@@ -392,7 +394,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(27, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(27, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                          Variant.Outlined
@@ -401,7 +403,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(28, "InputType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
+                                __builder6.AddAttribute(28, "InputType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                       _newPasswordInput
@@ -410,7 +412,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(29, "Adornment", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
+                                __builder6.AddAttribute(29, "Adornment", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                     Adornment.End
@@ -419,7 +421,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(30, "AdornmentIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(30, "AdornmentIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                    _newPasswordInputIcon
@@ -428,7 +430,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(31, "OnAdornmentClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(31, "OnAdornmentClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                                                               () => TogglePasswordVisibility(true)
@@ -437,7 +439,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 )));
-                                __builder6.AddAttribute(32, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                                __builder6.AddAttribute(32, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                           _passwordModel.NewPassword
@@ -446,14 +448,14 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(33, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _passwordModel.NewPassword = __value, _passwordModel.NewPassword))));
+                                __builder6.AddAttribute(33, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _passwordModel.NewPassword = __value, _passwordModel.NewPassword))));
                                 __builder6.CloseComponent();
                             }
                             ));
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(34, "\r\n                ");
                             __builder5.OpenComponent<MudBlazor.MudItem>(35);
-                            __builder5.AddAttribute(36, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                            __builder5.AddAttribute(36, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                              12
@@ -462,7 +464,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(37, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                            __builder5.AddAttribute(37, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                      6
@@ -473,7 +475,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
                             ));
                             __builder5.AddAttribute(38, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudTextField<string>>(39);
-                                __builder6.AddAttribute(40, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                                __builder6.AddAttribute(40, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                     () => _passwordModel.ConfirmNewPassword
@@ -482,7 +484,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(41, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(41, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                       _localizer["Password Confirmation"]
@@ -491,7 +493,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(42, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(42, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                     Variant.Outlined
@@ -500,7 +502,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(43, "InputType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
+                                __builder6.AddAttribute(43, "InputType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                  _newPasswordInput
@@ -509,7 +511,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(44, "Adornment", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
+                                __builder6.AddAttribute(44, "Adornment", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                Adornment.End
@@ -518,7 +520,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(45, "AdornmentIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(45, "AdornmentIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                                               _newPasswordInputIcon
@@ -527,7 +529,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(46, "OnAdornmentClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(46, "OnAdornmentClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                                                                                          () => TogglePasswordVisibility(true)
@@ -536,7 +538,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 )));
-                                __builder6.AddAttribute(47, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                                __builder6.AddAttribute(47, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                           _passwordModel.ConfirmNewPassword
@@ -545,14 +547,14 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(48, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _passwordModel.ConfirmNewPassword = __value, _passwordModel.ConfirmNewPassword))));
+                                __builder6.AddAttribute(48, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _passwordModel.ConfirmNewPassword = __value, _passwordModel.ConfirmNewPassword))));
                                 __builder6.CloseComponent();
                             }
                             ));
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(49, "\r\n                ");
                             __builder5.OpenComponent<MudBlazor.MudItem>(50);
-                            __builder5.AddAttribute(51, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                            __builder5.AddAttribute(51, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                              12
@@ -563,7 +565,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
                             ));
                             __builder5.AddAttribute(52, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudTextField<string>>(53);
-                                __builder6.AddAttribute(54, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                                __builder6.AddAttribute(54, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                           () => _passwordModel.Password
@@ -572,7 +574,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(55, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(55, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                   _localizer["Current Password"]
@@ -581,7 +583,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(56, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(56, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                            Variant.Outlined
@@ -590,7 +592,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(57, "InputType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
+                                __builder6.AddAttribute(57, "InputType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                         _currentPasswordInput
@@ -599,7 +601,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(58, "Adornment", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
+                                __builder6.AddAttribute(58, "Adornment", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                           Adornment.End
@@ -608,7 +610,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(59, "AdornmentIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(59, "AdornmentIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                          _currentPasswordInputIcon
@@ -617,7 +619,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(60, "OnAdornmentClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(60, "OnAdornmentClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                                                                                                                                                                                                                                         () => TogglePasswordVisibility(false)
@@ -626,7 +628,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 )));
-                                __builder6.AddAttribute(61, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                                __builder6.AddAttribute(61, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                           _passwordModel.Password
@@ -635,7 +637,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(62, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _passwordModel.Password = __value, _passwordModel.Password))));
+                                __builder6.AddAttribute(62, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _passwordModel.Password = __value, _passwordModel.Password))));
                                 __builder6.CloseComponent();
                             }
                             ));
@@ -651,7 +653,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
                     __builder3.AddAttribute(65, "Class", "pb-4 pl-4");
                     __builder3.AddAttribute(66, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudButton>(67);
-                        __builder4.AddAttribute(68, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(68, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                 Variant.Filled
@@ -660,7 +662,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(69, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(69, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                             !Validated
@@ -669,7 +671,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(70, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(70, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                 Color.Primary
@@ -678,7 +680,7 @@ __builder5.AddContent(14, _localizer["Change Password"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(71, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                        __builder4.AddAttribute(71, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
                                                                                                            ButtonType.Submit
@@ -689,13 +691,15 @@ __builder5.AddContent(14, _localizer["Change Password"]);
                         ));
                         __builder4.AddAttribute(72, "Class", "ml-auto");
                         __builder4.AddAttribute(73, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(74, 
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Security.razor"
-__builder5.AddContent(74, _localizer["Change Password"]);
+                                                                                                                                               _localizer["Change Password"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();

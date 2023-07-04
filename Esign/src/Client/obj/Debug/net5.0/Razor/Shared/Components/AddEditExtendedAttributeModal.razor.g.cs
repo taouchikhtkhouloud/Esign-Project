@@ -295,7 +295,7 @@ using Esign.Domain.Enums;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                   AddEditExtendedAttributeModel
@@ -304,7 +304,7 @@ using Esign.Domain.Enums;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                 SaveAsync
@@ -339,7 +339,7 @@ using Esign.Domain.Enums;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(9);
-                    __builder3.AddAttribute(10, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(10, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                    Typo.h6
@@ -350,7 +350,7 @@ using Esign.Domain.Enums;
                     ));
                     __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(12);
-                        __builder4.AddAttribute(13, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(13, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                         Icons.Material.Filled.Add
@@ -362,13 +362,15 @@ using Esign.Domain.Enums;
                         __builder4.AddAttribute(14, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(15, "\r\n                        ");
+                        __builder4.AddContent(16, 
 #nullable restore
 #line 18 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder4.AddContent(16, _localizer["Add Extended Attribute"]);
+                         _localizer["Add Extended Attribute"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -382,7 +384,7 @@ __builder4.AddContent(16, _localizer["Add Extended Attribute"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(17);
-                    __builder3.AddAttribute(18, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(18, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 23 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                    Typo.h6
@@ -393,7 +395,7 @@ __builder4.AddContent(16, _localizer["Add Extended Attribute"]);
                     ));
                     __builder3.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(20);
-                        __builder4.AddAttribute(21, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(21, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                         Icons.Material.Filled.Update
@@ -405,13 +407,15 @@ __builder4.AddContent(16, _localizer["Add Extended Attribute"]);
                         __builder4.AddAttribute(22, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(23, "\r\n                        ");
+                        __builder4.AddContent(24, 
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder4.AddContent(24, _localizer["Update Extended Attribute"]);
+                         _localizer["Update Extended Attribute"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -437,7 +441,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(28);
-                        __builder4.AddAttribute(29, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(29, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                  12
@@ -446,7 +450,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(30, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(30, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                          6
@@ -480,7 +484,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line default
 #line hidden
 #nullable disable
-                            , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Id = __value, AddEditExtendedAttributeModel.Id)));
+                            , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Id = __value, AddEditExtendedAttributeModel.Id)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -492,7 +496,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(38);
-                        __builder4.AddAttribute(39, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(39, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -501,7 +505,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(40, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(40, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -535,13 +539,13 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line default
 #line hidden
 #nullable disable
-                            , 47, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.EntityId = __value, AddEditExtendedAttributeModel.EntityId)));
+                            , 47, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.EntityId = __value, AddEditExtendedAttributeModel.EntityId)));
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(48, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(49);
-                        __builder4.AddAttribute(50, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(50, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -550,7 +554,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(51, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(51, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -561,7 +565,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
                         ));
                         __builder4.AddAttribute(52, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudSelect<EntityExtendedAttributeType>>(53);
-                            __builder5.AddAttribute(54, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(54, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                        _localizer["Type"]
@@ -570,7 +574,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(55, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<EntityExtendedAttributeType>>>(
+                            __builder5.AddAttribute(55, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<EntityExtendedAttributeType>>>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                   () => AddEditExtendedAttributeModel.Type
@@ -579,7 +583,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(56, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                            __builder5.AddAttribute(56, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                                                                                                        Variant.Filled
@@ -588,7 +592,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(57, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<EntityExtendedAttributeType>(
+                            __builder5.AddAttribute(57, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<EntityExtendedAttributeType>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                                                           AddEditExtendedAttributeModel.Type
@@ -597,7 +601,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(58, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<EntityExtendedAttributeType>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<EntityExtendedAttributeType>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Type = __value, AddEditExtendedAttributeModel.Type))));
+                            __builder5.AddAttribute(58, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<EntityExtendedAttributeType>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<EntityExtendedAttributeType>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Type = __value, AddEditExtendedAttributeModel.Type))));
                             __builder5.AddAttribute(59, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
 #nullable restore
 #line 43 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
@@ -608,7 +612,7 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudSelectItem<EntityExtendedAttributeType>>(60);
-                                __builder6.AddAttribute(61, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<EntityExtendedAttributeType>(
+                                __builder6.AddAttribute(61, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<EntityExtendedAttributeType>(
 #nullable restore
 #line 45 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                     Enum.GetValues<EntityExtendedAttributeType>().FirstOrDefault(x => x.ToString() == typeName)
@@ -618,13 +622,15 @@ __builder4.AddContent(24, _localizer["Update Extended Attribute"]);
 #nullable disable
                                 ));
                                 __builder6.AddAttribute(62, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(63, 
 #nullable restore
 #line 45 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(63, typeName);
+                                                                                                                                                                                   typeName
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -643,7 +649,7 @@ __builder7.AddContent(63, typeName);
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(64, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(65);
-                        __builder4.AddAttribute(66, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(66, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -652,7 +658,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(67, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(67, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -686,7 +692,7 @@ __builder7.AddContent(63, typeName);
 #line default
 #line hidden
 #nullable disable
-                            , 73, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Key = __value, AddEditExtendedAttributeModel.Key)));
+                            , 73, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Key = __value, AddEditExtendedAttributeModel.Key)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -699,7 +705,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(74);
-                        __builder4.AddAttribute(75, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(75, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 54 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                  12
@@ -708,7 +714,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(76, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(76, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 54 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                          6
@@ -742,7 +748,7 @@ __builder7.AddContent(63, typeName);
 #line default
 #line hidden
 #nullable disable
-                            , 82, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Decimal = __value, AddEditExtendedAttributeModel.Decimal)));
+                            , 82, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Decimal = __value, AddEditExtendedAttributeModel.Decimal)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -756,7 +762,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(83);
-                        __builder4.AddAttribute(84, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(84, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 60 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                  12
@@ -765,7 +771,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(85, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(85, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 60 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                          6
@@ -799,7 +805,7 @@ __builder7.AddContent(63, typeName);
 #line default
 #line hidden
 #nullable disable
-                            , 91, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Text = __value, AddEditExtendedAttributeModel.Text)));
+                            , 91, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Text = __value, AddEditExtendedAttributeModel.Text)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -813,7 +819,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(92);
-                        __builder4.AddAttribute(93, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(93, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 66 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                  12
@@ -822,7 +828,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(94, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(94, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 66 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                          6
@@ -833,7 +839,7 @@ __builder7.AddContent(63, typeName);
                         ));
                         __builder4.AddAttribute(95, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudDatePicker>(96);
-                            __builder5.AddAttribute(97, "PickerVariant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.PickerVariant>(
+                            __builder5.AddAttribute(97, "PickerVariant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.PickerVariant>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                          PickerVariant.Dialog
@@ -842,7 +848,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(98, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(98, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                                                            _localizer["Date"]
@@ -851,7 +857,7 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(99, "Date", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.DateTime?>(
+                            __builder5.AddAttribute(99, "Date", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.DateTime?>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                            AddEditExtendedAttributeModel.DateTime
@@ -860,11 +866,11 @@ __builder7.AddContent(63, typeName);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(100, "DateChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.DateTime?>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.DateTime?>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.DateTime = __value, AddEditExtendedAttributeModel.DateTime))));
+                            __builder5.AddAttribute(100, "DateChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.DateTime?>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.DateTime?>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.DateTime = __value, AddEditExtendedAttributeModel.DateTime))));
                             __builder5.AddAttribute(101, "PickerActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudButton>(102);
                                 __builder6.AddAttribute(103, "Class", "mr-auto align-self-start");
-                                __builder6.AddAttribute(104, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(104, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 69 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                        () => _datePicker.Clear()
@@ -874,19 +880,21 @@ __builder7.AddContent(63, typeName);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(105, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(106, 
 #nullable restore
 #line 69 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(106, _localizer["Clear"]);
+                                                                                                                    _localizer["Clear"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
                                 __builder6.AddMarkupContent(107, "\r\n                                ");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(108);
-                                __builder6.AddAttribute(109, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(109, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                       () => _datePicker.Close(false)
@@ -896,19 +904,21 @@ __builder7.AddContent(106, _localizer["Clear"]);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(110, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(111, 
 #nullable restore
 #line 70 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(111, _localizer["Cancel"]);
+                                                                                        _localizer["Cancel"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
                                 __builder6.AddMarkupContent(112, "\r\n                                ");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(113);
-                                __builder6.AddAttribute(114, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(114, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 71 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                   Color.Primary
@@ -917,7 +927,7 @@ __builder7.AddContent(111, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(115, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(115, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 71 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                             () => _datePicker.Close()
@@ -927,13 +937,15 @@ __builder7.AddContent(111, _localizer["Cancel"]);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(116, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(117, 
 #nullable restore
 #line 71 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(117, _localizer["Ok"]);
+                                                                                                         _localizer["Ok"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -952,7 +964,7 @@ __builder7.AddContent(117, _localizer["Ok"]);
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(119, "\r\n\r\n                        ");
                             __builder5.OpenComponent<MudBlazor.MudTimePicker>(120);
-                            __builder5.AddAttribute(121, "PickerVariant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.PickerVariant>(
+                            __builder5.AddAttribute(121, "PickerVariant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.PickerVariant>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                          PickerVariant.Dialog
@@ -961,7 +973,7 @@ __builder7.AddContent(117, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(122, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(122, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                        _localizer["Time"]
@@ -970,7 +982,7 @@ __builder7.AddContent(117, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(123, "Time", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.TimeSpan?>(
+                            __builder5.AddAttribute(123, "Time", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.TimeSpan?>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                                        _time
@@ -979,11 +991,11 @@ __builder7.AddContent(117, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(124, "TimeChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.TimeSpan?>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.TimeSpan?>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _time = __value, _time))));
+                            __builder5.AddAttribute(124, "TimeChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.TimeSpan?>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.TimeSpan?>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _time = __value, _time))));
                             __builder5.AddAttribute(125, "PickerActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudButton>(126);
                                 __builder6.AddAttribute(127, "Class", "mr-auto align-self-start");
-                                __builder6.AddAttribute(128, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(128, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 77 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                        () => _timePicker.Clear()
@@ -993,19 +1005,21 @@ __builder7.AddContent(117, _localizer["Ok"]);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(129, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(130, 
 #nullable restore
 #line 77 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(130, _localizer["Clear"]);
+                                                                                                                    _localizer["Clear"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
                                 __builder6.AddMarkupContent(131, "\r\n                                ");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(132);
-                                __builder6.AddAttribute(133, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(133, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 78 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                       () => _timePicker.Close(false)
@@ -1015,19 +1029,21 @@ __builder7.AddContent(130, _localizer["Clear"]);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(134, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(135, 
 #nullable restore
 #line 78 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(135, _localizer["Cancel"]);
+                                                                                        _localizer["Cancel"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
                                 __builder6.AddMarkupContent(136, "\r\n                                ");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(137);
-                                __builder6.AddAttribute(138, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(138, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 79 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                   Color.Primary
@@ -1036,7 +1052,7 @@ __builder7.AddContent(135, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(139, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(139, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 79 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                             () => _timePicker.Close()
@@ -1046,13 +1062,15 @@ __builder7.AddContent(135, _localizer["Cancel"]);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(140, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(141, 
 #nullable restore
 #line 79 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder7.AddContent(141, _localizer["Ok"]);
+                                                                                                         _localizer["Ok"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -1082,7 +1100,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(143);
-                        __builder4.AddAttribute(144, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(144, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 86 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                  12
@@ -1091,7 +1109,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(145, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(145, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 86 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                          6
@@ -1141,7 +1159,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line default
 #line hidden
 #nullable disable
-                            , 153, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Json = __value, AddEditExtendedAttributeModel.Json)));
+                            , 153, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Json = __value, AddEditExtendedAttributeModel.Json)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1153,7 +1171,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(154);
-                        __builder4.AddAttribute(155, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(155, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 90 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -1162,7 +1180,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(156, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(156, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 90 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -1173,7 +1191,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
                         ));
                         __builder4.AddAttribute(157, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudTextField<string>>(158);
-                            __builder5.AddAttribute(159, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                            __builder5.AddAttribute(159, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 91 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                     () => AddEditExtendedAttributeModel.ExternalId
@@ -1182,7 +1200,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(160, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(160, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 91 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                                                                     _localizer["External Id"]
@@ -1191,7 +1209,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(161, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                            __builder5.AddAttribute(161, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 91 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                   AddEditExtendedAttributeModel.ExternalId
@@ -1200,14 +1218,14 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(162, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.ExternalId = __value, AddEditExtendedAttributeModel.ExternalId))));
+                            __builder5.AddAttribute(162, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.ExternalId = __value, AddEditExtendedAttributeModel.ExternalId))));
                             __builder5.CloseComponent();
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(163, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(164);
-                        __builder4.AddAttribute(165, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(165, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 93 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -1216,7 +1234,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(166, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(166, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 93 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -1227,7 +1245,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
                         ));
                         __builder4.AddAttribute(167, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudTextField<string>>(168);
-                            __builder5.AddAttribute(169, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                            __builder5.AddAttribute(169, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 94 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                     () => AddEditExtendedAttributeModel.Group
@@ -1236,7 +1254,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(170, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(170, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 94 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                                                           _localizer["Group"]
@@ -1245,7 +1263,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(171, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                            __builder5.AddAttribute(171, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 94 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                              AddEditExtendedAttributeModel.Group
@@ -1254,14 +1272,14 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(172, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Group = __value, AddEditExtendedAttributeModel.Group))));
+                            __builder5.AddAttribute(172, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Group = __value, AddEditExtendedAttributeModel.Group))));
                             __builder5.CloseComponent();
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(173, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(174);
-                        __builder4.AddAttribute(175, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(175, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 96 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -1270,7 +1288,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(176, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(176, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 96 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -1304,13 +1322,13 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line default
 #line hidden
 #nullable disable
-                            , 182, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Description = __value, AddEditExtendedAttributeModel.Description)));
+                            , 182, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.Description = __value, AddEditExtendedAttributeModel.Description)));
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(183, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(184);
-                        __builder4.AddAttribute(185, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(185, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 99 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                              12
@@ -1319,7 +1337,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(186, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(186, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 99 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                      6
@@ -1361,7 +1379,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line default
 #line hidden
 #nullable disable
-                            , 193, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.IsActive = __value, AddEditExtendedAttributeModel.IsActive)));
+                            , 193, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditExtendedAttributeModel.IsActive = __value, AddEditExtendedAttributeModel.IsActive)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1372,7 +1390,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
                 ));
                 __builder2.AddAttribute(194, "DialogActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudButton>(195);
-                    __builder3.AddAttribute(196, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(196, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 105 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                 Variant.Filled
@@ -1381,7 +1399,7 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(197, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(197, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 105 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                          Cancel
@@ -1391,13 +1409,15 @@ __builder7.AddContent(141, _localizer["Ok"]);
 #nullable disable
                     )));
                     __builder3.AddAttribute(198, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(199, 
 #nullable restore
 #line 105 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder4.AddContent(199, _localizer["Cancel"]);
+                                                                  _localizer["Cancel"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -1410,7 +1430,7 @@ __builder4.AddContent(199, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(200);
-                    __builder3.AddAttribute(201, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(201, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 108 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                     Variant.Filled
@@ -1419,7 +1439,7 @@ __builder4.AddContent(199, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(202, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(202, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 108 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                 ButtonType.Submit
@@ -1428,7 +1448,7 @@ __builder4.AddContent(199, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(203, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(203, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 108 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                !Validated
@@ -1437,7 +1457,7 @@ __builder4.AddContent(199, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(204, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(204, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 108 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                    Color.Secondary
@@ -1447,13 +1467,15 @@ __builder4.AddContent(199, _localizer["Cancel"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(205, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(206, 
 #nullable restore
 #line 108 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder4.AddContent(206, _localizer["Update"]);
+                                                                                                                                     _localizer["Update"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -1467,7 +1489,7 @@ __builder4.AddContent(206, _localizer["Update"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(207);
-                    __builder3.AddAttribute(208, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(208, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 112 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                     Variant.Filled
@@ -1476,7 +1498,7 @@ __builder4.AddContent(206, _localizer["Update"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(209, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(209, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 112 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                 ButtonType.Submit
@@ -1485,7 +1507,7 @@ __builder4.AddContent(206, _localizer["Update"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(210, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(210, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 112 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                !Validated
@@ -1494,7 +1516,7 @@ __builder4.AddContent(206, _localizer["Update"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(211, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(211, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 112 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
                                                                                                                    Color.Success
@@ -1504,13 +1526,15 @@ __builder4.AddContent(206, _localizer["Update"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(212, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(213, 
 #nullable restore
 #line 112 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Components\AddEditExtendedAttributeModal.razor"
-__builder4.AddContent(213, _localizer["Save"]);
+                                                                                                                                   _localizer["Save"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();

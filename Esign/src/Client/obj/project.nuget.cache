@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d6iQlPStaEp+MpSiny1aZbsvWX+xgn82KN3srz7vrtLmSioOddSKw2aRDDq926Podljx62EGfBmbfdNoruHFhA==",
+  "dgSpecHash": "ttzNC9PIN80fnntOOAt99DdkoWuBTU97aJRgaapia1icIrSznjnMXgxhFzN0MM6kDY9RvzhhAOw6qujfHpa02Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\KHOULOUD TAOUCHIKHT\\Desktop\\Files\\Coding\\WarehouseManger\\Esign\\src\\Client\\Client.csproj",
   "expectedPackageFiles": [
@@ -105,7 +105,7 @@
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512",
     "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\9.2.1\\toolbelt.blazor.httpclientinterceptor.9.2.1.nupkg.sha512",
-    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.12\\microsoft.netcore.app.runtime.browser-wasm.5.0.12.nupkg.sha512"
+    "C:\\Users\\KHOULOUD TAOUCHIKHT\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.17\\microsoft.netcore.app.runtime.browser-wasm.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

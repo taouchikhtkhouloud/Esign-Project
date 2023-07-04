@@ -288,7 +288,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                   AddEditProductModel
@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                       SaveAsync
@@ -332,7 +332,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(9);
-                    __builder3.AddAttribute(10, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(10, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                    Typo.h6
@@ -343,7 +343,7 @@ using Esign.Client.Extensions;
                     ));
                     __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(12);
-                        __builder4.AddAttribute(13, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(13, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 11 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                         Icons.Material.Filled.Add
@@ -355,13 +355,15 @@ using Esign.Client.Extensions;
                         __builder4.AddAttribute(14, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(15, "\r\n                        ");
+                        __builder4.AddContent(16, 
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder4.AddContent(16, _localizer["Add Product"]);
+                         _localizer["Add Product"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -375,7 +377,7 @@ __builder4.AddContent(16, _localizer["Add Product"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(17);
-                    __builder3.AddAttribute(18, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(18, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                    Typo.h6
@@ -386,7 +388,7 @@ __builder4.AddContent(16, _localizer["Add Product"]);
                     ));
                     __builder3.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(20);
-                        __builder4.AddAttribute(21, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(21, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 18 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                         Icons.Material.Filled.Update
@@ -398,13 +400,15 @@ __builder4.AddContent(16, _localizer["Add Product"]);
                         __builder4.AddAttribute(22, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(23, "\r\n                        ");
+                        __builder4.AddContent(24, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder4.AddContent(24, _localizer["Update Product"]);
+                         _localizer["Update Product"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -430,7 +434,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(28);
-                        __builder4.AddAttribute(29, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(29, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                  12
@@ -439,7 +443,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(30, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(30, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                          6
@@ -473,7 +477,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line default
 #line hidden
 #nullable disable
-                            , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Id = __value, AddEditProductModel.Id)));
+                            , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Id = __value, AddEditProductModel.Id)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -485,7 +489,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(38);
-                        __builder4.AddAttribute(39, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(39, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 32 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                              12
@@ -494,7 +498,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(40, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(40, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 32 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                      6
@@ -528,13 +532,13 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line default
 #line hidden
 #nullable disable
-                            , 46, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Name = __value, AddEditProductModel.Name)));
+                            , 46, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Name = __value, AddEditProductModel.Name)));
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(47, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(48);
-                        __builder4.AddAttribute(49, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(49, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                              12
@@ -543,7 +547,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(50, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(50, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                      6
@@ -577,13 +581,13 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line default
 #line hidden
 #nullable disable
-                            , 56, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Description = __value, AddEditProductModel.Description)));
+                            , 56, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Description = __value, AddEditProductModel.Description)));
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(57, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(58);
-                        __builder4.AddAttribute(59, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(59, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                              12
@@ -592,7 +596,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(60, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(60, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                      6
@@ -603,7 +607,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
                         ));
                         __builder4.AddAttribute(61, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudAutocomplete<int>>(62);
-                            __builder5.AddAttribute(63, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(63, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                      _localizer["Brand"]
@@ -612,7 +616,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(64, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<int>>>(
+                            __builder5.AddAttribute(64, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<int>>>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                  () => AddEditProductModel.BrandId
@@ -621,7 +625,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(65, "ResetValueOnEmptyText", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                            __builder5.AddAttribute(65, "ResetValueOnEmptyText", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                                                                       true
@@ -630,7 +634,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(66, "SearchFunc", (System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<int>>>)(
+                            __builder5.AddAttribute(66, "SearchFunc", new System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<int>>>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                                                                                          SearchBrands
@@ -639,7 +643,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(67, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                            __builder5.AddAttribute(67, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                                                                                                                 Variant.Filled
@@ -648,7 +652,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(68, "ToStringFunc", (System.Func<int, System.String>)(
+                            __builder5.AddAttribute(68, "ToStringFunc", new System.Func<int, System.String>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                                                                                                                                                 i => _brands.FirstOrDefault(b => b.Id == i)?.Name ?? string.Empty
@@ -657,7 +661,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(69, "OffsetY", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                            __builder5.AddAttribute(69, "OffsetY", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                                                                                                                                                                                                                              true
@@ -666,7 +670,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(70, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<int>(
+                            __builder5.AddAttribute(70, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<int>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                   AddEditProductModel.BrandId
@@ -675,14 +679,14 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(71, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<int>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<int>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.BrandId = __value, AddEditProductModel.BrandId))));
+                            __builder5.AddAttribute(71, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<int>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<int>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.BrandId = __value, AddEditProductModel.BrandId))));
                             __builder5.CloseComponent();
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(72, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudItem>(73);
-                        __builder4.AddAttribute(74, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(74, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                              12
@@ -691,7 +695,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(75, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(75, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                      6
@@ -725,7 +729,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line default
 #line hidden
 #nullable disable
-                            , 81, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Rate = __value, AddEditProductModel.Rate)));
+                            , 81, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Rate = __value, AddEditProductModel.Rate)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -738,7 +742,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(82);
-                        __builder4.AddAttribute(83, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(83, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                  12
@@ -747,7 +751,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(84, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(84, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                          6
@@ -781,7 +785,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line default
 #line hidden
 #nullable disable
-                            , 90, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Barcode = __value, AddEditProductModel.Barcode)));
+                            , 90, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Barcode = __value, AddEditProductModel.Barcode)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -795,7 +799,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(91);
-                        __builder4.AddAttribute(92, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(92, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                  12
@@ -804,7 +808,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(93, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(93, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                          6
@@ -838,7 +842,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line default
 #line hidden
 #nullable disable
-                            , 100, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Barcode = __value, AddEditProductModel.Barcode)));
+                            , 100, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => AddEditProductModel.Barcode = __value, AddEditProductModel.Barcode)));
                         }
                         ));
                         __builder4.CloseComponent();
@@ -850,7 +854,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudItem>(101);
-                        __builder4.AddAttribute(102, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(102, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 56 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                              12
@@ -859,7 +863,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(103, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                        __builder4.AddAttribute(103, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 56 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                      6
@@ -872,7 +876,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
                             __builder5.OpenComponent<MudBlazor.MudItem>(105);
                             __builder5.AddAttribute(106, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudAvatar>(107);
-                                __builder6.AddAttribute(108, "Image", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(108, "Image", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                             AddEditProductModel.ImageDataURL
@@ -881,7 +885,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(109, "Square", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(109, "Square", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                        true
@@ -901,7 +905,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
                                 __builder6.OpenComponent<Microsoft.AspNetCore.Components.Forms.InputFile>(114);
                                 __builder6.AddAttribute(115, "id", "fileInput");
                                 __builder6.AddAttribute(116, "hidden", true);
-                                __builder6.AddAttribute(117, "OnChange", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs>(this, 
+                                __builder6.AddAttribute(117, "OnChange", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs>(this, 
 #nullable restore
 #line 61 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                    UploadFiles
@@ -915,7 +919,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
                                 __builder6.OpenElement(119, "div");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(120);
                                 __builder6.AddAttribute(121, "HtmlTag", "label");
-                                __builder6.AddAttribute(122, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(122, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 64 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                 Variant.Text
@@ -924,7 +928,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(123, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(123, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 65 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                               Color.Primary
@@ -933,7 +937,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(124, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                                __builder6.AddAttribute(124, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 66 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                              Size.Small
@@ -942,7 +946,7 @@ __builder4.AddContent(24, _localizer["Update Product"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(125, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(125, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 67 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                    Icons.Filled.CloudUpload
@@ -953,13 +957,15 @@ __builder4.AddContent(24, _localizer["Update Product"]);
                                 ));
                                 __builder6.AddAttribute(126, "for", "fileInput");
                                 __builder6.AddAttribute(127, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(128, 
 #nullable restore
 #line 69 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder7.AddContent(128, _localizer["Upload"]);
+                                 _localizer["Upload"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -972,7 +978,7 @@ __builder7.AddContent(128, _localizer["Upload"]);
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudButton>(129);
-                                __builder6.AddAttribute(130, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(130, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 73 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                     Variant.Text
@@ -981,7 +987,7 @@ __builder7.AddContent(128, _localizer["Upload"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(131, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(131, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 74 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                   Color.Info
@@ -990,7 +996,7 @@ __builder7.AddContent(128, _localizer["Upload"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(132, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(132, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 75 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                        Icons.Filled.RemoveRedEye
@@ -999,7 +1005,7 @@ __builder7.AddContent(128, _localizer["Upload"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(133, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                                __builder6.AddAttribute(133, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 76 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                  Size.Small
@@ -1008,7 +1014,7 @@ __builder7.AddContent(128, _localizer["Upload"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(134, "Link", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(134, "Link", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 77 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                    AddEditProductModel.ImageDataURL
@@ -1019,19 +1025,21 @@ __builder7.AddContent(128, _localizer["Upload"]);
                                 ));
                                 __builder6.AddAttribute(135, "Target", "_blank");
                                 __builder6.AddAttribute(136, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(137, 
 #nullable restore
 #line 78 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder7.AddContent(137, _localizer["View"]);
+                                     _localizer["View"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
                                 __builder6.AddMarkupContent(138, "\r\n                                ");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(139);
-                                __builder6.AddAttribute(140, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(140, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 80 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                     Variant.Text
@@ -1040,7 +1048,7 @@ __builder7.AddContent(137, _localizer["View"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(141, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(141, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 81 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                   Color.Error
@@ -1049,7 +1057,7 @@ __builder7.AddContent(137, _localizer["View"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(142, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(142, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 82 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                        Icons.Filled.Delete
@@ -1058,7 +1066,7 @@ __builder7.AddContent(137, _localizer["View"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(143, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                                __builder6.AddAttribute(143, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 83 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                  Size.Small
@@ -1067,7 +1075,7 @@ __builder7.AddContent(137, _localizer["View"]);
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(144, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                                __builder6.AddAttribute(144, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 84 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                     DeleteAsync
@@ -1077,13 +1085,15 @@ __builder7.AddContent(137, _localizer["View"]);
 #nullable disable
                                 )));
                                 __builder6.AddAttribute(145, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(146, 
 #nullable restore
 #line 85 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder7.AddContent(146, _localizer["Delete"]);
+                                     _localizer["Delete"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -1109,7 +1119,7 @@ __builder7.AddContent(146, _localizer["Delete"]);
                 __builder2.AddAttribute(147, "DialogActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudButton>(148);
                     __builder3.AddAttribute(149, "DisableElevation", true);
-                    __builder3.AddAttribute(150, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(150, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 94 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                  Variant.Filled
@@ -1118,7 +1128,7 @@ __builder7.AddContent(146, _localizer["Delete"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(151, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(151, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 94 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                           Cancel
@@ -1128,13 +1138,15 @@ __builder7.AddContent(146, _localizer["Delete"]);
 #nullable disable
                     )));
                     __builder3.AddAttribute(152, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(153, 
 #nullable restore
 #line 94 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder4.AddContent(153, _localizer["Cancel"]);
+                                                                                   _localizer["Cancel"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -1148,7 +1160,7 @@ __builder4.AddContent(153, _localizer["Cancel"]);
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(154);
                     __builder3.AddAttribute(155, "DisableElevation", true);
-                    __builder3.AddAttribute(156, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(156, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 97 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                      Variant.Filled
@@ -1157,7 +1169,7 @@ __builder4.AddContent(153, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(157, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(157, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 97 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                  ButtonType.Submit
@@ -1166,7 +1178,7 @@ __builder4.AddContent(153, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(158, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(158, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 97 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                 !Validated
@@ -1175,7 +1187,7 @@ __builder4.AddContent(153, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(159, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(159, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 97 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                     Color.Secondary
@@ -1185,13 +1197,15 @@ __builder4.AddContent(153, _localizer["Cancel"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(160, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(161, 
 #nullable restore
 #line 97 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder4.AddContent(161, _localizer["Update"]);
+                                                                                                                                                      _localizer["Update"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -1206,7 +1220,7 @@ __builder4.AddContent(161, _localizer["Update"]);
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(162);
                     __builder3.AddAttribute(163, "DisableElevation", true);
-                    __builder3.AddAttribute(164, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(164, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 101 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                      Variant.Filled
@@ -1215,7 +1229,7 @@ __builder4.AddContent(161, _localizer["Update"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(165, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(165, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 101 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                  ButtonType.Submit
@@ -1224,7 +1238,7 @@ __builder4.AddContent(161, _localizer["Update"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(166, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(166, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 101 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                 !Validated
@@ -1233,7 +1247,7 @@ __builder4.AddContent(161, _localizer["Update"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(167, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(167, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 101 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
                                                                                                                                     Color.Success
@@ -1243,13 +1257,15 @@ __builder4.AddContent(161, _localizer["Update"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(168, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(169, 
 #nullable restore
 #line 101 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\AddEditProductModal.razor"
-__builder4.AddContent(169, _localizer["Save"]);
+                                                                                                                                                    _localizer["Save"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();

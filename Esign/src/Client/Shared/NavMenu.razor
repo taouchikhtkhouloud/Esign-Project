@@ -3,7 +3,7 @@
 
 <UserCard />
 <MudNavMenu>
-    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Home">@_localizer["Dashboard"]</MudNavLink>
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.SupervisorAccount">@_localizer["Account"]</MudNavLink>
     
     
     <MudListSubheader Class="mt-2 mb-n2">@_localizer["Personal"]</MudListSubheader>
@@ -13,9 +13,9 @@
             @_localizer["Dashboard"]
         </MudNavLink>
     }
-    <MudNavLink Href="/account" Icon="@Icons.Material.Outlined.SupervisorAccount">
+    @*<MudNavLink Href="/account" Icon="@Icons.Material.Outlined.SupervisorAccount">
         @_localizer["Account"]
-    </MudNavLink>
+    </MudNavLink>*@
     @if (_canViewAuditTrails)
     {
         <MudNavLink Href="/audit-trails" Icon="@Icons.Material.Outlined.Security">
@@ -28,13 +28,13 @@
         @if (_canViewDocuments)
         {
             <MudNavLink Href="/document-store" Icon="@Icons.Material.Outlined.AttachFile">
-                @_localizer["Document Store"]
+                @_localizer["Documents"]
             </MudNavLink>
         }
         @if (_canViewDocumentTypes)
         {
             <MudNavLink Href="/document-types" Icon="@Icons.Material.Outlined.FileCopy">
-                @_localizer["Document Types"]
+                @_localizer["Folders"]
             </MudNavLink>
         }
     }

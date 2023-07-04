@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                   _registerUserModel
@@ -306,7 +306,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                      SubmitAsync
@@ -332,7 +332,7 @@ using Esign.Client.Extensions;
                 __builder2.OpenComponent<MudBlazor.MudGrid>(7);
                 __builder2.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudItem>(9);
-                    __builder3.AddAttribute(10, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(10, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                      12
@@ -348,7 +348,7 @@ using Esign.Client.Extensions;
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(13, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(14);
-                    __builder3.AddAttribute(15, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(15, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                      12
@@ -361,7 +361,7 @@ using Esign.Client.Extensions;
                         __builder4.OpenElement(17, "div");
                         __builder4.AddAttribute(18, "class", "d-flex justify-center");
                         __builder4.OpenComponent<MudBlazor.MudText>(19);
-                        __builder4.AddAttribute(20, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(20, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                Typo.h4
@@ -371,13 +371,15 @@ using Esign.Client.Extensions;
 #nullable disable
                         ));
                         __builder4.AddAttribute(21, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(22, 
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
-__builder5.AddContent(22, _localizer["Register"]);
+                                         _localizer["Register"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -387,7 +389,7 @@ __builder5.AddContent(22, _localizer["Register"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(23, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(24);
-                    __builder3.AddAttribute(25, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(25, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -401,24 +403,28 @@ __builder5.AddContent(22, _localizer["Register"]);
                         __builder4.AddAttribute(28, "class", "d-flex justify-center");
                         __builder4.OpenComponent<MudBlazor.MudText>(29);
                         __builder4.AddAttribute(30, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(31, 
 #nullable restore
 #line 21 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
-__builder5.AddContent(31, _localizer["Already have an account?"]);
+                          _localizer["Already have an account?"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                             __builder5.AddContent(32, " ");
                             __builder5.OpenComponent<MudBlazor.MudLink>(33);
                             __builder5.AddAttribute(34, "Href", "/login");
                             __builder5.AddAttribute(35, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(36, 
 #nullable restore
 #line 21 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
-__builder6.AddContent(36, _localizer["Sign In"]);
+                                                                                         _localizer["Sign In"]
 
 #line default
 #line hidden
 #nullable disable
+                                );
                             }
                             ));
                             __builder5.CloseComponent();
@@ -431,7 +437,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(37, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(38);
-                    __builder3.AddAttribute(39, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(39, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -465,13 +471,13 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line default
 #line hidden
 #nullable disable
-                        , 45, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.UserName = __value, _registerUserModel.UserName)));
+                        , 45, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.UserName = __value, _registerUserModel.UserName)));
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(46, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(47);
-                    __builder3.AddAttribute(48, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(48, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -480,7 +486,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(49, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(49, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                               6
@@ -489,7 +495,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(50, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(50, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                      6
@@ -523,13 +529,13 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line default
 #line hidden
 #nullable disable
-                        , 56, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.FirstName = __value, _registerUserModel.FirstName)));
+                        , 56, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.FirstName = __value, _registerUserModel.FirstName)));
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(57, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(58);
-                    __builder3.AddAttribute(59, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(59, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -538,7 +544,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(60, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(60, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                               6
@@ -547,7 +553,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(61, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(61, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                      6
@@ -581,13 +587,13 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line default
 #line hidden
 #nullable disable
-                        , 67, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.LastName = __value, _registerUserModel.LastName)));
+                        , 67, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.LastName = __value, _registerUserModel.LastName)));
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(68, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(69);
-                    __builder3.AddAttribute(70, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(70, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -596,7 +602,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(71, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(71, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                               6
@@ -605,7 +611,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(72, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(72, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                      6
@@ -616,7 +622,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
                     ));
                     __builder3.AddAttribute(73, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudTextField<string>>(74);
-                        __builder4.AddAttribute(75, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(75, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                              _localizer["E-mail"]
@@ -625,7 +631,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(76, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                        __builder4.AddAttribute(76, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                                                  () => _registerUserModel.Email
@@ -634,7 +640,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(77, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                        __builder4.AddAttribute(77, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                 _registerUserModel.Email
@@ -643,14 +649,14 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(78, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Email = __value, _registerUserModel.Email))));
+                        __builder4.AddAttribute(78, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Email = __value, _registerUserModel.Email))));
                         __builder4.CloseComponent();
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(79, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(80);
-                    __builder3.AddAttribute(81, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(81, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -659,7 +665,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(82, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(82, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                               6
@@ -668,7 +674,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(83, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(83, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                      6
@@ -679,7 +685,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
                     ));
                     __builder3.AddAttribute(84, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudTextField<string>>(85);
-                        __builder4.AddAttribute(86, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(86, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                              _localizer["Phone Number"]
@@ -688,7 +694,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(87, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                        __builder4.AddAttribute(87, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                                                              () => _registerUserModel.PhoneNumber
@@ -697,7 +703,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(88, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                        __builder4.AddAttribute(88, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                       _registerUserModel.PhoneNumber
@@ -706,14 +712,14 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(89, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.PhoneNumber = __value, _registerUserModel.PhoneNumber))));
+                        __builder4.AddAttribute(89, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.PhoneNumber = __value, _registerUserModel.PhoneNumber))));
                         __builder4.CloseComponent();
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(90, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(91);
-                    __builder3.AddAttribute(92, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(92, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -722,7 +728,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(93, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(93, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                               6
@@ -731,7 +737,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(94, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(94, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                      6
@@ -797,13 +803,13 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line default
 #line hidden
 #nullable disable
-                        , 104, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Password = __value, _registerUserModel.Password)));
+                        , 104, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.Password = __value, _registerUserModel.Password)));
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(105, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(106);
-                    __builder3.AddAttribute(107, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(107, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -812,7 +818,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(108, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(108, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                               6
@@ -821,7 +827,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(109, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(109, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                      6
@@ -863,13 +869,13 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line default
 #line hidden
 #nullable disable
-                        , 116, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.ConfirmPassword = __value, _registerUserModel.ConfirmPassword)));
+                        , 116, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _registerUserModel.ConfirmPassword = __value, _registerUserModel.ConfirmPassword)));
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(117, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(118);
-                    __builder3.AddAttribute(119, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(119, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 45 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                       12
@@ -881,7 +887,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
                     __builder3.AddAttribute(120, "Class", "d-flex justify-center");
                     __builder3.AddAttribute(121, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudButton>(122);
-                        __builder4.AddAttribute(123, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                        __builder4.AddAttribute(123, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                    ButtonType.Submit
@@ -890,7 +896,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(124, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(124, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                Variant.Filled
@@ -899,7 +905,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(125, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(125, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                            !Validated
@@ -908,7 +914,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(126, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(126, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                                                Color.Primary
@@ -917,7 +923,7 @@ __builder6.AddContent(36, _localizer["Sign In"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(127, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                        __builder4.AddAttribute(127, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
                                                                                                                                     Size.Large
@@ -928,13 +934,15 @@ __builder6.AddContent(36, _localizer["Sign In"]);
                         ));
                         __builder4.AddAttribute(128, "Style", "width: 100%;");
                         __builder4.AddAttribute(129, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(130, 
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Authentication\Register.razor"
-__builder5.AddContent(130, _localizer["Register"]);
+                                                                                                                                                                      _localizer["Register"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();

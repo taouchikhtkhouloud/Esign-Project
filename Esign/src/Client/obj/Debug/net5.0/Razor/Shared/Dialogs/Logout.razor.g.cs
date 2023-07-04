@@ -304,7 +304,7 @@ using Microsoft.AspNetCore.SignalR.Client;
             __builder.OpenComponent<MudBlazor.MudDialog>(0);
             __builder.AddAttribute(1, "TitleContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudText>(2);
-                __builder2.AddAttribute(3, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                __builder2.AddAttribute(3, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
                        Typo.h6
@@ -315,7 +315,7 @@ using Microsoft.AspNetCore.SignalR.Client;
                 ));
                 __builder2.AddAttribute(4, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudIcon>(5);
-                    __builder3.AddAttribute(6, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(6, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
                             Icons.Material.Filled.Logout
@@ -327,13 +327,15 @@ using Microsoft.AspNetCore.SignalR.Client;
                     __builder3.AddAttribute(7, "Class", "mr-3 mb-n1");
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(8, "\r\n            ");
+                    __builder3.AddContent(9, 
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
-__builder3.AddContent(9, localizer["Logout Confirmation"]);
+             localizer["Logout Confirmation"]
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -342,13 +344,15 @@ __builder3.AddContent(9, localizer["Logout Confirmation"]);
             __builder.AddAttribute(10, "DialogContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudText>(11);
                 __builder2.AddAttribute(12, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(13, 
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
-__builder3.AddContent(13, ContentText);
+                  ContentText
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -356,7 +360,7 @@ __builder3.AddContent(13, ContentText);
             ));
             __builder.AddAttribute(14, "DialogActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudButton>(15);
-                __builder2.AddAttribute(16, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(16, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
                             Cancel
@@ -366,19 +370,21 @@ __builder3.AddContent(13, ContentText);
 #nullable disable
                 )));
                 __builder2.AddAttribute(17, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(18, 
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
-__builder3.AddContent(18, localizer["Cancel"]);
+                                     localizer["Cancel"]
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(19, "\r\n        ");
                 __builder2.OpenComponent<MudBlazor.MudButton>(20);
-                __builder2.AddAttribute(21, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(21, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
                            Color
@@ -387,7 +393,7 @@ __builder3.AddContent(18, localizer["Cancel"]);
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(22, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                __builder2.AddAttribute(22, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
                                            Variant.Filled
@@ -396,7 +402,7 @@ __builder3.AddContent(18, localizer["Cancel"]);
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(23, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                __builder2.AddAttribute(23, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
                                                                     Submit
@@ -406,13 +412,15 @@ __builder3.AddContent(18, localizer["Cancel"]);
 #nullable disable
                 )));
                 __builder2.AddAttribute(24, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(25, 
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Dialogs\Logout.razor"
-__builder3.AddContent(25, ButtonText);
+                                                                             ButtonText
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();

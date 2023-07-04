@@ -306,7 +306,7 @@ using System.Globalization;
             __builder.OpenElement(0, "div");
             __builder.AddAttribute(1, "class", "d-flex flex-grow-1 flex-row");
             __builder.OpenComponent<MudBlazor.MudPaper>(2);
-            __builder.AddAttribute(3, "Elevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+            __builder.AddAttribute(3, "Elevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                          25
@@ -318,7 +318,7 @@ using System.Globalization;
             __builder.AddAttribute(4, "Class", "py-4 flex-grow-1");
             __builder.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudToolBar>(6);
-                __builder2.AddAttribute(7, "Dense", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                __builder2.AddAttribute(7, "Dense", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                            true
@@ -337,7 +337,7 @@ using System.Globalization;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudIcon>(9);
-                    __builder3.AddAttribute(10, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(10, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                 Icons.Material.Outlined.Person
@@ -350,7 +350,7 @@ using System.Globalization;
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(12, "\r\n                ");
                     __builder3.OpenComponent<MudBlazor.MudText>(13);
-                    __builder3.AddAttribute(14, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(14, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                Typo.h6
@@ -360,13 +360,15 @@ using System.Globalization;
 #nullable disable
                     ));
                     __builder3.AddAttribute(15, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(16, 
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder4.AddContent(16, _localizer["chat"]);
+                                         _localizer["chat"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -380,7 +382,7 @@ __builder4.AddContent(16, _localizer["chat"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudIcon>(17);
-                    __builder3.AddAttribute(18, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(18, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 18 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                 Icons.Material.Outlined.ChatBubble
@@ -393,7 +395,7 @@ __builder4.AddContent(16, _localizer["chat"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(20, "\r\n                ");
                     __builder3.OpenComponent<MudBlazor.MudText>(21);
-                    __builder3.AddAttribute(22, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(22, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                Typo.h6
@@ -403,13 +405,15 @@ __builder4.AddContent(16, _localizer["chat"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(23, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(24, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder4.AddContent(24, CFullName);
+                                         CFullName
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -424,7 +428,7 @@ __builder4.AddContent(24, CFullName);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(26, "\r\n            ");
                     __builder3.OpenComponent<MudBlazor.MudHidden>(27);
-                    __builder3.AddAttribute(28, "Breakpoint", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Breakpoint>(
+                    __builder3.AddAttribute(28, "Breakpoint", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Breakpoint>(
 #nullable restore
 #line 23 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                    Breakpoint.MdAndUp
@@ -435,7 +439,7 @@ __builder4.AddContent(24, CFullName);
                     ));
                     __builder3.AddAttribute(29, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIconButton>(30);
-                        __builder4.AddAttribute(31, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                        __builder4.AddAttribute(31, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                           () => OpenDrawer(Anchor.Right)
@@ -444,7 +448,7 @@ __builder4.AddContent(24, CFullName);
 #line hidden
 #nullable disable
                         )));
-                        __builder4.AddAttribute(32, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(32, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                   Icons.Material.Outlined.PeopleAlt
@@ -453,7 +457,7 @@ __builder4.AddContent(24, CFullName);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(33, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(33, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                             Color.Inherit
@@ -496,7 +500,7 @@ __builder4.AddContent(24, CFullName);
 #line hidden
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudAvatar>(44);
-                __builder2.AddAttribute(45, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                __builder2.AddAttribute(45, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                               Color.Secondary
@@ -507,13 +511,15 @@ __builder4.AddContent(24, CFullName);
                 ));
                 __builder2.AddAttribute(46, "Style", "height:50px; width:50px;");
                 __builder2.AddAttribute(47, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(48, 
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder3.AddContent(48, message.FromUserFullName.ToUpper().FirstOrDefault());
+                                                                                                 message.FromUserFullName.ToUpper().FirstOrDefault()
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -527,7 +533,7 @@ __builder3.AddContent(48, message.FromUserFullName.ToUpper().FirstOrDefault());
 #line hidden
 #nullable disable
                 __builder2.OpenComponent<MudBlazor.MudAvatar>(49);
-                __builder2.AddAttribute(50, "Image", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(50, "Image", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                message.FromUserImageURL
@@ -549,7 +555,7 @@ __builder3.AddContent(48, message.FromUserFullName.ToUpper().FirstOrDefault());
                 __builder2.AddMarkupContent(52, "\r\n                    ");
                 __builder2.OpenElement(53, "div");
                 __builder2.OpenComponent<MudBlazor.MudText>(54);
-                __builder2.AddAttribute(55, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                __builder2.AddAttribute(55, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                        Typo.body1
@@ -559,19 +565,21 @@ __builder3.AddContent(48, message.FromUserFullName.ToUpper().FirstOrDefault());
 #nullable disable
                 ));
                 __builder2.AddAttribute(56, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(57, 
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder3.AddContent(57, message.FromUserFullName);
+                                                    message.FromUserFullName
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(58, "\r\n                        ");
                 __builder2.OpenComponent<MudBlazor.MudText>(59);
-                __builder2.AddAttribute(60, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                __builder2.AddAttribute(60, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 43 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                        Typo.caption
@@ -582,19 +590,21 @@ __builder3.AddContent(57, message.FromUserFullName);
                 ));
                 __builder2.AddAttribute(61, "Style", "font-size: xx-small!important;");
                 __builder2.AddAttribute(62, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(63, 
 #nullable restore
 #line 43 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder3.AddContent(63, message.CreatedDate.ToString("G", CultureInfo.CurrentCulture));
+                                                                                             message.CreatedDate.ToString("G", CultureInfo.CurrentCulture)
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(64, "\r\n                        ");
                 __builder2.OpenComponent<MudBlazor.MudText>(65);
-                __builder2.AddAttribute(66, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                __builder2.AddAttribute(66, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                        Typo.body2
@@ -605,13 +615,15 @@ __builder3.AddContent(63, message.CreatedDate.ToString("G", CultureInfo.CurrentC
                 ));
                 __builder2.AddAttribute(67, "Style", " padding: 15px;background-color: var(--mud-palette-background-grey);border-radius: 5px;margin-top:5px");
                 __builder2.AddAttribute(68, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(69, 
 #nullable restore
 #line 44 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder3.AddContent(69, message.Message);
+                                                                                                                                                                  message.Message
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
@@ -627,7 +639,7 @@ __builder3.AddContent(69, message.Message);
                 __builder2.CloseElement();
                 __builder2.AddMarkupContent(70, "\r\n        ");
                 __builder2.OpenComponent<MudBlazor.MudPaper>(71);
-                __builder2.AddAttribute(72, "Elevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                __builder2.AddAttribute(72, "Elevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                              25
@@ -640,7 +652,7 @@ __builder3.AddContent(69, message.Message);
                 __builder2.AddAttribute(74, "Style", "");
                 __builder2.AddAttribute(75, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudTextField<string>>(76);
-                    __builder3.AddAttribute(77, "Placeholder", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(77, "Placeholder", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 50 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                    _localizer["Enter your message..."]
@@ -658,7 +670,7 @@ __builder3.AddContent(69, message.Message);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(79, "DisableUnderLine", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(79, "DisableUnderLine", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 50 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                                          true
@@ -668,7 +680,7 @@ __builder3.AddContent(69, message.Message);
 #nullable disable
                     ));
                     __builder3.AddAttribute(80, "Class", "mt-n2 mx-4");
-                    __builder3.AddAttribute(81, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                    __builder3.AddAttribute(81, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 51 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                               ()=> CurrentMessage
@@ -677,7 +689,7 @@ __builder3.AddContent(69, message.Message);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(82, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                    __builder3.AddAttribute(82, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 51 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                        CurrentMessage
@@ -686,11 +698,11 @@ __builder3.AddContent(69, message.Message);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(83, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => CurrentMessage = __value, CurrentMessage))));
+                    __builder3.AddAttribute(83, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => CurrentMessage = __value, CurrentMessage))));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(84, "\r\n            ");
                     __builder3.OpenComponent<MudBlazor.MudButton>(85);
-                    __builder3.AddAttribute(86, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(86, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                 SubmitAsync
@@ -699,7 +711,7 @@ __builder3.AddContent(69, message.Message);
 #line hidden
 #nullable disable
                     )));
-                    __builder3.AddAttribute(87, "StartIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(87, "StartIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                          Icons.Material.Outlined.Send
@@ -708,7 +720,7 @@ __builder3.AddContent(69, message.Message);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(88, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(88, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                               Color.Secondary
@@ -717,7 +729,7 @@ __builder3.AddContent(69, message.Message);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(89, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(89, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                            ButtonType.Button
@@ -727,13 +739,15 @@ __builder3.AddContent(69, message.Message);
 #nullable disable
                     ));
                     __builder3.AddAttribute(90, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(91, 
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder4.AddContent(91, _localizer["Send"]);
+                                                                                                                                               _localizer["Send"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -745,7 +759,7 @@ __builder4.AddContent(91, _localizer["Send"]);
             __builder.CloseComponent();
             __builder.AddMarkupContent(92, "\r\n    ");
             __builder.OpenComponent<MudBlazor.MudHidden>(93);
-            __builder.AddAttribute(94, "Breakpoint", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Breakpoint>(
+            __builder.AddAttribute(94, "Breakpoint", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Breakpoint>(
 #nullable restore
 #line 55 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                            Breakpoint.SmAndDown
@@ -756,7 +770,7 @@ __builder4.AddContent(91, _localizer["Send"]);
             ));
             __builder.AddAttribute(95, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenComponent<MudBlazor.MudPaper>(96);
-                __builder2.AddAttribute(97, "Elevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                __builder2.AddAttribute(97, "Elevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 56 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                              25
@@ -769,7 +783,7 @@ __builder4.AddContent(91, _localizer["Send"]);
                 __builder2.AddAttribute(99, "MinWidth", "350px");
                 __builder2.AddAttribute(100, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudToolBar>(101);
-                    __builder3.AddAttribute(102, "Dense", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(102, "Dense", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 57 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                true
@@ -780,7 +794,7 @@ __builder4.AddContent(91, _localizer["Send"]);
                     ));
                     __builder3.AddAttribute(103, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudText>(104);
-                        __builder4.AddAttribute(105, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(105, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                Typo.h6
@@ -789,7 +803,7 @@ __builder4.AddContent(91, _localizer["Send"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(106, "Inline", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(106, "Inline", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 58 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                 true
@@ -806,7 +820,7 @@ __builder4.AddContent(91, _localizer["Send"]);
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(110, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudText>(111);
-                        __builder4.AddAttribute(112, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(112, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 59 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                Typo.h6
@@ -816,13 +830,15 @@ __builder4.AddContent(91, _localizer["Send"]);
 #nullable disable
                         ));
                         __builder4.AddAttribute(113, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(114, 
 #nullable restore
 #line 59 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder5.AddContent(114, _localizer["contacts"]);
+                                         _localizer["contacts"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -834,7 +850,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
                     __builder3.AddAttribute(117, "class", "d-flex flex-column px-4");
                     __builder3.AddAttribute(118, "style", "max-height:70vh;min-height:70vh; overflow:scroll;");
                     __builder3.OpenComponent<MudBlazor.MudList>(119);
-                    __builder3.AddAttribute(120, "Clickable", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(120, "Clickable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 62 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                     true
@@ -854,7 +870,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
 #nullable disable
                         __builder4.OpenComponent<MudBlazor.MudListItem>(122);
                         __builder4.AddAttribute(123, "Class", "pa-0 px-2");
-                        __builder4.AddAttribute(124, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                        __builder4.AddAttribute(124, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 65 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                   () => LoadUserChat(user.Id)
@@ -870,7 +886,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
                             __builder5.AddAttribute(129, "class", "mr-4");
                             __builder5.OpenComponent<MudBlazor.MudBadge>(130);
                             __builder5.AddAttribute(131, "Class", "my-2");
-                            __builder5.AddAttribute(132, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                            __builder5.AddAttribute(132, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 68 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                     GetUserStatusBadgeColor(user.IsOnline)
@@ -879,7 +895,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(133, "Overlap", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                            __builder5.AddAttribute(133, "Overlap", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 68 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                       true
@@ -888,7 +904,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(134, "Bottom", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                            __builder5.AddAttribute(134, "Bottom", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 68 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                                     true
@@ -897,7 +913,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(135, "Dot", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                            __builder5.AddAttribute(135, "Dot", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 68 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                                                true
@@ -925,7 +941,7 @@ __builder5.AddContent(114, _localizer["contacts"]);
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudAvatar>(137);
-                                __builder6.AddAttribute(138, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(138, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 73 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                   Color.Secondary
@@ -936,13 +952,15 @@ __builder5.AddContent(114, _localizer["contacts"]);
                                 ));
                                 __builder6.AddAttribute(139, "Style", "height:50px; width:50px;");
                                 __builder6.AddAttribute(140, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(141, 
 #nullable restore
 #line 73 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder7.AddContent(141, user.UserName.ToUpper().FirstOrDefault());
+                                                                                                                     user.UserName.ToUpper().FirstOrDefault()
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -956,7 +974,7 @@ __builder7.AddContent(141, user.UserName.ToUpper().FirstOrDefault());
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudAvatar>(142);
-                                __builder6.AddAttribute(143, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(143, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 77 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                   Color.Dark
@@ -967,13 +985,15 @@ __builder7.AddContent(141, user.UserName.ToUpper().FirstOrDefault());
                                 ));
                                 __builder6.AddAttribute(144, "Style", "height:50px; width:50px;");
                                 __builder6.AddAttribute(145, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(146, 
 #nullable restore
 #line 77 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder7.AddContent(146, user.UserName.ToUpper().FirstOrDefault());
+                                                                                                                user.UserName.ToUpper().FirstOrDefault()
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -995,7 +1015,7 @@ __builder7.AddContent(146, user.UserName.ToUpper().FirstOrDefault());
 #line hidden
 #nullable disable
                                 __builder6.OpenComponent<MudBlazor.MudAvatar>(147);
-                                __builder6.AddAttribute(148, "Image", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                __builder6.AddAttribute(148, "Image", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 82 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                user.ProfilePictureDataUrl
@@ -1020,7 +1040,7 @@ __builder7.AddContent(146, user.UserName.ToUpper().FirstOrDefault());
                             __builder5.AddMarkupContent(150, "\r\n                                ");
                             __builder5.OpenElement(151, "div");
                             __builder5.OpenComponent<MudBlazor.MudText>(152);
-                            __builder5.AddAttribute(153, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                            __builder5.AddAttribute(153, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 87 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                    Typo.body2
@@ -1031,27 +1051,31 @@ __builder7.AddContent(146, user.UserName.ToUpper().FirstOrDefault());
                             ));
                             __builder5.AddAttribute(154, "Class", "mt-3 mb-n2");
                             __builder5.AddAttribute(155, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(156, 
 #nullable restore
 #line 87 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder6.AddContent(156, user.FirstName);
+                                                                                   user.FirstName
 
 #line default
 #line hidden
 #nullable disable
+                                );
                                 __builder6.AddContent(157, " ");
+                                __builder6.AddContent(158, 
 #nullable restore
 #line 87 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder6.AddContent(158, user.LastName);
+                                                                                                   user.LastName
 
 #line default
 #line hidden
 #nullable disable
+                                );
                             }
                             ));
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(159, "\r\n                                    ");
                             __builder5.OpenComponent<MudBlazor.MudText>(160);
-                            __builder5.AddAttribute(161, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                            __builder5.AddAttribute(161, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 88 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                    Typo.caption
@@ -1062,13 +1086,15 @@ __builder6.AddContent(158, user.LastName);
                             ));
                             __builder5.AddAttribute(162, "Style", "font-size: xx-small!important;");
                             __builder5.AddAttribute(163, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(164, 
 #nullable restore
 #line 88 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder6.AddContent(164, user.EmailAddress);
+                                                                                                         user.EmailAddress
 
 #line default
 #line hidden
 #nullable disable
+                                );
                             }
                             ));
                             __builder5.CloseComponent();
@@ -1097,7 +1123,7 @@ __builder6.AddContent(164, user.EmailAddress);
             __builder.CloseElement();
             __builder.AddMarkupContent(165, "\r\n");
             __builder.OpenComponent<MudBlazor.MudDrawer>(166);
-            __builder.AddAttribute(167, "Anchor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Anchor>(
+            __builder.AddAttribute(167, "Anchor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Anchor>(
 #nullable restore
 #line 98 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                         ChatDrawer
@@ -1106,7 +1132,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(168, "Elevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+            __builder.AddAttribute(168, "Elevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 98 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                1
@@ -1115,7 +1141,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(169, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.DrawerVariant>(
+            __builder.AddAttribute(169, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.DrawerVariant>(
 #nullable restore
 #line 98 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                             DrawerVariant.Temporary
@@ -1124,7 +1150,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(170, "Open", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+            __builder.AddAttribute(170, "Open", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 98 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                         _open
@@ -1133,12 +1159,12 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(171, "OpenChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.Boolean>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.Boolean>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _open = __value, _open))));
+            __builder.AddAttribute(171, "OpenChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.Boolean>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.Boolean>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _open = __value, _open))));
             __builder.AddAttribute(172, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.OpenElement(173, "div");
                 __builder2.AddAttribute(174, "class", "pa-3");
                 __builder2.OpenComponent<MudBlazor.MudList>(175);
-                __builder2.AddAttribute(176, "Clickable", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                __builder2.AddAttribute(176, "Clickable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 100 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                             true
@@ -1158,7 +1184,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudListItem>(178);
                     __builder3.AddAttribute(179, "Class", "pa-0 px-2");
-                    __builder3.AddAttribute(180, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(180, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 103 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                           () => LoadUserChat(user.Id)
@@ -1174,7 +1200,7 @@ __builder6.AddContent(164, user.EmailAddress);
                         __builder4.AddAttribute(185, "class", "mr-4");
                         __builder4.OpenComponent<MudBlazor.MudBadge>(186);
                         __builder4.AddAttribute(187, "Class", "my-2");
-                        __builder4.AddAttribute(188, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(188, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 106 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                             GetUserStatusBadgeColor(user.IsOnline)
@@ -1183,7 +1209,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(189, "Overlap", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(189, "Overlap", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 106 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                               true
@@ -1192,7 +1218,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(190, "Bottom", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(190, "Bottom", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 106 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                             true
@@ -1201,7 +1227,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(191, "Dot", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(191, "Dot", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 106 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                                                                                        true
@@ -1229,7 +1255,7 @@ __builder6.AddContent(164, user.EmailAddress);
 #line hidden
 #nullable disable
                             __builder5.OpenComponent<MudBlazor.MudAvatar>(193);
-                            __builder5.AddAttribute(194, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                            __builder5.AddAttribute(194, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 111 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                           Color.Secondary
@@ -1240,13 +1266,15 @@ __builder6.AddContent(164, user.EmailAddress);
                             ));
                             __builder5.AddAttribute(195, "Style", "height: 50px; width: 50px;");
                             __builder5.AddAttribute(196, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(197, 
 #nullable restore
 #line 111 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder6.AddContent(197, user.UserName.ToUpper().FirstOrDefault());
+                                                                                                               user.UserName.ToUpper().FirstOrDefault()
 
 #line default
 #line hidden
 #nullable disable
+                                );
                             }
                             ));
                             __builder5.CloseComponent();
@@ -1260,7 +1288,7 @@ __builder6.AddContent(197, user.UserName.ToUpper().FirstOrDefault());
 #line hidden
 #nullable disable
                             __builder5.OpenComponent<MudBlazor.MudAvatar>(198);
-                            __builder5.AddAttribute(199, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                            __builder5.AddAttribute(199, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 115 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                           Color.Dark
@@ -1271,13 +1299,15 @@ __builder6.AddContent(197, user.UserName.ToUpper().FirstOrDefault());
                             ));
                             __builder5.AddAttribute(200, "Style", "height: 50px; width: 50px;");
                             __builder5.AddAttribute(201, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(202, 
 #nullable restore
 #line 115 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder6.AddContent(202, user.UserName.ToUpper().FirstOrDefault());
+                                                                                                          user.UserName.ToUpper().FirstOrDefault()
 
 #line default
 #line hidden
 #nullable disable
+                                );
                             }
                             ));
                             __builder5.CloseComponent();
@@ -1299,7 +1329,7 @@ __builder6.AddContent(202, user.UserName.ToUpper().FirstOrDefault());
 #line hidden
 #nullable disable
                             __builder5.OpenComponent<MudBlazor.MudAvatar>(203);
-                            __builder5.AddAttribute(204, "Image", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(204, "Image", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 120 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                        user.ProfilePictureDataUrl
@@ -1324,7 +1354,7 @@ __builder6.AddContent(202, user.UserName.ToUpper().FirstOrDefault());
                         __builder4.AddMarkupContent(206, "\r\n                        ");
                         __builder4.OpenElement(207, "div");
                         __builder4.OpenComponent<MudBlazor.MudText>(208);
-                        __builder4.AddAttribute(209, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(209, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 125 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                            Typo.body2
@@ -1335,27 +1365,31 @@ __builder6.AddContent(202, user.UserName.ToUpper().FirstOrDefault());
                         ));
                         __builder4.AddAttribute(210, "Class", "mt-3 mb-n2");
                         __builder4.AddAttribute(211, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(212, 
 #nullable restore
 #line 125 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder5.AddContent(212, user.FirstName);
+                                                                           user.FirstName
 
 #line default
 #line hidden
 #nullable disable
+                            );
                             __builder5.AddContent(213, " ");
+                            __builder5.AddContent(214, 
 #nullable restore
 #line 125 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder5.AddContent(214, user.LastName);
+                                                                                           user.LastName
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(215, "\r\n                            ");
                         __builder4.OpenComponent<MudBlazor.MudText>(216);
-                        __builder4.AddAttribute(217, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(217, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 126 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                            Typo.caption
@@ -1366,13 +1400,15 @@ __builder5.AddContent(214, user.LastName);
                         ));
                         __builder4.AddAttribute(218, "Style", "font-size: xx-small!important;");
                         __builder4.AddAttribute(219, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(220, 
 #nullable restore
 #line 126 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder5.AddContent(220, user.EmailAddress);
+                                                                                                 user.EmailAddress
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -1398,7 +1434,7 @@ __builder5.AddContent(220, user.EmailAddress);
             __builder.AddMarkupContent(221, "\r\n");
             __builder.OpenComponent<MudBlazor.MudAlert>(222);
             __builder.AddAttribute(223, "Style", "margin-top:10px;margin-bottom:20px");
-            __builder.AddAttribute(224, "Severity", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Severity>(
+            __builder.AddAttribute(224, "Severity", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Severity>(
 #nullable restore
 #line 134 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
                                                                Severity.Success
@@ -1408,24 +1444,28 @@ __builder5.AddContent(220, user.EmailAddress);
 #nullable disable
             ));
             __builder.AddAttribute(225, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
+                __builder2.AddContent(226, 
 #nullable restore
 #line 134 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder2.AddContent(226, _localizer["Want to understand how Chat is implemented in BlazorHero ? Refer this"]);
+                                                                                  _localizer["Want to understand how Chat is implemented in BlazorHero ? Refer this"]
 
 #line default
 #line hidden
 #nullable disable
+                );
                 __builder2.AddContent(227, " ");
                 __builder2.OpenComponent<MudBlazor.MudLink>(228);
                 __builder2.AddAttribute(229, "Href", "https://codewithmukesh.com/blog/realtime-chat-application-with-blazor");
                 __builder2.AddAttribute(230, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(231, 
 #nullable restore
 #line 134 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Communication\Chat.razor"
-__builder3.AddContent(231, _localizer["detailed guide for more."]);
+                                                                                                                                                                                                                                                             _localizer["detailed guide for more."]
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();

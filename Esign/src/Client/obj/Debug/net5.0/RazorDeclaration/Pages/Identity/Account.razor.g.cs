@@ -285,7 +285,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/account")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Account : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

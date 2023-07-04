@@ -288,7 +288,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<MudBlazor.MudThemeProvider>(0);
-            __builder.AddAttribute(1, "Theme", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.MudTheme>(
+            __builder.AddAttribute(1, "Theme", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.MudTheme>(
 #nullable restore
 #line 4 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                          BlazorHeroTheme.DefaultTheme
@@ -303,7 +303,7 @@ using Esign.Client.Extensions;
             __builder.CloseComponent();
             __builder.AddMarkupContent(4, "\r\n");
             __builder.OpenComponent<MudBlazor.MudContainer>(5);
-            __builder.AddAttribute(6, "MaxWidth", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.MaxWidth>(
+            __builder.AddAttribute(6, "MaxWidth", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.MaxWidth>(
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                         MaxWidth.Small
@@ -317,7 +317,7 @@ using Esign.Client.Extensions;
                 __builder2.AddAttribute(9, "class", "d-flex flex-column");
                 __builder2.AddMarkupContent(10, "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 569 384.7\" width=\"550\" height=\"371.84\" style=\"margin-top:25%;\"><path d=\"M600.18,328.75v60.74L705.4,450.24V389.5Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path>\r\n            <path d=\"M600.18,450.24V511L705.4,450.24V389.5Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M495.15,389.5v60.74l105-60.75V328.75Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M495.15,389.49v60.75l105,60.74V450.24Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path>\r\n            <path d=\"M419.18,327.71l52.06,30.05L500,341.17l-52.06-30.05Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M471.24,276.38V436.64l-52.07-30.06V126.28l52.06,30.06\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path>\r\n            <path d=\"M315.12,387.83l52.06,30.05,104.06-60.12L419.17,327.7Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M415.43,188.31l-52.06-30.05L315.12,387.82l52.06,30.06Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path>\r\n            <path d=\"M363.37,158.26l52.06,30.05,55.8-32-52.06-30Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M751.3,311.12l-52.06,30.05L728,357.76l52.06-30.05Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path>\r\n            <path d=\"M728,156.34l52.06-30V406.58L728,436.64V276.39\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M780.06,327.7,728,357.76l104.06,60.12,52.06-30.05Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path>\r\n            <path d=\"M832.06,417.88l52.06-30.06L835.87,158.26l-52.06,30.05Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#1E88E5\"></path>\r\n            <path d=\"M780.07,126.29,728,156.34l55.8,32,52.06-30.05Z\" transform=\"translate(-315.12 -126.28)\" style=\"fill:#0069c0\"></path></svg>\r\n        ");
                 __builder2.OpenComponent<MudBlazor.MudText>(11);
-                __builder2.AddAttribute(12, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                __builder2.AddAttribute(12, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                        Typo.h5
@@ -327,7 +327,7 @@ using Esign.Client.Extensions;
 #nullable disable
                 ));
                 __builder2.AddAttribute(13, "Class", "mt-6");
-                __builder2.AddAttribute(14, "Align", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
+                __builder2.AddAttribute(14, "Align", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                                                     Align.Center
@@ -337,19 +337,21 @@ using Esign.Client.Extensions;
 #nullable disable
                 ));
                 __builder2.AddAttribute(15, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddContent(16, 
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
-__builder3.AddContent(16, _localizer["Message"]);
+                                                                   _localizer["Message"]
 
 #line default
 #line hidden
 #nullable disable
+                    );
                 }
                 ));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(17, "\r\n        ");
                 __builder2.OpenComponent<MudBlazor.MudItem>(18);
-                __builder2.AddAttribute(19, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                __builder2.AddAttribute(19, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                      12
@@ -358,7 +360,7 @@ __builder3.AddContent(16, _localizer["Message"]);
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(20, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                __builder2.AddAttribute(20, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                              12
@@ -367,7 +369,7 @@ __builder3.AddContent(16, _localizer["Message"]);
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(21, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                __builder2.AddAttribute(21, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                                      12
@@ -380,7 +382,7 @@ __builder3.AddContent(16, _localizer["Message"]);
                     __builder3.OpenElement(23, "div");
                     __builder3.AddAttribute(24, "class", "pa-4 justify-center my-4 mud-text-align-center");
                     __builder3.OpenComponent<MudBlazor.MudButton>(25);
-                    __builder3.AddAttribute(26, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(26, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                                     Variant.Filled
@@ -389,7 +391,7 @@ __builder3.AddContent(16, _localizer["Message"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(27, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(27, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                                                            Color.Primary
@@ -398,7 +400,7 @@ __builder3.AddContent(16, _localizer["Message"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(28, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                    __builder3.AddAttribute(28, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
                                                                                 Size.Large
@@ -409,13 +411,15 @@ __builder3.AddContent(16, _localizer["Message"]);
                     ));
                     __builder3.AddAttribute(29, "Link", "/");
                     __builder3.AddAttribute(30, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(31, 
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\NotFoundLayout.razor"
-__builder4.AddContent(31, _localizer["GoHome"]);
+                                                                                                      _localizer["GoHome"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();

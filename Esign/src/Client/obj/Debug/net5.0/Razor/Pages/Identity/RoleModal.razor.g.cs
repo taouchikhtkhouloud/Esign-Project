@@ -288,7 +288,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                   RoleModel
@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                             SaveAsync
@@ -332,7 +332,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(9);
-                    __builder3.AddAttribute(10, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(10, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                    Typo.h6
@@ -343,7 +343,7 @@ using Esign.Client.Extensions;
                     ));
                     __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(12);
-                        __builder4.AddAttribute(13, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(13, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 11 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                         Icons.Material.Filled.Add
@@ -355,13 +355,15 @@ using Esign.Client.Extensions;
                         __builder4.AddAttribute(14, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(15, "\r\n                        ");
+                        __builder4.AddContent(16, 
 #nullable restore
 #line 12 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
-__builder4.AddContent(16, _localizer["Add Role"]);
+                         _localizer["Add Role"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -375,7 +377,7 @@ __builder4.AddContent(16, _localizer["Add Role"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudText>(17);
-                    __builder3.AddAttribute(18, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                    __builder3.AddAttribute(18, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                    Typo.h6
@@ -386,7 +388,7 @@ __builder4.AddContent(16, _localizer["Add Role"]);
                     ));
                     __builder3.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudIcon>(20);
-                        __builder4.AddAttribute(21, "Icon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(21, "Icon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 18 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                         Icons.Material.Filled.Update
@@ -398,13 +400,15 @@ __builder4.AddContent(16, _localizer["Add Role"]);
                         __builder4.AddAttribute(22, "Class", "mr-3 mb-n1");
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(23, "\r\n                        ");
+                        __builder4.AddContent(24, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
-__builder4.AddContent(24, _localizer["Update Role"]);
+                         _localizer["Update Role"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -443,7 +447,7 @@ __builder4.AddContent(24, _localizer["Update Role"]);
 #line default
 #line hidden
 #nullable disable
-                    , 31, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => RoleModel.Id = __value, RoleModel.Id)));
+                    , 31, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => RoleModel.Id = __value, RoleModel.Id)));
                     __builder3.AddMarkupContent(32, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RoleModal.TypeInference.CreateMudTextField_1(__builder3, 33, 34, 
 #nullable restore
@@ -469,7 +473,7 @@ __builder4.AddContent(24, _localizer["Update Role"]);
 #line default
 #line hidden
 #nullable disable
-                    , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => RoleModel.Name = __value, RoleModel.Name)));
+                    , 37, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => RoleModel.Name = __value, RoleModel.Name)));
                     __builder3.AddMarkupContent(38, "\r\n            ");
                     __Blazor.Esign.Client.Pages.Identity.RoleModal.TypeInference.CreateMudTextField_2(__builder3, 39, 40, 
 #nullable restore
@@ -495,12 +499,12 @@ __builder4.AddContent(24, _localizer["Update Role"]);
 #line default
 #line hidden
 #nullable disable
-                    , 43, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => RoleModel.Description = __value, RoleModel.Description)));
+                    , 43, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => RoleModel.Description = __value, RoleModel.Description)));
                 }
                 ));
                 __builder2.AddAttribute(44, "DialogActions", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudButton>(45);
-                    __builder3.AddAttribute(46, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(46, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                 Variant.Filled
@@ -509,7 +513,7 @@ __builder4.AddContent(24, _localizer["Update Role"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(47, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                    __builder3.AddAttribute(47, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                          Cancel
@@ -519,13 +523,15 @@ __builder4.AddContent(24, _localizer["Update Role"]);
 #nullable disable
                     )));
                     __builder3.AddAttribute(48, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(49, 
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
-__builder4.AddContent(49, _localizer["Cancel"]);
+                                                                  _localizer["Cancel"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -539,7 +545,7 @@ __builder4.AddContent(49, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(50);
-                    __builder3.AddAttribute(51, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(51, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                         Variant.Filled
@@ -548,7 +554,7 @@ __builder4.AddContent(49, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(52, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(52, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                                     ButtonType.Submit
@@ -557,7 +563,7 @@ __builder4.AddContent(49, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(53, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(53, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                                                                    !Validated
@@ -566,7 +572,7 @@ __builder4.AddContent(49, _localizer["Cancel"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(54, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(54, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                                                                                        Color.Success
@@ -576,13 +582,15 @@ __builder4.AddContent(49, _localizer["Cancel"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(55, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(56, 
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
-__builder4.AddContent(56, _localizer["Save Role"]);
+                                                                                                                                       _localizer["Save Role"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();
@@ -596,7 +604,7 @@ __builder4.AddContent(56, _localizer["Save Role"]);
 #line hidden
 #nullable disable
                     __builder3.OpenComponent<MudBlazor.MudButton>(57);
-                    __builder3.AddAttribute(58, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                    __builder3.AddAttribute(58, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                         Variant.Filled
@@ -605,7 +613,7 @@ __builder4.AddContent(56, _localizer["Save Role"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(59, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                    __builder3.AddAttribute(59, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                                     ButtonType.Submit
@@ -614,7 +622,7 @@ __builder4.AddContent(56, _localizer["Save Role"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(60, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(60, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                                                                    !Validated
@@ -623,7 +631,7 @@ __builder4.AddContent(56, _localizer["Save Role"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(61, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                    __builder3.AddAttribute(61, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
                                                                                                                        Color.Secondary
@@ -633,13 +641,15 @@ __builder4.AddContent(56, _localizer["Save Role"]);
 #nullable disable
                     ));
                     __builder3.AddAttribute(62, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(63, 
 #nullable restore
 #line 38 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\RoleModal.razor"
-__builder4.AddContent(63, _localizer["Update Role"]);
+                                                                                                                                         _localizer["Update Role"]
 
 #line default
 #line hidden
 #nullable disable
+                        );
                     }
                     ));
                     __builder3.CloseComponent();

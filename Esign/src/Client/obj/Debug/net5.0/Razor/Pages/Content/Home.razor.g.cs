@@ -293,7 +293,7 @@ using Esign.Client.Extensions;
                 __builder2.OpenComponent<MudBlazor.MudGrid>(2);
                 __builder2.AddAttribute(3, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudItem>(4);
-                    __builder3.AddAttribute(5, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(5, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                      12
@@ -302,7 +302,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(6, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(6, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                              12
@@ -311,7 +311,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(7, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(7, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                      12
@@ -327,7 +327,7 @@ using Esign.Client.Extensions;
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(10, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(11);
-                    __builder3.AddAttribute(12, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(12, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                      12
@@ -336,7 +336,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(13, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(13, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                              12
@@ -345,7 +345,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(14, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(14, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                      12
@@ -356,7 +356,7 @@ using Esign.Client.Extensions;
                     ));
                     __builder3.AddAttribute(15, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudText>(16);
-                        __builder4.AddAttribute(17, "Align", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
+                        __builder4.AddAttribute(17, "Align", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                             Align.Center
@@ -365,7 +365,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(18, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(18, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                 Typo.h2
@@ -375,20 +375,22 @@ using Esign.Client.Extensions;
 #nullable disable
                         ));
                         __builder4.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(20, 
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(20, _localizer["Title"]);
+                                                          _localizer["Title"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                             __builder5.AddContent(21, " v2.2");
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(22, "\r\n            ");
                         __builder4.OpenComponent<MudBlazor.MudText>(23);
-                        __builder4.AddAttribute(24, "Align", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
+                        __builder4.AddAttribute(24, "Align", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                             Align.Center
@@ -397,7 +399,7 @@ __builder5.AddContent(20, _localizer["Title"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(25, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(25, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                 Typo.h5
@@ -408,13 +410,15 @@ __builder5.AddContent(20, _localizer["Title"]);
                         ));
                         __builder4.AddAttribute(26, "Class", "smaller");
                         __builder4.AddAttribute(27, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(28, 
 #nullable restore
 #line 15 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(28, _localizer["Description"]);
+                                                                          _localizer["Description"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -423,7 +427,7 @@ __builder5.AddContent(28, _localizer["Description"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(29, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(30);
-                    __builder3.AddAttribute(31, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(31, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                      12
@@ -432,7 +436,7 @@ __builder5.AddContent(28, _localizer["Description"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(32, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(32, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                              12
@@ -441,7 +445,7 @@ __builder5.AddContent(28, _localizer["Description"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(33, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(33, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 17 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                      12
@@ -452,7 +456,7 @@ __builder5.AddContent(28, _localizer["Description"]);
                     ));
                     __builder3.AddAttribute(34, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudText>(35);
-                        __builder4.AddAttribute(36, "Align", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
+                        __builder4.AddAttribute(36, "Align", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Align>(
 #nullable restore
 #line 18 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                             Align.Center
@@ -462,13 +466,15 @@ __builder5.AddContent(28, _localizer["Description"]);
 #nullable disable
                         ));
                         __builder4.AddAttribute(37, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(38, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(38, _localizer["Blazor Hero Description"]);
+                 _localizer["Blazor Hero Description"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                             __builder5.AddContent(39, " ");
                             __builder5.OpenComponent<MudBlazor.MudLink>(40);
                             __builder5.AddAttribute(41, "Href", "https://www.mudblazor.com");
@@ -479,13 +485,15 @@ __builder5.AddContent(38, _localizer["Blazor Hero Description"]);
                             ));
                             __builder5.CloseComponent();
                             __builder5.AddContent(45, " ");
+                            __builder5.AddContent(46, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(46, _localizer["Component Library"]);
+                                                                                                                                      _localizer["Component Library"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                             __builder5.AddMarkupContent(47, ".\r\n            ");
                         }
                         ));
@@ -495,7 +503,7 @@ __builder5.AddContent(46, _localizer["Component Library"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(48, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(49);
-                    __builder3.AddAttribute(50, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(50, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 22 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                       12
@@ -504,7 +512,7 @@ __builder5.AddContent(46, _localizer["Component Library"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(51, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(51, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 22 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                               12
@@ -513,7 +521,7 @@ __builder5.AddContent(46, _localizer["Component Library"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(52, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(52, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 22 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                       12
@@ -525,7 +533,7 @@ __builder5.AddContent(46, _localizer["Component Library"]);
                     __builder3.AddAttribute(53, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudAlert>(54);
                         __builder4.AddAttribute(55, "Style", "margin-top:10px;justify-content:center");
-                        __builder4.AddAttribute(56, "Severity", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Severity>(
+                        __builder4.AddAttribute(56, "Severity", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Severity>(
 #nullable restore
 #line 23 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                                                Severity.Info
@@ -535,24 +543,28 @@ __builder5.AddContent(46, _localizer["Component Library"]);
 #nullable disable
                         ));
                         __builder4.AddAttribute(57, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(58, 
 #nullable restore
 #line 23 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(58, _localizer["Celebrating 1,500 Stars on Github!"]);
+                                                                                               _localizer["Celebrating 1,500 Stars on Github!"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                             __builder5.AddContent(59, " ");
                             __builder5.OpenComponent<MudBlazor.MudLink>(60);
                             __builder5.AddAttribute(61, "Href", "https://github.com/blazorhero/CleanArchitecture/stargazers");
                             __builder5.AddAttribute(62, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(63, 
 #nullable restore
 #line 23 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
+                                                                                                                                                                                                                            _localizer["Liked BlazorHero? Star us on Github!"]
 
 #line default
 #line hidden
 #nullable disable
+                                );
                             }
                             ));
                             __builder5.CloseComponent();
@@ -564,7 +576,7 @@ __builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(64, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(65);
-                    __builder3.AddAttribute(66, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(66, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                      12
@@ -573,7 +585,7 @@ __builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(67, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(67, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                              12
@@ -582,7 +594,7 @@ __builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(68, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(68, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                      12
@@ -595,7 +607,7 @@ __builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
                         __builder4.OpenElement(70, "div");
                         __builder4.AddAttribute(71, "class", "pa-4 justify-center my-4 mud-text-align-center");
                         __builder4.OpenComponent<MudBlazor.MudButton>(72);
-                        __builder4.AddAttribute(73, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(73, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                     Variant.Filled
@@ -604,7 +616,7 @@ __builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(74, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(74, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                            Color.Primary
@@ -616,19 +628,21 @@ __builder6.AddContent(63, _localizer["Liked BlazorHero? Star us on Github!"]);
                         __builder4.AddAttribute(75, "Link", "https://codewithmukesh.com/blazorhero");
                         __builder4.AddAttribute(76, "Target", "_blank");
                         __builder4.AddAttribute(77, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(78, 
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(78, _localizer["Project Page"]);
+                                                                                                                                        _localizer["Project Page"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(79, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudButton>(80);
-                        __builder4.AddAttribute(81, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(81, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                     Variant.Filled
@@ -637,7 +651,7 @@ __builder5.AddContent(78, _localizer["Project Page"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(82, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(82, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                            Color.Secondary
@@ -649,19 +663,21 @@ __builder5.AddContent(78, _localizer["Project Page"]);
                         __builder4.AddAttribute(83, "Link", "https://www.buymeacoffee.com/codewithmukesh");
                         __builder4.AddAttribute(84, "Target", "_blank");
                         __builder4.AddAttribute(85, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(86, 
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(86, _localizer["Support Me"]);
+                                                                                                                                                _localizer["Support Me"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
                         __builder4.AddMarkupContent(87, "\r\n                ");
                         __builder4.OpenComponent<MudBlazor.MudButton>(88);
-                        __builder4.AddAttribute(89, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(89, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 29 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                     Variant.Filled
@@ -670,7 +686,7 @@ __builder5.AddContent(86, _localizer["Support Me"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(90, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(90, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 29 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                            Color.Surface
@@ -682,13 +698,15 @@ __builder5.AddContent(86, _localizer["Support Me"]);
                         __builder4.AddAttribute(91, "Link", "https://blazorhero.github.io/docs/");
                         __builder4.AddAttribute(92, "Target", "_blank");
                         __builder4.AddAttribute(93, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(94, 
 #nullable restore
 #line 29 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
+                                                                                                                                     _localizer["Documentation - Coming Soon"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -698,7 +716,7 @@ __builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(95, "\r\n\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(96);
-                    __builder3.AddAttribute(97, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(97, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                      12
@@ -707,7 +725,7 @@ __builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(98, "sm", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(98, "sm", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                              12
@@ -716,7 +734,7 @@ __builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(99, "md", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(99, "md", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                      12
@@ -729,7 +747,7 @@ __builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
                         __builder4.OpenComponent<MudBlazor.MudExpansionPanels>(101);
                         __builder4.AddAttribute(102, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
                             __builder5.OpenComponent<MudBlazor.MudExpansionPanel>(103);
-                            __builder5.AddAttribute(104, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(104, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                           _localizer["Getting Started"]
@@ -738,7 +756,7 @@ __builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(105, "MaxHeight", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32?>(
+                            __builder5.AddAttribute(105, "MaxHeight", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32?>(
 #nullable restore
 #line 35 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                                                     150
@@ -748,16 +766,18 @@ __builder5.AddContent(94, _localizer["Documentation - Coming Soon"]);
 #nullable disable
                             ));
                             __builder5.AddAttribute(106, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(107, 
 #nullable restore
 #line 36 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder6.AddContent(107, _localizer["Increase you are stuck anywhere or have any queries regarding this implementation, I have compiled a Quick Start Guide for you reference."]);
+                     _localizer["Increase you are stuck anywhere or have any queries regarding this implementation, I have compiled a Quick Start Guide for you reference."]
 
 #line default
 #line hidden
 #nullable disable
+                                );
                                 __builder6.AddMarkupContent(108, "\r\n                    ");
                                 __builder6.OpenComponent<MudBlazor.MudButton>(109);
-                                __builder6.AddAttribute(110, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                                __builder6.AddAttribute(110, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                         Variant.Text
@@ -766,7 +786,7 @@ __builder6.AddContent(107, _localizer["Increase you are stuck anywhere or have a
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(111, "DisableElevation", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(111, "DisableElevation", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                                         true
@@ -775,7 +795,7 @@ __builder6.AddContent(107, _localizer["Increase you are stuck anywhere or have a
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(112, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                                __builder6.AddAttribute(112, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                                                      Color.Secondary
@@ -787,13 +807,15 @@ __builder6.AddContent(107, _localizer["Increase you are stuck anywhere or have a
                                 __builder6.AddAttribute(113, "Link", "https://codewithmukesh.com/blazorhero");
                                 __builder6.AddAttribute(114, "Target", "_blank");
                                 __builder6.AddAttribute(115, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddContent(116, 
 #nullable restore
 #line 37 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder7.AddContent(116, _localizer["Read The Guide"]);
+                                                                                                                                                                    _localizer["Read The Guide"]
 
 #line default
 #line hidden
 #nullable disable
+                                    );
                                 }
                                 ));
                                 __builder6.CloseComponent();
@@ -802,7 +824,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(117, "\r\n                ");
                             __builder5.OpenComponent<MudBlazor.MudExpansionPanel>(118);
-                            __builder5.AddAttribute(119, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(119, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                           _localizer["Important Links"]
@@ -811,7 +833,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(120, "MaxHeight", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32?>(
+                            __builder5.AddAttribute(120, "MaxHeight", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32?>(
 #nullable restore
 #line 39 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                                                     500
@@ -822,7 +844,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
                             ));
                             __builder5.AddAttribute(121, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
                                 __builder6.OpenComponent<MudBlazor.MudList>(122);
-                                __builder6.AddAttribute(123, "Clickable", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(123, "Clickable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 40 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                         true
@@ -833,7 +855,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
                                 ));
                                 __builder6.AddAttribute(124, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(125);
-                                    __builder7.AddAttribute(126, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(126, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 41 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Github Repository : Do Not Forget to Leave a Star ;)"]
@@ -846,7 +868,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(128, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(129);
-                                    __builder7.AddAttribute(130, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(130, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 42 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Quick Start Guide"]
@@ -865,7 +887,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
                             __builder5.CloseComponent();
                             __builder5.AddMarkupContent(132, "\r\n                ");
                             __builder5.OpenComponent<MudBlazor.MudExpansionPanel>(133);
-                            __builder5.AddAttribute(134, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                            __builder5.AddAttribute(134, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 45 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                           _localizer["Learning Resources"]
@@ -874,7 +896,7 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(135, "MaxHeight", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32?>(
+                            __builder5.AddAttribute(135, "MaxHeight", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32?>(
 #nullable restore
 #line 45 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                                                                        1000
@@ -884,16 +906,18 @@ __builder7.AddContent(116, _localizer["Read The Guide"]);
 #nullable disable
                             ));
                             __builder5.AddAttribute(136, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddContent(137, 
 #nullable restore
 #line 46 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
-__builder6.AddContent(137, _localizer["Here are few articles that should help you get started with Blazor."]);
+                     _localizer["Here are few articles that should help you get started with Blazor."]
 
 #line default
 #line hidden
 #nullable disable
+                                );
                                 __builder6.AddMarkupContent(138, "\r\n                    ");
                                 __builder6.OpenComponent<MudBlazor.MudList>(139);
-                                __builder6.AddAttribute(140, "Clickable", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                __builder6.AddAttribute(140, "Clickable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 47 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                         true
@@ -904,7 +928,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                 ));
                                 __builder6.AddAttribute(141, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(142);
-                                    __builder7.AddAttribute(143, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(143, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 48 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Blazor For Beginners – Getting Started With Blazor"]
@@ -917,7 +941,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(145, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(146);
-                                    __builder7.AddAttribute(147, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(147, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Exploring Blazor Project Structure"]
@@ -930,7 +954,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(149, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(150);
-                                    __builder7.AddAttribute(151, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(151, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 50 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Onion Architecture In ASP.NET Core With CQRS – Detailed"]
@@ -943,7 +967,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(153, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(154);
-                                    __builder7.AddAttribute(155, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(155, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 51 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["How To Implement Blazor CRUD Using Entity Framework Core?"]
@@ -956,7 +980,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(157, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(158);
-                                    __builder7.AddAttribute(159, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(159, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 52 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Custom Authentication In Blazor WebAssembly – Detailed"]
@@ -969,7 +993,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(161, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(162);
-                                    __builder7.AddAttribute(163, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(163, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 53 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Implementing Blazor CRUD Using Mudblazor Component Library In .NET 5"]
@@ -982,7 +1006,7 @@ __builder6.AddContent(137, _localizer["Here are few articles that should help yo
                                     __builder7.CloseComponent();
                                     __builder7.AddMarkupContent(165, "\r\n                        ");
                                     __builder7.OpenComponent<MudBlazor.MudListItem>(166);
-                                    __builder7.AddAttribute(167, "Text", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                                    __builder7.AddAttribute(167, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 54 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Content\Home.razor"
                                             _localizer["Building A Chat Application With Blazor, Identity, And SignalR"]

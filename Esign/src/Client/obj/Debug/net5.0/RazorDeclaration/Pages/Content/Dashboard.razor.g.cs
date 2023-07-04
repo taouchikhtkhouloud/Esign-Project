@@ -292,7 +292,7 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/dashboard")]
     public partial class Dashboard : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

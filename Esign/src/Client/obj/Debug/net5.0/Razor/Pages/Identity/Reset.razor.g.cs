@@ -297,7 +297,7 @@ using Esign.Client.Extensions;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(0);
-            __builder.AddAttribute(1, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(1, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                   _resetPasswordModel
@@ -306,7 +306,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(2, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                       SubmitAsync
@@ -332,7 +332,7 @@ using Esign.Client.Extensions;
                 __builder2.OpenComponent<MudBlazor.MudGrid>(7);
                 __builder2.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
                     __builder3.OpenComponent<MudBlazor.MudItem>(9);
-                    __builder3.AddAttribute(10, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(10, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -348,7 +348,7 @@ using Esign.Client.Extensions;
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(13, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(14);
-                    __builder3.AddAttribute(15, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(15, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 14 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -361,7 +361,7 @@ using Esign.Client.Extensions;
                         __builder4.OpenElement(17, "div");
                         __builder4.AddAttribute(18, "class", "d-flex justify-center");
                         __builder4.OpenComponent<MudBlazor.MudText>(19);
-                        __builder4.AddAttribute(20, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(20, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                Typo.h4
@@ -371,13 +371,15 @@ using Esign.Client.Extensions;
 #nullable disable
                         ));
                         __builder4.AddAttribute(21, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(22, 
 #nullable restore
 #line 16 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
-__builder5.AddContent(22, _localizer["Reset password"]);
+                                         _localizer["Reset password"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -387,7 +389,7 @@ __builder5.AddContent(22, _localizer["Reset password"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(23, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(24);
-                    __builder3.AddAttribute(25, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(25, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -400,7 +402,7 @@ __builder5.AddContent(22, _localizer["Reset password"]);
                         __builder4.OpenElement(27, "div");
                         __builder4.AddAttribute(28, "class", "d-flex justify-center");
                         __builder4.OpenComponent<MudBlazor.MudText>(29);
-                        __builder4.AddAttribute(30, "Typo", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
+                        __builder4.AddAttribute(30, "Typo", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Typo>(
 #nullable restore
 #line 21 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                Typo.subtitle2
@@ -411,13 +413,15 @@ __builder5.AddContent(22, _localizer["Reset password"]);
                         ));
                         __builder4.AddAttribute(31, "Class", "mb-n4");
                         __builder4.AddAttribute(32, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(33, 
 #nullable restore
 #line 21 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
-__builder5.AddContent(33, _localizer["Enter email for password reset"]);
+                                                              _localizer["Enter email for password reset"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();
@@ -427,7 +431,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(34, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(35);
-                    __builder3.AddAttribute(36, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(36, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 24 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -438,7 +442,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
                     ));
                     __builder3.AddAttribute(37, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudTextField<string>>(38);
-                        __builder4.AddAttribute(39, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(39, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                              _localizer["E-mail"]
@@ -447,7 +451,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(40, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                        __builder4.AddAttribute(40, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                   () => _resetPasswordModel.Email
@@ -456,7 +460,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(41, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(41, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                              Variant.Outlined
@@ -465,7 +469,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(42, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                        __builder4.AddAttribute(42, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 25 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                 _resetPasswordModel.Email
@@ -474,14 +478,14 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(43, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _resetPasswordModel.Email = __value, _resetPasswordModel.Email))));
+                        __builder4.AddAttribute(43, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _resetPasswordModel.Email = __value, _resetPasswordModel.Email))));
                         __builder4.CloseComponent();
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(44, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(45);
-                    __builder3.AddAttribute(46, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(46, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 27 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -492,7 +496,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
                     ));
                     __builder3.AddAttribute(47, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudTextField<string>>(48);
-                        __builder4.AddAttribute(49, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(49, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                              _localizer["Password"]
@@ -501,7 +505,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(50, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                        __builder4.AddAttribute(50, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                        () => _resetPasswordModel.Password
@@ -510,7 +514,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(51, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(51, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                      Variant.Outlined
@@ -519,7 +523,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(52, "InputType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
+                        __builder4.AddAttribute(52, "InputType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                                                    _passwordInput
@@ -528,7 +532,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(53, "Adornment", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
+                        __builder4.AddAttribute(53, "Adornment", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Adornment>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                                                                               Adornment.End
@@ -537,7 +541,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(54, "AdornmentIcon", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(54, "AdornmentIcon", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                                                                                                              _passwordInputIcon
@@ -546,7 +550,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(55, "OnAdornmentClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                        __builder4.AddAttribute(55, "OnAdornmentClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                                                                                                                                                    TogglePasswordVisibility
@@ -555,7 +559,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         )));
-                        __builder4.AddAttribute(56, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                        __builder4.AddAttribute(56, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 28 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                   _resetPasswordModel.Password
@@ -564,14 +568,14 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(57, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _resetPasswordModel.Password = __value, _resetPasswordModel.Password))));
+                        __builder4.AddAttribute(57, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _resetPasswordModel.Password = __value, _resetPasswordModel.Password))));
                         __builder4.CloseComponent();
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(58, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(59);
-                    __builder3.AddAttribute(60, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(60, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 30 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -582,7 +586,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
                     ));
                     __builder3.AddAttribute(61, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudTextField<string>>(62);
-                        __builder4.AddAttribute(63, "Label", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddAttribute(63, "Label", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                              _localizer["Confirm Password"]
@@ -591,7 +595,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(64, "For", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
+                        __builder4.AddAttribute(64, "For", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                       () => _resetPasswordModel.ConfirmPassword
@@ -600,7 +604,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(65, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(65, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                                            Variant.Outlined
@@ -609,7 +613,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(66, "InputType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
+                        __builder4.AddAttribute(66, "InputType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.InputType>(
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                                                                                         InputType.Password
@@ -618,7 +622,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(67, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                        __builder4.AddAttribute(67, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 31 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                           _resetPasswordModel.ConfirmPassword
@@ -627,14 +631,14 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(68, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _resetPasswordModel.ConfirmPassword = __value, _resetPasswordModel.ConfirmPassword))));
+                        __builder4.AddAttribute(68, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => _resetPasswordModel.ConfirmPassword = __value, _resetPasswordModel.ConfirmPassword))));
                         __builder4.CloseComponent();
                     }
                     ));
                     __builder3.CloseComponent();
                     __builder3.AddMarkupContent(69, "\r\n        ");
                     __builder3.OpenComponent<MudBlazor.MudItem>(70);
-                    __builder3.AddAttribute(71, "xs", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(71, "xs", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 33 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                      12
@@ -646,7 +650,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
                     __builder3.AddAttribute(72, "Class", "d-flex justify-center");
                     __builder3.AddAttribute(73, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
                         __builder4.OpenComponent<MudBlazor.MudButton>(74);
-                        __builder4.AddAttribute(75, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(75, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                 Variant.Filled
@@ -655,7 +659,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(76, "Disabled", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(76, "Disabled", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                             !Validated
@@ -664,7 +668,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(77, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(77, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                 Color.Primary
@@ -673,7 +677,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(78, "ButtonType", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
+                        __builder4.AddAttribute(78, "ButtonType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.ButtonType>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                            ButtonType.Submit
@@ -682,7 +686,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(79, "Size", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
+                        __builder4.AddAttribute(79, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Size>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                     Size.Large
@@ -691,7 +695,7 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(80, "FullWidth", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(80, "FullWidth", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
                                                                                                                                                            true
@@ -701,13 +705,15 @@ __builder5.AddContent(33, _localizer["Enter email for password reset"]);
 #nullable disable
                         ));
                         __builder4.AddAttribute(81, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddContent(82, 
 #nullable restore
 #line 34 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Identity\Reset.razor"
-__builder5.AddContent(82, _localizer["Reset Password"]);
+                                                                                                                                                                  _localizer["Reset Password"]
 
 #line default
 #line hidden
 #nullable disable
+                            );
                         }
                         ));
                         __builder4.CloseComponent();

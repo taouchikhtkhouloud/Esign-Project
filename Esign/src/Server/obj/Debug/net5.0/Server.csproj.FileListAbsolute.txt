@@ -212,3 +212,4 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Serv
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\obj\Debug\net5.0\ref\Esign.Server.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\obj\Debug\net5.0\Esign.Server.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\obj\Debug\net5.0\Server.genruntimeconfig.cache
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\global.json

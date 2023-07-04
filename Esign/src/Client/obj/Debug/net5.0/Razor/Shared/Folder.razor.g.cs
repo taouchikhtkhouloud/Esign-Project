@@ -303,10 +303,10 @@ using Esign.Client.Extensions;
 #line default
 #line hidden
 #nullable disable
-                        , 10, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => newFolderName = __value, newFolderName)));
+                        , 10, Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => newFolderName = __value, newFolderName)));
                         __builder4.AddMarkupContent(11, "\r\n            ");
                         __builder4.OpenComponent<MudBlazor.MudButton>(12);
-                        __builder4.AddAttribute(13, "Color", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
+                        __builder4.AddAttribute(13, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Color>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Folder.razor"
                               Color.Primary
@@ -315,7 +315,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(14, "Variant", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
+                        __builder4.AddAttribute(14, "Variant", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<MudBlazor.Variant>(
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Folder.razor"
                                                       Variant.Filled
@@ -324,7 +324,7 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(15, "OnClick", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+                        __builder4.AddAttribute(15, "OnClick", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 9 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Folder.razor"
                                                                                CreateFolder
@@ -360,13 +360,15 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
                         __builder4.OpenElement(25, "li");
+                        __builder4.AddContent(26, 
 #nullable restore
 #line 19 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Folder.razor"
-__builder4.AddContent(26, folder);
+                         folder
 
 #line default
 #line hidden
 #nullable disable
+                        );
                         __builder4.CloseElement();
 #nullable restore
 #line 20 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Shared\Folder.razor"

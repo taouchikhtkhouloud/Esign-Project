@@ -78,7 +78,7 @@ namespace Esign.Client.Pages.Misc
         private  void View(int id)
         {
             // Redirect to the File page
-            NavigationManager.NavigateTo($"/document-store");
+            NavigationManager.NavigateTo($"/files/{id}");
         }
 
 

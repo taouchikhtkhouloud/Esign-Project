@@ -23,12 +23,14 @@ namespace Esign.Client.Pages.Misc
         [Parameter]
         public string id { get; set; }
 
+       
+
         private void GoBack()
         {
             // Redirect to the previous page
             NavigationManager.NavigateTo("/document-types");
         }
-
+        public int number;
         private IEnumerable<GetAllDocumentsResponse> _pagedData;
         private MudTable<GetAllDocumentsResponse> _table;
         private string CurrentUserId { get; set; }
@@ -73,11 +75,12 @@ namespace Esign.Client.Pages.Misc
             {
                 state.Page = 0;
             }
-            await LoadData(state.Page, state.PageSize, state);
+            number = int.Parse(id);
+            await LoadData(number, state.Page, state.PageSize, state);
             return new TableData<GetAllDocumentsResponse> { TotalItems = _totalItems, Items = _pagedData };
         }
 
-        private async Task LoadData(int pageNumber, int pageSize, TableState state)
+        private async Task LoadData(int i ,int pageNumber, int pageSize, TableState state)
         {
             var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
             var response = await DocumentManager.GetAllAsync(request);
@@ -97,7 +100,7 @@ namespace Esign.Client.Pages.Misc
                     if (element.DocumentType.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
                         return true;
                     return false;
-                });
+                }).Where(element => element.DocumentTypeId == i); ;
                 switch (state.SortLabel)
                 {
                     case "documentIdField":

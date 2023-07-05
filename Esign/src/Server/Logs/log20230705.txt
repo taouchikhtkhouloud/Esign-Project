@@ -1,0 +1,25 @@
+2023-07-05 00:24:55.419 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-05 00:24:55.550 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-05 00:24:55.556 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-05 00:24:55.558 +00:00 [INF] Hosting environment: Development
+2023-07-05 00:24:55.559 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-05 00:28:03.596 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-05 00:28:03.684 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-05 00:28:03.690 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-05 00:28:03.694 +00:00 [INF] Hosting environment: Development
+2023-07-05 00:28:03.696 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-05 00:32:49.208 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-05 00:32:49.298 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-05 00:32:49.302 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-05 00:32:49.303 +00:00 [INF] Hosting environment: Development
+2023-07-05 00:32:49.305 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-05 00:46:02.865 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-05 00:46:02.955 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-05 00:46:02.964 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-05 00:46:02.967 +00:00 [INF] Hosting environment: Development
+2023-07-05 00:46:02.971 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-05 00:50:03.066 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-05 00:50:03.216 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-05 00:50:03.221 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-05 00:50:03.222 +00:00 [INF] Hosting environment: Development
+2023-07-05 00:50:03.223 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

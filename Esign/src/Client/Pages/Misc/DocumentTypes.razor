@@ -44,13 +44,19 @@ else
             }
         </ToolBarContent>
         <HeaderContent>
-            <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentTypesResponse, object>(x => x.Id)">@_localizer["Id"]</MudTableSortLabel></MudTh>
+            <MudTh>
+               
+            </MudTh>
+           
             <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentTypesResponse, object>(x => x.Name)">@_localizer["Name"]</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentTypesResponse, object>(x => x.Description)">@_localizer["Description"]</MudTableSortLabel></MudTh>
             <MudTh Style="text-align:right">@_localizer["Actions"]</MudTh>
         </HeaderContent>
         <RowTemplate>
-            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd>
+                <MudIcon Icon="@Icons.Material.Outlined.Folder" Size="Size.Large" Color="Color.Dark" Class="my-custom-icon" />
+            </MudTd>
+            
             <MudTd DataLabel="Name">
                 <MudHighlighter Text="@context.Name" HighlightedText="@_searchString" />
             </MudTd>

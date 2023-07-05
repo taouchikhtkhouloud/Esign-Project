@@ -12,6 +12,11 @@
             return $"api/documents/{documentId}";
         }
 
+        public static string GetFilesPaged(int folderid ,int pageNumber, int pageSize, string searchString)
+        {
+            return $"api/documents/{folderid}?pageNumber={pageNumber}&pageSize={pageSize}&searchString={searchString}";
+        }
+
         public static string Save = "api/documents";
         public static string Delete = "api/documents";
     }

@@ -279,36 +279,19 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-using Esign.Application.Features.DocumentTypes.Queries.GetAll;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\_Imports.razor"
 [Authorize]
 
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-           [Authorize(Policy = Permissions.DocumentTypes.View)]
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/document-types")]
-    public partial class DocumentTypes : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ViewFolder : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.AspNetCore.Components.NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager _userManager { get; set; }

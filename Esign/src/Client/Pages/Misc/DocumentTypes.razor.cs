@@ -15,16 +15,20 @@ using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.JSInterop;
 using MudBlazor;
 
+
 namespace Esign.Client.Pages.Misc
 {
     public partial class DocumentTypes
     {
         [Inject] private IDocumentTypeManager DocumentTypeManager { get; set; }
 
+        
+
         [CascadingParameter] private HubConnection HubConnection { get; set; }
 
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
         private GetAllDocumentTypesResponse _documentType = new();
+      
         private string _searchString = "";
         private bool _dense = false;
         private bool _striped = true;
@@ -71,6 +75,13 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
+        private  void View(int id)
+        {
+            // Redirect to the File page
+            NavigationManager.NavigateTo($"/document-store");
+        }
+
+
 
         private async Task Delete(int id)
         {

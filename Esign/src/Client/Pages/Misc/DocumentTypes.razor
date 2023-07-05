@@ -2,6 +2,8 @@
 @attribute [Authorize(Policy = Permissions.DocumentTypes.View)]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer
 @using Esign.Application.Features.DocumentTypes.Queries.GetAll
+@inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager
+
 
 <style>
     .mud-table-container {
@@ -45,9 +47,9 @@ else
         </ToolBarContent>
         <HeaderContent>
             <MudTh>
-               
+
             </MudTh>
-           
+
             <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentTypesResponse, object>(x => x.Name)">@_localizer["Name"]</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentTypesResponse, object>(x => x.Description)">@_localizer["Description"]</MudTableSortLabel></MudTh>
             <MudTh Style="text-align:right">@_localizer["Actions"]</MudTh>
@@ -56,7 +58,7 @@ else
             <MudTd>
                 <MudIcon Icon="@Icons.Material.Outlined.Folder" Size="Size.Large" Color="Color.Dark" Class="my-custom-icon" />
             </MudTd>
-            
+
             <MudTd DataLabel="Name">
                 <MudHighlighter Text="@context.Name" HighlightedText="@_searchString" />
             </MudTd>
@@ -67,6 +69,8 @@ else
                 @if (_canEditDocumentTypes || _canDeleteDocumentTypes)
                     {
                     <MudMenu Label="@_localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
+                        <MudMenuItem @onclick="@(() => View(@context.Id))">@_localizer["View"]</MudMenuItem>
+
                         @if (_canEditDocumentTypes)
                             {
                             <MudMenuItem @onclick="@(() => InvokeModal(@context.Id))">@_localizer["Edit"]</MudMenuItem>

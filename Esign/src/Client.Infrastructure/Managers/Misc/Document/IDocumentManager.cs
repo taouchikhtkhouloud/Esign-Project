@@ -13,6 +13,8 @@ namespace Esign.Client.Infrastructure.Managers.Misc.Document
 
         Task<IResult<GetDocumentByIdResponse>> GetByIdAsync(GetDocumentByIdQuery request);
 
+        Task<PaginatedResult<GetAllDocumentsResponse>> GetFillesByFolderISAsync(GetAllPagedDocumentsRequest request ,int id);
+
         Task<IResult<int>> SaveAsync(AddEditDocumentCommand request);
 
         Task<IResult<int>> DeleteAsync(int id);

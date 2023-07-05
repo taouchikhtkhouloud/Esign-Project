@@ -37,6 +37,12 @@ namespace Esign.Client.Infrastructure.Managers.Misc.Document
             return await response.ToResult<GetDocumentByIdResponse>();
         }
 
+        public async Task<PaginatedResult<GetAllDocumentsResponse>> GetFillesByFolderISAsync(GetAllPagedDocumentsRequest request ,int id)
+        {
+            var response = await _httpClient.GetAsync(Routes.DocumentsEndpoints.GetFilesPaged(id ,request.PageNumber, request.PageSize, request.SearchString));
+            return await response.ToPaginatedResult<GetAllDocumentsResponse>();
+        }
+
         public async Task<IResult<int>> SaveAsync(AddEditDocumentCommand request)
         {
             var response = await _httpClient.PostAsJsonAsync(Routes.DocumentsEndpoints.Save, request);

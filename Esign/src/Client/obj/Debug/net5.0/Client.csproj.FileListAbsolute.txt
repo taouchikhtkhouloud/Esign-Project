@@ -1232,3 +1232,5 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Clie
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\build-gz\0xzc4Ymv.gz
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\build-gz\jYfoZZhu.gz
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\build-gz\uuKIm8BH.gz
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\ViewFolder.razor.g.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\ViewFolder.razor.g.cs

@@ -13,3 +13,57 @@
 2023-07-07 12:17:21.541 +00:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-07-07 12:17:21.542 +00:00 [INF] Hosting environment: Development
 2023-07-07 12:17:21.543 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-07 12:19:14.835 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-07 12:19:14.890 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-07 12:19:14.894 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 12:19:14.895 +00:00 [INF] Hosting environment: Development
+2023-07-07 12:19:14.896 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-07 12:37:30.806 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-07 12:37:30.852 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-07 12:37:30.855 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 12:37:30.857 +00:00 [INF] Hosting environment: Development
+2023-07-07 12:37:30.858 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-07 12:37:47.011 +00:00 [ERR] Failed executing DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[CreatedBy], [d].[CreatedOn], [d].[Description], [d].[LastModifiedBy], [d].[LastModifiedOn], [d].[Name], [d].[Parent]
+FROM [DocumentTypes] AS [d]
+2023-07-07 12:37:47.138 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Esign.Infrastructure.Contexts.BlazorHeroContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Parent'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:70711125-3ad0-4c93-9ee1-88b4f7aecb7e
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Parent'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:70711125-3ad0-4c93-9ee1-88b4f7aecb7e
+Error Number:207,State:1,Class:16
+2023-07-07 12:38:40.053 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-07 12:38:40.111 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-07 12:38:40.115 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 12:38:40.116 +00:00 [INF] Hosting environment: Development
+2023-07-07 12:38:40.117 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-07 13:05:55.798 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-07 13:05:55.906 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-07 13:05:55.910 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 13:05:55.911 +00:00 [INF] Hosting environment: Development
+2023-07-07 13:05:55.914 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

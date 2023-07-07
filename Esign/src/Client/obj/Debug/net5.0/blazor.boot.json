@@ -256,7 +256,7 @@
       "System.Private.CoreLib.dll": "sha256-9rUJv1mXEQdGt\/kWiJ1ITPPzp3cAi3lSmqHVTisp7w0=",
       "Esign.Application.dll": "sha256-hjfNsUh7\/8hz0eOeL9wBTL1rr2sH2ddnIkmCgiV5678=",
       "Esign.Client.Infrastructure.dll": "sha256-XuNyCEoAwtWFpW9n78eWSwGTEN4H2ZPvpoU5hWpWmYU=",
-      "Esign.Domain.dll": "sha256-joKMRfHGW9hLNbfIMUuSjfpN7ddBpNfj7MEr++HmwWM=",
+      "Esign.Domain.dll": "sha256-CEIzg29culLNtyGBMpLluXcQLmeu1UrPfdq9yxmvxaA=",
       "Esign.Shared.dll": "sha256-aTY6GpCPELo4FwFd+BLIBXNkV0NKf7RpSmLFdo+zMtc=",
       "Esign.Client.dll": "sha256-dlf1WZPYddTzh8QJSaGw6px4vSXw\/8lEs6+nJgFFHmc="
     },
@@ -275,43 +275,43 @@
     },
     "satelliteResources": {
       "de": {
-        "de\/Esign.Client.resources.dll": "sha256-STkUrjIKvdZSQJRDoqnHWMvWGKEOfN1bnUvtchMr1qo=",
-        "de\/Esign.Application.resources.dll": "sha256-MPUYgBl+clAMrhmD4nSTt7qSHzCdpz6ePPJHIeEvvws="
+        "de\/Esign.Client.resources.dll": "sha256-Vd0hfZNF4ikrH5k7IqCZqcGzLLqgmPuR144eaKBb0SA=",
+        "de\/Esign.Application.resources.dll": "sha256-BBMhja2Vmzzq0eGTFkB94LMd2VpUfa8oixh5kYBXRU4="
       },
       "en": {
-        "en\/Esign.Client.resources.dll": "sha256-DQK1Gon5Y9r+tUzMZa5\/llZxCEBcblpaGqKq+LSq7ck=",
-        "en\/Esign.Client.Infrastructure.resources.dll": "sha256-8uTmhm3+BkIIs7Hevxa3084sgMmmQsBCnfQ1Kq0zjzk=",
-        "en\/Esign.Application.resources.dll": "sha256-IIedSShlvAqCQcf+N2OaIT78zmUEfKsMLBxBh1wNmUI="
+        "en\/Esign.Client.resources.dll": "sha256-+Hf1RYwERwO2bZSqHylyjbsMBAIbUnBXYTJjWBCl7N0=",
+        "en\/Esign.Client.Infrastructure.resources.dll": "sha256-1PjEMatNAlsVFvyhzW1jpCfYfWCeCHDKPvXPLH52UNo=",
+        "en\/Esign.Application.resources.dll": "sha256-z6XKB0WKclkC1iK4WWv6gX5olSQuHh0e+oPbtbemnus="
       },
       "es": {
-        "es\/Esign.Client.resources.dll": "sha256-RbR3fZlUSHoU367wk1D7NUcwSw3HCR1wFn5aMJkGt0I=",
-        "es\/Esign.Application.resources.dll": "sha256-WOmo9bhefDBl7X\/EzzS9ytdeVRUS+VY2zqQzpj5Fkhw="
+        "es\/Esign.Client.resources.dll": "sha256-F2mikpWwnOLfYRjJ1ekRnNgC44sTfxARFXxs+syhglY=",
+        "es\/Esign.Application.resources.dll": "sha256-yOeqQU8UFLLUp3yP\/1A3vHPwMcH9IoKgj9+HWoylBQw="
       },
       "id": {
-        "id\/Esign.Client.resources.dll": "sha256-WAsxgRGucj5zquJu4iuqgkv34oMlSvpXeYdKHmicd\/M=",
-        "id\/Esign.Application.resources.dll": "sha256-pPUQGeJ85rnU3F\/yWTQ4ZwznDr8aijI60NYz+GmYPnk="
+        "id\/Esign.Client.resources.dll": "sha256-LIFkXxrrRWr684VKyXuiG\/gMMsBOLfQdNvPLflCsAwQ=",
+        "id\/Esign.Application.resources.dll": "sha256-05I04t8L9MvDynZ0N11PRqP\/WKcYrD+stCaXgLZldKs="
       },
       "it": {
-        "it\/Esign.Client.resources.dll": "sha256-MLlJSiEXICDwj0MLnZkSl7Z8KZMpdOe+yTo2XxpkpXI=",
-        "it\/Esign.Application.resources.dll": "sha256-zrR4P90RvGd8SC1Lk\/zXRAweSn6L1j3LxfEvXJiAb0g="
+        "it\/Esign.Client.resources.dll": "sha256-+Y1UK3Oe54zmQEuOkb4vbkS8uSaSUx1nxmyHQM5Nlz4=",
+        "it\/Esign.Application.resources.dll": "sha256-0IoseajNcJnfS+vekowGivnatlPPROYKZPIjW7cxp50="
       },
       "km": {
-        "km\/Esign.Client.resources.dll": "sha256-Q5rUoHvshaWwEuDTnzhdHNSepmhYmMsGWzSUwpYTyoc=",
-        "km\/Esign.Client.Infrastructure.resources.dll": "sha256-8GFnZtq1z+i0e8UZJ0Kt7QQpHPUn541Bbeaa7ZbZxxc=",
-        "km\/Esign.Application.resources.dll": "sha256-2DKLScpWfbMv41jUm7ISpJEHUzCDSJt0KV\/ennFLz30="
+        "km\/Esign.Client.resources.dll": "sha256-YF6zuAEAUCih6uYu+96JcOwT6ZvH9unqlg9\/\/H\/OfWU=",
+        "km\/Esign.Client.Infrastructure.resources.dll": "sha256-68rqSgcKYiRvhzKPXYQ+8jHmykKIVMb8w7IE2s8KFFo=",
+        "km\/Esign.Application.resources.dll": "sha256-DkwBzV1Oah3IqDceIVvlhUPGpjk2r4mLgNL9KTSKBYo="
       },
       "ru": {
-        "ru\/Esign.Client.resources.dll": "sha256-wymhTMZDLiugeJRS6iKloTPuRqBJNCZV+3cGZGCsajs=",
-        "ru\/Esign.Client.Infrastructure.resources.dll": "sha256-oAolIHyKkNTpMnmrXRigMMkGtP3ZZt0CEX7Z8BeKTbA=",
-        "ru\/Esign.Application.resources.dll": "sha256-6aPB\/ikGPMvu0n5YCWeWrspbtC8ZEavlrqgXodDnysM="
+        "ru\/Esign.Client.resources.dll": "sha256-78lhBfnVwW7KFve0EH6W7M+Qt+Q5aMfUoAZrIf\/sME4=",
+        "ru\/Esign.Client.Infrastructure.resources.dll": "sha256-QMRBqC\/zN+PeFmfLq9y9uYgFmUWazeNeWXePxyTiobk=",
+        "ru\/Esign.Application.resources.dll": "sha256-WVVSzXdHRcprFViTFT5u62PYNAC86sFVvnrf\/NhiNdo="
       },
       "sv": {
-        "sv\/Esign.Client.resources.dll": "sha256-ITi5fpSAud9HaXpJVV7aSNsjqueG72Yjnz\/3ph2rOnM=",
-        "sv\/Esign.Application.resources.dll": "sha256-KrQbM0oAUVUqe4sCRnl\/W0tsMXAmlEvmxFhfbH+GO80="
+        "sv\/Esign.Client.resources.dll": "sha256-WZTSOkgSGAK6xBDJY7WEX+r9YGuGIGX\/RirOLmIuLYk=",
+        "sv\/Esign.Application.resources.dll": "sha256-6AoLz7Cg4NAuB8M5\/8BbMA1hE4CQxQ9A0khigr2Bs8k="
       },
       "fr": {
-        "fr\/Esign.Client.resources.dll": "sha256-veiH8n4gdtSG0G5Gk4QKKI9X6qlH\/rpilshOhPm5Ums=",
-        "fr\/Esign.Application.resources.dll": "sha256-0b4bVW+rueVmqjyDbEpnW+86wiU4qzX0lm5IqekPYL8="
+        "fr\/Esign.Client.resources.dll": "sha256-d8MLeCIRohZo9cxu+hnPvQbaOlh+Chboy1GbzxK149c=",
+        "fr\/Esign.Application.resources.dll": "sha256-90N6XA2lJ6PgZ71xCMFVZJ7aBpQiefGcphzSjh7IUPk="
       }
     }
   }

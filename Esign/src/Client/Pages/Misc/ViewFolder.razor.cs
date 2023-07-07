@@ -21,9 +21,9 @@ namespace Esign.Client.Pages.Misc
         [Inject] private IDocumentManager DocumentManager { get; set; }
 
         [Parameter]
-        public string id { get; set; }
+        public string id1 { get; set; }
 
-       
+      
 
         private void GoBack()
         {
@@ -75,7 +75,7 @@ namespace Esign.Client.Pages.Misc
             {
                 state.Page = 0;
             }
-            number = int.Parse(id);
+            number = int.Parse(id1);
             await LoadData(number, state.Page, state.PageSize, state);
             return new TableData<GetAllDocumentsResponse> { TotalItems = _totalItems, Items = _pagedData };
         }
@@ -151,19 +151,20 @@ namespace Esign.Client.Pages.Misc
                 var doc = _pagedData.FirstOrDefault(c => c.Id == id);
                 if (doc != null)
                 {
-                    parameters.Add(nameof(AddEditDocumentModal.AddEditDocumentModel), new AddEditDocumentCommand
+                    parameters.Add(nameof(AddFolderDocument.AddEditDocumentModel), new AddEditDocumentCommand
                     {
                         Id = doc.Id,
                         Title = doc.Title,
                         Description = doc.Description,
                         URL = doc.URL,
                         IsPublic = doc.IsPublic,
-                        DocumentTypeId = doc.DocumentTypeId
+                        DocumentTypeId = int.Parse(id1)
                     });
                 }
             }
+            parameters.Add(nameof(AddFolderDocument.DocumentFolderId), int.Parse(id1));
             var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
-            var dialog = _dialogService.Show<AddEditDocumentModal>(id == 0 ? _localizer["Create"] : _localizer["Edit"], parameters, options);
+            var dialog = _dialogService.Show<AddFolderDocument>(id == 0 ? _localizer["Create"] : _localizer["Edit"], parameters, options);
             var result = await dialog.Result;
             if (!result.Cancelled)
             {

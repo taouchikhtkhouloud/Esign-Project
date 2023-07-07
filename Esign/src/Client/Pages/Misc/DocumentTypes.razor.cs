@@ -75,10 +75,10 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
-        private  void View(int id)
+        private  void View(int id1 )
         {
             // Redirect to the File page
-            NavigationManager.NavigateTo($"/files/{id}");
+            NavigationManager.NavigateTo($"/files/{id1}");
         }
 
 

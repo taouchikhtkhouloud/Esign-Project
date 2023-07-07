@@ -299,7 +299,7 @@ using Esign.Application.Features.Documents.Queries.GetAll;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/files/{id}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/files/{id1}")]
     public partial class ViewFolder : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

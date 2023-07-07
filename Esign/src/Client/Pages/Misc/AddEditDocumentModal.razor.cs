@@ -67,6 +67,7 @@ namespace Esign.Client.Pages.Misc
                 _documentTypes = data.Data;
             }
         }
+      
 
         private IBrowserFile _file;
 

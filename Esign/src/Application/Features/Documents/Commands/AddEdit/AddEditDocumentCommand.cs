@@ -62,6 +62,7 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
                 await _unitOfWork.Commit(cancellationToken);
                 return await Result<int>.SuccessAsync(doc.Id, _localizer["Document Saved"]);
             }
+
             else
             {
                 var doc = await _unitOfWork.Repository<Document>().GetByIdAsync(command.Id);

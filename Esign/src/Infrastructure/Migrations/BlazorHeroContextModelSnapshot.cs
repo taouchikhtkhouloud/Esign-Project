@@ -16,7 +16,7 @@ namespace Esign.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.6")
+                .HasAnnotation("ProductVersion", "5.0.7")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Esign.Application.Models.Chat.ChatHistory<Esign.Infrastructure.Models.Identity.BlazorHeroUser>", b =>
@@ -249,6 +249,9 @@ namespace Esign.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Parent")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

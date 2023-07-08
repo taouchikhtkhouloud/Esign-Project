@@ -1,5 +1,124 @@
-2023-07-08 14:09:31.528 +00:00 [INF] Now listening on: https://localhost:5001
-2023-07-08 14:09:31.594 +00:00 [INF] Now listening on: http://localhost:5000
-2023-07-08 14:09:31.605 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-07-08 14:09:31.606 +00:00 [INF] Hosting environment: Development
-2023-07-08 14:09:31.607 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 00:15:52.197 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 00:15:52.397 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 00:15:52.414 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 00:15:52.428 +00:00 [INF] Hosting environment: Development
+2023-07-08 00:15:52.431 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 00:16:29.598 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-08 00:16:29.786 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-08 00:16:29.786 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-08 00:16:29.951 +00:00 [ERR] Connection id "0HMRV91UNKS99", Request id "0HMRV91UNKS99:00000011": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-07-08 00:16:29.951 +00:00 [ERR] Connection id "0HMRV91UNKS99", Request id "0HMRV91UNKS99:00000013": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-07-08 00:16:29.951 +00:00 [ERR] Connection id "0HMRV91UNKS99", Request id "0HMRV91UNKS99:0000001B": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-07-08 00:22:52.847 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 00:22:53.028 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 00:22:53.034 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 00:22:53.035 +00:00 [INF] Hosting environment: Development
+2023-07-08 00:22:53.037 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 00:29:13.107 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 00:29:13.193 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 00:29:13.198 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 00:29:13.199 +00:00 [INF] Hosting environment: Development
+2023-07-08 00:29:13.200 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 00:53:41.160 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 00:53:41.304 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 00:53:41.309 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 00:53:41.310 +00:00 [INF] Hosting environment: Development
+2023-07-08 00:53:41.311 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 00:56:17.863 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 00:56:17.934 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 00:56:17.939 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 00:56:17.942 +00:00 [INF] Hosting environment: Development
+2023-07-08 00:56:17.944 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 01:01:37.551 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 01:01:37.741 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 01:01:37.756 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 01:01:37.757 +00:00 [INF] Hosting environment: Development
+2023-07-08 01:01:37.759 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:10:30.881 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:10:30.987 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:10:30.995 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:10:30.996 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:10:30.998 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:30:41.955 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:30:42.009 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:30:42.012 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:30:42.013 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:30:42.014 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:36:02.388 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:36:02.447 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:36:02.451 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:36:02.451 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:36:02.452 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:39:43.453 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:39:43.507 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:39:43.510 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:39:43.511 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:39:43.512 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:45:06.162 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:45:06.252 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:45:06.256 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:45:06.258 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:45:06.259 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:50:07.913 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:50:07.994 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:50:08.018 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:50:08.022 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:50:08.023 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 13:58:54.850 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 13:58:54.924 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 13:58:54.927 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 13:58:54.928 +00:00 [INF] Hosting environment: Development
+2023-07-08 13:58:54.929 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-08 14:12:47.880 +00:00 [INF] Now listening on: https://localhost:5001
+2023-07-08 14:12:47.928 +00:00 [INF] Now listening on: http://localhost:5000
+2023-07-08 14:12:47.932 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-08 14:12:47.933 +00:00 [INF] Hosting environment: Development
+2023-07-08 14:12:47.934 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

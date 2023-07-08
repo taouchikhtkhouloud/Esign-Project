@@ -20,6 +20,7 @@ namespace Esign.Application.Features.DocumentTypes.Commands.AddEdit
         public string Name { get; set; }
         [Required]
         public string Description { get; set; }
+        public int Parent { get; set; }
     }
 
     internal class AddEditDocumentTypeCommandHandler : IRequestHandler<AddEditDocumentTypeCommand, Result<int>>

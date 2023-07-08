@@ -286,6 +286,13 @@ using Esign.Application.Features.Documents.Queries.GetAll;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
+using Esign.Application.Features.DocumentTypes.Queries.GetAll;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\_Imports.razor"
 [Authorize]
 
@@ -299,6 +306,13 @@ using Esign.Application.Features.Documents.Queries.GetAll;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
+           [Authorize(Policy = Permissions.DocumentTypes.View)]
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/files/{id1}")]
     public partial class ViewFolder : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -307,8 +321,9 @@ using Esign.Application.Features.Documents.Queries.GetAll;
         {
         }
         #pragma warning restore 1998
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.AspNetCore.Components.NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer1 { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager _userManager { get; set; }

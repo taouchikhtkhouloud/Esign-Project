@@ -50,7 +50,7 @@ namespace Esign.Client.Pages.Misc
             _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Delete)).Succeeded;
             _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Export)).Succeeded;
             _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Search)).Succeeded;
-
+            await Reset();
             await GetDocumentTypesAsync();
             _loaded = true;
             HubConnection = HubConnection.TryInitialize(_navigationManager);
@@ -78,7 +78,7 @@ namespace Esign.Client.Pages.Misc
         private  void View(int id1 )
         {
             // Redirect to the File page
-            NavigationManager.NavigateTo($"/files/{id1}");
+            NavigationManager.NavigateTo($"/files/{id1}", forceLoad: true);
         }
 
 

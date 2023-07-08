@@ -27,14 +27,7 @@ else
     <MudTable Elevation="25" ServerData="@(new Func<TableState, Task<TableData<GetAllDocumentsResponse>>>(ServerReload))" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
         <ToolBarContent>
             <div class="justify-center mud-text-align-center">
-                <MudButton Variant="Variant.Filled"
-                           StartIcon="@Icons.Material.Filled.ArrowLeft"
-                           IconColor="Color.Secondary"
-                           Size="Size.Small"
-                           Color="Color.Surface"
-                           OnClick="GoBack">
-                    @_localizer["Go Back"]
-                </MudButton>
+                
                 @if (_canCreateDocuments)
                 {
                     <MudButton DisableElevation Variant="Variant.Filled" Color="Color.Primary" @onclick="@(() => InvokeModal(0))" StartIcon="@Icons.Material.Filled.Add" IconColor="Color.Surface">@_localizer["Create Document"]</MudButton>

@@ -13,17 +13,25 @@ using Esign.Domain.Entities.Misc;
 using Esign.Shared.Constants.Permission;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
+using Esign.Application.Features.DocumentTypes.Queries.GetAll;
+using Esign.Client.Infrastructure.Managers.Misc.DocumentType;
+using Esign.Application.Features.DocumentTypes.Commands.AddEdit;
+using Microsoft.AspNetCore.SignalR.Client;
+using Esign.Shared.Constants.Application;
 
 namespace Esign.Client.Pages.Misc
 {
     public partial class ViewFolder
     {
         [Inject] private IDocumentManager DocumentManager { get; set; }
+        [Inject] private IDocumentTypeManager DocumentTypeManager { get; set; }
 
         [Parameter]
         public string id1 { get; set; }
 
-      
+        [CascadingParameter] private HubConnection HubConnection { get; set; }
+
+
 
         private void GoBack()
         {
@@ -33,6 +41,9 @@ namespace Esign.Client.Pages.Misc
         public int number;
         private IEnumerable<GetAllDocumentsResponse> _pagedData;
         private MudTable<GetAllDocumentsResponse> _table;
+
+        private List<GetAllDocumentTypesResponse> _documentTypeList = new();
+        private GetAllDocumentTypesResponse _documentType = new();
         private string CurrentUserId { get; set; }
         private int _totalItems;
         private int _currentPage;
@@ -43,29 +54,47 @@ namespace Esign.Client.Pages.Misc
 
         private ClaimsPrincipal _currentUser;
         private bool _canCreateDocuments;
+        private bool _canCreateDocumentTypes;
         private bool _canEditDocuments;
         private bool _canDeleteDocuments;
         private bool _canSearchDocuments;
         private bool _canViewDocumentExtendedAttributes;
         private bool _loaded;
+        
+        private bool _canEditDocumentTypes;
+        private bool _canDeleteDocumentTypes;
+        private bool _canExportDocumentTypes;
+        private bool _canSearchDocumentTypes;
 
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
             _canCreateDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Create)).Succeeded;
+            _canCreateDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Create)).Succeeded;
+            _canEditDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Edit)).Succeeded;
+            _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Delete)).Succeeded;
+            _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Export)).Succeeded;
+            _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Search)).Succeeded;
+
             _canEditDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Edit)).Succeeded;
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;
             _canSearchDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Search)).Succeeded;
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
 
             _loaded = true;
-
+            
+            await GetDocumentTypesAsync();
             var state = await _stateProvider.GetAuthenticationStateAsync();
             var user = state.User;
             if (user == null) return;
             if (user.Identity?.IsAuthenticated == true)
             {
                 CurrentUserId = user.GetUserId();
+            }
+            HubConnection = HubConnection.TryInitialize(_navigationManager);
+            if (HubConnection.State == HubConnectionState.Disconnected)
+            {
+                await HubConnection.StartAsync();
             }
         }
 
@@ -79,7 +108,21 @@ namespace Esign.Client.Pages.Misc
             await LoadData(number, state.Page, state.PageSize, state);
             return new TableData<GetAllDocumentsResponse> { TotalItems = _totalItems, Items = _pagedData };
         }
-
+        private async Task GetDocumentTypesAsync()
+        {
+            var response = await DocumentTypeManager.GetAllAsync();
+            if (response.Succeeded)
+            {
+                _documentTypeList = response.Data.Where(dt => dt.Parent == int.Parse(id1)).ToList();
+            }
+            else
+            {
+                foreach (var message in response.Messages)
+                {
+                    _snackBar.Add(message, Severity.Error);
+                }
+            }
+        }
         private async Task LoadData(int i ,int pageNumber, int pageSize, TableState state)
         {
             var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
@@ -171,7 +214,32 @@ namespace Esign.Client.Pages.Misc
                 OnSearch("");
             }
         }
+        private async Task InvokeModalFolder(int id = 0)
+        {
+            var parameters = new DialogParameters();
+            if (id != 0)
+            {
+                _documentType = _documentTypeList.FirstOrDefault(c => c.Id == id);
+                if (_documentType != null)
+                {
+                    parameters.Add(nameof(AddFolderInFolder.AddEditDocumentTypeModel), new AddEditDocumentTypeCommand
+                    {
+                        Id = _documentType.Id,
+                        Name = _documentType.Name,
+                        Description = _documentType.Description
+                    });
+                }
+            }
+            parameters.Add(nameof(AddFolderInFolder.DocumentFolderId), int.Parse(id1));
+            var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Small, FullWidth = true, DisableBackdropClick = true };
+            var dialog = _dialogService.Show<AddFolderInFolder>(id == 0 ? _localizer["Create"] : _localizer["Edit"], parameters, options);
+            var result = await dialog.Result;
+            if (!result.Cancelled)
+            {
+                await Reset();
+            }
 
+        }
         private async Task Delete(int id)
         {
             string deleteContent = _localizer["Delete Content"];
@@ -205,5 +273,58 @@ namespace Esign.Client.Pages.Misc
         {
             _navigationManager.NavigateTo($"/extended-attributes/{typeof(Document).Name}/{documentId}");
         }
+        private bool Search(GetAllDocumentTypesResponse brand)
+        {
+            if (string.IsNullOrWhiteSpace(_searchString)) return true;
+            if (brand.Name?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+            {
+                return true;
+            }
+            if (brand.Description?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+            {
+                return true;
+            }
+            return false;
+        }
+        private void View(int id1)
+        {
+            // Redirect to the File page
+            NavigationManager.NavigateTo($"/files/{id1}", forceLoad: true);
+        }
+        private async Task Reset()
+        {
+            _documentType = new GetAllDocumentTypesResponse();
+            await GetDocumentTypesAsync();
+        }
+        private async Task DeleteFolder(int id)
+        {
+            string deleteContent = _localizer["Delete Content"];
+            var parameters = new DialogParameters
+            {
+                {nameof(Shared.Dialogs.DeleteConfirmation.ContentText), string.Format(deleteContent, id)}
+            };
+            var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Small, FullWidth = true, DisableBackdropClick = true };
+            var dialog = _dialogService.Show<Shared.Dialogs.DeleteConfirmation>(_localizer["Delete"], parameters, options);
+            var result = await dialog.Result;
+            if (!result.Cancelled)
+            {
+                var response = await DocumentTypeManager.DeleteAsync(id);
+                if (response.Succeeded)
+                {
+                    await Reset();
+                    await HubConnection.SendAsync(ApplicationConstants.SignalR.SendUpdateDashboard);
+                    _snackBar.Add(response.Messages[0], Severity.Success);
+                }
+                else
+                {
+                    await Reset();
+                    foreach (var message in response.Messages)
+                    {
+                        _snackBar.Add(message, Severity.Error);
+                    }
+                }
+            }
+        }
+
     }
 }

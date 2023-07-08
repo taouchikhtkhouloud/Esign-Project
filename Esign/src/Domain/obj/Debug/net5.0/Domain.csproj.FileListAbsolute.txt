@@ -1,6 +1,5 @@
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\bin\Debug\net5.0\Esign.Domain.deps.json
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\bin\Debug\net5.0\Esign.Domain.dll
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\bin\Debug\net5.0\ref\Esign.Domain.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\bin\Debug\net5.0\Esign.Domain.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,3 +9,4 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Doma
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\obj\Debug\net5.0\Esign.Domain.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\obj\Debug\net5.0\ref\Esign.Domain.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\obj\Debug\net5.0\Esign.Domain.pdb
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Domain\bin\Debug\net5.0\ref\Esign.Domain.dll

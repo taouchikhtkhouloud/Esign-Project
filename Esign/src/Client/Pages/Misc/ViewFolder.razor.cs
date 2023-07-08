@@ -33,17 +33,14 @@ namespace Esign.Client.Pages.Misc
 
 
 
-        private void GoBack()
-        {
-            // Redirect to the previous page
-            NavigationManager.NavigateTo("/document-types");
-        }
+      
         public int number;
         private IEnumerable<GetAllDocumentsResponse> _pagedData;
         private MudTable<GetAllDocumentsResponse> _table;
 
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
         private GetAllDocumentTypesResponse _documentType = new();
+        private GetAllDocumentTypesResponse _documentType2 = new();
         private string CurrentUserId { get; set; }
         private int _totalItems;
         private int _currentPage;
@@ -185,7 +182,35 @@ namespace Esign.Client.Pages.Misc
             _searchString = text;
             _table.ReloadServerData();
         }
+        private async void GoBack()
+        {
+            // Redirect to the previous page
+            Console.WriteLine("-------------id1----------------");
+            Console.WriteLine(id1);
+            _documentType2 = _documentTypeList.FirstOrDefault(c => c.Id == int.Parse(id1));
+            Console.WriteLine("-------------documentList----------------");
+            Console.WriteLine(_documentTypeList);
+            
+            
+            
+            if (_documentType2!=null)
+            {
 
+                int i = _documentType2.Parent;
+                Console.WriteLine("-------------i----------------");
+                Console.WriteLine(i);
+                if (i != 0)
+                {
+                    NavigationManager.NavigateTo($"/files/{i}", forceLoad: true);
+                }
+                NavigationManager.NavigateTo("/document-types");
+            }
+            else
+            {
+
+                NavigationManager.NavigateTo("/document-types");
+            }
+        }
         private async Task InvokeModal(int id = 0)
         {
             var parameters = new DialogParameters();
@@ -227,6 +252,7 @@ namespace Esign.Client.Pages.Misc
                         Id = _documentType.Id,
                         Name = _documentType.Name,
                         Description = _documentType.Description
+                        
                     });
                 }
             }

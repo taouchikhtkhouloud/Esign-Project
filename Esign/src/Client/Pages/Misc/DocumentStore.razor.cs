@@ -246,7 +246,7 @@ namespace Esign.Client.Pages.Misc
                         status = doc.status
                     });
                 }
-            var options = new DialogOptions { FullScreen = true, CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+            var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
 
             var dialog = _dialogService.Show<ViewDocument>(  _localizer["View Document"], parameters, options);
             var result = await dialog.Result;

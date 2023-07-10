@@ -120,6 +120,37 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
+        private async Task ViewDoc(int documentId)
+        {
+            var parameters = new DialogParameters();
+
+            var doc = _pagedData.FirstOrDefault(c => c.Id == documentId);
+            if (doc != null)
+            {
+                parameters.Add(nameof(ViewDocument.AddEditDocumentModel), new AddEditDocumentCommand
+                {
+                    Id = doc.Id,
+                    Title = doc.Title,
+                    Description = doc.Description,
+                    URL = doc.URL,
+                    IsPublic = doc.IsPublic,
+                    DocumentTypeId = doc.DocumentTypeId,
+                    Client = doc.Client,
+                    Value = doc.Value,
+                    fileType = doc.fileType,
+                    keywords = doc.keywords,
+                    status = doc.status
+                });
+            }
+            var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+
+            var dialog = _dialogService.Show<ViewDocument>(_localizer["View Document"], parameters, options);
+            var result = await dialog.Result;
+            if (!result.Cancelled)
+            {
+                OnSearch("");
+            }
+        }
         private async Task LoadData(int i ,int pageNumber, int pageSize, TableState state)
         {
             var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };

@@ -92,7 +92,6 @@ else
                         }
                     <MudMenuItem @onclick="@(() => ViewDoc(@context.Id))" Target="_blank">@_localizer["View"]</MudMenuItem>
 
-                    <MudMenuItem Link="@context.URL" Disabled="@(string.IsNullOrWhiteSpace(context.URL))" Target="_blank">@_localizer["Download"]</MudMenuItem>
                 </MudMenu>
                     }
                     else

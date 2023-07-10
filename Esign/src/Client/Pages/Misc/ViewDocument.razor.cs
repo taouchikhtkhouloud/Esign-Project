@@ -97,5 +97,6 @@ namespace Esign.Client.Pages.Misc
             return _documentTypes.Where(x => x.Name.Contains(value, StringComparison.InvariantCultureIgnoreCase))
                 .Select(x => x.Id);
         }
+
     }
 }

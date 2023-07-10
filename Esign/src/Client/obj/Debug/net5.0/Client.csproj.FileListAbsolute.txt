@@ -878,9 +878,11 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Clie
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\AddEditDocumentModal.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\AddEditDocumentTypeModal.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\AddFolderDocument.razor.g.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\AddFolderInFolder.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\DocumentStore.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\DocumentTypes.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor.g.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\ViewDocument.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\ViewFolder.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Utilities\AuditTrails.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Shared\Components\AddEditExtendedAttributeModal.razor.g.cs
@@ -928,9 +930,11 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Clie
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\AddEditDocumentModal.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\AddEditDocumentTypeModal.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\AddFolderDocument.razor.g.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\AddFolderInFolder.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\DocumentStore.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\DocumentTypes.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor.g.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\ViewDocument.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\ViewFolder.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Utilities\AuditTrails.razor.g.cs
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Shared\Components\AddEditExtendedAttributeModal.razor.g.cs
@@ -1236,5 +1240,3 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Clie
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Esign.Client.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\ref\Esign.Client.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Esign.Client.pdb
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\AddFolderInFolder.razor.g.cs
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\AddFolderInFolder.razor.g.cs

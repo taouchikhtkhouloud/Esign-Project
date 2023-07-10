@@ -10,6 +10,12 @@ namespace Esign.Domain.Entities.Misc
         public bool IsPublic { get; set; } = false;
         public string URL { get; set; }
         public int DocumentTypeId { get; set; }
+        public string Client { get; set; }
+        public string Value { get; set; }
+        public string fileType { get; set; }
+        public string keywords { get; set; }
+        public bool status { get; set; }
+
         public virtual DocumentType DocumentType { get; set; }
     }
 }

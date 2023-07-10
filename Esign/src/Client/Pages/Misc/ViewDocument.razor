@@ -1,0 +1,82 @@
+﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<AddEditDocumentModal> _localizer
+
+<EditForm Model="@AddEditDocumentModel" OnValidSubmit="SaveAsync">
+    <FluentValidationValidator @ref="_fluentValidationValidator" />
+    <MudDialog>
+        <TitleContent>
+         
+                    <MudText Typo="Typo.h6">
+                        <MudIcon Icon="@Icons.Material.Filled.Update" Class="mr-3 mb-n1" />
+                        @_localizer["View Document Informations"]
+                    </MudText>
+                
+            
+        </TitleContent>
+        <DialogContent>
+            <MudGrid>
+
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6">Title: </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.Title</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6">Description: </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.Description</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6">Client : </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.Client</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6">Document Type: </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.fileType</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6"> Value: </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.Value</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6"> Keywords: </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.keywords</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Color="Color.Primary" Typo="Typo.h6"> Folder: </MudText>
+                    <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.DocumentTypeId</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    
+                        <MudText Color="Color.Primary" Typo="Typo.h6"> Is Document Public: </MudText>
+                        <MudText Typo="Typo.subtitle1">
+                            @(AddEditDocumentModel.IsPublic ? "Yes" : "No")
+                        </MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    
+                        <MudText Color="Color.Primary" Typo="Typo.h6"> Is Document Signed: </MudText> <MudText Typo="Typo.subtitle1">
+    @(AddEditDocumentModel.status ? "Yes" : "No")
+</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudItem>
+
+                        <div>
+
+                            <MudButton Variant="Variant.Text"
+                                       Color="Color.Secondary"
+                                       StartIcon="@Icons.Filled.Web"
+                                       Size="Size.Small"
+                                       Link="@(AddEditDocumentModel.URL)" Target="_blank">
+                                @_localizer["View Document"]
+                            </MudButton>
+
+
+                        </div>
+                    </MudItem>
+                </MudItem>
+            </MudGrid>
+        </DialogContent>
+        <DialogActions>
+            
+        </DialogActions>
+    </MudDialog>
+</EditForm>

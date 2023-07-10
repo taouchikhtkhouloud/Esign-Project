@@ -13,15 +13,22 @@ using Esign.Domain.Entities.Misc;
 using Esign.Shared.Constants.Permission;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.JSInterop;
+using System.Net.Http;
+
+
+
 
 namespace Esign.Client.Pages.Misc
 {
     public partial class DocumentStore
     {
         [Inject] private IDocumentManager DocumentManager { get; set; }
-
+        [Inject] IJSRuntime JSRuntime { get; set; }
         private IEnumerable<GetAllDocumentsResponse> _pagedData;
         private MudTable<GetAllDocumentsResponse> _table;
+        private readonly HttpClient httpClient = new HttpClient();
         private string CurrentUserId { get; set; }
         private int _totalItems;
         private int _currentPage;
@@ -146,8 +153,13 @@ namespace Esign.Client.Pages.Misc
                         Description = doc.Description,
                         URL = doc.URL,
                         IsPublic = doc.IsPublic,
-                        DocumentTypeId = doc.DocumentTypeId
-                    });
+                        DocumentTypeId = doc.DocumentTypeId,
+                        Client = doc.Client,
+                    Value = doc.Value,
+                    fileType = doc.fileType,
+                    keywords = doc.keywords,
+                    status = doc.status
+                });
                 }
             }
             var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
@@ -158,8 +170,27 @@ namespace Esign.Client.Pages.Misc
                 OnSearch("");
             }
         }
+        
+    
 
-        private async Task Delete(int id)
+        private async Task DownloadFile(string url)
+        {
+            var fileUrl = url; // Replace with your file URL
+            var response = await httpClient.GetAsync(fileUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var fileName = "file.png"; // Replace with the desired file name
+                var content = await response.Content.ReadAsByteArrayAsync();
+
+                // Trigger file download
+                await JSRuntime.InvokeVoidAsync("BlazorDownloadFile", fileName, content);
+            }
+        }
+    
+
+
+    private async Task Delete(int id)
         {
             string deleteContent = _localizer["Delete Content"];
             var parameters = new DialogParameters
@@ -191,6 +222,38 @@ namespace Esign.Client.Pages.Misc
         private void ManageExtendedAttributes(int documentId)
         {
             _navigationManager.NavigateTo($"/extended-attributes/{typeof(Document).Name}/{documentId}");
+        }
+
+        private async Task ViewDoc(int documentId)
+        {
+            var parameters = new DialogParameters();
+           
+                var doc = _pagedData.FirstOrDefault(c => c.Id == documentId);
+                if (doc != null)
+                {
+                    parameters.Add(nameof(ViewDocument.AddEditDocumentModel), new AddEditDocumentCommand
+                    {
+                        Id = doc.Id,
+                        Title = doc.Title,
+                        Description = doc.Description,
+                        URL = doc.URL,
+                        IsPublic = doc.IsPublic,
+                        DocumentTypeId = doc.DocumentTypeId,
+                        Client = doc.Client,
+                        Value = doc.Value,
+                        fileType = doc.fileType,
+                        keywords = doc.keywords,
+                        status = doc.status
+                    });
+                }
+            var options = new DialogOptions { FullScreen = true, CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+
+            var dialog = _dialogService.Show<ViewDocument>(  _localizer["View Document"], parameters, options);
+            var result = await dialog.Result;
+            if (!result.Cancelled)
+            {
+                OnSearch("");
+            }
         }
     }
 }

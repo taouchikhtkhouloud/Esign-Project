@@ -51,8 +51,13 @@ namespace Esign.Application.Features.Documents.Queries.GetAll
                 Description = e.Description,
                 URL = e.URL,
                 DocumentType = e.DocumentType.Name,
-                DocumentTypeId = e.DocumentTypeId
-            };
+                DocumentTypeId = e.DocumentTypeId,
+                Client = e.Client,
+                Value = e.Value,
+                fileType = e.fileType,
+                keywords = e.keywords,
+                status = e.status
+        };
             var docSpec = new DocumentFilterSpecification(request.SearchString, _currentUserService.UserId);
             var data = await _unitOfWork.Repository<Document>().Entities
                .Specify(docSpec)

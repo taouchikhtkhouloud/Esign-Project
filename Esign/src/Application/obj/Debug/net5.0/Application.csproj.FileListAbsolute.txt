@@ -1,5 +1,6 @@
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\Esign.Application.deps.json
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\Esign.Application.dll
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\ref\Esign.Application.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\Esign.Application.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\en\Esign.Application.resources.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\it\Esign.Application.resources.dll
@@ -214,4 +215,3 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Appl
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\ref\Esign.Application.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.pdb
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\bin\Debug\net5.0\ref\Esign.Application.dll

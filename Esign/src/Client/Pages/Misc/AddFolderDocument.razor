@@ -36,7 +36,22 @@
                     <MudTextField For="@(() => AddEditDocumentModel.Description)" @bind-Value="AddEditDocumentModel.Description" Label="@_localizer["Description"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudAutocomplete  T="int" Label="@_localizer["Folder"]" For="@(() => AddEditDocumentModel.DocumentTypeId)" @bind-Value="AddEditDocumentModel.DocumentTypeId" ResetValueOnEmptyText="true" SearchFunc="@SearchDocumentTypes" Variant="Variant.Filled" ToStringFunc="@(i=> _documentTypes.FirstOrDefault(b => b.Id == DocumentFolderId)?.Name ?? string.Empty)" OffsetY="true" />
+                    <MudTextField For="@(() => AddEditDocumentModel.Client)" @bind-Value="AddEditDocumentModel.Client" Label="@_localizer["Client"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditDocumentModel.fileType)" @bind-Value="AddEditDocumentModel.fileType" Label="@_localizer["Document Type"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditDocumentModel.Value)" @bind-Value="AddEditDocumentModel.Value" Label="@_localizer["Document Value"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField For="@(() => AddEditDocumentModel.keywords)" @bind-Value="AddEditDocumentModel.keywords" Label="@_localizer["Keywords"]" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudAutocomplete T="int" Label="@_localizer["Folder"]" For="@(() => AddEditDocumentModel.DocumentTypeId)" @bind-Value="AddEditDocumentModel.DocumentTypeId" ResetValueOnEmptyText="true" SearchFunc="@SearchDocumentTypes" Variant="Variant.Filled" ToStringFunc="@(i=> _documentTypes.FirstOrDefault(b => b.Id == DocumentFolderId)?.Name ?? string.Empty)" OffsetY="true" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudCheckBox For="@(() => AddEditDocumentModel.status)" @bind-Checked="AddEditDocumentModel.status" Label="@_localizer["Is Signed?"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
                     <MudCheckBox For="@(() => AddEditDocumentModel.IsPublic)" @bind-Checked="AddEditDocumentModel.IsPublic" Label="@_localizer["Is Public?"]" />

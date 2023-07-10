@@ -2,6 +2,7 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infr
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\Esign.Infrastructure.runtimeconfig.json
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\Esign.Infrastructure.runtimeconfig.dev.json
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\Esign.Infrastructure.dll
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\ref\Esign.Infrastructure.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\Esign.Infrastructure.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\en\Esign.Infrastructure.resources.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\ru\Esign.Infrastructure.resources.dll
@@ -86,4 +87,3 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infr
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\obj\Debug\net5.0\ref\Esign.Infrastructure.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\obj\Debug\net5.0\Esign.Infrastructure.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Infrastructure\bin\Debug\net5.0\ref\Esign.Infrastructure.dll

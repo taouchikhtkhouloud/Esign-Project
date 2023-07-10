@@ -26,6 +26,11 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
         [Required]
         public int DocumentTypeId { get; set; }
         public UploadRequest UploadRequest { get; set; }
+        public string Client { get; set; }
+        public string Value { get; set; }
+        public string fileType { get; set; }
+        public string keywords { get; set; }
+        public bool status { get; set; }
     }
 
     internal class AddDocumentFolderHandler : IRequestHandler<AddDocumentFolder, Result<int>>
@@ -54,7 +59,12 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
             if (command.Id == 0)
             {
                 var doc = _mapper.Map<Document>(command);
-                doc.DocumentTypeId = command.DocumentTypeId;
+                //doc.DocumentTypeId = command.DocumentTypeId;
+                //doc.Client = command.Client;
+                //doc.Value = command.Value;
+                //doc.fileType = command.fileType;
+                //doc.keywords = command.keywords;
+                //doc.status = command.status;
                 if (uploadRequest != null)
                 {
                     doc.URL = _uploadService.UploadAsync(uploadRequest);
@@ -72,6 +82,11 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
                     doc.Title = command.Title ?? doc.Title;
                     doc.Description = command.Description ?? doc.Description;
                     doc.IsPublic = command.IsPublic;
+                    doc.Client = command.Client;
+                    doc.Value = command.Value;
+                    doc.fileType = command.fileType;
+                    doc.keywords = command.keywords;
+                    doc.status = command.status;
                     if (uploadRequest != null)
                     {
                         doc.URL = _uploadService.UploadAsync(uploadRequest);

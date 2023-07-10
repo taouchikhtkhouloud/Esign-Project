@@ -74,24 +74,26 @@ else
             <MudTd DataLabel="Actions" Style="text-align: right">
                 @if (_canEditDocuments || _canDeleteDocuments || _canViewDocumentExtendedAttributes)
                     {
-                    <MudMenu Label="@_localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
-                        @if (_canViewDocumentExtendedAttributes)
+                <MudMenu Label="@_localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
+                    @if (_canViewDocumentExtendedAttributes)
+                        {
+                        <MudMenuItem @onclick="@(() => ManageExtendedAttributes(@context.Id))">@_localizer["Manage Extended Attributes"]</MudMenuItem>
+                        }
+                    @if (context.CreatedBy == CurrentUserId)
+                        {
+                        @if (_canEditDocuments)
                             {
-                            <MudMenuItem @onclick="@(() => ManageExtendedAttributes(@context.Id))">@_localizer["Manage Extended Attributes"]</MudMenuItem>
+                            <MudMenuItem @onclick="@(() => InvokeModal(@context.Id))">@_localizer["Edit"]</MudMenuItem>
                             }
-                        @if (context.CreatedBy == CurrentUserId)
+                        @if (_canDeleteDocuments)
                             {
-                            @if (_canEditDocuments)
-                                {
-                                <MudMenuItem @onclick="@(() => InvokeModal(@context.Id))">@_localizer["Edit"]</MudMenuItem>
-                                }
-                            @if (_canDeleteDocuments)
-                                {
-                                <MudMenuItem @onclick="@(() => Delete(@context.Id))">@_localizer["Delete"]</MudMenuItem>
-                                }
+                            <MudMenuItem @onclick="@(() => Delete(@context.Id))">@_localizer["Delete"]</MudMenuItem>
                             }
-                        <MudMenuItem Link="@context.URL" Disabled="@(string.IsNullOrWhiteSpace(context.URL))" Target="_blank">@_localizer["Download"]</MudMenuItem>
-                    </MudMenu>
+                        }
+                    <MudMenuItem @onclick="@(() => ViewDoc(@context.Id))" Target="_blank">@_localizer["View"]</MudMenuItem>
+
+                    <MudMenuItem Link="@context.URL" Disabled="@(string.IsNullOrWhiteSpace(context.URL))" Target="_blank">@_localizer["Download"]</MudMenuItem>
+                </MudMenu>
                     }
                     else
                     {

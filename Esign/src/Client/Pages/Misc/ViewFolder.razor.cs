@@ -198,8 +198,13 @@ namespace Esign.Client.Pages.Misc
                         Description = doc.Description,
                         URL = doc.URL,
                         IsPublic = doc.IsPublic,
-                        DocumentTypeId = int.Parse(id1)
-                    });
+                        DocumentTypeId = int.Parse(id1),
+                        Client = doc.Client,
+                        Value = doc.Value,
+                        fileType = doc.fileType,
+                        keywords = doc.keywords,
+                        status = doc.status
+                });
                 }
             }
             parameters.Add(nameof(AddFolderDocument.DocumentFolderId), int.Parse(id1));

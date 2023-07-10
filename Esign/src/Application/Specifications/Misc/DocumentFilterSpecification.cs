@@ -9,7 +9,7 @@ namespace Esign.Application.Specifications.Misc
         {
             if (!string.IsNullOrEmpty(searchString))
             {
-                Criteria = p => (p.Title.Contains(searchString) || p.Description.Contains(searchString)) && (p.IsPublic == true || (p.IsPublic == false && p.CreatedBy == userId));
+                Criteria = p => (p.Title.Contains(searchString) || p.Description.Contains(searchString) || p.keywords.Contains(searchString) || p.Client.Contains(searchString) || p.fileType.Contains(searchString)) && (p.IsPublic == true || (p.IsPublic == false && p.CreatedBy == userId));
             }
             else
             {

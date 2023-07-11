@@ -91,6 +91,7 @@ else
                             }
                         }
                     <MudMenuItem @onclick="@(() => ViewDoc(@context.Id))" Target="_blank">@_localizer["View"]</MudMenuItem>
+                    <MudMenuItem @onclick="@(() => SubmitAsync(@context.Id))" Target="_blank">@_localizer["Sigm Document"]</MudMenuItem>
 
                 </MudMenu>
                     }

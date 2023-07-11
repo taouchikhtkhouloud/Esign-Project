@@ -105,6 +105,13 @@
             <param name="request"></param>
             <returns>Status 200 OK</returns>
         </member>
+        <member name="M:Esign.Server.Controllers.Identity.UserController.SendCodeAsyn(Esign.Application.Requests.Documents.SignDocumentRequest)">
+            <summary>
+            send code
+            </summary>
+            /// <param name="request"></param>
+            <returns>Status 200 OK</returns>
+        </member>
         <member name="M:Esign.Server.Controllers.Identity.UserController.ConfirmEmailAsync(System.String,System.String)">
             <summary>
             Confirm Email

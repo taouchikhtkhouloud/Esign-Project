@@ -1,4 +1,5 @@
 ﻿using Esign.Application.Interfaces.Services.Identity;
+using Esign.Application.Requests.Documents;
 using Esign.Application.Requests.Identity;
 using Esign.Shared.Constants.Permission;
 using Microsoft.AspNetCore.Authorization;
@@ -83,6 +84,19 @@ namespace Esign.Server.Controllers.Identity
         }
 
         /// <summary>
+        /// send code
+        /// </summary>
+        /// /// <param name="request"></param>
+        /// <returns>Status 200 OK</returns>
+        [AllowAnonymous]
+        [HttpPost("send-code")]
+        public async Task<IActionResult> SendCodeAsyn(SignDocumentRequest request)
+        {
+            return Ok(await _userService.SendCodeAsyn(request));
+
+        }
+
+        /// <summary>
         /// Confirm Email
         /// </summary>
         /// <param name="userId"></param>
@@ -118,6 +132,8 @@ namespace Esign.Server.Controllers.Identity
             var origin = Request.Headers["origin"];
             return Ok(await _userService.ForgotPasswordAsync(request, origin));
         }
+
+
 
         /// <summary>
         /// Reset Password

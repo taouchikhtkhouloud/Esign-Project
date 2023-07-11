@@ -16,8 +16,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.JSInterop;
 using System.Net.Http;
-
-
+using System.Text;
 
 
 namespace Esign.Client.Pages.Misc
@@ -26,6 +25,8 @@ namespace Esign.Client.Pages.Misc
     {
         [Inject] private IDocumentManager DocumentManager { get; set; }
         [Inject] IJSRuntime JSRuntime { get; set; }
+
+
         private IEnumerable<GetAllDocumentsResponse> _pagedData;
         private MudTable<GetAllDocumentsResponse> _table;
         private readonly HttpClient httpClient = new HttpClient();
@@ -36,6 +37,7 @@ namespace Esign.Client.Pages.Misc
         private bool _dense = false;
         private bool _striped = true;
         private bool _bordered = false;
+       
 
         private ClaimsPrincipal _currentUser;
         private bool _canCreateDocuments;
@@ -44,6 +46,9 @@ namespace Esign.Client.Pages.Misc
         private bool _canSearchDocuments;
         private bool _canViewDocumentExtendedAttributes;
         private bool _loaded;
+        private string CurrentUserEmail;
+        private readonly SignDocumentRequest _CodeModel = new();
+
 
         protected override async Task OnInitializedAsync()
         {
@@ -53,7 +58,7 @@ namespace Esign.Client.Pages.Misc
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;
             _canSearchDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Search)).Succeeded;
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
-
+           
             _loaded = true;
 
             var state = await _stateProvider.GetAuthenticationStateAsync();
@@ -255,5 +260,109 @@ namespace Esign.Client.Pages.Misc
                 OnSearch("");
             }
         }
+        private const string Characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        private const int CodeLength = 8;
+
+        //public async Task GenerateCodeAsync(int id)
+        //{
+        //    var random = new Random();
+        //    var codeBuilder = new StringBuilder();
+        //    var state = await _stateProvider.GetAuthenticationStateAsync().ConfigureAwait(false);
+        //    var user = state.User;
+
+        //    for (int i = 0; i < CodeLength; i++)
+        //    {
+        //        int index = random.Next(Characters.Length);
+        //        char character = Characters[index];
+        //        codeBuilder.Append(character);
+        //        Console.WriteLine("----------code---------");
+        //        Console.WriteLine(codeBuilder.ToString());
+        //    }
+
+        //    if (user.Identity?.IsAuthenticated == true)
+        //    {
+        //        CurrentUserEmail = user.GetEmail();
+        //        Console.WriteLine("----------mail---------");
+        //        Console.WriteLine(CurrentUserEmail);
+        //        _CodeModel.Code = codeBuilder.ToString();
+        //        _CodeModel.Email = CurrentUserEmail;
+        //        //var response = await SubmitAsync();
+        //        //if (response.Succeeded)
+        //        //{
+        //        //    _snackBar.Add(response.Messages[0], Severity.Success);
+
+
+        //        //}
+        //        //else
+        //        //{
+        //        //    foreach (var message in response.Messages)
+        //        //    {
+        //        //        _snackBar.Add(message, Severity.Error);
+        //        //    }
+        //        //}
+        //    }
+        //    return 
+        //    //var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+        //    //var parameters = new DialogParameters();
+        //    //parameters.Add(nameof(SignDocument.documentId), id);
+
+        //    //var dialog = _dialogService.Show<SignDocument>(_localizer["Sign Document"], parameters, options);
+        //    //var result = await dialog.Result;
+
+        //    //if (!result.Cancelled)
+        //    //{
+        //    //    OnSearch("");
+        //    //}
+        //}
+        public  string GenerateCodeAsync()
+        {
+            var random = new Random();
+            var codeBuilder = new StringBuilder();
+            
+
+            for (int i = 0; i < CodeLength; i++)
+            {
+                int index = random.Next(Characters.Length);
+                char character = Characters[index];
+                codeBuilder.Append(character);
+                Console.WriteLine("----------code---------");
+                Console.WriteLine(codeBuilder.ToString());
+            }
+            return codeBuilder.ToString();
+        }
+        public async Task<string> CurrentUserE()
+        {
+            var state = await _stateProvider.GetAuthenticationStateAsync().ConfigureAwait(false);
+            var user = state.User;
+            if (user.Identity?.IsAuthenticated == true)
+            {
+                CurrentUserEmail = user.GetEmail();
+                Console.WriteLine("----------mail---------");
+                Console.WriteLine(CurrentUserEmail);
+            }
+            return CurrentUserEmail;
+        }
+        private async Task SubmitAsync(int id)
+        {
+            _CodeModel.Email = await CurrentUserE();
+            _CodeModel.Code = GenerateCodeAsync();
+            Console.WriteLine(_CodeModel.Email);
+            Console.WriteLine(_CodeModel.Code);
+            var result = await _userManager.SendCodeAsyn(_CodeModel);
+            if (result.Succeeded)
+            {
+                _snackBar.Add(_localizer["Done!"], Severity.Success);
+                _navigationManager.NavigateTo("/");
+            }
+            else
+            {
+                foreach (var message in result.Messages)
+                {
+                    _snackBar.Add(message, Severity.Error);
+                }
+            }
+        }
+
+
     }
 }

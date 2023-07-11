@@ -1,4 +1,5 @@
-﻿using Esign.Application.Requests.Identity;
+﻿using Esign.Application.Requests.Documents;
+using Esign.Application.Requests.Identity;
 using Esign.Application.Responses.Identity;
 using Esign.Client.Infrastructure.Extensions;
 using Esign.Shared.Wrapper;
@@ -73,6 +74,12 @@ namespace Esign.Client.Infrastructure.Managers.Identity.Users
                 : Routes.UserEndpoints.ExportFiltered(searchString));
             var data = await response.Content.ReadAsStringAsync();
             return data;
+        }
+
+        public async Task<IResult> SendCodeAsyn(SignDocumentRequest request)
+        {
+            var response = await _httpClient.PostAsJsonAsync(Routes.UserEndpoints.SendCode, request);
+            return await response.ToResult();
         }
     }
 }

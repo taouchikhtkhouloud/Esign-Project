@@ -1,4 +1,5 @@
 ﻿using Esign.Application.Interfaces.Common;
+using Esign.Application.Requests.Documents;
 using Esign.Application.Requests.Identity;
 using Esign.Application.Responses.Identity;
 using Esign.Shared.Wrapper;
@@ -14,7 +15,7 @@ namespace Esign.Application.Interfaces.Services.Identity
         Task<int> GetCountAsync();
 
         Task<IResult<UserResponse>> GetAsync(string userId);
-
+        Task<IResult> SendCodeAsyn(SignDocumentRequest request);
         Task<IResult> RegisterAsync(RegisterRequest request, string origin);
 
         Task<IResult> ToggleUserStatusAsync(ToggleUserStatusRequest request);

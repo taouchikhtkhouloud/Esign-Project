@@ -10,6 +10,7 @@ namespace Esign.Client.Infrastructure.Managers.Misc.Document
     public interface IDocumentManager : IManager
     {
         Task<PaginatedResult<GetAllDocumentsResponse>> GetAllAsync(GetAllPagedDocumentsRequest request);
+       
 
         Task<IResult<GetDocumentByIdResponse>> GetByIdAsync(GetDocumentByIdQuery request);
 

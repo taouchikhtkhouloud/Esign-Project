@@ -10,6 +10,7 @@ using Esign.Application.Exceptions;
 using Esign.Application.Extensions;
 using Esign.Application.Interfaces.Services;
 using Esign.Application.Interfaces.Services.Identity;
+using Esign.Application.Requests.Documents;
 using Esign.Application.Requests.Identity;
 using Esign.Application.Requests.Mail;
 using Esign.Application.Responses.Identity;
@@ -59,8 +60,15 @@ namespace Esign.Infrastructure.Services.Identity
             var result = _mapper.Map<List<UserResponse>>(users);
             return await Result<List<UserResponse>>.SuccessAsync(result);
         }
+        public async Task<IResult> SendCodeAsyn(SignDocumentRequest request)
+        {
+            var message = new MailRequest(new string[] { request.Email }, "Confirmation code ", request.Code);
+            _mailService.SendAsync(message);
+            return await Result<string>.SuccessAsync( string.Format(_localizer["Sent Code!  Please check your Mailbox to verify!"]));
 
-       
+
+        }
+
         public async Task<IResult> RegisterAsync(RegisterRequest request, string origin)
         {
             var userWithSameUserName = await _userManager.FindByNameAsync(request.UserName);

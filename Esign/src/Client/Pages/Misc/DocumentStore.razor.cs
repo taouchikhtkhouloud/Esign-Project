@@ -263,57 +263,7 @@ namespace Esign.Client.Pages.Misc
         private const string Characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         private const int CodeLength = 8;
 
-        //public async Task GenerateCodeAsync(int id)
-        //{
-        //    var random = new Random();
-        //    var codeBuilder = new StringBuilder();
-        //    var state = await _stateProvider.GetAuthenticationStateAsync().ConfigureAwait(false);
-        //    var user = state.User;
-
-        //    for (int i = 0; i < CodeLength; i++)
-        //    {
-        //        int index = random.Next(Characters.Length);
-        //        char character = Characters[index];
-        //        codeBuilder.Append(character);
-        //        Console.WriteLine("----------code---------");
-        //        Console.WriteLine(codeBuilder.ToString());
-        //    }
-
-        //    if (user.Identity?.IsAuthenticated == true)
-        //    {
-        //        CurrentUserEmail = user.GetEmail();
-        //        Console.WriteLine("----------mail---------");
-        //        Console.WriteLine(CurrentUserEmail);
-        //        _CodeModel.Code = codeBuilder.ToString();
-        //        _CodeModel.Email = CurrentUserEmail;
-        //        //var response = await SubmitAsync();
-        //        //if (response.Succeeded)
-        //        //{
-        //        //    _snackBar.Add(response.Messages[0], Severity.Success);
-
-
-        //        //}
-        //        //else
-        //        //{
-        //        //    foreach (var message in response.Messages)
-        //        //    {
-        //        //        _snackBar.Add(message, Severity.Error);
-        //        //    }
-        //        //}
-        //    }
-        //    return 
-        //    //var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
-        //    //var parameters = new DialogParameters();
-        //    //parameters.Add(nameof(SignDocument.documentId), id);
-
-        //    //var dialog = _dialogService.Show<SignDocument>(_localizer["Sign Document"], parameters, options);
-        //    //var result = await dialog.Result;
-
-        //    //if (!result.Cancelled)
-        //    //{
-        //    //    OnSearch("");
-        //    //}
-        //}
+        
         public  string GenerateCodeAsync()
         {
             var random = new Random();
@@ -351,8 +301,13 @@ namespace Esign.Client.Pages.Misc
             var result = await _userManager.SendCodeAsyn(_CodeModel);
             if (result.Succeeded)
             {
-                _snackBar.Add(_localizer["Done!"], Severity.Success);
-                _navigationManager.NavigateTo("/");
+                _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
+                var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+                var parameters = new DialogParameters();
+                parameters.Add(nameof(SignDocument.documentId), id);
+                parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
+                var dialog = _dialogService.Show<SignDocument>(_localizer["enter the code sent to your email to sign the document"], parameters, options);
+                var result1 = await dialog.Result;
             }
             else
             {

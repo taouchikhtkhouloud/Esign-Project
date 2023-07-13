@@ -279,8 +279,22 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\SignDocument.razor"
+using Esign.Application.Features.Documents.Queries.GetAll;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 49 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\_Imports.razor"
 [Authorize]
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\SignDocument.razor"
+           [Authorize(Policy = Permissions.Documents.View)]
 
 #line default
 #line hidden
@@ -292,6 +306,7 @@ using Esign.Client.Extensions;
         {
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager _userManager { get; set; }

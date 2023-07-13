@@ -304,7 +304,24 @@ namespace Esign.Client.Pages.Misc
                 _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
                 var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
                 var parameters = new DialogParameters();
-                parameters.Add(nameof(SignDocument.documentId), id);
+                var doc = _pagedData.FirstOrDefault(c => c.Id == id);
+                if (doc != null)
+                {
+                    parameters.Add(nameof(SignDocument.AddEditDocumentModel), new AddEditDocumentCommand
+                    {
+                        Id = doc.Id,
+                        Title = doc.Title,
+                        Description = doc.Description,
+                        URL = doc.URL,
+                        IsPublic = doc.IsPublic,
+                        DocumentTypeId = doc.DocumentTypeId,
+                        Client = doc.Client,
+                        Value = doc.Value,
+                        fileType = doc.fileType,
+                        keywords = doc.keywords,
+                        status = doc.status
+                    });
+                }
                 parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
                 var dialog = _dialogService.Show<SignDocument>(_localizer["enter the code sent to your email to sign the document"], parameters, options);
                 var result1 = await dialog.Result;

@@ -463,13 +463,22 @@
           }
         }
       },
+      "Domain/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
       "Esign.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "Esign.Domain": "1.0.0",
+          "Domain": "1.0.0",
           "Esign.Shared": "1.0.0",
           "FluentValidation": "10.2.3",
           "LazyCache": "2.1.3",
@@ -486,19 +495,6 @@
         },
         "runtime": {
           "bin/placeholder/Esign.Application.dll": {}
-        }
-      },
-      "Esign.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "MailKit": "2.13.0"
-        },
-        "compile": {
-          "bin/placeholder/Esign.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Esign.Domain.dll": {}
         }
       },
       "Esign.Shared/1.0.0": {
@@ -1662,15 +1658,15 @@
         "version.txt"
       ]
     },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
     "Esign.Application/1.0.0": {
       "type": "project",
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
-    },
-    "Esign.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
     },
     "Esign.Shared/1.0.0": {
       "type": "project",

@@ -8,6 +8,14 @@ using System.IO;
 using System.Threading.Tasks;
 using Blazored.FluentValidation;
 using Esign.Shared.Constants.Storage;
+using System.IO;
+using Esign.Client.Extensions;
+using System;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+using Microsoft.JSInterop;
 
 namespace Esign.Client.Pages.Identity
 {
@@ -17,6 +25,7 @@ namespace Esign.Client.Pages.Identity
         private bool Validated => _fluentValidationValidator.Validate(options => { options.IncludeAllRuleSets(); });
         private char _firstLetterOfName;
         private readonly UpdateProfileRequest _profileModel = new();
+        [Inject] IJSRuntime JSRuntime { get; set; }
 
         public string UserId { get; set; }
 
@@ -38,9 +47,130 @@ namespace Esign.Client.Pages.Identity
             }
         }
 
+        public const string pdfPath = "../../test.pdf";
+
+        private async Task EditDocument()
+        {
+            string documentPath = "../test.pdf";
+            byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
+
+            // Check if the pdfBytes is not null before saving
+            if (pdfBytes != null)
+            {
+                // Save the PDF bytes as a file on the client-side
+                await Profile.SaveAs(JSRuntime, pdfPath, pdfBytes);
+            }
+            else
+            {
+                // Handle the case where pdfBytes is null (e.g., show an error message)
+                Console.WriteLine("PDF generation failed.");
+            }
+        }
+
+
+        public static async Task SaveAs(IJSRuntime jsRuntime, string filePath, byte[] fileBytes)
+        {
+            // Convert the file bytes to a Base64 string
+            var base64File = Convert.ToBase64String(fileBytes);
+
+            // Invoke the JavaScript function to save the file
+            await jsRuntime.InvokeVoidAsync("saveAsFile", filePath, base64File);
+        }
+        public void ModifyPdf(string filePath)
+        {
+            try
+            {
+                // Open the existing PDF file
+                PdfDocument pdfDoc = new PdfDocument(new PdfReader(filePath), new PdfWriter("modified.pdf"));
+                // Initialize document to write modifications
+                using (var document = new Document(pdfDoc))
+                {
+                    // Modify the PDF content here
+
+                    // For example, let's add a new paragraph to the first page
+                    document.Add(new Paragraph("This is a modified PDF"));
+
+                    // Close the document
+                    document.Close();
+                }
+
+                Console.WriteLine("PDF modified successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while modifying the PDF: " + ex.Message);
+            }
+        }
+
+        private void GenerateModifiedPdf()
+        {
+            try
+            {
+                FileInfo file = new FileInfo(pdfPath);
+                if (file.Exists)
+                {
+                    new Profile().ModifyPdf(pdfPath);
+                }
+                else
+                {
+                    Console.WriteLine("The specified PDF file does not exist.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while generating the modified PDF: " + ex.Message);
+            }
+        }
+        public void CreatePdf(string dest)
+        {
+            try
+            {
+                // Initialize PDF writer
+                PdfWriter writer = new PdfWriter(dest);
+                // Initialize PDF document
+                PdfDocument pdf = new PdfDocument(writer);
+                // Initialize document
+                Document document = new Document(pdf);
+                // Add paragraph to the document
+                document.Add(new Paragraph("Hello World!"));
+                Console.WriteLine("-----------------------");
+                Console.WriteLine(document);
+                // Close document
+                document.Close();
+                Console.WriteLine("PDF created successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while creating the PDF: " + ex.Message);
+            }
+        }
+
+        private void GeneratePdf()
+        {
+            try
+            {
+                //FileInfo file = new FileInfo(pdfPath);
+                //Console.WriteLine("---------------------->", file);
+                //Directory.CreateDirectory(Path.GetDirectoryName(pdfPath));
+                new Profile().CreatePdf(pdfPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while generating the PDF: " + ex.Message);
+            }
+        }
         protected override async Task OnInitializedAsync()
         {
             await LoadDataAsync();
+            PdfWriter writer = new PdfWriter("C:\\Users\\KHOULOUD TAOUCHIKHT\\Downloads\\zft.pdf");
+            PdfDocument pdf = new PdfDocument(writer);
+            Document document = new Document(pdf);
+            Paragraph header = new Paragraph("HEADER")
+               .SetTextAlignment(TextAlignment.CENTER)
+               .SetFontSize(20);
+
+            document.Add(header);
+            document.Close();
         }
 
         private async Task LoadDataAsync()

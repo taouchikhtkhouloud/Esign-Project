@@ -1,4 +1,6 @@
 ﻿<StaticWebAssets Version="1.0">
   <ContentRoot BasePath="/" Path="C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\" />
   <ContentRoot BasePath="_content/MudBlazor" Path="C:\Users\KHOULOUD TAOUCHIKHT\.nuget\packages\mudblazor\5.0.14\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor" Path="C:\Users\KHOULOUD TAOUCHIKHT\.nuget\packages\syncfusion.blazor\22.1.34\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.WordProcessor" Path="C:\Users\KHOULOUD TAOUCHIKHT\.nuget\packages\syncfusion.blazor.wordprocessor\22.1.34\build\..\staticwebassets\" />
 </StaticWebAssets>

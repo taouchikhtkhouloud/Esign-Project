@@ -261,6 +261,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "BlazorBarcodes": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "Blazored.FluentValidation": {
               "target": "Package",
               "version": "[2.0.1, )"
@@ -314,9 +318,37 @@
               "target": "Package",
               "version": "[5.0.14, )"
             },
+            "NETStandardQRCode": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "Syncfusion.Blazor": {
+              "target": "Package",
+              "version": "[22.1.34, )"
+            },
+            "Syncfusion.Blazor.WordProcessor": {
+              "target": "Package",
+              "version": "[22.1.34, )"
+            },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "itext7.bouncy-castle-adapter": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

@@ -1,0 +1,30 @@
+2023-07-15 01:35:40.210 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 01:35:40.523 +00:00 [INF] Hosting environment: Development
+2023-07-15 01:35:40.532 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 11:14:42.771 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 11:14:42.949 +00:00 [INF] Hosting environment: Development
+2023-07-15 11:14:42.955 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 11:20:03.056 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 11:20:03.858 +00:00 [INF] Hosting environment: Development
+2023-07-15 11:20:03.865 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 11:24:10.453 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 11:24:10.635 +00:00 [INF] Hosting environment: Development
+2023-07-15 11:24:10.645 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 11:27:28.560 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 11:27:28.734 +00:00 [INF] Hosting environment: Development
+2023-07-15 11:27:28.745 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 11:40:26.008 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 11:40:26.110 +00:00 [INF] Hosting environment: Development
+2023-07-15 11:40:26.115 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 11:46:01.550 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 11:46:01.724 +00:00 [INF] Hosting environment: Development
+2023-07-15 11:46:01.730 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 14:42:44.762 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 14:42:44.917 +00:00 [INF] Hosting environment: Development
+2023-07-15 14:42:44.923 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 14:59:59.502 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 14:59:59.698 +00:00 [INF] Hosting environment: Development
+2023-07-15 14:59:59.714 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 15:04:36.660 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 15:04:36.807 +00:00 [INF] Hosting environment: Development
+2023-07-15 15:04:36.813 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

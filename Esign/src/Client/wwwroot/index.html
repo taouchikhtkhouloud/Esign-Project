@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="_content/MudBlazor/MudBlazor.min.css?v=5.0.5" rel="stylesheet" />
     <link href="css/loader.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="_content/Syncfusion.Blazor/styles/material.css" rel="stylesheet" />
+    <script src="_content/Syncfusion.Blazor/scripts/sf-blazor.min.js"></script>
+
 </head>
 
 <body>
@@ -45,6 +49,21 @@
                 top: 50%;
                 transform: translate(-50%,-50%)
             }
+
+            @font-face {
+                font-family: CCodeQR;
+                src: url("./fonts/CCodeQR_Trial.woff") format("woff");
+            }
+
+            #qrBarcodeFonts {
+                font-weight: normal;
+                font-style: normal;
+                line-height: normal;
+                font-family: 'CCodeQR', sans-serif;
+                font-size: 12px;
+                letter-spacing: -1px;
+                line-height: 98%;
+            }
         </style>
 
         <div style="height:100%;width:100%;margin:0;position:fixed;">
@@ -66,7 +85,11 @@
     <script src="js/scroll.js"></script>
     <script src="js/sounds.js"></script>
     <script src="js/file.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/QRCodeInterop.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.js"></script>
     <script src="_content/MudBlazor/MudBlazor.min.js?v=5.0.5"></script>
 </body>
 </html>

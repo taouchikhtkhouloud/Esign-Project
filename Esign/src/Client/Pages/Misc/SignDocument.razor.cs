@@ -56,7 +56,7 @@ namespace Esign.Client.Pages.Misc
 
         private async Task EditDocument()
         {
-            string documentPath = "../test.pdf";
+            string documentPath = "../Files/Documents/Northwind Report.pdf";
             byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
 
             // Check if the pdfBytes is not null before saving

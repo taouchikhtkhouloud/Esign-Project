@@ -2,7 +2,7 @@
     const { PDFDocument, StandardFonts, rgb, SVG } = PDFLib;
     const url = '../Files/Documents/Northwind Report.pdf';
     //const filename = 'AWS Certified Cloud Practitioner.pdf';
-    const filePath = encodeURI(url);
+    const filePath = encodeURI(documentUrl);
     const existingPdfBytes = await fetch(filePath).then(res => res.arrayBuffer())
 
     const pdfDoc = await PDFDocument.load(existingPdfBytes)

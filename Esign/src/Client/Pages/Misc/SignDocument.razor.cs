@@ -12,6 +12,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Drawing.Imaging;
+using System.IO;
+using QRCoder;
+using System.Drawing;
+using Microsoft.JSInterop;
+using Net.ConnectCode.BarcodeFontsStandard2D;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+
 namespace Esign.Client.Pages.Misc
 {
     public partial class SignDocument
@@ -22,62 +31,89 @@ namespace Esign.Client.Pages.Misc
         [Parameter] public string code { get; set; }
 
         [Inject] private IDocumentManager DocumentManager { get; set; }
+        [Parameter] public AddEditDocumentCommand AddEditDocumentModel { get; set; } = new();
+        private string Url { get; set; } = "https://translate.google.com/";
 
         private string enteredCode;
-        private IEnumerable<GetAllDocumentsResponse> _pagedData;
-        private GetDocumentByIdQuery docById = new();
-      
+        [Inject] IJSRuntime JSRuntime { get; set; }
 
+        [CascadingParameter] private MudDialogInstance MudDialog { get; set; }
 
-        private async Task LoadData()
+        //private string GenerateQRCode()
+        //{
+        //    QRCoder.QRCodeGenerator qrGenerator = new QRCodeGenerator();
+        //    QRCodeData qrCodeData = qrGenerator.CreateQrCode(Url, QRCodeGenerator.ECCLevel.Q);
+        //    QRCode qrCode = new QRCode(qrCodeData);
+        //    Bitmap qrCodeImage = qrCode.GetGraphic(20);
+
+        //    using (MemoryStream ms = new MemoryStream())
+        //    {
+        //        qrCodeImage.Save(ms, ImageFormat.Png);
+        //        byte[] imageBytes = ms.ToArray();
+        //        return "data:image/png;base64," + Convert.ToBase64String(imageBytes);
+        //    }
+        //}
+
+        private async Task EditDocument()
         {
-            var request = new GetAllPagedDocumentsRequest { };
-            var response = await DocumentManager.GetAllAsync(request);
-            if (response.Succeeded)
-            {
+            string documentPath = "../Files/Documents/Northwind Report.pdf";
+            byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
 
-                _pagedData = response.Data.ToList();
-            }
-            else
-            {
-                foreach (var message in response.Messages)
-                {
-                    _snackBar.Add(message, Severity.Error);
-                }
-            }
+            // Check if the pdfBytes is not null before saving
+            //if (pdfBytes != null)
+            //{
+            //    // Save the PDF bytes as a file on the client-side
+            //    await Profile.SaveAs(JSRuntime, pdfPath, pdfBytes);
+            //}
+            //else
+            //{
+            //    // Handle the case where pdfBytes is null (e.g., show an error message)
+            //    Console.WriteLine("PDF generation failed.");
+            //}
         }
 
         private async Task HandleSubmit()
         {
+           
+    // Close the PDF document
+ 
             if (enteredCode == code)
             {
-                // Code matches, sign the document
-                // Add your sign document logic here
-                docById.Id = documentId;
-                //var doc = DocumentManager.GetByIdAsync(docById);
-                await LoadData();
-                var doc = _pagedData.FirstOrDefault(c => c.Id == documentId);
-                doc.status = true;
-               
-                var document = new AddEditDocumentCommand
-                {
-                    Id = doc.Id,
-                    Title = doc.Title,
-                    Description = doc.Description,
-                    URL = doc.URL,
-                    IsPublic = doc.IsPublic,
-                    DocumentTypeId = doc.DocumentTypeId,
-                    Client = doc.Client,
-                    Value = doc.Value,
-                    fileType = doc.fileType,
-                    keywords = doc.keywords,
-                    status = true
-                };
-                var response = await DocumentManager.SaveAsync(document);
+                //try
+                //{
+                //    Document document = new Document();
+                //    string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                //    string filePath = Path.Combine(baseDirectory, "test.pdf");
+                //    MemoryStream memory = new MemoryStream();
+                //    Console.WriteLine(filePath);
+                //    string sanitizedFilePath = Path.GetFullPath(filePath);
+
+                //    PdfWriter writer = PdfWriter.GetInstance(document, memory);
+
+                //    // Open the PDF document
+                //    document.Open();
+
+                //    // Create a new paragraph with the QR code HTML
+                //    Paragraph paragraph = new Paragraph();
+                //    paragraph.Font = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 12f);
+                //    paragraph.Add(new Chunk("hello world", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 12f)));
+                //    document.Add(paragraph);
+                //    Console.WriteLine("---------->", document);
+                //    document.Close();
+                //    Console.WriteLine("---------->>", memory);
+                //}
+                //catch (Exception ex)
+                //{
+                //    Console.WriteLine("------------->Error: " + ex.Message);
+                //}
+
+                AddEditDocumentModel.status = true;
+                await EditDocument();
+                var response = await DocumentManager.SaveAsync(AddEditDocumentModel);
                 if (response.Succeeded)
                 {
                     _snackBar.Add("Document signed successfully!", Severity.Success);
-
+                    MudDialog.Close();
                 }
                 else
                 {

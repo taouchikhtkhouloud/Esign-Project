@@ -15,6 +15,7 @@ using Esign.Server.Filters;
 using Esign.Server.Managers.Preferences;
 using Microsoft.Extensions.Localization;
 
+
 namespace Esign.Server
 {
     public class Startup
@@ -69,6 +70,7 @@ namespace Esign.Server
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IStringLocalizer<Startup> localizer)
         {
+            //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjU3NDU3OEAzMjMyMmUzMDJlMzBRZnRIeWp5T2RITkRZQmF0WXdNTUpObngzVEg4Y3FaVmVlMVFEeEVQeitzPQ==");
             app.UseCors();
             app.UseExceptionHandling(env);
             app.UseHttpsRedirection();

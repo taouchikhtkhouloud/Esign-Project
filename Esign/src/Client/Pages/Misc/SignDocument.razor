@@ -1,6 +1,11 @@
-﻿<MudDialog Title="Sign Document" OnClose="DialogClosed">
+﻿@attribute [Authorize(Policy = Permissions.Documents.View)]
+@inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer
+@using Esign.Application.Features.Documents.Queries.GetAll
+
+<MudDialog Title="Sign Document" OnClose="DialogClosed">
     <DialogContent>
         <MudTextField @bind-Value="enteredCode" Label="Enter the code" />
+       
     </DialogContent>
     <DialogActions>
         <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="HandleSubmit">Submit</MudButton>

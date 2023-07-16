@@ -46,6 +46,7 @@ namespace Esign.Client.Pages.Misc
         private bool _canSearchDocuments;
         private bool _canViewDocumentExtendedAttributes;
         private bool _loaded;
+        private bool IsSigned;
         private string CurrentUserEmail;
         private readonly SignDocumentRequest _CodeModel = new();
 
@@ -58,7 +59,7 @@ namespace Esign.Client.Pages.Misc
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;
             _canSearchDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Search)).Succeeded;
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
-           
+            IsSigned = false;
             _loaded = true;
 
             var state = await _stateProvider.GetAuthenticationStateAsync();

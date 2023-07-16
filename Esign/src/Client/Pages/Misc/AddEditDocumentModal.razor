@@ -53,9 +53,7 @@
                 <MudItem xs="12" md="6">
                     <MudCheckBox For="@(() => AddEditDocumentModel.IsPublic)" @bind-Checked="AddEditDocumentModel.IsPublic" Label="@_localizer["Is Public?"]" />
                 </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudCheckBox For="@(() => AddEditDocumentModel.status)" @bind-Checked="AddEditDocumentModel.status" Label="@_localizer["Is Signed?"]" />
-                </MudItem>
+               
                 <MudItem xs="12" md="6">
                     <MudItem>
                         @if (_file != null)

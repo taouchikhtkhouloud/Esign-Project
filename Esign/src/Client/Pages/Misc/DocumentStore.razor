@@ -75,23 +75,27 @@ else
                 @if (_canEditDocuments || _canDeleteDocuments || _canViewDocumentExtendedAttributes)
                     {
                 <MudMenu Label="@_localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
-                    @if (_canViewDocumentExtendedAttributes)
+                    @*@if (_canViewDocumentExtendedAttributes)
                         {
                         <MudMenuItem @onclick="@(() => ManageExtendedAttributes(@context.Id))">@_localizer["Manage Extended Attributes"]</MudMenuItem>
-                        }
+                        }*@
                     @if (context.CreatedBy == CurrentUserId)
                         {
-                        @if (_canEditDocuments)
+                        @if (_canEditDocuments && !context.status)
                             {
                             <MudMenuItem @onclick="@(() => InvokeModal(@context.Id))">@_localizer["Edit"]</MudMenuItem>
                             }
-                        @if (_canDeleteDocuments)
+                        @if (_canDeleteDocuments && !context.status)
                             {
                             <MudMenuItem @onclick="@(() => Delete(@context.Id))">@_localizer["Delete"]</MudMenuItem>
                             }
+                        @if (!context.status)
+                            {
+
+                    <MudMenuItem @onclick="@(() => SubmitAsync(@context.Id))" Target="_blank">@_localizer["Sign Document"]</MudMenuItem>
+                            }
                         }
                     <MudMenuItem @onclick="@(() => ViewDoc(@context.Id))" Target="_blank">@_localizer["View"]</MudMenuItem>
-                    <MudMenuItem @onclick="@(() => SubmitAsync(@context.Id))" Target="_blank">@_localizer["Sigm Document"]</MudMenuItem>
 
                 </MudMenu>
                     }

@@ -30,7 +30,7 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
         public string Value { get; set; }
         public string fileType { get; set; }
         public string keywords { get; set; }
-        public bool status { get; set; }
+        public bool status { get; set; } 
     }
 
     internal class AddDocumentFolderHandler : IRequestHandler<AddDocumentFolder, Result<int>>

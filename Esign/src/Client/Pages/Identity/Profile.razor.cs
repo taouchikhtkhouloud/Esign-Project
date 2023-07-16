@@ -49,33 +49,33 @@ namespace Esign.Client.Pages.Identity
 
         public const string pdfPath = "../../test.pdf";
 
-        private async Task EditDocument()
-        {
-            string documentPath = "../test.pdf";
-            byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
+        //private async Task EditDocument()
+        //{
+        //    string documentPath = "../test.pdf";
+        //    byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
 
-            // Check if the pdfBytes is not null before saving
-            if (pdfBytes != null)
-            {
-                // Save the PDF bytes as a file on the client-side
-                await Profile.SaveAs(JSRuntime, pdfPath, pdfBytes);
-            }
-            else
-            {
-                // Handle the case where pdfBytes is null (e.g., show an error message)
-                Console.WriteLine("PDF generation failed.");
-            }
-        }
+        //    // Check if the pdfBytes is not null before saving
+        //    if (pdfBytes != null)
+        //    {
+        //        // Save the PDF bytes as a file on the client-side
+        //        await Profile.SaveAs(JSRuntime, pdfPath, pdfBytes);
+        //    }
+        //    else
+        //    {
+        //        // Handle the case where pdfBytes is null (e.g., show an error message)
+        //        Console.WriteLine("PDF generation failed.");
+        //    }
+        //}
 
 
-        public static async Task SaveAs(IJSRuntime jsRuntime, string filePath, byte[] fileBytes)
-        {
-            // Convert the file bytes to a Base64 string
-            var base64File = Convert.ToBase64String(fileBytes);
+        //public static async Task SaveAs(IJSRuntime jsRuntime, string filePath, byte[] fileBytes)
+        //{
+        //    // Convert the file bytes to a Base64 string
+        //    var base64File = Convert.ToBase64String(fileBytes);
 
-            // Invoke the JavaScript function to save the file
-            await jsRuntime.InvokeVoidAsync("saveAsFile", filePath, base64File);
-        }
+        //    // Invoke the JavaScript function to save the file
+        //    await jsRuntime.InvokeVoidAsync("saveAsFile", filePath, base64File);
+        //}
         public void ModifyPdf(string filePath)
         {
             try

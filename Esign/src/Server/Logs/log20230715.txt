@@ -136,3 +136,21 @@
 2023-07-15 22:17:57.008 +00:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-07-15 22:17:57.096 +00:00 [INF] Hosting environment: Development
 2023-07-15 22:17:57.100 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 22:27:37.183 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 22:27:37.361 +00:00 [INF] Hosting environment: Development
+2023-07-15 22:27:37.367 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 22:31:51.395 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 22:31:51.498 +00:00 [INF] Hosting environment: Development
+2023-07-15 22:31:51.503 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 22:36:21.045 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 22:36:21.261 +00:00 [INF] Hosting environment: Development
+2023-07-15 22:36:21.268 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 22:38:12.609 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 22:38:12.775 +00:00 [INF] Hosting environment: Development
+2023-07-15 22:38:12.784 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 22:45:14.397 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 22:45:14.583 +00:00 [INF] Hosting environment: Development
+2023-07-15 22:45:14.591 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-15 22:47:12.503 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-15 22:47:12.706 +00:00 [INF] Hosting environment: Development
+2023-07-15 22:47:12.714 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

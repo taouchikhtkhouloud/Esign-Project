@@ -35,7 +35,9 @@ namespace Esign.Client.Pages.Misc
         private string Url { get; set; } = "https://translate.google.com/";
 
         private string enteredCode;
+        [Inject] IJSRuntime JSRuntime { get; set; }
 
+        [CascadingParameter] private MudDialogInstance MudDialog { get; set; }
 
         //private string GenerateQRCode()
         //{
@@ -52,14 +54,22 @@ namespace Esign.Client.Pages.Misc
         //    }
         //}
 
-        private string qrCodeStr = "";
-        protected override async Task OnInitializedAsync()
+        private async Task EditDocument()
         {
-            QR qr = new QR(Url, "M", 8);
-            qr.NewLine = "<br />";
-            qrCodeStr = qr.Encode();
-            // Create a new PDF document
-            
+            string documentPath = "../test.pdf";
+            byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
+
+            // Check if the pdfBytes is not null before saving
+            //if (pdfBytes != null)
+            //{
+            //    // Save the PDF bytes as a file on the client-side
+            //    await Profile.SaveAs(JSRuntime, pdfPath, pdfBytes);
+            //}
+            //else
+            //{
+            //    // Handle the case where pdfBytes is null (e.g., show an error message)
+            //    Console.WriteLine("PDF generation failed.");
+            //}
         }
 
         private async Task HandleSubmit()
@@ -69,40 +79,41 @@ namespace Esign.Client.Pages.Misc
  
             if (enteredCode == code)
             {
-                try
-                {
-                    Document document = new Document();
-                    string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                    string filePath = Path.Combine(baseDirectory, "test.pdf");
-                    MemoryStream memory = new MemoryStream();
-                    Console.WriteLine(filePath);
-                    string sanitizedFilePath = Path.GetFullPath(filePath);
+                //try
+                //{
+                //    Document document = new Document();
+                //    string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                //    string filePath = Path.Combine(baseDirectory, "test.pdf");
+                //    MemoryStream memory = new MemoryStream();
+                //    Console.WriteLine(filePath);
+                //    string sanitizedFilePath = Path.GetFullPath(filePath);
 
-                    PdfWriter writer = PdfWriter.GetInstance(document, memory);
+                //    PdfWriter writer = PdfWriter.GetInstance(document, memory);
 
-                    // Open the PDF document
-                    document.Open();
+                //    // Open the PDF document
+                //    document.Open();
 
-                    // Create a new paragraph with the QR code HTML
-                    Paragraph paragraph = new Paragraph();
-                    paragraph.Font = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 12f);
-                    paragraph.Add(new Chunk("hello world", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 12f)));
-                    document.Add(paragraph);
-                    Console.WriteLine("---------->", document);
-                    document.Close();
-                    Console.WriteLine("---------->>", memory);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("------------->Error: " + ex.Message);
-                }
+                //    // Create a new paragraph with the QR code HTML
+                //    Paragraph paragraph = new Paragraph();
+                //    paragraph.Font = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 12f);
+                //    paragraph.Add(new Chunk("hello world", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 12f)));
+                //    document.Add(paragraph);
+                //    Console.WriteLine("---------->", document);
+                //    document.Close();
+                //    Console.WriteLine("---------->>", memory);
+                //}
+                //catch (Exception ex)
+                //{
+                //    Console.WriteLine("------------->Error: " + ex.Message);
+                //}
 
                 AddEditDocumentModel.status = true;
+                await EditDocument();
                 var response = await DocumentManager.SaveAsync(AddEditDocumentModel);
                 if (response.Succeeded)
                 {
                     _snackBar.Add("Document signed successfully!", Severity.Success);
-
+                    MudDialog.Close();
                 }
                 else
                 {

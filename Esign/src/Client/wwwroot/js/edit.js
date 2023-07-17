@@ -47,6 +47,7 @@
 
     // Trigger the download
     link.click();
+    return pdfBlob;
 }
 
 async function getQRCode(text) {
@@ -55,7 +56,7 @@ async function getQRCode(text) {
         height: 300,
         type: "svg",
         data: "https://www.facebook.com/",
-        image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+        image: "../fabraControle.png",
         dotsOptions: {
             color: "#4267b2",
             type: "rounded"

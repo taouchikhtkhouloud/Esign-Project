@@ -20,6 +20,8 @@ using Microsoft.JSInterop;
 using Net.ConnectCode.BarcodeFontsStandard2D;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using Microsoft.AspNetCore.Components.Forms;
+using Esign.Application.Requests;
 
 namespace Esign.Client.Pages.Misc
 {
@@ -59,17 +61,31 @@ namespace Esign.Client.Pages.Misc
             string documentPath = "../Files/Documents/Northwind Report.pdf";
             byte[] pdfBytes = await JSRuntime.InvokeAsync<byte[]>("editDocument", documentPath);
 
-            // Check if the pdfBytes is not null before saving
-            //if (pdfBytes != null)
-            //{
-            //    // Save the PDF bytes as a file on the client-side
-            //    await Profile.SaveAs(JSRuntime, pdfPath, pdfBytes);
-            //}
-            //else
-            //{
-            //    // Handle the case where pdfBytes is null (e.g., show an error message)
-            //    Console.WriteLine("PDF generation failed.");
-            //}
+            //Check if the pdfBytes is not null before saving
+            if (pdfBytes != null)
+            {
+                //Save the PDF bytes as a file on the client-side
+                await UploadFiles(pdfBytes, Path.GetFileName(documentPath));
+            }
+            else
+            {
+                //Handle the case where pdfBytes is null(e.g., show an error message)
+                Console.WriteLine("PDF generation failed.");
+            }
+        }
+      
+        private async Task UploadFiles(byte[] pdfBytes, string fileName)
+        {
+            if (pdfBytes != null)
+            {
+                var buffer = pdfBytes;
+                var extension = Path.GetExtension(fileName);
+                var format = "application/octet-stream";
+                AddEditDocumentModel.URL = $"data:{format};base64,{Convert.ToBase64String(buffer)}";
+                AddEditDocumentModel.UploadRequest = new UploadRequest { Data = buffer, UploadType = Application.Enums.UploadType.Document, Extension = extension };
+
+                
+            }
         }
 
         private async Task HandleSubmit()

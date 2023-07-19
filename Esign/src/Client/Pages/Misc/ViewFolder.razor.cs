@@ -18,6 +18,7 @@ using Esign.Client.Infrastructure.Managers.Misc.DocumentType;
 using Esign.Application.Features.DocumentTypes.Commands.AddEdit;
 using Microsoft.AspNetCore.SignalR.Client;
 using Esign.Shared.Constants.Application;
+using Esign.Application.Features.DocumentTypes.Queries.GetFolder;
 
 namespace Esign.Client.Pages.Misc
 {
@@ -33,14 +34,15 @@ namespace Esign.Client.Pages.Misc
 
 
 
-      
+
         public int number;
         private IEnumerable<GetAllDocumentsResponse> _pagedData;
-        private MudTable<GetAllDocumentsResponse> _table;
-
+        private MudTable<GetAllDocumentOrFolderResponse> _table;
+        private GetAllPagedDocumentsRequest request1 = new();
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
         private GetAllDocumentTypesResponse _documentType = new();
         private GetAllDocumentTypesResponse _documentType2 = new();
+        private List<GetAllDocumentOrFolderResponse> _documentOrFolderList = new();
         private string CurrentUserId { get; set; }
         private int _totalItems;
         private int _currentPage;
@@ -57,7 +59,7 @@ namespace Esign.Client.Pages.Misc
         private bool _canSearchDocuments;
         private bool _canViewDocumentExtendedAttributes;
         private bool _loaded;
-        
+
         private bool _canEditDocumentTypes;
         private bool _canDeleteDocumentTypes;
         private bool _canExportDocumentTypes;
@@ -79,7 +81,7 @@ namespace Esign.Client.Pages.Misc
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
 
             _loaded = true;
-            
+            await GetDocumentsAndFoldersAsync();
             await GetDocumentTypesAsync();
             var state = await _stateProvider.GetAuthenticationStateAsync();
             var user = state.User;
@@ -93,6 +95,38 @@ namespace Esign.Client.Pages.Misc
             {
                 await HubConnection.StartAsync();
             }
+        }
+        private async Task GetDocumentsAndFoldersAsync()
+        {
+            // Get documents
+
+            var documentResponse = await DocumentManager.GetAllAsync(request1);
+            var documentItems = documentResponse.Data.Select(d => new GetAllDocumentOrFolderResponse
+            {
+                Id = d.Id,
+                Name = d.Title,
+                Description = d.Description,
+                CreatedOn = d.CreatedOn,
+                CreatedBy = d.CreatedBy,
+                IsDocument = true
+            }).ToList();
+
+            // Get folders
+            var folderResponse = await DocumentTypeManager.GetAllAsync();
+            var folderItems = folderResponse.Data.Where(dt => dt.Parent == int.Parse(id1)).Select(f => new GetAllDocumentOrFolderResponse
+            {
+                Id = f.Id,
+                Name = f.Name,
+                Description = f.Description,
+                CreatedOn = f.CreatedOn,
+                CreatedBy = f.CreatedBy,
+                IsDocument = false
+            }).ToList();
+
+            // Combine documents and folders
+            var combinedList = documentItems.Concat(folderItems).ToList();
+
+            _documentOrFolderList = combinedList;
         }
 
         private async Task<TableData<GetAllDocumentsResponse>> ServerReload(TableState state)
@@ -151,7 +185,8 @@ namespace Esign.Client.Pages.Misc
                 OnSearch("");
             }
         }
-        private async Task LoadData(int i ,int pageNumber, int pageSize, TableState state)
+
+        private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
         {
             var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
             var response = await DocumentManager.GetAllAsync(request);
@@ -213,7 +248,7 @@ namespace Esign.Client.Pages.Misc
             _searchString = text;
             _table.ReloadServerData();
         }
-        
+
         private async Task InvokeModal(int id = 0)
         {
             var parameters = new DialogParameters();
@@ -235,7 +270,7 @@ namespace Esign.Client.Pages.Misc
                         fileType = doc.fileType,
                         keywords = doc.keywords,
                         status = doc.status
-                });
+                    });
                 }
             }
             parameters.Add(nameof(AddFolderDocument.DocumentFolderId), int.Parse(id1));
@@ -260,7 +295,7 @@ namespace Esign.Client.Pages.Misc
                         Id = _documentType.Id,
                         Name = _documentType.Name,
                         Description = _documentType.Description
-                        
+
                     });
                 }
             }

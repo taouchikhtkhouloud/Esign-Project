@@ -1931,11 +1931,16 @@
           }
         }
       },
+      "Domain/1.0.0": {
+        "runtime": {
+          "Esign.Domain.dll": {}
+        }
+      },
       "Esign.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "Esign.Domain": "1.0.0",
+          "Domain": "1.0.0",
           "Esign.Shared": "1.0.0",
           "FluentValidation": "10.2.3",
           "LazyCache": "2.1.3",
@@ -1978,14 +1983,6 @@
           "sv/Esign.Application.resources.dll": {
             "locale": "sv"
           }
-        }
-      },
-      "Esign.Domain/1.0.0": {
-        "dependencies": {
-          "MailKit": "2.13.0"
-        },
-        "runtime": {
-          "Esign.Domain.dll": {}
         }
       },
       "Esign.Shared/1.0.0": {
@@ -3252,12 +3249,12 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "Esign.Application/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Esign.Domain/1.0.0": {
+    "Esign.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

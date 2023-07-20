@@ -14,7 +14,7 @@
         overflow: auto;
     }
 </style>
-
+<MudBreadcrumbs Items="_items"></MudBreadcrumbs>
 <HeroTitle Title="@_localizer["Folder's Documents Store"]" Description="@_localizer["Browse Available Documents."]" />
     @if (!_loaded)
     {
@@ -22,7 +22,30 @@
     }
     else
     {
-<MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" Items="_documentOrFolderList" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
+
+<MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" ServerData="@(new Func<TableState, Task<TableData<GetAllDocumentOrFolderResponse>>>(ServerReload))" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
+    <ToolBarContent>
+        <div class="justify-center mud-text-align-center">
+
+            @if (_canCreateDocuments)
+            {
+                <MudButton DisableElevation Variant="Variant.Filled" Color="Color.Primary" @onclick="@(() => InvokeModal(0))" StartIcon="@Icons.Material.Filled.Add" IconColor="Color.Surface">@_localizer["Create Document"]</MudButton>
+                @if (_canCreateDocumentTypes)
+                {
+                    <MudButton DisableElevation Variant="Variant.Filled" Color="Color.Primary" OnClick="(() => InvokeModalFolder())" StartIcon="@Icons.Material.Filled.Add" IconColor="Color.Surface">@_localizer["Create Folder"]</MudButton>
+
+                }
+            }
+            else
+            {
+            }
+        </div>
+        <MudToolBarSpacer />
+        @if (_canSearchDocuments)
+        {
+            <MudTextField T="string" ValueChanged="@(s=>OnSearch(s))" Placeholder="@_localizer["Search"]" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+        }
+    </ToolBarContent>
     <HeaderContent>
         <MudTh></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentOrFolderResponse, object>(item => item.Name)">@_localizer["Name"]</MudTableSortLabel></MudTh>
@@ -31,15 +54,16 @@
         <MudTh><MudTableSortLabel SortBy="new Func<GetAllDocumentOrFolderResponse, object>(item => item.CreatedBy)">@_localizer["Owner"]</MudTableSortLabel></MudTh>
         <MudTh Style="text-align:right">@_localizer["Actions"]</MudTh>
     </HeaderContent>
+
     <RowTemplate>
         <MudTd>
             @if (context.IsDocument)
             {
-                <MudIcon Icon="@Icons.Material.Outlined.InsertDriveFile" Size="Size.Large" Color="Color.Dark" Class="my-custom-icon" />
+                <MudIcon Icon="@Icons.Material.Outlined.InsertDriveFile" Size="Size.Large" Color="Color.Warning" Class="my-custom-icon" />
             }
             else
             {
-                <MudIcon Icon="@Icons.Material.Outlined.Folder" Size="Size.Large" Color="Color.Dark" Class="my-custom-icon" />
+                <MudIcon Icon="@Icons.Material.Outlined.Folder" Size="Size.Large" Color="Color.Error" Class="my-custom-icon" />
             }
         </MudTd>
         <MudTd DataLabel="Name">
@@ -133,7 +157,7 @@
     </RowTemplate>
 
     <PagerContent>
-        <TablePager />
+        <TablePager   />
     </PagerContent>
 </MudTable>
     }

@@ -604,8 +604,8 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Clie
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\Esign.Shared.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\Esign.Client.Infrastructure.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\Esign.Shared.pdb
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\Esign.Application.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\Esign.Domain.pdb
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\Esign.Application.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\en\Esign.Client.Infrastructure.resources.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\km\Esign.Client.Infrastructure.resources.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\bin\Debug\net5.0\wwwroot\_framework\ru\Esign.Client.Infrastructure.resources.dll

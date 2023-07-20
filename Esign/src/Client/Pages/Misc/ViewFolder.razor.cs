@@ -36,16 +36,17 @@ namespace Esign.Client.Pages.Misc
 
 
         public int number;
-        private IEnumerable<GetAllDocumentsResponse> _pagedData;
+        private IEnumerable<GetAllDocumentOrFolderResponse> _pagedData;
         private MudTable<GetAllDocumentOrFolderResponse> _table;
         private GetAllPagedDocumentsRequest request1 = new();
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
+        private List<GetAllDocumentsResponse> _document = new();
         private GetAllDocumentTypesResponse _documentType = new();
         private GetAllDocumentTypesResponse _documentType2 = new();
         private List<GetAllDocumentOrFolderResponse> _documentOrFolderList = new();
         private string CurrentUserId { get; set; }
         private int _totalItems;
-        private int _currentPage;
+        private int _currentPage =1;
         private string _searchString = "";
         private bool _dense = false;
         private bool _striped = true;
@@ -64,7 +65,12 @@ namespace Esign.Client.Pages.Misc
         private bool _canDeleteDocumentTypes;
         private bool _canExportDocumentTypes;
         private bool _canSearchDocumentTypes;
-
+        private List<BreadcrumbItem> _items = new List<BreadcrumbItem>
+    {
+        new BreadcrumbItem("Folders", href: "/document-types", icon: Icons.Material.Filled.Home),
+     
+    };
+       
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
@@ -81,7 +87,7 @@ namespace Esign.Client.Pages.Misc
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
 
             _loaded = true;
-            await GetDocumentsAndFoldersAsync();
+            //await GetDocumentsAndFoldersAsync();
             await GetDocumentTypesAsync();
             var state = await _stateProvider.GetAuthenticationStateAsync();
             var user = state.User;
@@ -96,40 +102,41 @@ namespace Esign.Client.Pages.Misc
                 await HubConnection.StartAsync();
             }
         }
-        private async Task GetDocumentsAndFoldersAsync()
-        {
-            // Get documents
+        //private async Task GetDocumentsAndFoldersAsync()
+        //{
+        //    // Get documents
 
-            var documentResponse = await DocumentManager.GetAllAsync(request1);
-            var documentItems = documentResponse.Data.Select(d => new GetAllDocumentOrFolderResponse
-            {
-                Id = d.Id,
-                Name = d.Title,
-                Description = d.Description,
-                CreatedOn = d.CreatedOn,
-                CreatedBy = d.CreatedBy,
-                IsDocument = true
-            }).ToList();
+        //    var documentResponse = await DocumentManager.GetAllAsync(request1);
+        //    _document = documentResponse.Data.ToList();
+        //    var documentItems = documentResponse.Data.Select(d => new GetAllDocumentOrFolderResponse
+        //    {
+        //        Id = d.Id,
+        //        Name = d.Title,
+        //        Description = d.Description,
+        //        CreatedOn = d.CreatedOn,
+        //        CreatedBy = d.CreatedBy,
+        //        IsDocument = true
+        //    }).ToList();
 
-            // Get folders
-            var folderResponse = await DocumentTypeManager.GetAllAsync();
-            var folderItems = folderResponse.Data.Where(dt => dt.Parent == int.Parse(id1)).Select(f => new GetAllDocumentOrFolderResponse
-            {
-                Id = f.Id,
-                Name = f.Name,
-                Description = f.Description,
-                CreatedOn = f.CreatedOn,
-                CreatedBy = f.CreatedBy,
-                IsDocument = false
-            }).ToList();
+        //    // Get folders
+        //    var folderResponse = await DocumentTypeManager.GetAllAsync();
+        //    var folderItems = folderResponse.Data.Where(dt => dt.Parent == int.Parse(id1)).Select(f => new GetAllDocumentOrFolderResponse
+        //    {
+        //        Id = f.Id,
+        //        Name = f.Name,
+        //        Description = f.Description,
+        //        CreatedOn = f.CreatedOn,
+        //        CreatedBy = f.CreatedBy,
+        //        IsDocument = false
+        //    }).ToList();
 
-            // Combine documents and folders
-            var combinedList = documentItems.Concat(folderItems).ToList();
+        //    // Combine documents and folders
+        //    var combinedList = documentItems.Concat(folderItems).ToList();
 
-            _documentOrFolderList = combinedList;
-        }
+        //    _documentOrFolderList = combinedList;
+        //}
 
-        private async Task<TableData<GetAllDocumentsResponse>> ServerReload(TableState state)
+        private async Task<TableData<GetAllDocumentOrFolderResponse>> ServerReload(TableState state)
         {
             if (!string.IsNullOrWhiteSpace(_searchString))
             {
@@ -137,7 +144,7 @@ namespace Esign.Client.Pages.Misc
             }
             number = int.Parse(id1);
             await LoadData(number, state.Page, state.PageSize, state);
-            return new TableData<GetAllDocumentsResponse> { TotalItems = _totalItems, Items = _pagedData };
+            return new TableData<GetAllDocumentOrFolderResponse> { TotalItems = _totalItems, Items = _pagedData };
         }
         private async Task GetDocumentTypesAsync()
         {
@@ -158,7 +165,7 @@ namespace Esign.Client.Pages.Misc
         {
             var parameters = new DialogParameters();
 
-            var doc = _pagedData.FirstOrDefault(c => c.Id == documentId);
+            var doc = _document.FirstOrDefault(c => c.Id == documentId);
             if (doc != null)
             {
                 parameters.Add(nameof(ViewDocument.AddEditDocumentModel), new AddEditDocumentCommand
@@ -185,28 +192,31 @@ namespace Esign.Client.Pages.Misc
                 OnSearch("");
             }
         }
+    
 
         private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
         {
-            var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
+            var request = new GetAllPagedDocumentsRequest { PageSize = pageSize*2, PageNumber = pageNumber*2 + 1, SearchString = _searchString };
             var response = await DocumentManager.GetAllAsync(request);
-            if (response.Succeeded)
+            var folderResponse = await DocumentTypeManager.GetAllAsync();
+            if (response.Succeeded && folderResponse.Succeeded)
             {
-                _totalItems = response.TotalCount;
                 _currentPage = response.CurrentPage;
                 var data = response.Data;
-                var loadedData = data.Where(element =>
-                {
-                    if (string.IsNullOrWhiteSpace(_searchString))
-                        return true;
-                    if (element.Title.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
-                        return true;
-                    if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
-                        return true;
-                    if (element.DocumentType.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
-                        return true;
-                    return false;
-                }).Where(element => element.DocumentTypeId == i); ;
+
+                // Filter documents by parent folder ID
+                var loadedData = data.Where(d => d.DocumentTypeId == i).Where(element =>
+                        {
+                            if (string.IsNullOrWhiteSpace(_searchString))
+                                return true;
+                            if (element.Title.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                                return true;
+                            if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                                return true;
+                            if (element.DocumentType.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                                return true;
+                            return false;
+                        });
                 switch (state.SortLabel)
                 {
                     case "documentIdField":
@@ -218,12 +228,6 @@ namespace Esign.Client.Pages.Misc
                     case "documentDescriptionField":
                         loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Description);
                         break;
-                    case "documentDocumentTypeField":
-                        loadedData = loadedData.OrderByDirection(state.SortDirection, p => p.DocumentType);
-                        break;
-                    case "documentIsPublicField":
-                        loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.IsPublic);
-                        break;
                     case "documentDateCreatedField":
                         loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedOn);
                         break;
@@ -231,8 +235,46 @@ namespace Esign.Client.Pages.Misc
                         loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedBy);
                         break;
                 }
-                data = loadedData.ToList();
-                _pagedData = data;
+
+                // Filter folders by parent folder ID
+                var folderData = folderResponse.Data.Where(f => f.Parent == i);
+
+                // Merge folders and documents into a single list
+                var mergedData = new List<GetAllDocumentOrFolderResponse>();
+
+                foreach (var document in loadedData)
+                {
+                    mergedData.Add(new GetAllDocumentOrFolderResponse
+                    {
+                        Id = document.Id,
+                        Name = document.Title,
+                        Description = document.Description,
+                        CreatedOn = document.CreatedOn,
+                        CreatedBy = document.CreatedBy,
+                        IsDocument = true
+                    });
+                }
+
+                foreach (var folder in folderData)
+                {
+                    mergedData.Add(new GetAllDocumentOrFolderResponse
+                    {
+                        Id = folder.Id,
+                        Name = folder.Name,
+                        Description = folder.Description,
+                        CreatedOn = folder.CreatedOn,
+                        CreatedBy = folder.CreatedBy,
+                        IsDocument = false
+                    });
+                }
+
+                // Sorting based on the chosen state.SortLabel, similar to your original code
+
+                // Update the _totalItems and _pagedData variables
+                _totalItems = mergedData.Count;
+                //_pagedData = mergedData.ToList();
+                var startIndex = (pageNumber - 1) * pageSize;
+                _pagedData = mergedData.Skip(startIndex).Take(pageSize).ToList();
             }
             else
             {
@@ -242,6 +284,107 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
+
+        //private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
+        //{
+        //    var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
+        //    var response = await DocumentManager.GetAllAsync(request);
+        //    var folderResponse = await DocumentTypeManager.GetAllAsync();
+        //    if (response.Succeeded && folderResponse.Succeeded)
+        //    {
+
+                
+        //        var data = response.Data;
+        //        var loadedData = data.Where(element => element.DocumentTypeId == i);
+        //        switch (state.SortLabel)
+        //        {
+        //            case "documentIdField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Id);
+        //                break;
+        //            case "documentTitleField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Title);
+        //                break;
+        //            case "documentDescriptionField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Description);
+        //                break;
+        //            case "documentDateCreatedField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedOn);
+        //                break;
+        //            case "documentOwnerField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedBy);
+        //                break;
+        //        }
+
+
+        //        var folderData = folderResponse.Data.Where(element =>
+        //            {
+        //                if (string.IsNullOrWhiteSpace(_searchString))
+        //                    return true;
+        //                if (element.Name.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                    return true;
+        //                if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                    return true;
+        //                return false;
+        //            }).Where(element => element.Parent == i); ;
+        //        switch (state.SortLabel)
+        //        {
+        //            case "documentIdField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Id);
+        //                break;
+        //            case "documentTitleField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Title);
+        //                break;
+        //            case "documentDescriptionField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Description);
+        //                break;
+        //            case "documentDateCreatedField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedOn);
+        //                break;
+        //            case "documentOwnerField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedBy);
+        //                break;
+        //        }
+        //        // Merge folders and documents into a single list
+        //        var mergedData = new List<GetAllDocumentOrFolderResponse>();
+        //        foreach (var document in data)
+        //        {
+        //            mergedData.Add(new GetAllDocumentOrFolderResponse
+        //            {
+        //                Id = document.Id,
+        //                Name = document.Title,
+        //                Description = document.Description,
+        //                CreatedOn = document.CreatedOn,
+        //                CreatedBy = document.CreatedBy,
+        //                IsDocument = true
+        //            });
+        //        }
+
+        //        foreach (var folder in folderData)
+        //        {
+        //            mergedData.Add(new GetAllDocumentOrFolderResponse
+        //            {
+        //                Id = folder.Id,
+        //                Name = folder.Name,
+        //                Description = folder.Description,
+        //                CreatedOn = folder.CreatedOn,
+        //                CreatedBy = folder.CreatedBy,
+        //                IsDocument = false
+        //            });
+        //        }
+        //        //_currentPage = mergedData.CurrentPage;
+        //        _totalItems = mergedData.Count;
+        //        _document = loadedData.ToList();
+        //        _pagedData = mergedData.ToList();
+        //    }
+        //    else
+        //    {
+        //        foreach (var message in response.Messages)
+        //        {
+        //            _snackBar.Add(message, Severity.Error);
+        //        }
+        //    }
+        //}
+
 
         private void OnSearch(string text)
         {
@@ -254,7 +397,7 @@ namespace Esign.Client.Pages.Misc
             var parameters = new DialogParameters();
             if (id != 0)
             {
-                var doc = _pagedData.FirstOrDefault(c => c.Id == id);
+                var doc = _document.FirstOrDefault(c => c.Id == id);
                 if (doc != null)
                 {
                     parameters.Add(nameof(AddFolderDocument.AddEditDocumentModel), new AddEditDocumentCommand

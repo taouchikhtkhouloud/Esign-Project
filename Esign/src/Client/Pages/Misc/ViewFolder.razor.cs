@@ -44,6 +44,7 @@ namespace Esign.Client.Pages.Misc
         private GetAllDocumentTypesResponse _documentType = new();
         private GetAllDocumentTypesResponse _documentType2 = new();
         private List<GetAllDocumentOrFolderResponse> _documentOrFolderList = new();
+
         private string CurrentUserId { get; set; }
         private int _totalItems;
         private int _currentPage =1;
@@ -65,12 +66,8 @@ namespace Esign.Client.Pages.Misc
         private bool _canDeleteDocumentTypes;
         private bool _canExportDocumentTypes;
         private bool _canSearchDocumentTypes;
-        private List<BreadcrumbItem> _items = new List<BreadcrumbItem>
-    {
-        new BreadcrumbItem("Folders", href: "/document-types", icon: Icons.Material.Filled.Home),
-     
-    };
-       
+        bool isOpen;
+
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
@@ -144,7 +141,7 @@ namespace Esign.Client.Pages.Misc
             }
             number = int.Parse(id1);
             await LoadData(number, state.Page, state.PageSize, state);
-            return new TableData<GetAllDocumentOrFolderResponse> { TotalItems = _totalItems, Items = _pagedData };
+            return new TableData<GetAllDocumentOrFolderResponse> { TotalItems = _totalItems, Items = _pagedData  };
         }
         private async Task GetDocumentTypesAsync()
         {
@@ -192,31 +189,40 @@ namespace Esign.Client.Pages.Misc
                 OnSearch("");
             }
         }
-    
 
-        private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
+        private async Task LoadData(int i ,int pageNumber, int pageSize, TableState state)
         {
-            var request = new GetAllPagedDocumentsRequest { PageSize = pageSize*2, PageNumber = pageNumber*2 + 1, SearchString = _searchString };
+            var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
             var response = await DocumentManager.GetAllAsync(request);
-            var folderResponse = await DocumentTypeManager.GetAllAsync();
+            var request2 = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
+            var folderResponse = await DocumentTypeManager.GetAllAsync2(request2);
             if (response.Succeeded && folderResponse.Succeeded)
             {
+                _totalItems = response.TotalCount + folderResponse.TotalCount;
                 _currentPage = response.CurrentPage;
                 var data = response.Data;
-
-                // Filter documents by parent folder ID
                 var loadedData = data.Where(d => d.DocumentTypeId == i).Where(element =>
-                        {
-                            if (string.IsNullOrWhiteSpace(_searchString))
-                                return true;
-                            if (element.Title.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
-                                return true;
-                            if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
-                                return true;
-                            if (element.DocumentType.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
-                                return true;
-                            return false;
-                        });
+                {
+                    if (string.IsNullOrWhiteSpace(_searchString))
+                        return true;
+                    if (element.Title.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    if (element.DocumentType.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    return false;
+                });
+                var folderData = folderResponse.Data.Where(f => f.Parent == i).Where(element =>
+                {
+                    if (string.IsNullOrWhiteSpace(_searchString))
+                        return true;
+                    if (element.Name.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    return false;
+                }); ;
                 switch (state.SortLabel)
                 {
                     case "documentIdField":
@@ -228,6 +234,12 @@ namespace Esign.Client.Pages.Misc
                     case "documentDescriptionField":
                         loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Description);
                         break;
+                    case "documentDocumentTypeField":
+                        loadedData = loadedData.OrderByDirection(state.SortDirection, p => p.DocumentType);
+                        break;
+                    case "documentIsPublicField":
+                        loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.IsPublic);
+                        break;
                     case "documentDateCreatedField":
                         loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedOn);
                         break;
@@ -235,11 +247,6 @@ namespace Esign.Client.Pages.Misc
                         loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedBy);
                         break;
                 }
-
-                // Filter folders by parent folder ID
-                var folderData = folderResponse.Data.Where(f => f.Parent == i);
-
-                // Merge folders and documents into a single list
                 var mergedData = new List<GetAllDocumentOrFolderResponse>();
 
                 foreach (var document in loadedData)
@@ -254,7 +261,6 @@ namespace Esign.Client.Pages.Misc
                         IsDocument = true
                     });
                 }
-
                 foreach (var folder in folderData)
                 {
                     mergedData.Add(new GetAllDocumentOrFolderResponse
@@ -267,14 +273,9 @@ namespace Esign.Client.Pages.Misc
                         IsDocument = false
                     });
                 }
-
-                // Sorting based on the chosen state.SortLabel, similar to your original code
-
-                // Update the _totalItems and _pagedData variables
-                _totalItems = mergedData.Count;
-                //_pagedData = mergedData.ToList();
-                var startIndex = (pageNumber - 1) * pageSize;
-                _pagedData = mergedData.Skip(startIndex).Take(pageSize).ToList();
+                data = loadedData.ToList();
+                _document = data;
+                _pagedData = mergedData.ToList();
             }
             else
             {
@@ -287,13 +288,113 @@ namespace Esign.Client.Pages.Misc
 
         //private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
         //{
+        //    var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 2, SearchString = _searchString };
+        //    var response = await DocumentManager.GetAllAsync(request);
+        //    var folderResponse = await DocumentTypeManager.GetAllAsync2(request);
+        //    if (response.Succeeded && folderResponse.Succeeded)
+        //    {
+        //        _currentPage = response.CurrentPage + folderResponse.CurrentPage;
+        //        var data = response.Data;
+
+        //        // Filter documents by parent folder ID
+        //        var loadedData = data.Where(d => d.DocumentTypeId == i).Where(element =>
+        //                {
+        //                    if (string.IsNullOrWhiteSpace(_searchString))
+        //                        return true;
+        //                    if (element.Title.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                        return true;
+        //                    if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                        return true;
+        //                    if (element.DocumentType.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                        return true;
+        //                    return false;
+        //                });
+        //        switch (state.SortLabel)
+        //        {
+        //            case "documentIdField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Id);
+        //                break;
+        //            case "documentTitleField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Title);
+        //                break;
+        //            case "documentDescriptionField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Description);
+        //                break;
+        //            case "documentDateCreatedField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedOn);
+        //                break;
+        //            case "documentOwnerField":
+        //                loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.CreatedBy);
+        //                break;
+        //        }
+
+        //        // Filter folders by parent folder ID
+        //        var folderData = folderResponse.Data.Where(f => f.Parent == i).Where(element =>
+        //        {
+        //            if (string.IsNullOrWhiteSpace(_searchString))
+        //                return true;
+        //            if (element.Name.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                return true;
+        //            if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+        //                return true;
+        //            return false;
+        //        }); ;
+
+        //        // Merge folders and documents into a single list
+        //        var mergedData = new List<GetAllDocumentOrFolderResponse>();
+
+        //        foreach (var document in loadedData)
+        //        {
+        //            mergedData.Add(new GetAllDocumentOrFolderResponse
+        //            {
+        //                Id = document.Id,
+        //                Name = document.Title,
+        //                Description = document.Description,
+        //                CreatedOn = document.CreatedOn,
+        //                CreatedBy = document.CreatedBy,
+        //                IsDocument = true
+        //            });
+        //        }
+
+        //        foreach (var folder in folderData)
+        //        {
+        //            mergedData.Add(new GetAllDocumentOrFolderResponse
+        //            {
+        //                Id = folder.Id,
+        //                Name = folder.Name,
+        //                Description = folder.Description,
+        //                CreatedOn = folder.CreatedOn,
+        //                CreatedBy = folder.CreatedBy,
+        //                IsDocument = false
+        //            });
+        //        }
+
+        //        // Sorting based on the chosen state.SortLabel, similar to your original code
+
+        //        // Update the _totalItems and _pagedData variables
+        //        _totalItems = mergedData.Count;
+        //        //_pagedData = mergedData.ToList();
+        //        var startIndex = (pageNumber - 1) * pageSize;
+        //        _pagedData = mergedData.ToList();
+        //    }
+        //    else
+        //    {
+        //        foreach (var message in response.Messages)
+        //        {
+        //            _snackBar.Add(message, Severity.Error);
+        //        }
+        //    }
+        //}
+
+        //private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
+        //{
         //    var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
         //    var response = await DocumentManager.GetAllAsync(request);
         //    var folderResponse = await DocumentTypeManager.GetAllAsync();
         //    if (response.Succeeded && folderResponse.Succeeded)
         //    {
 
-                
+
         //        var data = response.Data;
         //        var loadedData = data.Where(element => element.DocumentTypeId == i);
         //        switch (state.SortLabel)

@@ -4,6 +4,7 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Esign.Application.Features.DocumentTypes.Commands.AddEdit;
 using Esign.Application.Features.DocumentTypes.Queries.GetAll;
+using Esign.Application.Requests.Documents;
 using Esign.Client.Infrastructure.Extensions;
 using Esign.Shared.Wrapper;
 
@@ -25,7 +26,11 @@ namespace Esign.Client.Infrastructure.Managers.Misc.DocumentType
                 : Routes.DocumentTypesEndpoints.ExportFiltered(searchString));
             return await response.ToResult<string>();
         }
-
+        public async Task<PaginatedResult<GetAllDocumentTypesResponse>> GetAllAsync2(GetAllPagedDocumentsRequest request)
+        {
+            var response = await _httpClient.GetAsync(Routes.DocumentTypesEndpoints.GetAllPaged(request.PageNumber, request.PageSize, request.SearchString));
+            return await response.ToPaginatedResult<GetAllDocumentTypesResponse>();
+        }
         public async Task<IResult<int>> DeleteAsync(int id)
         {
             var response = await _httpClient.DeleteAsync($"{Routes.DocumentTypesEndpoints.Delete}/{id}");

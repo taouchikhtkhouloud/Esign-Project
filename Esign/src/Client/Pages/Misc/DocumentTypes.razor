@@ -18,7 +18,7 @@
 }
 else
 {
-    <MudTable Hover="true" Elevation="25" Items="_documentTypeList" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" Filter="new Func<GetAllDocumentTypesResponse, bool>(Search)" @bind-brand="_documentType">
+    <MudTable Hover="true" Elevation="25"  ServerData="@(new Func<TableState, Task<TableData<GetAllDocumentTypesResponse>>>(ServerReload))" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" Filter="new Func<GetAllDocumentTypesResponse, bool>(Search)" @bind-brand="_documentType">
         <ToolBarContent>
             <div class="justify-center mud-text-align-center">
                 @if (_canCreateDocumentTypes)

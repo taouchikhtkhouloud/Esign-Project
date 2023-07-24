@@ -18,25 +18,25 @@
 }
 else
 {
-    <MudTable Hover="true" Elevation="25"  ServerData="@(new Func<TableState, Task<TableData<GetAllDocumentTypesResponse>>>(ServerReload))" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" Filter="new Func<GetAllDocumentTypesResponse, bool>(Search)" @bind-brand="_documentType">
+    <MudTable T="GetAllDocumentTypesResponse" Hover="true" Elevation="25"  ServerData="@(new Func<TableState, Task<TableData<GetAllDocumentTypesResponse>>>(ServerReload))" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" Filter="new Func<GetAllDocumentTypesResponse, bool>(Search)" @bind-brand="_documentType" @ref="_table">
         <ToolBarContent>
             <div class="justify-center mud-text-align-center">
                 @if (_canCreateDocumentTypes)
                 {
                     <MudButton DisableElevation Variant="Variant.Filled" Color="Color.Primary" OnClick="(() => InvokeModal())" StartIcon="@Icons.Material.Filled.Add" IconColor="Color.Surface">@_localizer["Create"]</MudButton>
-                    <MudButton DisableElevation Variant="Variant.Filled" OnClick="GetDocumentTypesAsync" StartIcon="@Icons.Material.Filled.Refresh" IconColor="Color.Surface" Color="Color.Secondary">@_localizer["Reload"]</MudButton>
+                    @*<MudButton DisableElevation Variant="Variant.Filled" OnClick="GetDocumentTypesAsync" StartIcon="@Icons.Material.Filled.Refresh" IconColor="Color.Surface" Color="Color.Secondary">@_localizer["Reload"]</MudButton>
                     @if (_canExportDocumentTypes)
                     {
                         <MudButton DisableElevation Variant="Variant.Filled" OnClick="ExportToExcel" StartIcon="@Icons.Custom.FileFormats.FileExcel" IconColor="Color.Secondary" Color="Color.Surface" Style="margin-left: 5px;">@_localizer["Export"]</MudButton>
-                    }
+                    }*@
                 }
                 else
                 {
-                    <MudButton DisableElevation Variant="Variant.Filled" OnClick="GetDocumentTypesAsync" StartIcon="@Icons.Material.Filled.Refresh" IconColor="Color.Surface" Color="Color.Secondary">@_localizer["Reload"]</MudButton>
+                    @*<MudButton DisableElevation Variant="Variant.Filled" OnClick="GetDocumentTypesAsync" StartIcon="@Icons.Material.Filled.Refresh" IconColor="Color.Surface" Color="Color.Secondary">@_localizer["Reload"]</MudButton>
                     @if (_canExportDocumentTypes)
                     {
                         <MudButton DisableElevation Variant="Variant.Filled" OnClick="ExportToExcel" StartIcon="@Icons.Custom.FileFormats.FileExcel" IconColor="Color.Secondary" Color="Color.Surface" Style="margin-left: 5px;">@_localizer["Export"]</MudButton>
-                    }
+                    }*@
                 }
             </div>
             <MudToolBarSpacer />

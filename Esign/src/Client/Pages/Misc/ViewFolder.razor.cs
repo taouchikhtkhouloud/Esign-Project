@@ -549,7 +549,7 @@ namespace Esign.Client.Pages.Misc
             var result = await dialog.Result;
             if (!result.Cancelled)
             {
-                await Reset();
+                OnSearch("");
             }
 
         }
@@ -624,13 +624,13 @@ namespace Esign.Client.Pages.Misc
                 var response = await DocumentTypeManager.DeleteAsync(id);
                 if (response.Succeeded)
                 {
-                    await Reset();
+                    OnSearch("");
                     await HubConnection.SendAsync(ApplicationConstants.SignalR.SendUpdateDashboard);
                     _snackBar.Add(response.Messages[0], Severity.Success);
                 }
                 else
                 {
-                    await Reset();
+                    OnSearch("");
                     foreach (var message in response.Messages)
                     {
                         _snackBar.Add(message, Severity.Error);

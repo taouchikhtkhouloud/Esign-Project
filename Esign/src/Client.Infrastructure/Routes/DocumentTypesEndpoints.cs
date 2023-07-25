@@ -6,6 +6,10 @@
         {
             return $"{Export}?searchString={searchString}";
         }
+        public static string GetAllPaged(int pageNumber, int pageSize, string searchString)
+        {
+            return $"api/documentTypes?pageNumber={pageNumber}&pageSize={pageSize}&searchString={searchString}";
+        }
 
         public static string Export = "api/documentTypes/export";
 

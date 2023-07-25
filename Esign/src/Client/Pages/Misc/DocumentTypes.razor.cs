@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Esign.Application.Features.DocumentTypes.Commands.AddEdit;
 using Esign.Application.Features.DocumentTypes.Queries.GetAll;
+using Esign.Application.Requests.Documents;
 using Esign.Client.Extensions;
 using Esign.Client.Infrastructure.Managers.Misc.DocumentType;
 using Esign.Shared.Constants.Application;
@@ -28,7 +29,7 @@ namespace Esign.Client.Pages.Misc
 
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
         private GetAllDocumentTypesResponse _documentType = new();
-      
+        private MudTable<GetAllDocumentTypesResponse> _table;
         private string _searchString = "";
         private bool _dense = false;
         private bool _striped = true;
@@ -41,7 +42,9 @@ namespace Esign.Client.Pages.Misc
         private bool _canExportDocumentTypes;
         private bool _canSearchDocumentTypes;
         private bool _loaded;
-
+        private int _totalItems;
+        private int _currentPage = 1;
+        private IEnumerable<GetAllDocumentTypesResponse> _pagedData;
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
@@ -59,7 +62,59 @@ namespace Esign.Client.Pages.Misc
                 await HubConnection.StartAsync();
             }
         }
+        private async Task<TableData<GetAllDocumentTypesResponse>> ServerReload(TableState state)
+        {
+            if (!string.IsNullOrWhiteSpace(_searchString))
+            {
+                state.Page = 0;
+            }
+            await LoadData(state.Page, state.PageSize, state);
+            return new TableData<GetAllDocumentTypesResponse> { TotalItems = _totalItems, Items = _pagedData };
+        }
 
+        private async Task LoadData(int pageNumber, int pageSize, TableState state)
+        {
+            var request2 = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
+            var response = await DocumentTypeManager.GetAllAsync2(request2);
+            if (response.Succeeded)
+            {
+                _totalItems = response.TotalCount;
+                _currentPage = response.CurrentPage;
+                var data = response.Data;
+                var loadedData = data.Where(element =>
+                {
+                    if (string.IsNullOrWhiteSpace(_searchString))
+                        return true;
+                    if (element.Name.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    if (element.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+                        return true;
+                    return false;
+                });
+                switch (state.SortLabel)
+                {
+                    case "documentIdField":
+                        loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Id);
+                        break;
+                    case "documentTitleField":
+                        loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Name);
+                        break;
+                    case "documentDescriptionField":
+                        loadedData = loadedData.OrderByDirection(state.SortDirection, d => d.Description);
+                        break;
+               
+                }
+                data = loadedData.ToList();
+                _pagedData = data;
+            }
+            else
+            {
+                foreach (var message in response.Messages)
+                {
+                    _snackBar.Add(message, Severity.Error);
+                }
+            }
+        }
         private async Task GetDocumentTypesAsync()
         {
             var response = await DocumentTypeManager.GetAllAsync();
@@ -98,13 +153,13 @@ namespace Esign.Client.Pages.Misc
                 var response = await DocumentTypeManager.DeleteAsync(id);
                 if (response.Succeeded)
                 {
-                    await Reset();
+                    OnSearch("");
                     await HubConnection.SendAsync(ApplicationConstants.SignalR.SendUpdateDashboard);
                     _snackBar.Add(response.Messages[0], Severity.Success);
                 }
                 else
                 {
-                    await Reset();
+                    OnSearch("");
                     foreach (var message in response.Messages)
                     {
                         _snackBar.Add(message, Severity.Error);
@@ -112,7 +167,11 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
-
+        private void OnSearch(string text)
+        {
+            _searchString = text;
+            _table.ReloadServerData();
+        }
         private async Task ExportToExcel()
         {
             var response = await DocumentTypeManager.ExportToExcelAsync(_searchString);
@@ -142,7 +201,7 @@ namespace Esign.Client.Pages.Misc
             var parameters = new DialogParameters();
             if (id != 0)
             {
-                _documentType = _documentTypeList.FirstOrDefault(c => c.Id == id);
+                _documentType = _pagedData.FirstOrDefault(c => c.Id == id);
                 if (_documentType != null)
                 {
                     parameters.Add(nameof(AddEditDocumentTypeModal.AddEditDocumentTypeModel), new AddEditDocumentTypeCommand
@@ -158,7 +217,7 @@ namespace Esign.Client.Pages.Misc
             var result = await dialog.Result;
             if (!result.Cancelled)
             {
-                await Reset();
+                OnSearch("");
             }
         }
 

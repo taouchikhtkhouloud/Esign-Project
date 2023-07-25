@@ -180,8 +180,8 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Serv
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\Esign.Infrastructure.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\Esign.Shared.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\Esign.Client.pdb
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\Esign.Domain.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\Esign.Client.Infrastructure.pdb
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\Esign.Domain.pdb
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\de\Esign.Application.resources.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\en\Esign.Application.resources.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\bin\Debug\net5.0\es\Esign.Application.resources.dll

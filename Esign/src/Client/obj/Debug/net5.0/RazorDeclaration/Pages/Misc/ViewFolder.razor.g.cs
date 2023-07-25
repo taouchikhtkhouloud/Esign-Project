@@ -279,15 +279,15 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
-using Esign.Application.Features.Documents.Queries.GetAll;
+#line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
+using Esign.Application.Features.DocumentTypes.Queries.GetAll;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
-using Esign.Application.Features.DocumentTypes.Queries.GetAll;
+using Esign.Application.Features.DocumentTypes.Queries.GetFolder;
 
 #line default
 #line hidden
@@ -300,14 +300,14 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
+#line 3 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
            [Authorize(Policy = Permissions.Documents.View)]
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
+#line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
            [Authorize(Policy = Permissions.DocumentTypes.View)]
 
 #line default
@@ -323,7 +323,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.AspNetCore.Components.NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer1 { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<ViewFolder> _localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager _userManager { get; set; }

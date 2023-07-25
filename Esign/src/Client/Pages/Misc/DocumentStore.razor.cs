@@ -295,20 +295,20 @@ namespace Esign.Client.Pages.Misc
         }
         private async Task SubmitAsync(int id)
         {
-            _CodeModel.Email = await CurrentUserE();
-            _CodeModel.Code = GenerateCodeAsync();
-            Console.WriteLine(_CodeModel.Email);
-            Console.WriteLine(_CodeModel.Code);
-            var result = await _userManager.SendCodeAsyn(_CodeModel);
-            if (result.Succeeded)
-            {
-                _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
+            //_CodeModel.Email = "fabracontrolea@gmail.com";
+            //_CodeModel.Code = GenerateCodeAsync();
+            //Console.WriteLine(_CodeModel.Email);
+            //Console.WriteLine(_CodeModel.Code);
+            //var result = await _userManager.SendCodeAsyn(_CodeModel);
+            //if (result.Succeeded)
+            //{
+            //    _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
                 var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
                 var parameters = new DialogParameters();
                 var doc = _pagedData.FirstOrDefault(c => c.Id == id);
                 if (doc != null)
                 {
-                    parameters.Add(nameof(SignDocument.AddEditDocumentModel), new AddEditDocumentCommand
+                    parameters.Add(nameof(SendSigningCode.AddEditDocumentModel), new AddEditDocumentCommand
                     {
                         Id = doc.Id,
                         Title = doc.Title,
@@ -322,17 +322,16 @@ namespace Esign.Client.Pages.Misc
                         keywords = doc.keywords,
                         status = doc.status
                     });
+                var dialog = _dialogService.Show<SendSigningCode>(_localizer["Signature Confirmation"], parameters, options);
                 }
-                parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
-                var dialog = _dialogService.Show<SignDocument>(_localizer["enter the code sent to your email to sign the document"], parameters, options);
-                var result1 = await dialog.Result;
-            }
+                //parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
+            //var result1 = await dialog.Result;
+            
             else
             {
-                foreach (var message in result.Messages)
-                {
-                    _snackBar.Add(message, Severity.Error);
-                }
+               
+                    _snackBar.Add("document is null or dont exist", Severity.Error);
+                
             }
         }
 

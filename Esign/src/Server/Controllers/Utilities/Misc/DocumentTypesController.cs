@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Esign.Application.Features.Documents.Queries.GetAll;
 using Esign.Application.Features.DocumentTypes.Commands.AddEdit;
 using Esign.Application.Features.DocumentTypes.Commands.Delete;
 using Esign.Application.Features.DocumentTypes.Queries.Export;
@@ -15,16 +16,30 @@ namespace Esign.Server.Controllers.Utilities.Misc
     public class DocumentTypesController : BaseApiController<DocumentTypesController>
     {
         /// <summary>
-        /// Get All Document Types
+        /// Get All Documents Types in Folder
         /// </summary>
+        /// <param name="pageNumber"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="searchString"></param>
         /// <returns>Status 200 OK</returns>
         [Authorize(Policy = Permissions.DocumentTypes.View)]
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(int pageNumber, int pageSize, string searchString)
         {
-            var documentTypes = await _mediator.Send(new GetAllDocumentTypesQuery());
-            return Ok(documentTypes);
+            var docs = await _mediator.Send(new GetAllDocumentsTypesQuery2(pageNumber, pageSize, searchString));
+            return Ok(docs);
         }
+        ///// <summary>
+        ///// Get All Document Types
+        ///// </summary>
+        ///// <returns>Status 200 OK</returns>
+        //[Authorize(Policy = Permissions.DocumentTypes.View)]
+        //[HttpGet]
+        //public async Task<IActionResult> GetAll()
+        //{
+        //    var documentTypes = await _mediator.Send(new GetAllDocumentTypesQuery());
+        //    return Ok(documentTypes);
+        //}
 
         /// <summary>
         /// Get Document Type By Id

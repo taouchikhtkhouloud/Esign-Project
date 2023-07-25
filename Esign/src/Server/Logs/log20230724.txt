@@ -58,12 +58,3 @@ System.InvalidOperationException: The response headers cannot be modified becaus
 2023-07-24 12:13:24.866 +00:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-07-24 12:13:25.037 +00:00 [INF] Hosting environment: Development
 2023-07-24 12:13:25.045 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
-2023-07-24 12:55:45.082 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-07-24 12:55:45.270 +00:00 [INF] Hosting environment: Development
-2023-07-24 12:55:45.284 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
-2023-07-24 12:59:15.493 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-07-24 12:59:15.711 +00:00 [INF] Hosting environment: Development
-2023-07-24 12:59:15.718 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
-2023-07-24 13:04:40.553 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-07-24 13:04:40.804 +00:00 [INF] Hosting environment: Development
-2023-07-24 13:04:40.811 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

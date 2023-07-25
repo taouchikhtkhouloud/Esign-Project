@@ -10,6 +10,7 @@ namespace Esign.Application.Features.DocumentTypes.Queries.GetFolder
         public DateTime CreatedOn { get; set; }
         public string CreatedBy { get; set; }
         public bool IsDocument { get; set; }
+        public bool status { get; set; }
 
     }
 }

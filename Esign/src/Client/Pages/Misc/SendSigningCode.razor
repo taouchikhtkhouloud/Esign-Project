@@ -1,0 +1,13 @@
+﻿@inject IDialogService DialogService
+@inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer
+
+
+<MudDialog>
+    <DialogContent>
+        Are you sure you want to sign this document
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="SubmitAsync">Sign document</MudButton>
+    </DialogActions>
+</MudDialog>

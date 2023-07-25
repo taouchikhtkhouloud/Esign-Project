@@ -258,7 +258,8 @@ namespace Esign.Client.Pages.Misc
                         Description = document.Description,
                         CreatedOn = document.CreatedOn,
                         CreatedBy = document.CreatedBy,
-                        IsDocument = true
+                        IsDocument = true,
+                        status=document.status
                     });
                 }
                 foreach (var folder in folderData)
@@ -285,7 +286,47 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
+        private async Task SubmitAsync(int id)
+        {
+            //_CodeModel.Email = "fabracontrolea@gmail.com";
+            //_CodeModel.Code = GenerateCodeAsync();
+            //Console.WriteLine(_CodeModel.Email);
+            //Console.WriteLine(_CodeModel.Code);
+            //var result = await _userManager.SendCodeAsyn(_CodeModel);
+            //if (result.Succeeded)
+            //{
+            //    _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
+            var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+            var parameters = new DialogParameters();
+            var doc = _document.FirstOrDefault(c => c.Id == id);
+            if (doc != null)
+            {
+                parameters.Add(nameof(SendSigningCode.AddEditDocumentModel), new AddEditDocumentCommand
+                {
+                    Id = doc.Id,
+                    Title = doc.Title,
+                    Description = doc.Description,
+                    URL = doc.URL,
+                    IsPublic = doc.IsPublic,
+                    DocumentTypeId = doc.DocumentTypeId,
+                    Client = doc.Client,
+                    Value = doc.Value,
+                    fileType = doc.fileType,
+                    keywords = doc.keywords,
+                    status = doc.status
+                });
+                var dialog = _dialogService.Show<SendSigningCode>(_localizer["Signature Confirmation"], parameters, options);
+            }
+            //parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
+            //var result1 = await dialog.Result;
 
+            else
+            {
+
+                _snackBar.Add("document is null or dont exist", Severity.Error);
+
+            }
+        }
         //private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
         //{
         //    var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 2, SearchString = _searchString };

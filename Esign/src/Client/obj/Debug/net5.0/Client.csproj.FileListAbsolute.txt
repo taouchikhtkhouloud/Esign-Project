@@ -1317,3 +1317,5 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Clie
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Esign.Client.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\ref\Esign.Client.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Esign.Client.pdb
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Misc\SendSigningCode.razor.g.cs
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\obj\Debug\net5.0\Razor\Pages\Misc\SendSigningCode.razor.g.cs

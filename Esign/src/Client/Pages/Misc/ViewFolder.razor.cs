@@ -1,4 +1,5 @@
-﻿using Esign.Application.Features.Documents.Queries.GetAll;
+﻿
+using Esign.Application.Features.Documents.Queries.GetAll;
 using Esign.Application.Requests.Documents;
 using Esign.Client.Extensions;
 using MudBlazor;
@@ -47,7 +48,7 @@ namespace Esign.Client.Pages.Misc
 
         private string CurrentUserId { get; set; }
         private int _totalItems;
-        private int _currentPage =1;
+        private int _currentPage = 1;
         private string _searchString = "";
         private bool _dense = false;
         private bool _striped = true;
@@ -141,7 +142,7 @@ namespace Esign.Client.Pages.Misc
             }
             number = int.Parse(id1);
             await LoadData(number, state.Page, state.PageSize, state);
-            return new TableData<GetAllDocumentOrFolderResponse> { TotalItems = _totalItems, Items = _pagedData  };
+            return new TableData<GetAllDocumentOrFolderResponse> { TotalItems = _totalItems, Items = _pagedData };
         }
         private async Task GetDocumentTypesAsync()
         {
@@ -190,7 +191,7 @@ namespace Esign.Client.Pages.Misc
             }
         }
 
-        private async Task LoadData(int i ,int pageNumber, int pageSize, TableState state)
+        private async Task LoadData(int i, int pageNumber, int pageSize, TableState state)
         {
             var request = new GetAllPagedDocumentsRequest { PageSize = pageSize, PageNumber = pageNumber + 1, SearchString = _searchString };
             var response = await DocumentManager.GetAllAsync(request);
@@ -259,7 +260,7 @@ namespace Esign.Client.Pages.Misc
                         CreatedOn = document.CreatedOn,
                         CreatedBy = document.CreatedBy,
                         IsDocument = true,
-                        status=document.status
+                        status = document.status
                     });
                 }
                 foreach (var folder in folderData)
@@ -276,6 +277,7 @@ namespace Esign.Client.Pages.Misc
                 }
                 data = loadedData.ToList();
                 _document = data;
+                _totalItems = loadedData.Count() + folderData.Count();
                 _pagedData = mergedData.ToList();
             }
             else

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using Esign.Application.Features.Documents.Commands.AddEdit;
 using Esign.Application.Requests;
@@ -27,7 +28,47 @@ namespace Esign.Client.Pages.Misc
         private FluentValidationValidator _fluentValidationValidator;
         private bool Validated => _fluentValidationValidator.Validate(options => { options.IncludeAllRuleSets(); });
         private List<GetAllDocumentTypesResponse> _documentTypes = new();
+        private bool arrows = false;
+        private bool bullets = false;
+        private bool enableSwipeGesture = false;
+        private bool autocycle = false;
+        private Transition transition = Transition.Slide;
+        private static string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full z-10";
+        private string DragClass = DefaultDragClass;
+        private List<string> fileNames = new List<string>();
 
+        private void OnInputFileChanged(InputFileChangeEventArgs e)
+        {
+            ClearDragClass();
+            var files = e.GetMultipleFiles();
+            foreach (var file in files)
+            {
+                fileNames.Add(file.Name);
+            }
+        }
+
+        private async Task Clear()
+        {
+            fileNames.Clear();
+            ClearDragClass();
+            await Task.Delay(100);
+        }
+        private void Upload()
+        {
+            //Upload the files here
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Add("TODO: Upload your files!", Severity.Normal);
+        }
+
+        private void SetDragClass()
+        {
+            DragClass = $"{DefaultDragClass} mud-border-primary";
+        }
+
+        private void ClearDragClass()
+        {
+            DragClass = DefaultDragClass;
+        }
         public void Cancel()
         {
             MudDialog.Cancel();
@@ -83,6 +124,7 @@ namespace Esign.Client.Pages.Misc
                 await _file.OpenReadStream(_file.Size).ReadAsync(buffer);
                 AddEditDocumentModel.URL = $"data:{format};base64,{Convert.ToBase64String(buffer)}";
                 AddEditDocumentModel.UploadRequest = new UploadRequest { Data = buffer, UploadType = Application.Enums.UploadType.Document, Extension = extension };
+                bullets = true;
             }
         }
 

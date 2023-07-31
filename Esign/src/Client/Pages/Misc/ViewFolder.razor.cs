@@ -42,6 +42,7 @@ namespace Esign.Client.Pages.Misc
         private MudTable<GetAllDocumentOrFolderResponse> _table;
         private GetAllPagedDocumentsRequest request1 = new();
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
+        private List<GetAllDocumentTypesResponse> _documentTypeList2 = new();
         private List<GetDocumentByFolderIdResponse> _document = new();
         private GetAllDocumentTypesResponse _documentType = new();
         private GetAllDocumentTypesResponse _documentType2 = new();
@@ -86,7 +87,9 @@ namespace Esign.Client.Pages.Misc
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
 
             _loaded = true;
-            await GetDocumentsAndFoldersAsync();
+
+            await Reset();
+            await GetDocumentsAndFoldersAsync(int.Parse(id1));
             await GetDocumentTypesAsync();
             var state = await _stateProvider.GetAuthenticationStateAsync();
             var user = state.User;
@@ -101,9 +104,15 @@ namespace Esign.Client.Pages.Misc
                 await HubConnection.StartAsync();
             }
         }
-        private async Task GetDocumentsAndFoldersAsync()
+        private async Task Reset()
+        {
+            _documentOrFolderList = new List<GetAllDocumentOrFolderResponse>();
+            await GetDocumentsAndFoldersAsync(int.Parse(id1));
+        }
+        private async Task GetDocumentsAndFoldersAsync(int id1)
         {
             // Get documents
+            
             var documentResponse = await DocumentManager.GetByFolderAsync();
             var folderResponse = await DocumentTypeManager.GetAllAsync();
             Console.WriteLine("GetByFolderAsync", documentResponse);
@@ -118,7 +127,7 @@ namespace Esign.Client.Pages.Misc
                 if (documentResponse.Data != null)
                 {
                     var documentItems = documentResponse.Data
-                        .Where(dt => dt.DocumentTypeId == int.Parse(id1))
+                        .Where(dt => dt.DocumentTypeId == id1)
                         .Select(f => new GetAllDocumentOrFolderResponse
                         {
                             Id = f.Id,
@@ -130,9 +139,10 @@ namespace Esign.Client.Pages.Misc
                             status = f.status
                         })
                         .ToList();
+                    _document = documentResponse.Data.Where(dt => dt.DocumentTypeId == id1).ToList();
 
                     var folderItems = folderResponse.Data
-                        .Where(dt => dt.Parent == int.Parse(id1))
+                        .Where(dt => dt.Parent ==id1)
                         .Select(f => new GetAllDocumentOrFolderResponse
                         {
                             Id = f.Id,
@@ -175,6 +185,7 @@ namespace Esign.Client.Pages.Misc
             var response = await DocumentTypeManager.GetAllAsync();
             if (response.Succeeded)
             {
+                _documentTypeList2 = response.Data.ToList();
                 _documentTypeList = response.Data.Where(dt => dt.Parent == int.Parse(id1)).ToList();
             }
             else
@@ -214,6 +225,26 @@ namespace Esign.Client.Pages.Misc
             if (!result.Cancelled)
             {
                 OnSearch("");
+            }
+        }
+        private async Task GoBack(int id1)
+        {
+            //number = int.Parse(id1);
+            Console.WriteLine("number:", id1);
+            var f = _documentTypeList2.FirstOrDefault(c => c.Id == id1);
+            if (f != null)
+            {
+
+            if (f.Parent == 0)
+            {
+                
+                NavigationManager.NavigateTo($"/document-types");
+            }
+            else
+            {
+                await GetDocumentsAndFoldersAsync(f.Parent);
+                NavigationManager.NavigateTo($"/files/{f.Parent}");
+            }
             }
         }
 
@@ -592,7 +623,7 @@ namespace Esign.Client.Pages.Misc
             var result = await dialog.Result;
             if (!result.Cancelled)
             {
-                OnSearch("");
+                await Reset();
             }
         }
         private async Task InvokeModalFolder(int id = 0)
@@ -618,7 +649,7 @@ namespace Esign.Client.Pages.Misc
             var result = await dialog.Result;
             if (!result.Cancelled)
             {
-                OnSearch("");
+                await Reset();
             }
 
         }
@@ -668,16 +699,13 @@ namespace Esign.Client.Pages.Misc
             }
             return false;
         }
-        private void View(int id1)
+        private async Task ViewAsync(int id1)
         {
             // Redirect to the File page
-            NavigationManager.NavigateTo($"/files/{id1}", forceLoad: true);
+            await GetDocumentsAndFoldersAsync(id1);
+            NavigationManager.NavigateTo($"/files/{id1}");
         }
-        private async Task Reset()
-        {
-            _documentType = new GetAllDocumentTypesResponse();
-            await GetDocumentTypesAsync();
-        }
+      
         private async Task DeleteFolder(int id)
         {
             string deleteContent = _localizer["Delete Content"];

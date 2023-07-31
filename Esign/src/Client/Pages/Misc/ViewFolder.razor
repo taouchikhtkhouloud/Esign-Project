@@ -16,13 +16,23 @@
 </style>
 
 
-<HeroTitle Title="@_localizer["Folder's Documents Store"]" Description="@_localizer["Browse Available Documents."]" />
+<HeroTitle Title="@_localizer["Folder's Store"]" Description="@_localizer["Browse Available Documents."]" />
+@if (int.Parse(id1) != 0)
+{
+    var f = _documentTypeList2.FirstOrDefault(c => c.Id == int.Parse(id1));
+    var n = "Folder Name: "+f.Name;
+    <HeroTitle Title="@n"  />
+}
 @if (!_loaded)
 {
     <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
 }
 else
 {
+    <div class="d-flex justify-content-start mb-4">
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" @onclick="@(() => GoBack(int.Parse(id1)))" StartIcon="@Icons.Material.Filled.ArrowBack" IconColor="Color.Surface">Go Back</MudButton>
+    </div>
+
     <div style="max-width: 400px;" class="primary d-flex justify-content-start p-5 m-4 mud-text-align-center">
         <MudExpansionPanel @bind-IsExpanded="isOpen" HideIcon="true">
             <TitleContent>
@@ -63,7 +73,7 @@ else
             {
             }*@
     </div>
-    <MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" Items="_documentOrFolderList"  Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
+    <MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" Items="_documentOrFolderList" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
         <ToolBarContent>
 
             <MudToolBarSpacer />
@@ -170,7 +180,7 @@ else
                     @if (_canEditDocumentTypes || _canDeleteDocumentTypes)
                     {
                         <MudMenu Label="@_localizer1["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
-                            <MudMenuItem @onclick="@(() => View(@context.Id))">@_localizer1["View"]</MudMenuItem>
+                            <MudMenuItem @onclick="@(() => ViewAsync(@context.Id))">@_localizer1["View"]</MudMenuItem>
 
                             @if (_canEditDocumentTypes)
                             {

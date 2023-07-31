@@ -108,8 +108,10 @@ namespace Esign.Application.Features.Documents.Commands.Sign
                 Rectangle pageSize = reader.GetPageSize(1);
                 //float textX = pageSize.Left + textx;
                 //float textY = pageSize.Bottom + textz;
+                float qrCodeX = command.isRight ? pageSize.Right - 50 : 0; // If isRight is true, position QR code at the bottom right
+                float qrCodeY = command.isTop ? pageSize.Top - 50 : 0;
                 // Positionnement du code QR
-                imgQR.SetAbsolutePosition(0, 0);
+                imgQR.SetAbsolutePosition(qrCodeX, qrCodeY);
                 cb.AddImage(imgQR);
 
 
@@ -132,7 +134,10 @@ namespace Esign.Application.Features.Documents.Commands.Sign
                     //float textX = pageSize.Left + textx;
                     //float textY = pageSize.Bottom + textz;
                     // Positionnement du code QR
-                    imgQR.SetAbsolutePosition(0, 0);
+                    float qrCodeX = command.isRight ? pageSize.Right - 50 : 0; // If isRight is true, position QR code at the bottom right
+                    float qrCodeY = command.isTop ? pageSize.Top - 50 : 0;
+                    // Positionnement du code QR
+                    imgQR.SetAbsolutePosition(qrCodeX, qrCodeY);
                     cb.AddImage(imgQR);
 
 

@@ -91,15 +91,44 @@ namespace Esign.Application.Features.Documents.Commands.Sign
                 //{
                 //    Console.WriteLine(line);
                 //}
-                if (i == 1)
-                {
+
+                //if (i == 1)
+                //{
+                    
+                //}
+            }
+            if (!command.allPages)
+            {
+                FileStream fs = new FileStream(filePathS, FileMode.Create, FileAccess.Write, FileShare.None);
+                PdfStamper stamper = new PdfStamper(reader, fs);
+                PdfContentByte cb = stamper.GetOverContent(1);
+
+                Phrase phrase = new Phrase("");
+
+                Rectangle pageSize = reader.GetPageSize(1);
+                //float textX = pageSize.Left + textx;
+                //float textY = pageSize.Bottom + textz;
+                // Positionnement du code QR
+                imgQR.SetAbsolutePosition(0, 0);
+                cb.AddImage(imgQR);
+
+
+                ColumnText.ShowTextAligned(cb, Element.ALIGN_RIGHT, phrase, 0, 0, 0);
+                // Enregistrement du fichier modifié
+                stamper.Close();
+                fs.Close();
+            }
+            else
+            {
                     FileStream fs = new FileStream(filePathS, FileMode.Create, FileAccess.Write, FileShare.None);
                     PdfStamper stamper = new PdfStamper(reader, fs);
-                    PdfContentByte cb = stamper.GetOverContent(i);
+                for(int j=1; j <= reader.NumberOfPages; j++)
+                {
+                    PdfContentByte cb = stamper.GetOverContent(j);
 
                     Phrase phrase = new Phrase("");
 
-                    Rectangle pageSize = reader.GetPageSize(i);
+                    Rectangle pageSize = reader.GetPageSize(j);
                     //float textX = pageSize.Left + textx;
                     //float textY = pageSize.Bottom + textz;
                     // Positionnement du code QR
@@ -109,8 +138,9 @@ namespace Esign.Application.Features.Documents.Commands.Sign
 
                     ColumnText.ShowTextAligned(cb, Element.ALIGN_RIGHT, phrase, 0, 0, 0);
                     // Enregistrement du fichier modifié
-                    stamper.Close();
                 }
+                    stamper.Close();
+                fs.Close();
             }
             document.NomSignateur = command.nom;
             document.PrenomSignateur = command.prenom;

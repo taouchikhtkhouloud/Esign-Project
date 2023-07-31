@@ -7,6 +7,7 @@ using Esign.Application.Features.Documents.Queries.GetById;
 using Esign.Shared.Constants.Permission;
 using Microsoft.AspNetCore.Authorization;
 using Esign.Application.Features.Documents.Queries.GetByFolderId;
+using Esign.Application.Features.Documents.Commands.Sign;
 
 namespace Esign.Server.Controllers.Utilities.Misc
 {
@@ -61,6 +62,17 @@ namespace Esign.Server.Controllers.Utilities.Misc
         [Authorize(Policy = Permissions.Documents.Create)]
         [HttpPost]
         public async Task<IActionResult> Post(AddEditDocumentCommand command)
+        {
+            return Ok(await _mediator.Send(command));
+        }
+
+        /// <summary>
+        /// Aign Document
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns>Status 200 OK</returns>
+        [HttpPost("/Sign")]
+        public async Task<IActionResult> Sign(SignDocumentCommand command)
         {
             return Ok(await _mediator.Send(command));
         }

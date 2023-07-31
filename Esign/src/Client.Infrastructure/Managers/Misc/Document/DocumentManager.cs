@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Esign.Application.Features.Documents.Queries.GetById;
 using System.Collections.Generic;
 using Esign.Application.Features.Documents.Queries.GetByFolderId;
+using Esign.Application.Features.Documents.Commands.Sign;
 
 namespace Esign.Client.Infrastructure.Managers.Misc.Document
 {
@@ -54,6 +55,11 @@ namespace Esign.Client.Infrastructure.Managers.Misc.Document
         {
             var response = await _httpClient.PostAsJsonAsync(Routes.DocumentsEndpoints.Save, request);
             return await response.ToResult<int>();
+        }
+        public async Task<IResult<string>> SignDocument(SignDocumentCommand request)
+        {
+            var response = await _httpClient.PostAsJsonAsync(Routes.DocumentsEndpoints.Sign, request);
+            return await response.ToResult<string>();
         }
     }
 }

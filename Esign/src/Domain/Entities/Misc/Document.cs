@@ -1,5 +1,6 @@
 ﻿using Esign.Domain.Contracts;
 using Esign.Domain.Entities.ExtendedAttributes;
+using System;
 
 namespace Esign.Domain.Entities.Misc
 {
@@ -17,5 +18,10 @@ namespace Esign.Domain.Entities.Misc
         public bool status { get; set; }
 
         public virtual DocumentType DocumentType { get; set; }
+        public string NomSignateur { get; set; }
+        public string PrenomSignateur { get; set; }
+        public string FileUrlsSigne { get; set; }
+        public DateTime DateSignature { get; set; }
+        public string CodeSignature { get; set; }
     }
 }

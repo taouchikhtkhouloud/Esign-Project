@@ -303,6 +303,13 @@
             <param name="command"></param>
             <returns>Status 200 OK</returns>
         </member>
+        <member name="M:Esign.Server.Controllers.Utilities.Misc.DocumentsController.Sign(Esign.Application.Features.Documents.Commands.Sign.SignDocumentCommand)">
+            <summary>
+            Aign Document
+            </summary>
+            <param name="command"></param>
+            <returns>Status 200 OK</returns>
+        </member>
         <member name="M:Esign.Server.Controllers.Utilities.Misc.DocumentsController.Delete(System.Int32)">
             <summary>
             Delete a Document

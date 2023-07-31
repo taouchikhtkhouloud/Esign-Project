@@ -55,6 +55,7 @@
     <ProjectReference Include="..\Client\Client.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Files\Documents\Dossier\" />
     <Folder Include="Files\Images\ProfilePictures\" />
   </ItemGroup>
 

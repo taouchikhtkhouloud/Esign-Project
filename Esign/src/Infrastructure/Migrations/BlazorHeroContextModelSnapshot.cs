@@ -194,10 +194,16 @@ namespace Esign.Infrastructure.Migrations
                     b.Property<string>("Client")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("CodeSignature")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateSignature")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -205,6 +211,9 @@ namespace Esign.Infrastructure.Migrations
 
                     b.Property<int>("DocumentTypeId")
                         .HasColumnType("int");
+
+                    b.Property<string>("FileUrlsSigne")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsPublic")
                         .HasColumnType("bit");
@@ -214,6 +223,12 @@ namespace Esign.Infrastructure.Migrations
 
                     b.Property<DateTime?>("LastModifiedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("NomSignateur")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PrenomSignateur")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");

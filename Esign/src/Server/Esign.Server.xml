@@ -283,6 +283,12 @@
             <param name="searchString"></param>
             <returns>Status 200 OK</returns>
         </member>
+        <member name="M:Esign.Server.Controllers.Utilities.Misc.DocumentsController.GetByFolder">
+            <summary>
+            Get All Document Types
+            </summary>
+            <returns>Status 200 OK</returns>
+        </member>
         <member name="M:Esign.Server.Controllers.Utilities.Misc.DocumentsController.GetById(System.Int32)">
             <summary>
             Get Document By Id

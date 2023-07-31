@@ -1,5 +1,5 @@
 ﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<AddEditDocumentModal> _localizer
-
+@inject ISnackbar Snackbar
 <EditForm Model="@AddEditDocumentModel" OnValidSubmit="SaveAsync">
     <FluentValidationValidator @ref="_fluentValidationValidator" />
     <MudDialog>
@@ -22,78 +22,145 @@
             }
         </TitleContent>
         <DialogContent>
-            <MudGrid>
-                @if (AddEditDocumentModel.Id != 0)
-                {
-                    <MudItem xs="12" md="6">
-                        <MudTextField Disabled For="@(() => AddEditDocumentModel.Id)" @bind-Value="AddEditDocumentModel.Id" Label="@_localizer["Id"]" />
-                    </MudItem>
-                }
-                <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditDocumentModel.Title)" @bind-Value="AddEditDocumentModel.Title" Label="@_localizer["Title"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditDocumentModel.Description)" @bind-Value="AddEditDocumentModel.Description" Label="@_localizer["Description"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditDocumentModel.Client)" @bind-Value="AddEditDocumentModel.Client" Label="@_localizer["Client"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditDocumentModel.fileType)" @bind-Value="AddEditDocumentModel.fileType" Label="@_localizer["Document Type"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditDocumentModel.Value)" @bind-Value="AddEditDocumentModel.Value" Label="@_localizer["Document Value"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => AddEditDocumentModel.keywords)" @bind-Value="AddEditDocumentModel.keywords" Label="@_localizer["Keywords"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudAutocomplete T="int" Label="@_localizer["Folder"]" For="@(() => AddEditDocumentModel.DocumentTypeId)" @bind-Value="AddEditDocumentModel.DocumentTypeId" ResetValueOnEmptyText="true" SearchFunc="@SearchDocumentTypes" Variant="Variant.Filled" ToStringFunc="@(i=> _documentTypes.FirstOrDefault(b => b.Id == DocumentFolderId)?.Name ?? string.Empty)" OffsetY="true" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudCheckBox For="@(() => AddEditDocumentModel.status)" @bind-Checked="AddEditDocumentModel.status" Label="@_localizer["Is Signed?"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudCheckBox For="@(() => AddEditDocumentModel.IsPublic)" @bind-Checked="AddEditDocumentModel.IsPublic" Label="@_localizer["Is Public?"]" />
-                </MudItem>
-                <MudItem xs="12" md="6">
-                    <MudItem>
-                        @if (_file != null)
-                        {
-                            <MudAlert>@_file.Name</MudAlert>
-                        }
-                        @if (AddEditDocumentModel.Id != 0 && !string.IsNullOrEmpty(AddEditDocumentModel.URL))
-                        {
-                            <MudAlert>@(AddEditDocumentModel.URL)</MudAlert>
-                        }
-                        <InputFile id="fileInput" hidden OnChange="UploadFiles" />
-                        <div>
-                            @if (AddEditDocumentModel.Id == 0)
+            @if (AddEditDocumentModel.Id == 0)
+            {
+                <MudCarousel ShowDelimiters="@bullets" Class="mud-width-full" Style="height: 400px; max-height: 700px; overflow-y: scroll " Bullets="False" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+                    <MudCarouselItem Transition="transition">
+                        <div class="d-block m-auto">
+
+                            <MudText Align="Align.Center">UPLOAD FILE </MudText>
+                            @if (_file != null)
                             {
+                                <MudAlert>@_file.Name</MudAlert>
+                            }
+
+                            <InputFile id="fileInput" hidden OnChange="UploadFiles" />
+                            <div class="d-block m-auto">
+
                                 <MudButton HtmlTag="label"
                                            Variant="Variant.Text"
                                            Color="Color.Primary"
-                                           Size="Size.Small"
+                                           Size="Size.Large"
+                                           Class="align-items-lg-center"
                                            StartIcon="@Icons.Filled.CloudUpload"
                                            for="fileInput">
                                     @_localizer["Upload"]
                                 </MudButton>
-                            }
-                            else if (!string.IsNullOrEmpty(AddEditDocumentModel.URL))
-                            {
-                                <MudButton Variant="Variant.Text"
-                                           Color="Color.Secondary"
-                                           StartIcon="@Icons.Filled.CloudDownload"
-                                           Size="Size.Small"
-                                           Link="@(AddEditDocumentModel.URL)" Target="_blank">
-                                    @_localizer["Download"]
-                                </MudButton>
 
-                            }
+
+                            </div>
+
+
                         </div>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="transition">
+                        <div class="d-flex" style="max-height: 700px; ">
+                            <MudGrid>
+                                <MudItem xs="12" md="6">
+                                    <MudTextField For="@(() => AddEditDocumentModel.Title)" @bind-Value="AddEditDocumentModel.Title" Label="@_localizer["Title"]" />
+                                </MudItem>
+                                <MudItem xs="12" md="6">
+                                    <MudTextField For="@(() => AddEditDocumentModel.Description)" @bind-Value="AddEditDocumentModel.Description" Label="@_localizer["Description"]" />
+                                </MudItem>
+                                <MudItem xs="12" md="6">
+                                    <MudTextField For="@(() => AddEditDocumentModel.Client)" @bind-Value="AddEditDocumentModel.Client" Label="@_localizer["Client"]" />
+                                </MudItem>
+                                <MudItem xs="12" md="6">
+                                    <MudTextField For="@(() => AddEditDocumentModel.fileType)" @bind-Value="AddEditDocumentModel.fileType" Label="@_localizer["Document Type"]" />
+                                </MudItem>
+                                <MudItem xs="12" md="6">
+                                    <MudTextField For="@(() => AddEditDocumentModel.Value)" @bind-Value="AddEditDocumentModel.Value" Label="@_localizer["Document Value"]" />
+                                </MudItem>
+                                <MudItem xs="12" md="6">
+                                    <MudTextField For="@(() => AddEditDocumentModel.keywords)" @bind-Value="AddEditDocumentModel.keywords" Label="@_localizer["Keywords"]" />
+                                </MudItem>
+                                <MudItem xs="12" md="6">
+                                    <MudAutocomplete T="int" Label="@_localizer["Folder"]" For="@(() => AddEditDocumentModel.DocumentTypeId)" @bind-Value="AddEditDocumentModel.DocumentTypeId" ResetValueOnEmptyText="true" SearchFunc="@SearchDocumentTypes" Variant="Variant.Filled" ToStringFunc="@(i=> _documentTypes.FirstOrDefault(b => b.Id == DocumentFolderId)?.Name ?? string.Empty)" OffsetY="true" />
+                                </MudItem>
+
+                                <MudItem xs="12" md="6">
+                                    <MudCheckBox For="@(() => AddEditDocumentModel.IsPublic)" @bind-Checked="AddEditDocumentModel.IsPublic" Label="@_localizer["Is Public?"]" />
+                                </MudItem>
+                            </MudGrid>
+                        </div>
+                    </MudCarouselItem>
+
+                </MudCarousel>
+            }
+            @if (AddEditDocumentModel.Id != 0)
+            {
+
+                <MudGrid>
+                    @if (AddEditDocumentModel.Id != 0)
+                    {
+                        <MudItem xs="12" md="6">
+                            <MudTextField Disabled For="@(() => AddEditDocumentModel.Id)" @bind-Value="AddEditDocumentModel.Id" Label="@_localizer["Id"]" />
+                        </MudItem>
+                    }
+                    <MudItem xs="12" md="6">
+                        <MudTextField For="@(() => AddEditDocumentModel.Title)" @bind-Value="AddEditDocumentModel.Title" Label="@_localizer["Title"]" />
                     </MudItem>
-                </MudItem>
-            </MudGrid>
+                    <MudItem xs="12" md="6">
+                        <MudTextField For="@(() => AddEditDocumentModel.Description)" @bind-Value="AddEditDocumentModel.Description" Label="@_localizer["Description"]" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudTextField For="@(() => AddEditDocumentModel.Client)" @bind-Value="AddEditDocumentModel.Client" Label="@_localizer["Client"]" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudTextField For="@(() => AddEditDocumentModel.fileType)" @bind-Value="AddEditDocumentModel.fileType" Label="@_localizer["Document Type"]" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudTextField For="@(() => AddEditDocumentModel.Value)" @bind-Value="AddEditDocumentModel.Value" Label="@_localizer["Document Value"]" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudTextField For="@(() => AddEditDocumentModel.keywords)" @bind-Value="AddEditDocumentModel.keywords" Label="@_localizer["Keywords"]" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudAutocomplete T="int" Label="@_localizer["Folder"]" For="@(() => AddEditDocumentModel.DocumentTypeId)" @bind-Value="AddEditDocumentModel.DocumentTypeId" ResetValueOnEmptyText="true" SearchFunc="@SearchDocumentTypes" Variant="Variant.Filled" ToStringFunc="@(i=> _documentTypes.FirstOrDefault(b => b.Id == DocumentFolderId)?.Name ?? string.Empty)" OffsetY="true" />
+                    </MudItem>
+
+                    <MudItem xs="12" md="6">
+                        <MudCheckBox For="@(() => AddEditDocumentModel.IsPublic)" @bind-Checked="AddEditDocumentModel.IsPublic" Label="@_localizer["Is Public?"]" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudItem>
+                            @if (_file != null)
+                            {
+                                <MudAlert>@_file.Name</MudAlert>
+                            }
+                            @if (AddEditDocumentModel.Id != 0 && !string.IsNullOrEmpty(AddEditDocumentModel.URL))
+                            {
+                                <MudAlert>@(AddEditDocumentModel.URL)</MudAlert>
+                            }
+                            <InputFile id="fileInput" hidden OnChange="UploadFiles" />
+                            <div>
+                                @if (AddEditDocumentModel.Id == 0)
+                                {
+                                    <MudButton HtmlTag="label"
+                                               Variant="Variant.Text"
+                                               Color="Color.Primary"
+                                               Size="Size.Small"
+                                               StartIcon="@Icons.Filled.CloudUpload"
+                                               for="fileInput">
+                                        @_localizer["Upload"]
+                                    </MudButton>
+                                }
+                                else if (!string.IsNullOrEmpty(AddEditDocumentModel.URL))
+                                {
+                                    <MudButton Variant="Variant.Text"
+                                               Color="Color.Secondary"
+                                               StartIcon="@Icons.Filled.CloudDownload"
+                                               Size="Size.Small"
+                                               Link="@(AddEditDocumentModel.URL)" Target="_blank">
+                                        @_localizer["Download"]
+                                    </MudButton>
+
+                                }
+                            </div>
+                        </MudItem>
+                    </MudItem>
+                </MudGrid>
+            }
         </DialogContent>
         <DialogActions>
             <MudButton Variant="Variant.Filled" OnClick="Cancel">@_localizer["Cancel"]</MudButton>

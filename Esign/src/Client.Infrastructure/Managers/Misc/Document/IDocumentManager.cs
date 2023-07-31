@@ -4,14 +4,16 @@ using Esign.Application.Requests.Documents;
 using Esign.Shared.Wrapper;
 using System.Threading.Tasks;
 using Esign.Application.Features.Documents.Queries.GetById;
+using System.Collections.Generic;
+using Esign.Application.Features.Documents.Queries.GetByFolderId;
 
 namespace Esign.Client.Infrastructure.Managers.Misc.Document
 {
     public interface IDocumentManager : IManager
     {
         Task<PaginatedResult<GetAllDocumentsResponse>> GetAllAsync(GetAllPagedDocumentsRequest request);
-       
 
+        Task<IResult<List<GetDocumentByFolderIdResponse>>> GetByFolderAsync();
         Task<IResult<GetDocumentByIdResponse>> GetByIdAsync(GetDocumentByIdQuery request);
 
         Task<PaginatedResult<GetAllDocumentsResponse>> GetFillesByFolderISAsync(GetAllPagedDocumentsRequest request ,int id);

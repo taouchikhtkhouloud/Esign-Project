@@ -1,0 +1,47 @@
+2023-07-28 16:25:45.526 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-28 16:25:45.649 +00:00 [INF] Hosting environment: Development
+2023-07-28 16:25:45.653 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-28 16:26:14.198 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-28 16:26:14.198 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-28 16:26:14.390 +00:00 [ERR] Connection ID "15276209936846029071", Request ID "40000110-0000-d400-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-28 16:26:14.396 +00:00 [ERR] Connection ID "5548434741725757718", Request ID "40000117-0000-4d00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-28 16:40:02.986 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-28 16:40:03.124 +00:00 [INF] Hosting environment: Development
+2023-07-28 16:40:03.133 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-28 16:47:00.731 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-28 16:47:00.839 +00:00 [INF] Hosting environment: Development
+2023-07-28 16:47:00.842 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-28 23:09:00.422 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-28 23:09:00.775 +00:00 [INF] Hosting environment: Development
+2023-07-28 23:09:00.789 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-28 23:24:40.997 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-28 23:24:41.190 +00:00 [INF] Hosting environment: Development
+2023-07-28 23:24:41.213 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

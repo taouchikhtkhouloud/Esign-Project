@@ -19,5 +19,6 @@
 
         public static string Save = "api/documents";
         public static string Delete = "api/documents";
+        public static string GetByFolder = "/ByFolder";
     }
 }

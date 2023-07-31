@@ -17,12 +17,7 @@
 
 
 <HeroTitle Title="@_localizer["Folder's Store"]" Description="@_localizer["Browse Available Documents."]" />
-@if (int.Parse(id1) != 0)
-{
-    var f = _documentTypeList2.FirstOrDefault(c => c.Id == int.Parse(id1));
-    var n = "Folder Name: "+f.Name;
-    <HeroTitle Title="@n"  />
-}
+
 @if (!_loaded)
 {
     <MudProgressCircular Color="Color.Primary" Indeterminate="true" />

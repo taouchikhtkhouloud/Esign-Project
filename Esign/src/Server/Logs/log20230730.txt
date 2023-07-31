@@ -1,0 +1,333 @@
+2023-07-30 16:44:39.946 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 16:44:40.212 +00:00 [INF] Hosting environment: Development
+2023-07-30 16:44:40.218 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 16:44:57.636 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-30 16:44:57.636 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-30 16:44:57.882 +00:00 [ERR] Connection ID "4611686023527661947", Request ID "4000017c-0001-4000-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-30 16:44:57.882 +00:00 [ERR] Connection ID "17221773771963105527", Request ID "400000f8-0800-ef00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-30 16:45:01.381 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-30 16:45:01.484 +00:00 [ERR] Connection ID "288230385546952989", Request ID "4000011e-0002-0400-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-30 16:45:01.486 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-30 16:45:01.490 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-30 16:45:01.492 +00:00 [ERR] Connection ID "12754194158403453207", Request ID "40000118-0003-b100-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-30 16:45:01.494 +00:00 [ERR] Connection ID "10088063170410185068", Request ID "4000016d-0001-8c00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response headers cannot be modified because the response has already started.
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.ThrowIfReadOnly()
+   at Microsoft.AspNetCore.HttpSys.Internal.HeaderCollection.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Esign.Server.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server\Middlewares\ErrorHandlerMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-07-30 16:48:57.112 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 16:48:57.284 +00:00 [INF] Hosting environment: Development
+2023-07-30 16:48:57.292 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:01:01.401 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:01:01.598 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:01:01.606 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:06:35.218 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:06:35.327 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:06:35.332 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:09:27.712 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:09:27.874 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:09:27.882 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:11:39.256 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:11:39.425 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:11:39.440 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:15:18.536 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:15:18.753 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:15:18.759 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:16:53.341 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:16:53.573 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:16:53.590 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 17:18:40.177 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 17:18:40.347 +00:00 [INF] Hosting environment: Development
+2023-07-30 17:18:40.356 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 18:09:21.933 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 18:09:21.993 +00:00 [INF] Hosting environment: Development
+2023-07-30 18:09:21.997 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 18:11:31.415 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 18:11:31.486 +00:00 [INF] Hosting environment: Development
+2023-07-30 18:11:31.490 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 18:16:23.631 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 18:16:23.716 +00:00 [INF] Hosting environment: Development
+2023-07-30 18:16:23.719 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 18:21:41.482 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 18:21:41.556 +00:00 [INF] Hosting environment: Development
+2023-07-30 18:21:41.559 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 18:47:51.591 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 18:47:51.668 +00:00 [INF] Hosting environment: Development
+2023-07-30 18:47:51.673 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 18:48:53.987 +00:00 [INF] Got 26 documents from the repository.
+2023-07-30 18:49:38.837 +00:00 [INF] Got 26 documents from the repository.
+2023-07-30 18:59:07.007 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 18:59:07.080 +00:00 [INF] Hosting environment: Development
+2023-07-30 18:59:07.084 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 19:08:57.337 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 19:08:57.415 +00:00 [INF] Hosting environment: Development
+2023-07-30 19:08:57.420 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 19:23:31.717 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 19:23:31.816 +00:00 [INF] Hosting environment: Development
+2023-07-30 19:23:31.821 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 19:24:58.369 +00:00 [ERR] An error occurred while fetching documents.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> List`1
+System.Object -> System.Collections.Generic.List`1[[Esign.Application.Features.Documents.Queries.GetByFolderId.GetDocumentByFolderIdResponse, Esign.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Document -> GetDocumentByFolderIdResponse
+Esign.Domain.Entities.Misc.Document -> Esign.Application.Features.Documents.Queries.GetByFolderId.GetDocumentByFolderIdResponse
+   at lambda_method515(Closure , Document , GetDocumentByFolderIdResponse , ResolutionContext )
+   at lambda_method514(Closure , Object , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method514(Closure , Object , List`1 , ResolutionContext )
+   at Esign.Application.Features.Documents.Queries.GetByFolderId.GetDocumentByFolderIdQueryHandler.Handle(GetDocumentByFolderIdQuery request, CancellationToken cancellationToken) in C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\Features\Documents\Queries\GetByFolderId\GetDocumentByFolderIdQuery.cs:line 43
+2023-07-30 19:36:19.964 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 19:36:20.042 +00:00 [INF] Hosting environment: Development
+2023-07-30 19:36:20.046 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 19:37:10.366 +00:00 [INF] Documents fetched from the repository:
+2023-07-30 19:37:10.367 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 23, Name: pdf test, Description: test
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-07-30 19:37:10.368 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-07-30 19:37:10.369 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-07-30 19:37:10.370 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-07-30 19:39:09.991 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 19:39:10.063 +00:00 [INF] Hosting environment: Development
+2023-07-30 19:39:10.067 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 19:40:01.569 +00:00 [INF] Documents fetched from the repository:
+2023-07-30 19:40:01.724 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-07-30 19:40:01.724 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-07-30 19:40:01.724 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-07-30 19:40:01.724 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 23, Name: pdf test, Description: test
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-07-30 19:40:01.725 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-07-30 19:40:01.726 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-07-30 19:40:01.727 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-07-30 19:40:01.727 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-07-30 19:40:01.727 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-07-30 19:40:01.727 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-07-30 23:08:27.513 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 23:08:27.689 +00:00 [INF] Hosting environment: Development
+2023-07-30 23:08:27.699 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 23:09:05.117 +00:00 [INF] Documents fetched from the repository:
+2023-07-30 23:09:05.120 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-07-30 23:09:05.120 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-07-30 23:09:05.120 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-07-30 23:09:05.120 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-07-30 23:09:05.120 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 23, Name: pdf test, Description: test
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-07-30 23:09:05.121 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-07-30 23:09:05.122 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-07-30 23:09:05.122 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-07-30 23:09:05.122 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-07-30 23:09:05.122 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-07-30 23:09:29.177 +00:00 [INF] Documents fetched from the repository:
+2023-07-30 23:09:29.178 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-07-30 23:09:29.178 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-07-30 23:09:29.179 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 23, Name: pdf test, Description: test
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-07-30 23:09:29.180 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-07-30 23:09:29.181 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-07-30 23:20:28.993 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-30 23:20:29.202 +00:00 [INF] Hosting environment: Development
+2023-07-30 23:20:29.211 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-07-30 23:21:12.418 +00:00 [INF] Documents fetched from the repository:
+2023-07-30 23:21:12.423 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-07-30 23:21:12.426 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 23, Name: pdf test, Description: test
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-07-30 23:21:12.427 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-07-30 23:21:12.428 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-07-30 23:21:12.428 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-07-30 23:21:12.428 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-07-30 23:21:12.428 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-07-30 23:21:12.428 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-07-30 23:21:12.429 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-07-30 23:21:12.429 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-07-30 23:21:12.429 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-07-30 23:21:12.430 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-07-30 23:21:55.455 +00:00 [INF] Documents fetched from the repository:
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-07-30 23:21:55.455 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-07-30 23:21:55.456 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-07-30 23:21:55.456 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-07-30 23:21:55.456 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-07-30 23:21:55.456 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-07-30 23:21:55.456 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 23, Name: pdf test, Description: test
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-07-30 23:21:55.457 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-07-30 23:21:55.458 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-07-30 23:21:55.458 +00:00 [INF] Document Id: 36, Name: ss, Description: s

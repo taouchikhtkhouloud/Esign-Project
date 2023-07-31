@@ -20,6 +20,7 @@ using Esign.Application.Features.DocumentTypes.Commands.AddEdit;
 using Microsoft.AspNetCore.SignalR.Client;
 using Esign.Shared.Constants.Application;
 using Esign.Application.Features.DocumentTypes.Queries.GetFolder;
+using Esign.Application.Features.Documents.Queries.GetByFolderId;
 
 namespace Esign.Client.Pages.Misc
 {
@@ -41,7 +42,7 @@ namespace Esign.Client.Pages.Misc
         private MudTable<GetAllDocumentOrFolderResponse> _table;
         private GetAllPagedDocumentsRequest request1 = new();
         private List<GetAllDocumentTypesResponse> _documentTypeList = new();
-        private List<GetAllDocumentsResponse> _document = new();
+        private List<GetDocumentByFolderIdResponse> _document = new();
         private GetAllDocumentTypesResponse _documentType = new();
         private GetAllDocumentTypesResponse _documentType2 = new();
         private List<GetAllDocumentOrFolderResponse> _documentOrFolderList = new();
@@ -85,7 +86,7 @@ namespace Esign.Client.Pages.Misc
             _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
 
             _loaded = true;
-            //await GetDocumentsAndFoldersAsync();
+            await GetDocumentsAndFoldersAsync();
             await GetDocumentTypesAsync();
             var state = await _stateProvider.GetAuthenticationStateAsync();
             var user = state.User;
@@ -100,39 +101,64 @@ namespace Esign.Client.Pages.Misc
                 await HubConnection.StartAsync();
             }
         }
-        //private async Task GetDocumentsAndFoldersAsync()
-        //{
-        //    // Get documents
+        private async Task GetDocumentsAndFoldersAsync()
+        {
+            // Get documents
+            var documentResponse = await DocumentManager.GetByFolderAsync();
+            var folderResponse = await DocumentTypeManager.GetAllAsync();
+            Console.WriteLine("GetByFolderAsync", documentResponse);
+            // Check if documentResponse and folderResponse are not null
+            if (documentResponse != null && folderResponse != null)
+            {
+                Console.WriteLine("GetByFolderAsync", documentResponse);
 
-        //    var documentResponse = await DocumentManager.GetAllAsync(request1);
-        //    _document = documentResponse.Data.ToList();
-        //    var documentItems = documentResponse.Data.Select(d => new GetAllDocumentOrFolderResponse
-        //    {
-        //        Id = d.Id,
-        //        Name = d.Title,
-        //        Description = d.Description,
-        //        CreatedOn = d.CreatedOn,
-        //        CreatedBy = d.CreatedBy,
-        //        IsDocument = true
-        //    }).ToList();
+               
 
-        //    // Get folders
-        //    var folderResponse = await DocumentTypeManager.GetAllAsync();
-        //    var folderItems = folderResponse.Data.Where(dt => dt.Parent == int.Parse(id1)).Select(f => new GetAllDocumentOrFolderResponse
-        //    {
-        //        Id = f.Id,
-        //        Name = f.Name,
-        //        Description = f.Description,
-        //        CreatedOn = f.CreatedOn,
-        //        CreatedBy = f.CreatedBy,
-        //        IsDocument = false
-        //    }).ToList();
+                // Check if documentResponse.Data is not null
+                if (documentResponse.Data != null)
+                {
+                    var documentItems = documentResponse.Data
+                        .Where(dt => dt.DocumentTypeId == int.Parse(id1))
+                        .Select(f => new GetAllDocumentOrFolderResponse
+                        {
+                            Id = f.Id,
+                            Name = f.Title,
+                            Description = f.Description,
+                            CreatedOn = f.CreatedOn,
+                            CreatedBy = f.CreatedBy,
+                            IsDocument = true,
+                            status = f.status
+                        })
+                        .ToList();
 
-        //    // Combine documents and folders
-        //    var combinedList = documentItems.Concat(folderItems).ToList();
+                    var folderItems = folderResponse.Data
+                        .Where(dt => dt.Parent == int.Parse(id1))
+                        .Select(f => new GetAllDocumentOrFolderResponse
+                        {
+                            Id = f.Id,
+                            Name = f.Name,
+                            Description = f.Description,
+                            CreatedOn = f.CreatedOn,
+                            CreatedBy = f.CreatedBy,
+                            IsDocument = false
+                        })
+                        .ToList();
 
-        //    _documentOrFolderList = combinedList;
-        //}
+                    var combinedList = documentItems.Concat(folderItems).ToList();
+                    _documentOrFolderList = combinedList;
+                }
+                else
+                {
+                    // Handle the case when documentResponse.Data is null
+                    _snackBar.Add("Error: Unable to retrieve documents data.", Severity.Error);
+                }
+            }
+            else
+            {
+                _snackBar.Add("Error: Unable to retrieve data.", Severity.Error);
+            }
+        }
+
 
         private async Task<TableData<GetAllDocumentOrFolderResponse>> ServerReload(TableState state)
         {
@@ -276,7 +302,7 @@ namespace Esign.Client.Pages.Misc
                     });
                 }
                 data = loadedData.ToList();
-                _document = data;
+               // _document = data;
                 _totalItems = loadedData.Count() + folderData.Count();
                 _pagedData = mergedData.ToList();
             }

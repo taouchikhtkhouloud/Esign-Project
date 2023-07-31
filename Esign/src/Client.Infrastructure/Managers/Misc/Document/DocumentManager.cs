@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Esign.Application.Features.Documents.Queries.GetById;
+using System.Collections.Generic;
+using Esign.Application.Features.Documents.Queries.GetByFolderId;
 
 namespace Esign.Client.Infrastructure.Managers.Misc.Document
 {
@@ -19,6 +21,11 @@ namespace Esign.Client.Infrastructure.Managers.Misc.Document
             _httpClient = httpClient;
         }
 
+        public async Task<IResult<List<GetDocumentByFolderIdResponse>>> GetByFolderAsync()
+        {
+            var response = await _httpClient.GetAsync(Routes.DocumentsEndpoints.GetByFolder);
+            return await response.ToResult<List<GetDocumentByFolderIdResponse>>();
+        }
         public async Task<IResult<int>> DeleteAsync(int id)
         {
             var response = await _httpClient.DeleteAsync($"{Routes.DocumentsEndpoints.Delete}/{id}");

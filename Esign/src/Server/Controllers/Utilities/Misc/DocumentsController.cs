@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Esign.Application.Features.Documents.Queries.GetById;
 using Esign.Shared.Constants.Permission;
 using Microsoft.AspNetCore.Authorization;
+using Esign.Application.Features.Documents.Queries.GetByFolderId;
 
 namespace Esign.Server.Controllers.Utilities.Misc
 {
@@ -26,6 +27,17 @@ namespace Esign.Server.Controllers.Utilities.Misc
         {
             var docs = await _mediator.Send(new GetAllDocumentsQuery(pageNumber, pageSize, searchString));
             return Ok(docs);
+        }
+
+        /// <summary>
+        /// Get All Document Types
+        /// </summary>
+        /// <returns>Status 200 OK</returns>
+        [HttpGet("/ByFolder")]
+        public async Task<IActionResult> GetByFolder()
+        {
+            var documentTypes = await _mediator.Send(new GetDocumentByFolderIdQuery());
+            return Ok(documentTypes);
         }
 
         /// <summary>

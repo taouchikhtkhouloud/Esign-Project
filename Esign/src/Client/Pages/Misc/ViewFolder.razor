@@ -63,7 +63,7 @@ else
             {
             }*@
     </div>
-    <MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" ServerData="@(new Func<TableState, Task<TableData<GetAllDocumentOrFolderResponse>>>(ServerReload))" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
+    <MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" Items="_documentOrFolderList"  Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
         <ToolBarContent>
 
             <MudToolBarSpacer />

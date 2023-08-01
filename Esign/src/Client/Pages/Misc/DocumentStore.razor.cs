@@ -249,8 +249,12 @@ namespace Esign.Client.Pages.Misc
                         Value = doc.Value,
                         fileType = doc.fileType,
                         keywords = doc.keywords,
-                        status = doc.status
-                    });
+                        status = doc.status,
+                         NomSignateur = doc.NomSignateur,
+                PrenomSignateur = doc.PrenomSignateur,
+                FileUrlsSigne = doc.FileUrlsSigne,
+                DateSignature = doc.DateSignature
+            });
                 }
             var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
 

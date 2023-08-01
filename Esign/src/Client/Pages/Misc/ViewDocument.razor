@@ -43,19 +43,32 @@
                     <MudText Color="Color.Primary" Typo="Typo.h6"> Folder: </MudText>
                     <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.DocumentTypeId</MudText>
                 </MudItem>
+
                 <MudItem xs="12" md="6">
-                    
-                        <MudText Color="Color.Primary" Typo="Typo.h6"> Is Document Public: </MudText>
-                        <MudText Typo="Typo.subtitle1">
-                            @(AddEditDocumentModel.IsPublic ? "Yes" : "No")
-                        </MudText>
+
+                    <MudText Color="Color.Primary" Typo="Typo.h6"> Is Document Public: </MudText>
+                    <MudText Typo="Typo.subtitle1">
+                        @(AddEditDocumentModel.IsPublic ? "Yes" : "No")
+                    </MudText>
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    
-                        <MudText Color="Color.Primary" Typo="Typo.h6"> Is Document Signed: </MudText> <MudText Typo="Typo.subtitle1">
-    @(AddEditDocumentModel.status ? "Yes" : "No")
-</MudText>
+
+                    <MudText Color="Color.Primary" Typo="Typo.h6"> Is Document Signed: </MudText> <MudText Typo="Typo.subtitle1">
+                        @(AddEditDocumentModel.status ? "Yes" : "No")
+                    </MudText>
                 </MudItem>
+                @if (AddEditDocumentModel.status)
+                {
+
+                    <MudItem xs="12" md="6">
+                        <MudText Color="Color.Primary" Typo="Typo.h6"> the date on which the document was signed: </MudText>
+                        <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.DateSignature</MudText>
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudText Color="Color.Primary" Typo="Typo.h6"> the person who on has sign the document: </MudText>
+                        <MudText Typo="Typo.subtitle1">@AddEditDocumentModel.NomSignateur @AddEditDocumentModel.PrenomSignateur</MudText>
+                    </MudItem>
+                }
                 <MudItem xs="12" md="6">
                     <MudItem>
 
@@ -69,6 +82,15 @@
                                 @_localizer["View Document"]
                             </MudButton>
 
+                            @if (@AddEditDocumentModel.status)
+                            {
+                                <MudButton Variant="Variant.Text"
+                                           Color="Color.Secondary"
+                                           StartIcon="@Icons.Filled.Web"
+                                           Size="Size.Small"
+                                           Link="@(AddEditDocumentModel.FileUrlsSigne)" Target="_blank">
+                                    @_localizer["View Signed Document"]
+                                </MudButton>}
 
                         </div>
                     </MudItem>

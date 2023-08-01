@@ -18,6 +18,9 @@ namespace Esign.Application.Features.Documents.Queries.GetAll
         public bool status { get; set; }
         public string DocumentType { get; set; }
         public int DocumentTypeId { get; set; }
-
+        public string NomSignateur { get; set; }
+        public string PrenomSignateur { get; set; }
+        public string FileUrlsSigne { get; set; }
+        public DateTime DateSignature { get; set; }
     }
 }

@@ -30,6 +30,11 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
         public string fileType { get; set; }
         public string keywords { get; set; }
         public bool status { get; set; }
+
+        public string NomSignateur { get; set; }
+        public string PrenomSignateur { get; set; }
+        public string FileUrlsSigne { get; set; }
+        public DateTime DateSignature { get; set; }
         public UploadRequest UploadRequest { get; set; }
     }
 
@@ -81,9 +86,14 @@ namespace Esign.Application.Features.Documents.Commands.AddEdit
                     doc.fileType = command.fileType;
                     doc.keywords = command.keywords;
                     doc.status = command.status;
+                    doc.NomSignateur = command.NomSignateur;
+                    doc.PrenomSignateur = command.PrenomSignateur;
+                    doc.FileUrlsSigne = command.FileUrlsSigne;
+                    doc.DateSignature = command.DateSignature;
                     if (uploadRequest != null)
                     {
                         doc.URL = _uploadService.UploadAsync(uploadRequest);
+                       // doc.FileUrlsSigne = _uploadService.UploadAsync(uploadRequest);
                     }
                     doc.DocumentTypeId = (command.DocumentTypeId == 0) ? doc.DocumentTypeId : command.DocumentTypeId;
                     await _unitOfWork.Repository<Document>().UpdateAsync(doc);

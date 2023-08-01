@@ -54,6 +54,10 @@ namespace Esign.Application.Features.Documents.Queries.GetByFolderId
                 .ForMember(dest => dest.DocumentType, opt => opt.MapFrom(src => src.DocumentType))
                 .ForMember(dest => dest.DocumentTypeId, opt => opt.MapFrom(src => src.DocumentTypeId))
                 .ForMember(dest => dest.fileType, opt => opt.MapFrom(src => src.fileType))
+                .ForMember(dest => dest.NomSignateur, opt => opt.MapFrom(src => src.NomSignateur))
+                .ForMember(dest => dest.PrenomSignateur, opt => opt.MapFrom(src => src.PrenomSignateur))
+                .ForMember(dest => dest.DateSignature, opt => opt.MapFrom(src => src.DateSignature))
+                .ForMember(dest => dest.FileUrlsSigne, opt => opt.MapFrom(src => src.FileUrlsSigne))
                 .ForMember(dest => dest.CreatedBy, opt => opt.MapFrom(src => src.CreatedBy));
                 // Add other property mappings if necessary
             }).CreateMapper();

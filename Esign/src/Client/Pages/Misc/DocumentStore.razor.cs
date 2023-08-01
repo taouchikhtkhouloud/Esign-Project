@@ -48,6 +48,9 @@ namespace Esign.Client.Pages.Misc
         private bool _loaded;
         private bool IsSigned;
         private string CurrentUserEmail;
+        private string CurrentUserName;
+        private string CurrentUserNameL;
+        List<string> t = new();
         private readonly SignDocumentRequest _CodeModel = new();
 
 
@@ -297,6 +300,21 @@ namespace Esign.Client.Pages.Misc
             }
             return CurrentUserEmail;
         }
+        public async Task<List<string>> CurrentUserN()
+        {
+            var state = await _stateProvider.GetAuthenticationStateAsync().ConfigureAwait(false);
+            var user = state.User;
+            if (user.Identity?.IsAuthenticated == true)
+            {
+                
+                CurrentUserName = user.GetFirstName();
+                CurrentUserNameL = user.GetLastName();
+                t.Add(CurrentUserName);
+                t.Add(CurrentUserNameL);
+               
+            }
+            return t;
+        }
         private async Task SubmitAsync(int id)
         {
             //_CodeModel.Email = "fabracontrolea@gmail.com";
@@ -309,7 +327,15 @@ namespace Esign.Client.Pages.Misc
             //    _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
                 var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
                 var parameters = new DialogParameters();
-                var doc = _pagedData.FirstOrDefault(c => c.Id == id);
+            await CurrentUserN();
+            List<string> ex = new List<string>();
+            ex.Add(CurrentUserName);
+            ex.Add(CurrentUserNameL);
+            Console.WriteLine("----------f name---------");
+            Console.WriteLine(ex[0]);
+            Console.WriteLine("----------l name---------");
+            Console.WriteLine(ex[1]);
+            var doc = _pagedData.FirstOrDefault(c => c.Id == id);
                 if (doc != null)
                 {
                     parameters.Add(nameof(SendSigningCode.AddEditDocumentModel), new AddEditDocumentCommand
@@ -326,8 +352,10 @@ namespace Esign.Client.Pages.Misc
                         keywords = doc.keywords,
                         status = doc.status
                     });
+                parameters.Add(nameof(SendSigningCode.User), ex);
                 var dialog = _dialogService.Show<SendSigningCode>(_localizer["Signature Confirmation"], parameters, options);
                 }
+           
                 //parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
             //var result1 = await dialog.Result;
             

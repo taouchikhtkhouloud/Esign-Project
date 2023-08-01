@@ -22,6 +22,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Microsoft.AspNetCore.Components.Forms;
 using Esign.Application.Requests;
+using System.Security.Claims;
 
 namespace Esign.Client.Pages.Misc
 {
@@ -34,6 +35,7 @@ namespace Esign.Client.Pages.Misc
 
         [Inject] private IDocumentManager DocumentManager { get; set; }
         [Parameter] public AddEditDocumentCommand AddEditDocumentModel { get; set; } = new();
+        [Parameter] public List<string> User { get; set; } = new();
         private string Url { get; set; } = "https://translate.google.com/";
 
         private string enteredCode;
@@ -123,23 +125,14 @@ namespace Esign.Client.Pages.Misc
                 //    Console.WriteLine("------------->Error: " + ex.Message);
                 //}
 
-                AddEditDocumentModel.status = true;
-                await EditDocument();
-                var response = await DocumentManager.SaveAsync(AddEditDocumentModel);
-                if (response.Succeeded)
-                {
-                    _snackBar.Add("Document signed successfully!", Severity.Success);
-                    MudDialog.Close();
-                }
-                else
-                {
-                    foreach (var message in response.Messages)
-                    {
-                        _snackBar.Add(message, Severity.Error);
-                    }
-                }
-               
-               
+                var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+                var parameters = new DialogParameters();
+                parameters.Add(nameof(SigningDoc.AddEditDocumentModel), AddEditDocumentModel);
+                parameters.Add(nameof(SigningDoc.User), User);
+                var dialog = _dialogService.Show<SigningDoc>(_localizer["Define your Qr Code position "], parameters, options);
+                var result1 = await dialog.Result;
+
+
             }
             else
             {

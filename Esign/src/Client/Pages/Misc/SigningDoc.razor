@@ -1,0 +1,26 @@
+﻿@attribute [Authorize(Policy = Permissions.Documents.View)]
+@inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentStore> _localizer
+@using Esign.Application.Features.Documents.Queries.GetAll
+
+<MudDialog Title="Define Qr Code position" OnClose="DialogClosed">
+    <DialogContent>
+        <MudItem xs="12" md="6">
+            <MudCheckBox For="@(() => signDocument.allPages)" @bind-Checked="signDocument.allPages" Label="@_localizer["Add Qr Code to all document's pages?"]" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCheckBox For="@(() => signDocument.isRight)" @bind-Checked="signDocument.isRight" Label="@_localizer["Add Qr Code to the right corne ?"]" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCheckBox For="@(() => signDocument.isTop)" @bind-Checked="signDocument.isTop" Label="@_localizer["Add Qr Code to the top corne?"]" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => signDocument.Largeur)" @bind-Checked="signDocument.Largeur" Label="@_localizer["Qr Code largeur?"]" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => signDocument.Hauteur)" @bind-Checked="signDocument.Hauteur" Label="@_localizer["Qr Code Hauteur?"]" />
+        </MudItem>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="HandleSubmit">Submit</MudButton>
+    </DialogActions>
+</MudDialog>

@@ -5,6 +5,7 @@ using MudBlazor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace Esign.Client.Pages.Misc
         private readonly SignDocumentRequest _CodeModel = new();
         void Cancel() => MudDialog.Cancel();
         [Parameter] public AddEditDocumentCommand AddEditDocumentModel { get; set; } = new();
+        [Parameter] public List<string> User { get; set; } = new();
         private void OpenSecondDialog()
         {
             DialogService.Show<SignDocument>("enter the code sent to your email to sign the document");
@@ -54,16 +56,17 @@ namespace Esign.Client.Pages.Misc
                 var parameters = new DialogParameters();
                 parameters.Add(nameof(SignDocument.AddEditDocumentModel), AddEditDocumentModel);           
                 parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
+                parameters.Add(nameof(SignDocument.User), User);
                 var dialog = _dialogService.Show<SignDocument>(_localizer["enter the code sent to your email to sign the document"], parameters, options);
                 var result1 = await dialog.Result;
-                //MudDialog.Close();
+                MudDialog.Close();
             }
             else
             {
                 foreach (var message in result.Messages)
                 {
                     _snackBar.Add(message, Severity.Error);
-                    //MudDialog.Close();
+                    MudDialog.Close();
                 }
             }
             MudDialog.Close();

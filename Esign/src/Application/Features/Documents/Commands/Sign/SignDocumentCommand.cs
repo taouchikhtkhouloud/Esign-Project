@@ -154,7 +154,8 @@ namespace Esign.Application.Features.Documents.Commands.Sign
             document.CodeSignature = code_url;
             document.status=true;
             await _unitOfWork.Repository<Domain.Entities.Misc.Document>().UpdateAsync(document);
-           
+            await _unitOfWork.Commit(cancellationToken);
+
             return await Result<string>.SuccessAsync("le document a été signé");
         }
     }

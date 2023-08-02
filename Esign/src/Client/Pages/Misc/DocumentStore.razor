@@ -100,7 +100,7 @@ else
                                 {
                                 <MudMenuItem @onclick="@(() => Delete(@context.Id))">@_localizer["Delete"]</MudMenuItem>
                                 }
-                            @if (!context.status)
+                            @if (!context.status && _canSignDocuments)
                                 {
 
                                 <MudMenuItem @onclick="@(() => SubmitAsync(@context.Id))" Target="_blank">@_localizer["Sign Document"]</MudMenuItem>

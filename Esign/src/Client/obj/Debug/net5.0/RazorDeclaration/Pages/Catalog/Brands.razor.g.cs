@@ -279,27 +279,12 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\Brands.razor"
-using Esign.Application.Features.Brands.Queries.GetAll;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 50 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\_Imports.razor"
 [Authorize]
 
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Catalog\Brands.razor"
-           [Authorize(Policy = Permissions.Brands.View)]
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/catalog/brands")]
     public partial class Brands : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -307,7 +292,6 @@ using Esign.Application.Features.Brands.Queries.GetAll;
         {
         }
         #pragma warning restore 1998
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Microsoft.Extensions.Localization.IStringLocalizer<Brands> _localizer { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager _userManager { get; set; }

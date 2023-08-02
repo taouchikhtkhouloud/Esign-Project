@@ -6,25 +6,26 @@ namespace Esign.Shared.Constants.Permission
 {
     public static class Permissions
     {
-        public static class Products
-        {
-            public const string View = "Permissions.Products.View";
-            public const string Create = "Permissions.Products.Create";
-            public const string Edit = "Permissions.Products.Edit";
-            public const string Delete = "Permissions.Products.Delete";
-            public const string Export = "Permissions.Products.Export";
-            public const string Search = "Permissions.Products.Search";
-        }
+        //public static class Products
+        //{
+        //    public const string View = "Permissions.Products.View";
+        //    public const string Create = "Permissions.Products.Create";
+        //    public const string Edit = "Permissions.Products.Edit";
+        //    public const string Delete = "Permissions.Products.Delete";
+        //    public const string Export = "Permissions.Products.Export";
+        //    public const string Search = "Permissions.Products.Search";
+        //}
 
-        public static class Brands
-        {
-            public const string View = "Permissions.Brands.View";
-            public const string Create = "Permissions.Brands.Create";
-            public const string Edit = "Permissions.Brands.Edit";
-            public const string Delete = "Permissions.Brands.Delete";
-            public const string Export = "Permissions.Brands.Export";
-            public const string Search = "Permissions.Brands.Search";
-        }
+        //public static class Brands
+        //{
+        //    public const string View = "Permissions.Brands.View";
+        //    public const string Create = "Permissions.Brands.Create";
+        //    public const string Edit = "Permissions.Brands.Edit";
+        //    public const string Delete = "Permissions.Brands.Delete";
+        //    public const string Export = "Permissions.Brands.Export";
+        //    public const string Search = "Permissions.Brands.Search";
+
+        //}
 
         public static class Documents
         {
@@ -33,6 +34,7 @@ namespace Esign.Shared.Constants.Permission
             public const string Edit = "Permissions.Documents.Edit";
             public const string Delete = "Permissions.Documents.Delete";
             public const string Search = "Permissions.Documents.Search";
+            public const string Sign = "Permissions.Documents.Sign";
         }
 
         public static class DocumentTypes
@@ -45,15 +47,15 @@ namespace Esign.Shared.Constants.Permission
             public const string Search = "Permissions.DocumentTypes.Search";
         }
 
-        public static class DocumentExtendedAttributes
-        {
-            public const string View = "Permissions.DocumentExtendedAttributes.View";
-            public const string Create = "Permissions.DocumentExtendedAttributes.Create";
-            public const string Edit = "Permissions.DocumentExtendedAttributes.Edit";
-            public const string Delete = "Permissions.DocumentExtendedAttributes.Delete";
-            public const string Export = "Permissions.DocumentExtendedAttributes.Export";
-            public const string Search = "Permissions.DocumentExtendedAttributes.Search";
-        }
+        //public static class DocumentExtendedAttributes
+        //{
+        //    public const string View = "Permissions.DocumentExtendedAttributes.View";
+        //    public const string Create = "Permissions.DocumentExtendedAttributes.Create";
+        //    public const string Edit = "Permissions.DocumentExtendedAttributes.Edit";
+        //    public const string Delete = "Permissions.DocumentExtendedAttributes.Delete";
+        //    public const string Export = "Permissions.DocumentExtendedAttributes.Export";
+        //    public const string Search = "Permissions.DocumentExtendedAttributes.Search";
+        //}
 
         public static class Users
         {
@@ -100,10 +102,10 @@ namespace Esign.Shared.Constants.Permission
             public const string View = "Permissions.Dashboards.View";
         }
 
-        public static class Hangfire
-        {
-            public const string View = "Permissions.Hangfire.View";
-        }
+        //public static class Hangfire
+        //{
+        //    public const string View = "Permissions.Hangfire.View";
+        //}
 
         public static class AuditTrails
         {

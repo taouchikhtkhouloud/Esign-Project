@@ -40,6 +40,7 @@ namespace Esign.Client.Pages.Misc
        
 
         private ClaimsPrincipal _currentUser;
+        private bool _canViewDocuments;
         private bool _canCreateDocuments;
         private bool _canEditDocuments;
         private bool _canDeleteDocuments;
@@ -58,6 +59,7 @@ namespace Esign.Client.Pages.Misc
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
+            _canViewDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.View)).Succeeded;
             _canCreateDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Create)).Succeeded;
             _canEditDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Edit)).Succeeded;
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;

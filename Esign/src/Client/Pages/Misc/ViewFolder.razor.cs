@@ -62,6 +62,8 @@ namespace Esign.Client.Pages.Misc
         private bool _canEditDocuments;
         private bool _canDeleteDocuments;
         private bool _canSearchDocuments;
+        private bool _canViewDocuments;
+        private bool _canSignDocuments;
         private bool _canViewDocumentExtendedAttributes;
         private bool _loaded;
 
@@ -69,6 +71,7 @@ namespace Esign.Client.Pages.Misc
         private bool _canDeleteDocumentTypes;
         private bool _canExportDocumentTypes;
         private bool _canSearchDocumentTypes;
+        private bool _canViewDocumentTypes;
         bool isOpen;
 
         protected override async Task OnInitializedAsync()
@@ -80,11 +83,14 @@ namespace Esign.Client.Pages.Misc
             _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Delete)).Succeeded;
             _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Export)).Succeeded;
             _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Search)).Succeeded;
+            _canViewDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.View)).Succeeded;
 
             _canEditDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Edit)).Succeeded;
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;
             _canSearchDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Search)).Succeeded;
             //_canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
+            _canViewDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.View)).Succeeded;
+            _canSignDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Sign)).Succeeded;
 
             _loaded = true;
 

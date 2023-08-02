@@ -283,11 +283,11 @@
       "Esign.Client.Infrastructure.dll": "sha256-vFYGOwfZadoQY\/2K8+tEd77dJhEXhoYZuiSRJG75Wew=",
       "Esign.Domain.dll": "sha256-B665URuXBHC5hQi7eRShZ\/RaHfJBiya5VdItFlEaEyU=",
       "Esign.Shared.dll": "sha256-XhBpYhphaQ8+ugnFvrMXvay7MD9VCSeanZQnvrF3+2A=",
-      "Esign.Client.dll": "sha256-swt65w56viwNhvYHIMeR1\/G0G+xkg4Z5XYDhc6U2cWs="
+      "Esign.Client.dll": "sha256-a05fDEN9E1nW+idCTqJkw7GnlVxN1OEoeRIk4M1wx\/c="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Esign.Client.pdb": "sha256-Ozu7gLmZuyVeX9wIEd\/GNyMG3vqqAu1\/jUv9jXfyUGs="
+      "Esign.Client.pdb": "sha256-pDsGCa0GKa\/lHvscgUko9sbuf5Prjhxmm5XH5sGxbbU="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-8oJip361m8OrfLRJOuIeswWKaoxtT27\/wINCxhn+s4c=",
@@ -300,42 +300,42 @@
     },
     "satelliteResources": {
       "de": {
-        "de\/Esign.Client.resources.dll": "sha256-1cQSuwyAZetXNXa3NDT3LQqQv9bx5C+gNL1lm1+BHCA=",
+        "de\/Esign.Client.resources.dll": "sha256-5Ix22w6Xoock429CMb5PwDggw5taQ6foTdIYr\/Ro8Kg=",
         "de\/Esign.Application.resources.dll": "sha256-nGFSHWWHSfTldBghWazbR7Dg0X7BwAls+zLIO\/Pmgf4="
       },
       "en": {
-        "en\/Esign.Client.resources.dll": "sha256-QyH2OEEfiF5l87O4ny6XYfSYRP1fnV9f0XPDXPtlRys=",
+        "en\/Esign.Client.resources.dll": "sha256-vnCc1YFq30bTL5WR0oJebfM2GeWFV7U7wSJfQEM9BH0=",
         "en\/Esign.Client.Infrastructure.resources.dll": "sha256-vDfyRu57hzkfRqTpqJUWRZ8Y9stiKNqT1ztz1ReXgXs=",
         "en\/Esign.Application.resources.dll": "sha256-TS231awM6LVimoZnI26\/q26zSuR9vbkWrFALfMVKgks="
       },
       "es": {
-        "es\/Esign.Client.resources.dll": "sha256-JT4lhmSU\/YxDU+Fzp+etoEtBgBpVKWAmNWnLeZgp+t0=",
+        "es\/Esign.Client.resources.dll": "sha256-FaE76wynxRBbavpR03ykWRghvTrpgvYP\/ahltHQ2BoU=",
         "es\/Esign.Application.resources.dll": "sha256-t1tUbNS\/Txjkg06E5tGltXK8dY9pnB4kPoFjpx\/WogE="
       },
       "id": {
-        "id\/Esign.Client.resources.dll": "sha256-MttT+2V+3LKkaKQDCs5pBrLBLCXu53PoiSPOpcy5hCk=",
+        "id\/Esign.Client.resources.dll": "sha256-PsppUODXWd7D+YR9X\/3AeGFLzG2IAeiV4fIDOp88YiM=",
         "id\/Esign.Application.resources.dll": "sha256-2Gt4rKhRK8otpcSoHbm71O+9nKS9sUzSUGuDIGFIm4M="
       },
       "it": {
-        "it\/Esign.Client.resources.dll": "sha256-XKL1rCsFwWJW+t707bx0w3Xqj189Oz+pYhqBE\/OOY2I=",
+        "it\/Esign.Client.resources.dll": "sha256-TY6NIDHpgtflFMsNfNMA\/0xBRVHQfm2q8AFvTBaV9Xo=",
         "it\/Esign.Application.resources.dll": "sha256-E6cJofWQiDn4o5O0Z2V41RcdElo8GkZ4O2kxfC5w5cw="
       },
       "km": {
-        "km\/Esign.Client.resources.dll": "sha256-EY+GtM+\/QPcMKZaak1nn5xJ86HDnVVGdGLFTlzQz4x0=",
+        "km\/Esign.Client.resources.dll": "sha256-goXmvl14kTWUIRNGDIAwPzGIRofd9PwGvhSoNrVyMF4=",
         "km\/Esign.Client.Infrastructure.resources.dll": "sha256-Ag6uuhpWtsWxzYrQFicNFlszP6ygVhxS5qQUbEzi0zQ=",
         "km\/Esign.Application.resources.dll": "sha256-mgQUQ9WeOvKoQxtNf4w6H5\/BxuxJFGnOzU39OHv3koQ="
       },
       "ru": {
-        "ru\/Esign.Client.resources.dll": "sha256-Yln23DntHmAyHpk5ZelpT4VkQrTRBmcO\/+Qnk4PwCwk=",
+        "ru\/Esign.Client.resources.dll": "sha256-KgMjY+zgAhUec0eL4YegA8ugaPcZ\/Sw9M3hakH3fq8o=",
         "ru\/Esign.Client.Infrastructure.resources.dll": "sha256-xC+dye8+xbwTnuybvaj3iyziIfHiAaamKucZMXcSxD4=",
         "ru\/Esign.Application.resources.dll": "sha256-sC5CuvEiDO71K5rezaAI9if0O0Orv5Wram\/\/h1xODMU="
       },
       "sv": {
-        "sv\/Esign.Client.resources.dll": "sha256-pYKavKAu4T96dzaMdx9uEZTHVSUmOiF07qp1KfNXf9Q=",
+        "sv\/Esign.Client.resources.dll": "sha256-0Uf4LdhdyjRYEVfiPA60otGJhLaZsodgU4aYxVVyb5c=",
         "sv\/Esign.Application.resources.dll": "sha256-WBZ8aq5tpCJk2VCjNWGc1rgAeoEVK\/5bwUEBAcb2FHU="
       },
       "fr": {
-        "fr\/Esign.Client.resources.dll": "sha256-OnoXscBiwK86\/Wuq9oiF2FmuT4IiWR4sbwC+r3hmjU0=",
+        "fr\/Esign.Client.resources.dll": "sha256-tCldzPmcDljpp6H8uTWgupU8OvdRVAsFW8AzK50s3ik=",
         "fr\/Esign.Application.resources.dll": "sha256-\/ISz9UVgK7a7nH1xLXtOKKEWaRcbud6NUvsfJcqb18k="
       }
     }

@@ -1,5 +1,5 @@
 ﻿@page "/document-types"
-@attribute [Authorize(Policy = Permissions.DocumentTypes.View)]
+@attribute [Authorize(Policy = Permissions.Folders.View)]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer
 @using Esign.Application.Features.DocumentTypes.Queries.GetAll
 @inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager

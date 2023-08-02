@@ -78,12 +78,12 @@ namespace Esign.Client.Pages.Misc
         {
             _currentUser = await _authenticationManager.CurrentUser();
             _canCreateDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Create)).Succeeded;
-            _canCreateDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Create)).Succeeded;
-            _canEditDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Edit)).Succeeded;
-            _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Delete)).Succeeded;
-            _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Export)).Succeeded;
-            _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Search)).Succeeded;
-            _canViewDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.View)).Succeeded;
+            _canCreateDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Create)).Succeeded;
+            _canEditDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Edit)).Succeeded;
+            _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Delete)).Succeeded;
+            _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Export)).Succeeded;
+            _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Search)).Succeeded;
+            _canViewDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.View)).Succeeded;
 
             _canEditDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Edit)).Succeeded;
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;

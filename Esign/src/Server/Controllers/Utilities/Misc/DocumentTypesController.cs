@@ -22,7 +22,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// <param name="pageSize"></param>
         /// <param name="searchString"></param>
         /// <returns>Status 200 OK</returns>
-        [Authorize(Policy = Permissions.DocumentTypes.View)]
+        [Authorize(Policy = Permissions.Folders.View)]
         [HttpGet]
         public async Task<IActionResult> GetAll(int pageNumber, int pageSize, string searchString)
         {
@@ -46,7 +46,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Status 200 Ok</returns>
-        [Authorize(Policy = Permissions.DocumentTypes.View)]
+        [Authorize(Policy = Permissions.Folders.View)]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -59,7 +59,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// </summary>
         /// <param name="command"></param>
         /// <returns>Status 200 OK</returns>
-        [Authorize(Policy = Permissions.DocumentTypes.Create)]
+        [Authorize(Policy = Permissions.Folders.Create)]
         [HttpPost]
         public async Task<IActionResult> Post(AddEditDocumentTypeCommand command)
         {
@@ -71,7 +71,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Status 200 OK</returns>
-        [Authorize(Policy = Permissions.DocumentTypes.Delete)]
+        [Authorize(Policy = Permissions.Folders.Delete)]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -83,7 +83,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// </summary>
         /// <param name="searchString"></param>
         /// <returns></returns>
-        [Authorize(Policy = Permissions.DocumentTypes.Export)]
+        [Authorize(Policy = Permissions.Folders.Export)]
         [HttpGet("export")]
         public async Task<IActionResult> Export(string searchString = "")
         {

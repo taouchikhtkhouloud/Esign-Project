@@ -49,13 +49,13 @@ namespace Esign.Client.Pages.Misc
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
-            _canCreateDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Create)).Succeeded;
-            _canViewDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.View)).Succeeded;
+            _canCreateDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Create)).Succeeded;
+            _canViewDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.View)).Succeeded;
 
-            _canEditDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Edit)).Succeeded;
-            _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Delete)).Succeeded;
-            _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Export)).Succeeded;
-            _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentTypes.Search)).Succeeded;
+            _canEditDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Edit)).Succeeded;
+            _canDeleteDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Delete)).Succeeded;
+            _canExportDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Export)).Succeeded;
+            _canSearchDocumentTypes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Folders.Search)).Succeeded;
             await Reset();
             await GetDocumentTypesAsync();
             _loaded = true;

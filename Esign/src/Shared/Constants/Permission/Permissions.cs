@@ -37,14 +37,14 @@ namespace Esign.Shared.Constants.Permission
             public const string Sign = "Permissions.Documents.Sign";
         }
 
-        public static class DocumentTypes
+        public static class Folders
         {
-            public const string View = "Permissions.DocumentTypes.View";
-            public const string Create = "Permissions.DocumentTypes.Create";
-            public const string Edit = "Permissions.DocumentTypes.Edit";
-            public const string Delete = "Permissions.DocumentTypes.Delete";
-            public const string Export = "Permissions.DocumentTypes.Export";
-            public const string Search = "Permissions.DocumentTypes.Search";
+            public const string View = "Permissions.Folders.View";
+            public const string Create = "Permissions.Folders.Create";
+            public const string Edit = "Permissions.Folders.Edit";
+            public const string Delete = "Permissions.Folders.Delete";
+            public const string Export = "Permissions.Folders.Export";
+            public const string Search = "Permissions.Folders.Search";
         }
 
         //public static class DocumentExtendedAttributes

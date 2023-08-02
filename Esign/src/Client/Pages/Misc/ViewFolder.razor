@@ -3,7 +3,7 @@
 @attribute [Authorize(Policy = Permissions.Documents.View)]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<ViewFolder> _localizer
 @*@using Esign.Application.Features.Documents.Queries.GetAll*@
-@attribute [Authorize(Policy = Permissions.DocumentTypes.View)]
+@attribute [Authorize(Policy = Permissions.Folders.View)]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer1
 @using Esign.Application.Features.DocumentTypes.Queries.GetAll
 @inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager

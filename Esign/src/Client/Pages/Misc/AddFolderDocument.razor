@@ -34,7 +34,7 @@
                                 <MudAlert>@_file.Name</MudAlert>
                             }
 
-                            <InputFile id="fileInput" hidden OnChange="UploadFiles" />
+                            <InputFile id="fileInput" hidden OnChange="UploadFiles" accept=".pdf" />
                             <div class="d-block m-auto">
 
                                 <MudButton HtmlTag="label"
@@ -43,7 +43,8 @@
                                            Size="Size.Large"
                                            Class="align-items-lg-center"
                                            StartIcon="@Icons.Filled.CloudUpload"
-                                           for="fileInput">
+                                           for="fileInput"
+                                           accept=".pdf">
                                     @_localizer["Upload"]
                                 </MudButton>
 

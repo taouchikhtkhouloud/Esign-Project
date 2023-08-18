@@ -64,7 +64,7 @@
                         {
                             <MudAlert>@(AddEditDocumentModel.URL)</MudAlert>
                         }
-                        <InputFile id="fileInput" hidden OnChange="UploadFiles" />
+                        <InputFile id="fileInput" hidden OnChange="UploadFiles" accept=".pdf"/>
                         <div>
                             @if (AddEditDocumentModel.Id == 0)
                             {
@@ -73,7 +73,8 @@
                                            Color="Color.Primary"
                                            Size="Size.Small"
                                            StartIcon="@Icons.Filled.CloudUpload"
-                                           for="fileInput">
+                                           for="fileInput"
+                                           accept=".pdf">
                                     @_localizer["Upload"]
                                 </MudButton>
                             }

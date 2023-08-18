@@ -2470,7 +2470,8 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.7",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Newtonsoft.Json": "13.0.1",
-          "System.Linq.Dynamic.Core": "1.2.10"
+          "System.Linq.Dynamic.Core": "1.2.10",
+          "iTextSharp": "5.5.13.3"
         },
         "compile": {
           "bin/placeholder/Esign.Application.dll": {}
@@ -4961,7 +4962,8 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.7",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Newtonsoft.Json": "13.0.1",
-          "System.Linq.Dynamic.Core": "1.2.10"
+          "System.Linq.Dynamic.Core": "1.2.10",
+          "iTextSharp": "5.5.13.3"
         },
         "compile": {
           "bin/placeholder/Esign.Application.dll": {}

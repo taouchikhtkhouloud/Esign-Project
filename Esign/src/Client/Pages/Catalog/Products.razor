@@ -1,4 +1,4 @@
-﻿@page "/catalog/products"
+﻿@*@page "/catalog/products"
 @attribute [Authorize(Policy = Permissions.Products.View)]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<Products> _localizer
 @using Esign.Application.Features.Products.Queries.GetAllPaged;
@@ -103,4 +103,4 @@ else
             <TablePager />
         </PagerContent>
     </MudTable>
-}
+}*@

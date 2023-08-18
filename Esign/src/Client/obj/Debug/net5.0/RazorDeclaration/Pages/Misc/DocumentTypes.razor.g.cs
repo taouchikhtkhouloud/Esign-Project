@@ -294,7 +294,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetAll;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\DocumentTypes.razor"
-           [Authorize(Policy = Permissions.DocumentTypes.View)]
+           [Authorize(Policy = Permissions.Folders.View)]
 
 #line default
 #line hidden

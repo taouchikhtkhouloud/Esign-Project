@@ -279,56 +279,19 @@ using Esign.Client.Extensions;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor"
-using Esign.Domain.Entities.Misc;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor"
-using Esign.Domain.Entities.ExtendedAttributes;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 50 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\_Imports.razor"
 [Authorize]
 
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor"
-           [Authorize(Policy = Permissions.DocumentExtendedAttributes.View)]
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/extended-attributes/{EntityName}/{EntityIdString}")]
-    public partial class DocumentExtendedAttributes : ExtendedAttributes<int, int, Document, DocumentExtendedAttribute>
+    public partial class DocumentExtendedAttributes : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 13 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ExtendedAttribute\DocumentExtendedAttributes.razor"
- 
-    protected override Func<string, int> FromStringToEntityIdTypeConverter => s => int.Parse(s);
-
-    protected override string ExtendedAttributesViewPolicyName => Permissions.DocumentExtendedAttributes.View;
-    protected override string ExtendedAttributesEditPolicyName => Permissions.DocumentExtendedAttributes.Edit;
-    protected override string ExtendedAttributesCreatePolicyName => Permissions.DocumentExtendedAttributes.Create;
-    protected override string ExtendedAttributesDeletePolicyName => Permissions.DocumentExtendedAttributes.Delete;
-    protected override string ExtendedAttributesExportPolicyName => Permissions.DocumentExtendedAttributes.Export;
-    protected override string ExtendedAttributesSearchPolicyName => Permissions.DocumentExtendedAttributes.Search;
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime _jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService _localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager _userManager { get; set; }

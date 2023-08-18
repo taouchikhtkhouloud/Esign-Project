@@ -308,7 +308,7 @@ using Esign.Application.Features.DocumentTypes.Queries.GetFolder;
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Client\Pages\Misc\ViewFolder.razor"
-           [Authorize(Policy = Permissions.DocumentTypes.View)]
+           [Authorize(Policy = Permissions.Folders.View)]
 
 #line default
 #line hidden

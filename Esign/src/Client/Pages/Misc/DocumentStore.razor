@@ -83,15 +83,15 @@ else
                     }
             </MudTd>
             <MudTd DataLabel="Actions" Style="text-align: right">
-                @if (_canEditDocuments || _canDeleteDocuments || _canViewDocumentExtendedAttributes)
+                @if (_canEditDocuments || _canDeleteDocuments || _canViewDocumentExtendedAttributes || _canSignDocuments || _canViewDocuments)
                     {
                     <MudMenu Label="@_localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
                         @*@if (_canViewDocumentExtendedAttributes)
                             {
                             <MudMenuItem @onclick="@(() => ManageExtendedAttributes(@context.Id))">@_localizer["Manage Extended Attributes"]</MudMenuItem>
                             }*@
-                        @if (context.CreatedBy == CurrentUserId)
-                            {
+                        @*@if (context.CreatedBy == CurrentUserId)*@
+                            @*{*@
                             @if (_canEditDocuments && !context.status)
                                 {
                                 <MudMenuItem @onclick="@(() => InvokeModal(@context.Id))">@_localizer["Edit"]</MudMenuItem>
@@ -100,13 +100,17 @@ else
                                 {
                                 <MudMenuItem @onclick="@(() => Delete(@context.Id))">@_localizer["Delete"]</MudMenuItem>
                                 }
-                            @if (!context.status)
+                            @if (!context.status && _canSignDocuments)
                                 {
 
                                 <MudMenuItem @onclick="@(() => SubmitAsync(@context.Id))" Target="_blank">@_localizer["Sign Document"]</MudMenuItem>
-                                }
+                                @*}*@
                             }
+                        @if (_canViewDocuments)
+                        {
+
                         <MudMenuItem @onclick="@(() => ViewDoc(@context.Id))" Target="_blank">@_localizer["View"]</MudMenuItem>
+                       }
 
                     </MudMenu>
                     }

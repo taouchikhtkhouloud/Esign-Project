@@ -59,9 +59,19 @@ else
         </HeaderContent>
         <RowTemplate>
             <MudTd DataLabel="Id">@context.Id</MudTd>
+            @if (context.TableName == "DocumentType")
+                {
+                <MudTd DataLabel="Name">
+                    <MudHighlighter Text="Folder" HighlightedText="@_searchString" />
+                </MudTd>
+                }
+                else
+                {
+
             <MudTd DataLabel="Name">
                 <MudHighlighter Text="@context.TableName" HighlightedText="@_searchString" />
             </MudTd>
+                }
             <MudTd DataLabel="Date">
                 <MudItem>
                     <MudChip Icon="@Icons.Material.Filled.Watch" IconColor="Color.Secondary" Label="true" Color="Color.Surface">@_localizer["Local"] : @context.LocalTime.ToString("G", CultureInfo.CurrentCulture)</MudChip>

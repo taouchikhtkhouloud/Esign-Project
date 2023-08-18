@@ -34,6 +34,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// Get All Document Types
         /// </summary>
         /// <returns>Status 200 OK</returns>
+        [Authorize(Policy = Permissions.Documents.View)]
         [HttpGet("/ByFolder")]
         public async Task<IActionResult> GetByFolder()
         {
@@ -71,6 +72,7 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// </summary>
         /// <param name="command"></param>
         /// <returns>Status 200 OK</returns>
+        [Authorize(Policy = Permissions.Documents.Sign)]
         [HttpPost("/Sign")]
         public async Task<IActionResult> Sign(SignDocumentCommand command)
         {

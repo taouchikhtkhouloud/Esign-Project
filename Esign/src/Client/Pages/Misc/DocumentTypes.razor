@@ -1,5 +1,5 @@
 ﻿@page "/document-types"
-@attribute [Authorize(Policy = Permissions.DocumentTypes.View)]
+@attribute [Authorize(Policy = Permissions.Folders.View)]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<DocumentTypes> _localizer
 @using Esign.Application.Features.DocumentTypes.Queries.GetAll
 @inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager
@@ -66,10 +66,14 @@ else
                 <MudHighlighter Text="@context.Description" HighlightedText="@_searchString" />
             </MudTd>
             <MudTd DataLabel="Actions" Style="text-align: right">
-                @if (_canEditDocumentTypes || _canDeleteDocumentTypes)
+                @if (_canEditDocumentTypes || _canDeleteDocumentTypes || _canViewDocumentTypes)
                     {
                     <MudMenu Label="@_localizer["Actions"]" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" Direction="Direction.Left" OffsetX="true">
+                        @if (_canViewDocumentTypes)
+                        {
+
                         <MudMenuItem @onclick="@(() => View(@context.Id))">@_localizer["View"]</MudMenuItem>
+                        }
 
                         @if (_canEditDocumentTypes)
                             {

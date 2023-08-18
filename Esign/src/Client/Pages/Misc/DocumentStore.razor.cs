@@ -40,10 +40,12 @@ namespace Esign.Client.Pages.Misc
        
 
         private ClaimsPrincipal _currentUser;
+        private bool _canViewDocuments;
         private bool _canCreateDocuments;
         private bool _canEditDocuments;
         private bool _canDeleteDocuments;
         private bool _canSearchDocuments;
+        private bool _canSignDocuments;
         private bool _canViewDocumentExtendedAttributes;
         private bool _loaded;
         private bool IsSigned;
@@ -57,11 +59,13 @@ namespace Esign.Client.Pages.Misc
         protected override async Task OnInitializedAsync()
         {
             _currentUser = await _authenticationManager.CurrentUser();
+            _canViewDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.View)).Succeeded;
             _canCreateDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Create)).Succeeded;
             _canEditDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Edit)).Succeeded;
             _canDeleteDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Delete)).Succeeded;
             _canSearchDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Search)).Succeeded;
-            _canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
+            _canSignDocuments = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.Documents.Sign)).Succeeded;
+            //_canViewDocumentExtendedAttributes = (await _authorizationService.AuthorizeAsync(_currentUser, Permissions.DocumentExtendedAttributes.View)).Succeeded;
             IsSigned = false;
             _loaded = true;
 

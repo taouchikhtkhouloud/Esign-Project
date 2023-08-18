@@ -1,4 +1,4 @@
-﻿@page "/extended-attributes/{EntityName}/{EntityIdString}"
+﻿@*@page "/extended-attributes/{EntityName}/{EntityIdString}"
 @attribute [Authorize(Policy = Permissions.DocumentExtendedAttributes.View)]
 
 @using Esign.Domain.Entities.Misc
@@ -19,4 +19,4 @@
     protected override string ExtendedAttributesDeletePolicyName => Permissions.DocumentExtendedAttributes.Delete;
     protected override string ExtendedAttributesExportPolicyName => Permissions.DocumentExtendedAttributes.Export;
     protected override string ExtendedAttributesSearchPolicyName => Permissions.DocumentExtendedAttributes.Search;
-}
+}*@

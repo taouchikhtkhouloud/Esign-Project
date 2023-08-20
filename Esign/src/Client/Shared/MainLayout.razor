@@ -15,13 +15,14 @@
             </MudTooltip>
         </MudAppBar>
 
-        <MudContainer MaxWidth="MaxWidth.Small" Class="d-flex align-center" Style="height: 150vh; margin-top: 50px; ">
-            <MudPaper Elevation="25" Class="pa-8" Style="width: 500px;">
+        <MudContainer MaxWidth="MaxWidth.Small" Class="align-content-xl-between" Style="height: 150vh; margin-top: 50px; width: 100%;">
+            <MudPaper Elevation="25" Class="pa-4" Style="width: 100%;">
                 <CascadingValue Value="hubConnection">
                     @Body
                 </CascadingValue>
             </MudPaper>
         </MudContainer>
+
     </NotAuthorized>
     <Authorized>
         @(LoadDataAsync())

@@ -68,15 +68,16 @@
                         <div>
                             @if (AddEditDocumentModel.Id == 0)
                             {
-                                <MudButton HtmlTag="label"
-                                           Variant="Variant.Text"
-                                           Color="Color.Primary"
-                                           Size="Size.Small"
-                                           StartIcon="@Icons.Filled.CloudUpload"
-                                           for="fileInput"
-                                           accept=".pdf">
-                                    @_localizer["Upload"]
-                                </MudButton>
+                            <MudButton HtmlTag="label"
+                                       Variant="Variant.Text"
+                                       Color="Color.Primary"
+                                       Size="Size.Small"
+                                       StartIcon="@Icons.Filled.CloudUpload"
+                                       for="fileInput"
+                                       accept=".pdf">
+                                @_localizer["Upload"]
+                                <InputFile id="fileInput" accept=".pdf" style="display:none;" />
+                            </MudButton>
                             }
                             else if (!string.IsNullOrEmpty(AddEditDocumentModel.URL))
                             {

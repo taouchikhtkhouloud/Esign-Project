@@ -34,8 +34,8 @@ namespace Esign.Server.Controllers.Utilities.Misc
         /// Get All Document Types
         /// </summary>
         /// <returns>Status 200 OK</returns>
-        [Authorize(Policy = Permissions.Documents.View)]
         [HttpGet("/ByFolder")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetByFolder()
         {
             var documentTypes = await _mediator.Send(new GetDocumentByFolderIdQuery());

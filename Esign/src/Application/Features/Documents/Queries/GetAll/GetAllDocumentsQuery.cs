@@ -60,8 +60,9 @@ namespace Esign.Application.Features.Documents.Queries.GetAll
                 NomSignateur = e.NomSignateur,
                 PrenomSignateur = e.PrenomSignateur,
                 FileUrlsSigne = e.FileUrlsSigne,
-                DateSignature = e.DateSignature
-            };
+                DateSignature = e.DateSignature,
+                CodeSignature=e.CodeSignature 
+    };
             var docSpec = new DocumentFilterSpecification(request.SearchString, _currentUserService.UserId);
             var data = await _unitOfWork.Repository<Document>().Entities
                .Specify(docSpec)

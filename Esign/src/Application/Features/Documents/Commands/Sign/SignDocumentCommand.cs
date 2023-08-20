@@ -103,19 +103,21 @@ namespace Esign.Application.Features.Documents.Commands.Sign
                 PdfStamper stamper = new PdfStamper(reader, fs);
                 PdfContentByte cb = stamper.GetOverContent(1);
 
-                Phrase phrase = new Phrase("");
+                Phrase phrase = new Phrase("validation Link:"+signed);
 
                 Rectangle pageSize = reader.GetPageSize(1);
                 //float textX = pageSize.Left + textx;
                 //float textY = pageSize.Bottom + textz;
                 float qrCodeX = command.isRight ? pageSize.Right - 50 : 0; // If isRight is true, position QR code at the bottom right
-                float qrCodeY = command.isTop ? pageSize.Top - 50 : 0;
+                float qrCodeY = command.isTop ? pageSize.Top - 50 :10;
+                float textX =pageSize.Right-5 ; // If isRight is true, position QR code at the bottom right
+                float textY = command.isTop ? pageSize.Top -10  : 3;
                 // Positionnement du code QR
                 imgQR.SetAbsolutePosition(qrCodeX, qrCodeY);
                 cb.AddImage(imgQR);
 
 
-                ColumnText.ShowTextAligned(cb, Element.ALIGN_RIGHT, phrase, 0, 0, 0);
+                ColumnText.ShowTextAligned(cb, Element.ALIGN_RIGHT, phrase, textX, textY, 0);
                 // Enregistrement du fichier modifié
                 stamper.Close();
                 fs.Close();
@@ -128,20 +130,22 @@ namespace Esign.Application.Features.Documents.Commands.Sign
                 {
                     PdfContentByte cb = stamper.GetOverContent(j);
 
-                    Phrase phrase = new Phrase("");
+                    Phrase phrase = new Phrase(signed);
 
                     Rectangle pageSize = reader.GetPageSize(j);
                     //float textX = pageSize.Left + textx;
                     //float textY = pageSize.Bottom + textz;
                     // Positionnement du code QR
                     float qrCodeX = command.isRight ? pageSize.Right - 50 : 0; // If isRight is true, position QR code at the bottom right
-                    float qrCodeY = command.isTop ? pageSize.Top - 50 : 0;
+                    float qrCodeY = command.isTop ? pageSize.Top - 50 : 10;
+                    float textX = pageSize.Right - 5; // If isRight is true, position QR code at the bottom right
+                    float textY = command.isTop ? pageSize.Top - 10 : 3;
                     // Positionnement du code QR
                     imgQR.SetAbsolutePosition(qrCodeX, qrCodeY);
                     cb.AddImage(imgQR);
 
 
-                    ColumnText.ShowTextAligned(cb, Element.ALIGN_RIGHT, phrase, 0, 0, 0);
+                    ColumnText.ShowTextAligned(cb, Element.ALIGN_RIGHT, phrase, textX, textY, 0);
                     // Enregistrement du fichier modifié
                 }
                     stamper.Close();

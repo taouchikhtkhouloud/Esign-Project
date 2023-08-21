@@ -1024,3 +1024,132 @@
 2023-08-21 02:16:45.033 +00:00 [INF] Document Id: 70, Name: aa, Description: a
 2023-08-21 02:16:45.033 +00:00 [INF] Document Id: 71, Name: aa2, Description: cv
 2023-08-21 02:16:45.033 +00:00 [INF] Document Id: 72, Name: nn, Description: aa
+2023-08-21 02:21:39.314 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 02:21:39.500 +00:00 [INF] Hosting environment: Development
+2023-08-21 02:21:39.508 +00:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-08-21 02:22:54.230 +00:00 [INF] Documents fetched from the repository:
+2023-08-21 02:22:54.237 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-08-21 02:22:54.238 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-08-21 02:22:54.238 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-08-21 02:22:54.241 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-08-21 02:22:54.242 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-08-21 02:22:54.243 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-08-21 02:22:54.244 +00:00 [INF] Document Id: 23, Name: pdf test12, Description: test
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-08-21 02:22:54.245 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-08-21 02:22:54.246 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-08-21 02:22:54.247 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-08-21 02:22:54.247 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 37, Name: testttt, Description: dvv
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 38, Name: s, Description: dv
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 39, Name: 2, Description: zdb
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 40, Name: exemple, Description: cd
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 41, Name: exemple2, Description: de
+2023-08-21 02:22:54.253 +00:00 [INF] Document Id: 42, Name: ex3, Description: vf
+2023-08-21 02:22:54.254 +00:00 [INF] Document Id: 43, Name: ex3, Description: vf
+2023-08-21 02:22:54.254 +00:00 [INF] Document Id: 44, Name: qq, Description: qq
+2023-08-21 02:22:54.254 +00:00 [INF] Document Id: 45, Name: document2, Description: rr
+2023-08-21 02:22:54.254 +00:00 [INF] Document Id: 46, Name: exx, Description: we
+2023-08-21 02:22:54.254 +00:00 [INF] Document Id: 47, Name: pdf test, Description: xc
+2023-08-21 02:22:54.255 +00:00 [INF] Document Id: 48, Name: pdfff, Description: r
+2023-08-21 02:22:54.255 +00:00 [INF] Document Id: 49, Name: pdf testing, Description: d
+2023-08-21 02:22:54.255 +00:00 [INF] Document Id: 50, Name: pdf testing, Description: d
+2023-08-21 02:22:54.255 +00:00 [INF] Document Id: 51, Name: pdf test3, Description: ws
+2023-08-21 02:22:54.255 +00:00 [INF] Document Id: 52, Name: test validation lien, Description: cd
+2023-08-21 02:22:54.255 +00:00 [INF] Document Id: 53, Name: validation, Description: cd
+2023-08-21 02:22:54.258 +00:00 [INF] Document Id: 54, Name: validation, Description: cd
+2023-08-21 02:22:54.258 +00:00 [INF] Document Id: 55, Name: val, Description: grf
+2023-08-21 02:22:54.258 +00:00 [INF] Document Id: 56, Name: val, Description: grf
+2023-08-21 02:22:54.259 +00:00 [INF] Document Id: 57, Name: test adding url, Description: ok
+2023-08-21 02:22:54.259 +00:00 [INF] Document Id: 58, Name: test add 2, Description: f
+2023-08-21 02:22:54.259 +00:00 [INF] Document Id: 59, Name: test add3, Description: cvfsv
+2023-08-21 02:22:54.259 +00:00 [INF] Document Id: 60, Name: adding url, Description: aa
+2023-08-21 02:22:54.259 +00:00 [INF] Document Id: 61, Name: signing doc, Description: cds
+2023-08-21 02:22:54.259 +00:00 [INF] Document Id: 62, Name: url signn, Description: rg
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 63, Name: sign33, Description: hi
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 64, Name: sign66, Description: fd
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 65, Name: kk, Description: kk
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 66, Name: ll, Description: ll
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 67, Name: ii, Description: n
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 68, Name: qq, Description: sc
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 69, Name: ;;, Description: sd
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 70, Name: aa, Description: a
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 71, Name: aa2, Description: cv
+2023-08-21 02:22:54.260 +00:00 [INF] Document Id: 72, Name: nn, Description: aa
+2023-08-21 02:22:54.597 +00:00 [INF] Documents fetched from the repository:
+2023-08-21 02:22:54.598 +00:00 [INF] Document Id: 2, Name: testing12, Description: dngfds
+2023-08-21 02:22:54.598 +00:00 [INF] Document Id: 11, Name: rjhgf, Description: fdbgnvc
+2023-08-21 02:22:54.599 +00:00 [INF] Document Id: 12, Name: gcvzbn, Description: svcbv
+2023-08-21 02:22:54.599 +00:00 [INF] Document Id: 13, Name: gnh, Description: fsdgn
+2023-08-21 02:22:54.599 +00:00 [INF] Document Id: 15, Name: ford, Description: dcvb 
+2023-08-21 02:22:54.599 +00:00 [INF] Document Id: 16, Name: doc, Description: sdb
+2023-08-21 02:22:54.599 +00:00 [INF] Document Id: 17, Name: vvbf, Description: dvb b
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 18, Name: dvfb, Description: bfbd
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 19, Name: cfvbg, Description: dfbgnf
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 20, Name: dbfd, Description: bdbf
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 21, Name: testtset, Description: gfgnxcz
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 22, Name: bahhh 2, Description: sdgfgj
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 23, Name: pdf test12, Description: test
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 24, Name: test 2 pdf, Description: dsv
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 25, Name: testtt, Description: fdggh
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 26, Name: p, Description: dcgvn
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 27, Name: test2, Description: vfs
+2023-08-21 02:22:54.600 +00:00 [INF] Document Id: 28, Name: segh, Description: sfdgn
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 29, Name: gxcvbn, Description: cxzv
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 30, Name: testttt, Description: wfg
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 31, Name: ha, Description: df
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 32, Name: ئ, Description: ء
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 33, Name: hiii, Description: vb
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 34, Name: db, Description: fbg
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 35, Name: dfv, Description: sv
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 36, Name: ss, Description: s
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 37, Name: testttt, Description: dvv
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 38, Name: s, Description: dv
+2023-08-21 02:22:54.601 +00:00 [INF] Document Id: 39, Name: 2, Description: zdb
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 40, Name: exemple, Description: cd
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 41, Name: exemple2, Description: de
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 42, Name: ex3, Description: vf
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 43, Name: ex3, Description: vf
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 44, Name: qq, Description: qq
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 45, Name: document2, Description: rr
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 46, Name: exx, Description: we
+2023-08-21 02:22:54.602 +00:00 [INF] Document Id: 47, Name: pdf test, Description: xc
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 48, Name: pdfff, Description: r
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 49, Name: pdf testing, Description: d
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 50, Name: pdf testing, Description: d
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 51, Name: pdf test3, Description: ws
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 52, Name: test validation lien, Description: cd
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 53, Name: validation, Description: cd
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 54, Name: validation, Description: cd
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 55, Name: val, Description: grf
+2023-08-21 02:22:54.603 +00:00 [INF] Document Id: 56, Name: val, Description: grf
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 57, Name: test adding url, Description: ok
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 58, Name: test add 2, Description: f
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 59, Name: test add3, Description: cvfsv
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 60, Name: adding url, Description: aa
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 61, Name: signing doc, Description: cds
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 62, Name: url signn, Description: rg
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 63, Name: sign33, Description: hi
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 64, Name: sign66, Description: fd
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 65, Name: kk, Description: kk
+2023-08-21 02:22:54.604 +00:00 [INF] Document Id: 66, Name: ll, Description: ll
+2023-08-21 02:22:54.605 +00:00 [INF] Document Id: 67, Name: ii, Description: n
+2023-08-21 02:22:54.605 +00:00 [INF] Document Id: 68, Name: qq, Description: sc
+2023-08-21 02:22:54.605 +00:00 [INF] Document Id: 69, Name: ;;, Description: sd
+2023-08-21 02:22:54.605 +00:00 [INF] Document Id: 70, Name: aa, Description: a
+2023-08-21 02:22:54.605 +00:00 [INF] Document Id: 71, Name: aa2, Description: cv
+2023-08-21 02:22:54.605 +00:00 [INF] Document Id: 72, Name: nn, Description: aa

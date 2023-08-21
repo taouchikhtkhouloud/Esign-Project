@@ -147,6 +147,7 @@ namespace Esign.Client.Pages.Misc
 
         private void OnSearch(string text)
         {
+            _searchString = "";
             _searchString = text;
             _table.ReloadServerData();
         }

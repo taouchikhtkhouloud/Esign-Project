@@ -22,5 +22,6 @@ namespace Esign.Application.Features.Documents.Queries.GetAll
         public string PrenomSignateur { get; set; }
         public string FileUrlsSigne { get; set; }
         public DateTime DateSignature { get; set; }
+        public string CodeSignature { get; set; }
     }
 }

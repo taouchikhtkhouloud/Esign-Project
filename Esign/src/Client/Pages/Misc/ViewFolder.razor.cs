@@ -49,6 +49,9 @@ namespace Esign.Client.Pages.Misc
         private List<GetAllDocumentOrFolderResponse> _documentOrFolderList = new();
 
         private string CurrentUserId { get; set; }
+        public string CurrentUserName { get; private set; }
+        public string CurrentUserNameL { get; private set; }
+
         private int _totalItems;
         private int _currentPage = 1;
         private string _searchString = "";
@@ -73,6 +76,7 @@ namespace Esign.Client.Pages.Misc
         private bool _canSearchDocumentTypes;
         private bool _canViewDocumentTypes;
         bool isOpen;
+        List<string> t = new();
 
         protected override async Task OnInitializedAsync()
         {
@@ -145,7 +149,12 @@ namespace Esign.Client.Pages.Misc
                             status = f.status
                         })
                         .ToList();
-                    _document = documentResponse.Data.Where(dt => dt.DocumentTypeId == id1).ToList();
+                    _document = documentResponse.Data.Where(dt => dt.DocumentTypeId == id1).Select(f => new GetDocumentByFolderIdResponse { Id = f.Id, Title = f.Title, Description = f.Description, CreatedOn = f.CreatedOn, CreatedBy = f.CreatedBy, URL = f.URL, Client=f.Client,CodeSignature=f.CodeSignature,DateSignature=f.DateSignature,DocumentType=f.DocumentType, DocumentTypeId=f.DocumentTypeId, fileType=f.fileType, FileUrlsSigne=f.FileUrlsSigne, IsPublic=f.IsPublic, keywords=f.keywords, NomSignateur=f.NomSignateur, PrenomSignateur=f.PrenomSignateur, Value=f.Value, status = f.status }).ToList();
+
+
+
+
+
 
                     var folderItems = folderResponse.Data
                         .Where(dt => dt.Parent ==id1)
@@ -355,6 +364,21 @@ namespace Esign.Client.Pages.Misc
                 }
             }
         }
+        public async Task<List<string>> CurrentUserN()
+        {
+            var state = await _stateProvider.GetAuthenticationStateAsync().ConfigureAwait(false);
+            var user = state.User;
+            if (user.Identity?.IsAuthenticated == true)
+            {
+
+                CurrentUserName = user.GetFirstName();
+                CurrentUserNameL = user.GetLastName();
+                t.Add(CurrentUserName);
+                t.Add(CurrentUserNameL);
+
+            }
+            return t;
+        }
         private async Task SubmitAsync(int id)
         {
             //_CodeModel.Email = "fabracontrolea@gmail.com";
@@ -367,6 +391,14 @@ namespace Esign.Client.Pages.Misc
             //    _snackBar.Add(_localizer["Code is sent to your email!"], Severity.Success);
             var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
             var parameters = new DialogParameters();
+            await CurrentUserN();
+            List<string> ex = new List<string>();
+            ex.Add(CurrentUserName);
+            ex.Add(CurrentUserNameL);
+            Console.WriteLine("----------f name---------");
+            Console.WriteLine(ex[0]);
+            Console.WriteLine("----------l name---------");
+            Console.WriteLine(ex[1]);
             var doc = _document.FirstOrDefault(c => c.Id == id);
             if (doc != null)
             {
@@ -384,8 +416,10 @@ namespace Esign.Client.Pages.Misc
                     keywords = doc.keywords,
                     status = doc.status
                 });
+                parameters.Add(nameof(SendSigningCode.User), ex);
                 var dialog = _dialogService.Show<SendSigningCode>(_localizer["Signature Confirmation"], parameters, options);
             }
+
             //parameters.Add(nameof(SignDocument.code), _CodeModel.Code);
             //var result1 = await dialog.Result;
 
@@ -696,7 +730,7 @@ namespace Esign.Client.Pages.Misc
         {
             _navigationManager.NavigateTo($"/extended-attributes/{typeof(Document).Name}/{documentId}");
         }
-        private bool Search(GetAllDocumentTypesResponse brand)
+        private bool Search(GetAllDocumentOrFolderResponse brand)
         {
             if (string.IsNullOrWhiteSpace(_searchString)) return true;
             if (brand.Name?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)

@@ -24,9 +24,11 @@
 }
 else
 {
-    <div class="d-flex justify-content-start mb-4">
-        <MudButton Variant="Variant.Filled" Color="Color.Secondary" @onclick="@(() => GoBack(int.Parse(id1)))" StartIcon="@Icons.Material.Filled.ArrowBack" IconColor="Color.Surface">Go Back</MudButton>
-    </div>
+<div class="d-flex justify-content-start mb-4 pr-4">
+    <MudButton Variant="Variant.Filled" Color="Color.Secondary" @onclick="@(() => GoBack(int.Parse(id1)))" StartIcon="@Icons.Material.Filled.ArrowBack" IconColor="Color.Surface">Go Back</MudButton>
+    <MudButton  Variant="Variant.Filled" OnClick="@(() => OnSearch(""))" StartIcon="@Icons.Material.Filled.Refresh" IconColor="Color.Surface" Color="Color.Secondary">@_localizer["Reload"]</MudButton>
+
+</div>
 
     <div style="max-width: 400px;" class="primary d-flex justify-content-start p-5 m-4 mud-text-align-center">
         <MudExpansionPanel @bind-IsExpanded="isOpen" HideIcon="true">
@@ -68,7 +70,7 @@ else
             {
             }*@
     </div>
-    <MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" Items="_documentOrFolderList" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
+    <MudTable T="GetAllDocumentOrFolderResponse" Elevation="25" Items="_documentOrFolderList" Filter="new Func<GetAllDocumentOrFolderResponse, bool>(Search)" Hover="true" Dense="@_dense" Bordered="@_bordered" Striped="@_striped" @ref="_table">
         <ToolBarContent>
 
             <MudToolBarSpacer />

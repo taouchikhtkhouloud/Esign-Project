@@ -43,12 +43,6 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Appl
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Documents.Commands.Delete.DeleteDocumentCommandHandler.it.resources
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Documents.Commands.Delete.DeleteDocumentCommandHandler.km.resources
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Documents.Commands.Delete.DeleteDocumentCommandHandler.ru.resources
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.DocumentTypes.Commands.AddEdit.AddEditDocumentTypeCommandHandler.en.resources
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.DocumentTypes.Commands.AddEdit.AddEditDocumentTypeCommandHandler.ru.resources
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.DocumentTypes.Commands.Delete.DeleteDocumentTypeCommandHandler.en.resources
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.DocumentTypes.Commands.Delete.DeleteDocumentTypeCommandHandler.ru.resources
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.DocumentTypes.Queries.Export.ExportDocumentTypesQueryHandler.en.resources
-C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.DocumentTypes.Queries.Export.ExportDocumentTypesQueryHandler.ru.resources
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.ExtendedAttributes.Commands.AddEdit.AddEditExtendedAttributeCommandLocalization.de.resources
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.ExtendedAttributes.Commands.AddEdit.AddEditExtendedAttributeCommandLocalization.en.resources
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.ExtendedAttributes.Commands.AddEdit.AddEditExtendedAttributeCommandLocalization.es.resources
@@ -215,3 +209,9 @@ C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Appl
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\ref\Esign.Application.dll
 C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.pdb
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Folders.Commands.AddEdit.AddEditDocumentTypeCommandHandler.en.resources
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Folders.Commands.AddEdit.AddEditDocumentTypeCommandHandler.ru.resources
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Folders.Commands.Delete.DeleteDocumentTypeCommandHandler.en.resources
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Folders.Commands.Delete.DeleteDocumentTypeCommandHandler.ru.resources
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Folders.Queries.Export.ExportDocumentTypesQueryHandler.en.resources
+C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Application\obj\Debug\net5.0\Esign.Application.Resources.Features.Folders.Queries.Export.ExportDocumentTypesQueryHandler.ru.resources

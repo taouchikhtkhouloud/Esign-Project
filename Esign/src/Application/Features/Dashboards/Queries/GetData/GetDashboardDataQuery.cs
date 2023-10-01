@@ -70,7 +70,7 @@ namespace Esign.Application.Features.Dashboards.Queries.GetData
             //response.DataEnterBarChart.Add(new ChartSeries { Name = _localizer["Brands"], Data = brandsFigure });
             response.DataEnterBarChart.Add(new ChartSeries { Name = _localizer["Documents"], Data = documentsFigure });
             response.DataEnterBarChart.Add(new ChartSeries { Name = _localizer["Folder"], Data = documentTypesFigure });
-            response.DataEnterBarChart.Add(new ChartSeries { Name = _localizer["Document Extended Attributes"], Data = documentExtendedAttributesFigure });
+            response.DataEnterBarChart.Add(new ChartSeries { Name = _localizer["Signed Documents"], Data = documentExtendedAttributesFigure });
 
             return await Result<DashboardDataResponse>.SuccessAsync(response);
         }

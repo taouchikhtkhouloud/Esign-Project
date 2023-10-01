@@ -215,7 +215,7 @@ namespace Esign.Client.Pages.Identity
                 {
                     await _localStorage.SetItemAsync(StorageConstants.Local.UserImageURL, result.Data);
                     _snackBar.Add(_localizer["Profile picture added."], Severity.Success);
-                    _navigationManager.NavigateTo("/account", true);
+                    _navigationManager.NavigateTo("/", true);
                 }
                 else
                 {

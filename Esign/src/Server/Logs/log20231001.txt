@@ -1,0 +1,6 @@
+2023-10-01 00:47:14.906 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 00:47:15.086 +01:00 [INF] Hosting environment: Development
+2023-10-01 00:47:15.170 +01:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server
+2023-10-01 00:52:31.541 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 00:52:31.622 +01:00 [INF] Hosting environment: Development
+2023-10-01 00:52:31.625 +01:00 [INF] Content root path: C:\Users\KHOULOUD TAOUCHIKHT\Desktop\Files\Coding\WarehouseManger\Esign\src\Server

@@ -31,7 +31,7 @@ namespace Esign.Client.Pages.Misc
             var response = await DocumentTypeManager.SaveAsync(AddEditDocumentTypeModel);
             if (response.Succeeded)
             {
-                _snackBar.Add(response.Messages[0], Severity.Success);
+                _snackBar.Add("Folder was successfully created", Severity.Success);
                 MudDialog.Close();
             }
             else
